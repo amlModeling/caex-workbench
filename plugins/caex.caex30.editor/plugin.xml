@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated CAEX30 -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="caex.caex30.caex.presentation.CAEXModelWizardID"
+            name="%_UI_CAEXModelWizard_label"
+            class="caex.caex30.caex.presentation.CAEXModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/CAEXModelFile.gif">
+         <description>%_UI_CAEXModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated CAEX30 -->
+      <editor
+            id="caex.caex30.caex.presentation.CAEXEditorID"
+            name="%_UI_CAEXEditor_label"
+            icon="icons/full/obj16/CAEXModelFile.gif"
+            extensions="caex"
+            class="caex.caex30.caex.presentation.CAEXEditor"
+            contributorClass="caex.caex30.caex.presentation.CAEXActionBarContributor">
+      </editor>
+   </extension>
+
+</plugin>
