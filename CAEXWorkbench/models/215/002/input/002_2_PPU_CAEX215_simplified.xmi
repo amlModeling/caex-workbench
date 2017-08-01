@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="ASCII"?>
+<caex:CAEXFile xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:caex="http://www.dke.de/CAEX/215" xsi:schemaLocation="http://www.dke.de/CAEX/215 ../../../../metamodels/2.15/CAEX_wao_215.ecore" fileName="PPU AML" schemaVersion="2.16">
+  <instanceHierarchy name="PPU">
+    <internalElement iD="" name="R1_Stack" refBaseClassPath="" baseSystemUnit="//@systemUnitClassLib.0/@systemUnitClass.0">
+      <attribute name="R1_Length" attributeDataType=""/>
+      <attribute name="R1_Width"/>
+      <attribute name="R1_Heigth"/>
+      <supportedRoleClass roleClass="//@roleClassLib.1/@roleClass.2"/>
+      <roleRequirements roleClass="//@roleClassLib.0/@roleClass.0"/>
+      <mappingObject>
+        <attributeNameMapping roleAttributeName="" roleAttribute="//@roleClassLib.0/@roleClass.0/@attribute.0" systemUnitAttribute="//@instanceHierarchy.0/@internalElement.0/@attribute.0"/>
+        <attributeNameMapping systemUnitAttributeName="" roleAttribute="//@roleClassLib.0/@roleClass.0/@attribute.1" systemUnitAttribute="//@instanceHierarchy.0/@internalElement.0/@attribute.1"/>
+        <attributeNameMapping roleAttribute="//@roleClassLib.0/@roleClass.0/@attribute.2" systemUnitAttribute="//@instanceHierarchy.0/@internalElement.0/@attribute.2"/>
+      </mappingObject>
+    </internalElement>
+    <internalElement iD="" name="R2_Crane" refBaseClassPath="" baseSystemUnit="//@systemUnitClassLib.0/@systemUnitClass.1">
+      <attribute name="R2_Length" attributeDataType=""/>
+      <attribute name="R2_Width"/>
+      <attribute name="R2_Heigth"/>
+      <supportedRoleClass roleClass="//@roleClassLib.1/@roleClass.2"/>
+      <roleRequirements roleClass="//@roleClassLib.0/@roleClass.0"/>
+      <mappingObject>
+        <attributeNameMapping roleAttributeName="" roleAttribute="//@roleClassLib.0/@roleClass.0/@attribute.0" systemUnitAttribute="//@instanceHierarchy.0/@internalElement.1/@attribute.0"/>
+        <attributeNameMapping systemUnitAttributeName="" roleAttribute="//@roleClassLib.0/@roleClass.0/@attribute.1" systemUnitAttribute="//@instanceHierarchy.0/@internalElement.1/@attribute.1"/>
+        <attributeNameMapping roleAttributeName="" roleAttribute="//@roleClassLib.0/@roleClass.0/@attribute.2" systemUnitAttribute="//@instanceHierarchy.0/@internalElement.1/@attribute.2"/>
+      </mappingObject>
+    </internalElement>
+    <internalElement iD="3659bef7-f6ea-418b-835b-d41ed0f55832" name="C1_Stack2Crane">
+      <externalInterface xsi:type="caex:ExternalInterface" iD="e15aa01e-ff5e-48dc-b0b4-60322073b9d7" name="C1_Stack2Crane Input" baseClass="//@interfaceClassLib.0/@interfaceClass.0/@interfaceClass.3"/>
+      <externalInterface xsi:type="caex:ExternalInterface" iD="99d579fe-78d2-4297-b975-7bd69494fc85" name="C1_Stack2Crane Output" baseClass="//@interfaceClassLib.0/@interfaceClass.0/@interfaceClass.3"/>
+      <internalLink name="" partnerSideA="//@systemUnitClassLib.0/@systemUnitClass.0/@externalInterface.1" partnerSideB="//@systemUnitClassLib.0/@systemUnitClass.1/@externalInterface.0"/>
+    </internalElement>
+  </instanceHierarchy>
+  <interfaceClassLib iD="ed768594-419d-46f5-9242-481b357a573d" name="AutomationMLInterfaceClassLib">
+    <interfaceClass iD="98e00b0f-5abc-4b87-8e53-3f2a134d2b90" name="AutomationMLBaseInterface">
+      <interfaceClass name="Order" refBaseClassPath="" baseClass="//@interfaceClassLib.0/@interfaceClass.0"/>
+      <interfaceClass name="PortConnector" refBaseClassPath="" baseClass="//@interfaceClassLib.0/@interfaceClass.0"/>
+      <interfaceClass name="InterlockingConnector" refBaseClassPath="" baseClass="//@interfaceClassLib.0/@interfaceClass.0"/>
+      <interfaceClass name="PPRConnector" refBaseClassPath="" baseClass="//@interfaceClassLib.0/@interfaceClass.0"/>
+      <interfaceClass name="ExternalDataConnector" refBaseClassPath="" baseClass="//@interfaceClassLib.0/@interfaceClass.0">
+        <interfaceClass name="COLLADAInterface" baseClass="//@interfaceClassLib.0/@interfaceClass.0/@interfaceClass.4"/>
+        <interfaceClass name="PLCOpenXMLConnector" refBaseClassPath="" baseClass="//@interfaceClassLib.0/@interfaceClass.0/@interfaceClass.4"/>
+      </interfaceClass>
+      <interfaceClass name="Communication" refBaseClassPath="" baseClass="//@interfaceClassLib.0/@interfaceClass.0">
+        <interfaceClass name="SignalInterface" baseClass="//@interfaceClassLib.0/@interfaceClass.0/@interfaceClass.5"/>
+      </interfaceClass>
+    </interfaceClass>
+  </interfaceClassLib>
+  <roleClassLib name="PPUPropertySetRoleClassLib">
+    <roleClass name="GeometryPropertySet">
+      <attribute name="Geometry_Length"/>
+      <attribute name="Geometry_Width"/>
+      <attribute name="Geometry_Height"/>
+    </roleClass>
+  </roleClassLib>
+  <roleClassLib iD="2d911384-a01c-43e0-bd49-6f39bf2c7220" name="AutomationMLBaseRole">
+    <roleClass name="Product" baseClass="//@roleClassLib.1/@roleClass.8"/>
+    <roleClass name="Process" baseClass="//@roleClassLib.1/@roleClass.8"/>
+    <roleClass name="Resource" baseClass="//@roleClassLib.1/@roleClass.8"/>
+    <roleClass name="PropertySet" baseClass="//@roleClassLib.1/@roleClass.8"/>
+    <roleClass name="Group" baseClass="//@roleClassLib.1/@roleClass.8"/>
+    <roleClass name="Facet" baseClass="//@roleClassLib.1/@roleClass.8"/>
+    <roleClass name="Port" baseClass="//@roleClassLib.1/@roleClass.8">
+      <externalInterface name="ConnectionPoint"/>
+    </roleClass>
+    <roleClass name="Structure" baseClass="//@roleClassLib.1/@roleClass.8">
+      <roleClass name="ProductStructure" baseClass="//@roleClassLib.1/@roleClass.7"/>
+      <roleClass name="ProcessStructure" baseClass="//@roleClassLib.1/@roleClass.7"/>
+      <roleClass name="ResourceStructure" baseClass="//@roleClassLib.1/@roleClass.7"/>
+    </roleClass>
+    <roleClass iD="8a4f367a-c6c6-4fb2-a489-a47094b0c8eb" name="AutomationMLBaseRole"/>
+  </roleClassLib>
+  <systemUnitClassLib name="PPU SUClib">
+    <systemUnitClass iD="" name="Stack">
+      <externalInterface xsi:type="caex:ExternalInterface" name="Stack_Input" baseClass="//@interfaceClassLib.0/@interfaceClass.0/@interfaceClass.3"/>
+      <externalInterface xsi:type="caex:ExternalInterface" name="Stack_Output" baseClass="//@interfaceClassLib.0/@interfaceClass.0/@interfaceClass.3"/>
+    </systemUnitClass>
+    <systemUnitClass iD="" name="Crane">
+      <externalInterface xsi:type="caex:ExternalInterface" name="Crane_Input" refBaseClassPath="" baseClass="//@interfaceClassLib.0/@interfaceClass.0/@interfaceClass.3"/>
+      <externalInterface xsi:type="caex:ExternalInterface" name="Crane_Output" refBaseClassPath="" baseClass="//@interfaceClassLib.0/@interfaceClass.0/@interfaceClass.3"/>
+    </systemUnitClass>
+  </systemUnitClassLib>
+</caex:CAEXFile>

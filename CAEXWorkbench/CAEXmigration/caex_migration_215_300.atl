@@ -1,0 +1,457 @@
+-- @path caex=/CAEXWorkbench/metamodels/2.15/CAEX_wao_215.ecore
+-- @path copy=/CAEXWorkbench/metamodels/3.0/CAEX_wao_300.ecore
+
+
+module caex_migration;
+create OUT : copy from IN : caex;
+
+--------------------------------------------------------
+--operation convertPathToId(path : String) {
+-- -- {ae671d03-30ae-4dcc-ba17-f0074fb69199}:Stromanschlussstecker2 --> ae671d03-30ae-4dcc-ba17-f0074fb69200
+--------------------------------------------------------	
+helper def : convertPathToId(path : String) : String = 
+let parts : Sequence(String) = path.split(':') in 
+	let ie_ID : String = parts->first()->substring(1, parts->first()->size()) in
+		caex!InternalElement.allInstances() -> any(x|x.iD = ie_ID).externalInterface -> any(x|x.name = parts->last());
+
+helper context caex!InternalElement def : hasRole(role : String) : Boolean =
+	if (not self.roleRequirements.oclIsUndefined())
+		then
+		    self.roleRequirements.roleClass.name = role or self.supportedRoleClass -> exists(x|x.roleClass.name = role)
+		else
+			false
+	endif;
+
+
+rule AttributeNameMapping extends CAEXBasicObject {
+ from
+  ine : caex!AttributeNameMapping
+ to
+  oute : copy!AttributeNameMapping (
+   roleAttributeName <- ine.roleAttributeName,
+   systemUnitAttributeName <- ine.systemUnitAttributeName,
+   roleAttribute <- ine.roleAttribute,
+   systemUnitAttribute <- ine.systemUnitAttribute
+  )
+}
+
+rule Attribute extends CAEXObject {
+ from
+  ine : caex!Attribute
+ to
+  oute : copy!Attribute (  
+   refSemantic <- ine.refSemantic,
+   constraint <- ine.constraint,
+   attribute <- ine.attribute,
+   attributeDataType <- ine.attributeDataType,
+   unit <- ine.unit,
+   value <- ine.value,
+   defaultValue <- ine.defaultValue
+  )
+}
+
+rule AttributeValueRequirement extends CAEXBasicObject {
+ from
+  ine : caex!AttributeValueRequirement
+ to
+  oute : copy!AttributeValueRequirement (
+   ordinalScaledType <- ine.ordinalScaledType,
+   nominalScaledType <- ine.nominalScaledType,
+   unknownType <- ine.unknownType,
+   name <- ine.name
+  )
+}
+
+rule CAEXBasicObject {
+ from
+  ine : caex!CAEXBasicObject
+ to
+  oute : copy!CAEXBasicObject (
+   description <- ine.description,
+   version <- ine.version,
+   revision <- ine.revision,
+   copyright <- ine.copyright,
+   changeMode <- ine.changeMode
+  )
+}
+
+-- added new CAEX 3.0 elements
+rule CAEXFile extends CAEXBasicObject {
+ from
+  ine : caex!CAEXFile
+ to
+  oute : copy!CAEXFile (
+   externalReference <- ine.externalReference,
+   instanceHierarchy <- ine.instanceHierarchy,
+   interfaceClassLib <- ine.interfaceClassLib,
+   roleClassLib <- ine.roleClassLib,
+   systemUnitClassLib <- ine.systemUnitClassLib,
+   fileName <- ine.fileName,
+   -- NEW CAEX 3.0 elements ---------------------------
+   -- change default value from 2.15 to 3.0
+   schemaVersion <- '3.0',
+   -- See Change Table: 7 - Source Document Information
+   sourceDocumentInformation <- sourceinfo,
+   -- NEW CAEX 3.0 element - to be configured by additional input model
+   -- See Change Table: row 6 - Superior Standard Version
+   superiorStandardVersion <- 'AutomationML 2.0',
+   attributeTypeLib <- copy!AttributeLib.allInstances()
+   ),
+   -- NEW CAEX 3.0 element - to be configured by additional input model
+   sourceinfo : copy!SourceDocumentInformation(
+	originID <- 'TODO',
+	originName <-  'TODO',
+	originProjectID <- 'TODO',
+	originProjectTitle <- 'TODO',
+	originRelease <- 'TODO',
+	originVendor <- 'TODO',
+	originVendorURL <- 'TODO',
+	originVersion <- '3.0'
+   )
+}
+
+rule CAEXObject extends CAEXBasicObject {
+ from
+  ine : caex!CAEXObject
+ to
+  oute : copy!CAEXObject (
+   iD <- ine.iD,       
+   name <- ine.name
+  )
+}
+
+
+rule Copyright {
+ from
+  ine : caex!Copyright
+ to
+  oute : copy!Copyright (
+   value <- ine.value,
+   changeMode <- ine.changeMode
+  )
+}
+
+rule Description {
+ from
+  ine : caex!Description
+ to
+  oute : copy!Description (
+   value <- ine.value,
+   changeMode <- ine.changeMode
+  )
+}
+
+rule DocumentRoot {
+ from
+  ine : caex!DocumentRoot
+ to
+  oute : copy!DocumentRoot (
+   mixed <- ine.mixed,
+   xMLNSPrefixMap <- ine.xMLNSPrefixMap,
+   xSISchemaLocation <- ine.xSISchemaLocation,
+   cAEXFile <- ine.cAEXFile
+  )
+}
+
+rule ExternalInterface extends InterfaceClass {
+ from
+  ine : caex!ExternalInterface
+ to
+  oute : copy!ExternalInterface (
+   attribute <- ine.attribute,
+   refBaseClassPath <- ine.refBaseClassPath,
+   baseClass <- ine.baseClass,
+   interfaceClass <- ine.interfaceClass
+  )
+}
+
+rule ExternalReference extends CAEXBasicObject {
+ from
+  ine : caex!ExternalReference
+ to
+  oute : copy!ExternalReference (
+   alias <- ine.alias,
+   path <- ine.path
+  )
+}
+
+rule InstanceHierarchy extends CAEXObject {
+ from
+  ine : caex!InstanceHierarchy
+ to
+  oute : copy!InstanceHierarchy (
+   internalElement <- ine.internalElement
+  )
+}
+
+rule InterfaceClassLib extends CAEXObject {
+ from
+  ine : caex!InterfaceClassLib
+ to
+  oute : copy!InterfaceClassLib (
+   interfaceClass <- ine.interfaceClass
+  )
+}
+
+rule InterfaceClass extends CAEXObject {
+ from
+  ine : caex!InterfaceClass
+ to
+  oute : copy!InterfaceClass (
+   attribute <- ine.attribute,
+   refBaseClassPath <- ine.refBaseClassPath,
+   baseClass <- ine.baseClass,
+   interfaceClass <- ine.interfaceClass
+  )
+}
+
+rule InterfaceFamily extends InterfaceClass {
+ from
+  ine : caex!InterfaceFamily
+ to
+  oute : copy!InterfaceFamily (
+  )
+}
+
+rule InterfaceNameMapping extends CAEXBasicObject {
+from
+  ine : caex!InterfaceNameMapping
+to
+  oute : copy!InterfaceIDMapping (
+   roleInterfaceID <- if not oute.roleInterfaceID.oclIsUndefined() then thisModule.convertPathToId(ine.roleInterfaceName) else OclUndefined endif,
+   systemUnitInterfaceID <- if not oute.systemUnitInterfaceID.oclIsUndefined() then thisModule.convertPathToId(ine.systemUnitInterfaceName) else OclUndefined endif, 
+   roleInterface <- ine.roleInterface,
+   systemUnitInterface <- ine.SystemUnitInterface
+  )
+}
+
+rule InternalElement extends SystemUnitClass {
+ from
+  ine : caex!InternalElement --(not ine.hasRole('PropertySet'))
+ to
+  oute : copy!InternalElement (
+   attribute <- ine.attribute,
+   externalInterface <- ine.externalInterface,
+   internalElement <- ine.internalElement,
+   supportedRoleClass <- ine.supportedRoleClass,
+   internalLink <- ine.internalLink,
+   refBaseClassPath <- ine.refBaseClassPath,
+   baseClass <- ine.baseClass,
+   systemUnitClass <- ine.systemUnitClass,
+   roleRequirements <- ine.roleRequirements,
+   refBaseSystemUnitPath <- ine.refBaseSystemUnitPath,
+   baseSystemUnit <- ine.baseSystemUnit
+ )
+}
+
+
+-- CAEX 3.0 specific rules
+-- Generate an attribute library if we find a IE 
+rule IE2AttributeLibrary {
+	from
+		ie : caex!InternalElement (ie.hasRole('PropertySet'))
+	to 
+		lib : copy!AttributeLib(
+			name <- if ie.name.oclIsUndefined() then 'attribute library' else ie.name.concat('lib') endif
+		)
+}
+
+
+rule InternalLink extends CAEXObject {
+ from
+  ine : caex!InternalLink
+ to
+  oute : copy!InternalLink (
+   refPartnerSideA <- ine.refPartnerSideA,
+   refPartnerSideB <- ine.refPartnerSideB,
+   partnerSideA <- ine.partnerSideA,
+   partnerSideB <- ine.partnerSideB
+  )
+}
+
+rule Mapping extends CAEXBasicObject {
+ from
+  ine : caex!Mapping
+ to
+  oute : copy!Mapping (
+   attributeNameMapping <- ine.attributeNameMapping,
+   interfaceIDMapping <- ine.interfaceNameMapping
+  )
+}
+
+rule NominalScaled {
+ from
+  ine : caex!NominalScaled
+ to
+  oute : copy!NominalScaled (
+   requiredValue <- ine.requiredValue
+  )
+}
+
+rule OrdinalScaled {
+ from
+  ine : caex!OrdinalScaled
+ to
+  oute : copy!OrdinalScaled (
+   requiredMaxValue <- ine.requiredMaxValue,
+   requiredValue <- ine.requiredValue,
+   requiredMinValue <- ine.requiredMinValue
+  )
+}
+
+rule RefSemantic extends CAEXBasicObject {
+ from
+  ine : caex!RefSemantic
+ to
+  oute : copy!RefSemantic (
+   correspondingAttributePath <- ine.correspondingAttributePath
+  )
+}
+
+rule Revision extends CAEXBasicObject {
+ from
+  ine : caex!Revision
+ to
+  oute : copy!Revision (
+   revisionDate <- ine.revisionDate,
+   oldVersion <- ine.oldVersion,
+   newVersion <- ine.newVersion,
+   authorName <- ine.authorName,
+   comment <- ine.comment
+  )
+}
+
+rule RoleClassLib extends CAEXObject {
+ from
+  ine : caex!RoleClassLib
+ to
+  oute : copy!RoleClassLib (
+   roleClass <- ine.roleClass
+  )
+}
+--
+rule RoleClass extends CAEXObject {
+ from
+  ine : caex!RoleClass
+ to
+  oute : copy!RoleClass (
+   attribute <- ine.attribute,
+   externalInterface <- ine.externalInterface,
+   refBaseClassPath <- ine.refBaseClassPath,
+   baseClass <- ine.baseClass,
+   roleClass <- ine.roleClass
+  )
+}
+
+rule RoleFamily extends RoleClass {
+ from
+  ine : caex!RoleFamily
+ to
+   oute : copy!RoleFamily (
+	attribute <- ine.attribute,
+	externalInterface <- ine.externalInterface,
+	refBaseClassPath <- ine.refBaseClassPath,
+	baseClass <- ine.baseClass,
+	roleClass <- ine.roleClass
+  )
+}
+
+rule RoleRequirements extends CAEXBasicObject {
+ from
+  ine : caex!RoleRequirements
+ to
+  oute : copy!RoleRequirements (
+   attribute <- ine.attribute,
+   externalInterface <- ine.externalInterface,
+   refBaseRoleClassPath <- ine.refBaseRoleClassPath,
+   roleClass <- ine.roleClass,
+   -- moving mapping objects from internalelement to its inner rolerequirement
+    mappingObject <-ine.refImmediateComposite().mappingObject
+  )
+}
+--
+rule SupportedRoleClass extends CAEXBasicObject {
+ from
+  ine : caex!SupportedRoleClass
+ to
+  oute : copy!SupportedRoleClass (
+   mappingObject <- ine.mappingObject,
+   refRoleClassPath <- ine.refRoleClassPath,
+   roleClass <- ine.roleClass
+  )
+}
+
+rule SystemUnitClassLib extends CAEXObject {
+ from
+  ine : caex!SystemUnitClassLib
+ to
+  oute : copy!SystemUnitClassLib (
+   systemUnitClass <- ine.systemUnitClass
+  )
+}
+
+rule SystemUnitClass extends CAEXObject {
+ from
+  ine : caex!SystemUnitClass
+ to
+  oute : copy!SystemUnitClass (
+   attribute <- ine.attribute,
+   externalInterface <- ine.externalInterface,
+   internalElement <- ine.internalElement,
+   supportedRoleClass <- ine.supportedRoleClass,
+   internalLink <- ine.internalLink,
+   refBaseClassPath <- ine.refBaseClassPath,
+   baseClass <- ine.baseClass,
+   systemUnitClass <- ine.systemUnitClass
+  )
+}
+
+rule SystemUnitFamily extends SystemUnitClass {
+ from
+  ine : caex!SystemUnitFamily
+ to
+  oute : copy!SystemUnitFamily (
+   attribute <- ine.attribute,
+   externalInterface <- ine.externalInterface,
+   internalElement <- ine.internalElement,
+   supportedRoleClass <- ine.supportedRoleClass,
+   internalLink <- ine.internalLink,
+   refBaseClassPath <- ine.refBaseClassPath,
+   baseClass <- ine.baseClass,
+   systemUnitClass <- ine.systemUnitClass
+  )
+}
+
+rule UnknownType {
+ from
+  ine : caex!UnknownType
+ to
+  oute : copy!UnknownType (
+   requirements <- ine.requirements
+  )
+}
+
+rule Version {
+ from
+  ine : caex!Version
+ to
+  oute : copy!Version (
+   value <- ine.value,
+   changeMode <- ine.changeMode
+  )
+}
+
+rule AdditionalInformation {
+ from
+  ine : caex!AdditionalInformation
+ to
+  oute : copy!AdditionalInformation (
+  	attributeFeatureMap <- ine.attributeFeatureMap,
+	attributes <- ine.attributes,
+	elementFeatureMap <- ine.elementFeatureMap,
+	name <- ine.name,
+	nestedElements <- ine.nestedElements,
+	value <- ine.value
+  )
+}
+

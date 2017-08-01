@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.epsilon.evl.eclipse.dt.launching.EvlLaunchConfigurationDelegate">
+<booleanAttribute key="fine_grained_profiling" value="false"/>
+<listAttribute key="models">
+<listEntry value="#Wed May 10 12:56:29 CEST 2017&#13;&#10;isMetamodelFileBased=true&#13;&#10;name=caex215&#13;&#10;readOnLoad=true&#13;&#10;storeOnDisposal=true&#13;&#10;aliases=caex215&#13;&#10;cached=true&#13;&#10;fileBasedMetamodelUri=platform\:/resource/CAEXWorkbench/metamodels/2.15/CAEX_wao_215.ecore&#13;&#10;metamodelUri=&#13;&#10;modelUri=platform\:/resource/CAEXWorkbench/models/215/002/input/002_2_PPU_CAEX215_simplified.xmi&#13;&#10;reuseUnmodifiedFileBasedMetamodels=true&#13;&#10;type=EMF&#13;&#10;modelFile=/CAEXWorkbench/models/215/002/input/002_2_PPU_CAEX215_simplified.xmi&#13;&#10;expand=true&#13;&#10;metamodelFile=/CAEXWorkbench/metamodels/2.15/CAEX_wao_215.ecore"/>
+</listAttribute>
+<booleanAttribute key="optimizeConstraints" value="false"/>
+<listAttribute key="parameters"/>
+<booleanAttribute key="profile_model_loading" value="false"/>
+<booleanAttribute key="profiling_enabled" value="false"/>
+<booleanAttribute key="reset_profiler" value="false"/>
+<stringAttribute key="source" value="/CAEXWorkbench/checkers/CAEX_215to30.evl"/>
+</launchConfiguration>

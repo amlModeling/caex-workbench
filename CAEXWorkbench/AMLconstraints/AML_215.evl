@@ -1,0 +1,49 @@
+context caex215!CAEXObject{
+	
+	constraint idIsMandatory{
+			check {
+				return self.iD <> null;
+			} 
+			
+			message {
+				return 'The Element ' + self.name + ' has no GUID.';
+			}	
+	}
+}
+
+context caex215!InternalElement{
+	
+	constraint strongConformanceSUC2IE{
+			guard {
+				return self.baseSystemUnit <> null;
+			}
+			check {
+				return self.baseSystemUnit.attribute->forAll(aC | self.attribute->one(cI | aC.name = cI.name and aC.value = cI.value));
+			} 
+			
+			message {
+				return 'The Element ' + self.name + ' has some missing attributes or nonconforming values.';
+			}
+	}
+}
+
+context caex215!InternalElement{
+	
+	constraint strongConformanceIE2SUC{
+			guard {
+				return self.baseSystemUnit <> null;
+			}
+			check {
+				return self.attribute->forAll(aI | self.baseSystemUnit.attribute->one(aC | aC.name = aI.name and aC.value = aI.value));
+			} 
+			
+			message {
+				return 'The Element ' + self.name + ' has too many attributes or nonconforming values.';
+			}
+	}
+}
+
+
+
+
+

@@ -1,0 +1,116 @@
+operation convertPathToId(path : String) {
+	-- {ae671d03-30ae-4dcc-ba17-f0074fb69199}:Stromanschlussstecker2 -> ae671d03-30ae-4dcc-ba17-f0074fb69200
+	-- assume right format {uuid}:name
+	
+	var parts = path.split(':');
+	var elementID = parts.get(0).substring(1, parts.get(0).length()-1);
+	var interfaceName = parts.get(1); 
+	
+	var element = caex215!InternalElement.all() -> selectOne(x|x.iD = elementID);
+	if(element = null){ return '';}
+	
+	var interface = element.externalInterface -> selectOne(x|x.name = interfaceName);
+	return interface.iD;
+}
+
+context caex215!InternalLink{
+
+	critique interalLinkAIsOpen{
+			check {
+				return self.refPartnerSideA = null;
+			} 
+			
+			message  {
+				return 'The InternalLink ' + self.name + ' has unset endpoint A.';
+			}
+	}
+	
+	critique interalLinkBIsOpen{
+			check {
+				return self.refPartnerSideB = null;
+			} 
+			
+			message  {
+				return 'The InternalLink ' + self.name + ' has unset endpoint B.';
+			}
+	}
+	
+	critique interalLinkAIsInvalid{
+			guard {
+				return self.refPartnerSideA <> null and self.refPartnerSideA <> '';
+			}
+			check {
+				return convertPathToId(self.refPartnerSideA) == '';
+			} 
+			
+			message  {
+				return 'The InternalLink ' + self.name + ' has invalid endpoint A.';
+			}
+	}
+	
+	critique interalLinkBIsInvalid{
+			guard {
+				return self.refPartnerSideB <> null and self.refPartnerSideB <> '';
+			}
+			check {
+				return convertPathToId(self.refPartnerSideB) == '';
+			} 
+			
+			message  {
+				return 'The InternalLink ' + self.name + ' has invalid endpoint B.';
+			}
+	}
+	
+}
+
+context caex215!RoleRequirements{
+
+	constraint refBaseRoleClassPathGetsMandatory{
+			check {
+				return self.refBaseRoleClassPath <> '' and self.refBaseRoleClassPath <> null;
+			} 
+			
+			message {
+				return 'The RoleRequirements of ' + self.eContainer().name + ' needs a valid reference to the RoleClass.';
+			}
+	}
+}
+
+context caex215!CAEXObject{
+	
+	constraint idIsMandatory{
+			check {
+				return self.iD <> null;
+			} 
+			
+			message {
+				return 'The Element ' + self.name + ' has no GUID.';
+			}
+			fix{		
+				title{
+					return "Add new GUID to : " + self.name;
+				}
+				do{
+					self.iD = new Native("big.tuwien.validation.guid.GUIDGenerator").getGUID();
+				}
+			}
+
+	}
+}
+
+context caex215!InternalElement{
+ guard {return self.baseSystemUnit.isTypeOf(caex215!InternalElement);}
+ constraint mirrorObjectIsEmpty{
+   check {
+    return self.internalElement.size() = 0;
+   } 
+   
+   message {
+    return 'The Mirror Object ' + self.name + ' has an internal structure.';
+   }
+ }
+}
+
+
+
+

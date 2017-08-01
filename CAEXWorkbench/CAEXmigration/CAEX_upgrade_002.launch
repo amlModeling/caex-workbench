@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.eclipse.m2m.atl.adt.launching.atlTransformation">
+<stringAttribute key="ATL File Name" value="/CAEXWorkbench/CAEXmigration/caex_migration_215_300.atl"/>
+<stringAttribute key="ATL VM" value="EMF-specific VM"/>
+<stringAttribute key="ATL_COMPILER" value="atl2006"/>
+<booleanAttribute key="IS_REFINING" value="false"/>
+<mapAttribute key="Input">
+<mapEntry key="IN" value="caex"/>
+</mapAttribute>
+<mapAttribute key="Libs"/>
+<mapAttribute key="Model Handler">
+<mapEntry key="caex" value="EMF"/>
+<mapEntry key="copy" value="EMF"/>
+</mapAttribute>
+<mapAttribute key="ModelType">
+<mapEntry key="IN" value="MODELINPUT"/>
+<mapEntry key="OUT" value="MODELOUTPUT"/>
+<mapEntry key="caex" value="METAMODELINPUT"/>
+<mapEntry key="copy" value="METAMODELOUTPUT"/>
+</mapAttribute>
+<mapAttribute key="Options">
+<mapEntry key="OPTION_CLEAR" value="true"/>
+<mapEntry key="OPTION_CONTENT_TYPE" value="false"/>
+<mapEntry key="OPTION_DERIVED" value="true"/>
+<mapEntry key="allowInterModelReferences" value="false"/>
+<mapEntry key="printExecutionTime" value="true"/>
+<mapEntry key="step" value="false"/>
+<mapEntry key="supportUML2Stereotypes" value="false"/>
+</mapAttribute>
+<listAttribute key="OrderedInput">
+<listEntry value="IN"/>
+</listAttribute>
+<listAttribute key="OrderedOutput">
+<listEntry value="OUT"/>
+</listAttribute>
+<mapAttribute key="Output">
+<mapEntry key="OUT" value="copy"/>
+</mapAttribute>
+<mapAttribute key="Path">
+<mapEntry key="IN" value="/CAEXWorkbench/models/215/002/input/002_2_PPU_CAEX215_simplified.xmi"/>
+<mapEntry key="OUT" value="/CAEXWorkbench/models/300/002/output/002_2_PPU_CAEX300_simplified.xmi"/>
+<mapEntry key="caex" value="/CAEXWorkbench/metamodels/2.15/CAEX_wao_215.ecore"/>
+<mapEntry key="copy" value="/CAEXWorkbench/metamodels/3.0/CAEX_wao_300.ecore"/>
+</mapAttribute>
+<listAttribute key="Superimpose"/>
+</launchConfiguration>
