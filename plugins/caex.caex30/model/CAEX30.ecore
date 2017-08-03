@@ -193,6 +193,8 @@
         containment="true" resolveProxies="false"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="roleClass" lowerBound="1"
         eType="#//RoleClass"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="refBaseRoleClassPath" lowerBound="1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//String"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="SourceDocumentInformation">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="lastWritingDateTime" lowerBound="1"

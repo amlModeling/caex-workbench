@@ -17,6 +17,7 @@ import org.eclipse.emf.common.util.EList;
  *   <li>{@link caex.caex30.caex.RoleRequirements#getExternalInterface <em>External Interface</em>}</li>
  *   <li>{@link caex.caex30.caex.RoleRequirements#getMappingObject <em>Mapping Object</em>}</li>
  *   <li>{@link caex.caex30.caex.RoleRequirements#getRoleClass <em>Role Class</em>}</li>
+ *   <li>{@link caex.caex30.caex.RoleRequirements#getRefBaseRoleClassPath <em>Ref Base Role Class Path</em>}</li>
  * </ul>
  *
  * @see caex.caex30.caex.CAEXPackage#getRoleRequirements()
@@ -107,5 +108,31 @@ public interface RoleRequirements extends CAEXBasicObject {
 	 * @generated
 	 */
 	void setRoleClass(RoleClass value);
+
+	/**
+	 * Returns the value of the '<em><b>Ref Base Role Class Path</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Ref Base Role Class Path</em>' attribute isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Ref Base Role Class Path</em>' attribute.
+	 * @see #setRefBaseRoleClassPath(String)
+	 * @see caex.caex30.caex.CAEXPackage#getRoleRequirements_RefBaseRoleClassPath()
+	 * @model dataType="org.eclipse.emf.ecore.xml.type.String" required="true"
+	 * @generated
+	 */
+	String getRefBaseRoleClassPath();
+
+	/**
+	 * Sets the value of the '{@link caex.caex30.caex.RoleRequirements#getRefBaseRoleClassPath <em>Ref Base Role Class Path</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Ref Base Role Class Path</em>' attribute.
+	 * @see #getRefBaseRoleClassPath()
+	 * @generated
+	 */
+	void setRefBaseRoleClassPath(String value);
 
 } // RoleRequirements

@@ -36,6 +36,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *   <li>{@link caex.caex30.caex.impl.RoleRequirementsImpl#getExternalInterface <em>External Interface</em>}</li>
  *   <li>{@link caex.caex30.caex.impl.RoleRequirementsImpl#getMappingObject <em>Mapping Object</em>}</li>
  *   <li>{@link caex.caex30.caex.impl.RoleRequirementsImpl#getRoleClass <em>Role Class</em>}</li>
+ *   <li>{@link caex.caex30.caex.impl.RoleRequirementsImpl#getRefBaseRoleClassPath <em>Ref Base Role Class Path</em>}</li>
  * </ul>
  *
  * @generated
@@ -80,6 +81,26 @@ public class RoleRequirementsImpl extends CAEXBasicObjectImpl implements RoleReq
 	 * @ordered
 	 */
 	protected RoleClass roleClass;
+
+	/**
+	 * The default value of the '{@link #getRefBaseRoleClassPath() <em>Ref Base Role Class Path</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getRefBaseRoleClassPath()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String REF_BASE_ROLE_CLASS_PATH_EDEFAULT = null;
+
+	/**
+	 * The cached value of the '{@link #getRefBaseRoleClassPath() <em>Ref Base Role Class Path</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getRefBaseRoleClassPath()
+	 * @generated
+	 * @ordered
+	 */
+	protected String refBaseRoleClassPath = REF_BASE_ROLE_CLASS_PATH_EDEFAULT;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -210,6 +231,27 @@ public class RoleRequirementsImpl extends CAEXBasicObjectImpl implements RoleReq
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public String getRefBaseRoleClassPath() {
+		return refBaseRoleClassPath;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setRefBaseRoleClassPath(String newRefBaseRoleClassPath) {
+		String oldRefBaseRoleClassPath = refBaseRoleClassPath;
+		refBaseRoleClassPath = newRefBaseRoleClassPath;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, CAEXPackage.ROLE_REQUIREMENTS__REF_BASE_ROLE_CLASS_PATH, oldRefBaseRoleClassPath, refBaseRoleClassPath));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
@@ -240,6 +282,8 @@ public class RoleRequirementsImpl extends CAEXBasicObjectImpl implements RoleReq
 			case CAEXPackage.ROLE_REQUIREMENTS__ROLE_CLASS:
 				if (resolve) return getRoleClass();
 				return basicGetRoleClass();
+			case CAEXPackage.ROLE_REQUIREMENTS__REF_BASE_ROLE_CLASS_PATH:
+				return getRefBaseRoleClassPath();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -267,6 +311,9 @@ public class RoleRequirementsImpl extends CAEXBasicObjectImpl implements RoleReq
 			case CAEXPackage.ROLE_REQUIREMENTS__ROLE_CLASS:
 				setRoleClass((RoleClass)newValue);
 				return;
+			case CAEXPackage.ROLE_REQUIREMENTS__REF_BASE_ROLE_CLASS_PATH:
+				setRefBaseRoleClassPath((String)newValue);
+				return;
 		}
 		super.eSet(featureID, newValue);
 	}
@@ -291,6 +338,9 @@ public class RoleRequirementsImpl extends CAEXBasicObjectImpl implements RoleReq
 			case CAEXPackage.ROLE_REQUIREMENTS__ROLE_CLASS:
 				setRoleClass((RoleClass)null);
 				return;
+			case CAEXPackage.ROLE_REQUIREMENTS__REF_BASE_ROLE_CLASS_PATH:
+				setRefBaseRoleClassPath(REF_BASE_ROLE_CLASS_PATH_EDEFAULT);
+				return;
 		}
 		super.eUnset(featureID);
 	}
@@ -311,8 +361,26 @@ public class RoleRequirementsImpl extends CAEXBasicObjectImpl implements RoleReq
 				return mappingObject != null;
 			case CAEXPackage.ROLE_REQUIREMENTS__ROLE_CLASS:
 				return roleClass != null;
+			case CAEXPackage.ROLE_REQUIREMENTS__REF_BASE_ROLE_CLASS_PATH:
+				return REF_BASE_ROLE_CLASS_PATH_EDEFAULT == null ? refBaseRoleClassPath != null : !REF_BASE_ROLE_CLASS_PATH_EDEFAULT.equals(refBaseRoleClassPath);
 		}
 		return super.eIsSet(featureID);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public String toString() {
+		if (eIsProxy()) return super.toString();
+
+		StringBuffer result = new StringBuffer(super.toString());
+		result.append(" (refBaseRoleClassPath: ");
+		result.append(refBaseRoleClassPath);
+		result.append(')');
+		return result.toString();
 	}
 
 } //RoleRequirementsImpl

@@ -18,6 +18,7 @@ import org.eclipse.emf.ecore.EStructuralFeature;
 
 import org.eclipse.emf.edit.provider.ComposeableAdapterFactory;
 import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
+import org.eclipse.emf.edit.provider.ItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ViewerNotification;
 
 /**
@@ -49,6 +50,7 @@ public class RoleRequirementsItemProvider extends CAEXBasicObjectItemProvider {
 			super.getPropertyDescriptors(object);
 
 			addRoleClassPropertyDescriptor(object);
+			addRefBaseRoleClassPathPropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
 	}
@@ -71,6 +73,28 @@ public class RoleRequirementsItemProvider extends CAEXBasicObjectItemProvider {
 				 false,
 				 true,
 				 null,
+				 null,
+				 null));
+	}
+
+	/**
+	 * This adds a property descriptor for the Ref Base Role Class Path feature.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void addRefBaseRoleClassPathPropertyDescriptor(Object object) {
+		itemPropertyDescriptors.add
+			(createItemPropertyDescriptor
+				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
+				 getResourceLocator(),
+				 getString("_UI_RoleRequirements_refBaseRoleClassPath_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_RoleRequirements_refBaseRoleClassPath_feature", "_UI_RoleRequirements_type"),
+				 CAEXPackage.Literals.ROLE_REQUIREMENTS__REF_BASE_ROLE_CLASS_PATH,
+				 true,
+				 false,
+				 false,
+				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
 				 null,
 				 null));
 	}
@@ -146,6 +170,9 @@ public class RoleRequirementsItemProvider extends CAEXBasicObjectItemProvider {
 		updateChildren(notification);
 
 		switch (notification.getFeatureID(RoleRequirements.class)) {
+			case CAEXPackage.ROLE_REQUIREMENTS__REF_BASE_ROLE_CLASS_PATH:
+				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
+				return;
 			case CAEXPackage.ROLE_REQUIREMENTS__ATTRIBUTE:
 			case CAEXPackage.ROLE_REQUIREMENTS__EXTERNAL_INTERFACE:
 			case CAEXPackage.ROLE_REQUIREMENTS__MAPPING_OBJECT:

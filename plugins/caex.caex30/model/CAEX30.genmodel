@@ -140,6 +140,7 @@
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CAEX30.ecore#//RoleRequirements/externalInterface"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CAEX30.ecore#//RoleRequirements/mappingObject"/>
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CAEX30.ecore#//RoleRequirements/roleClass"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CAEX30.ecore#//RoleRequirements/refBaseRoleClassPath"/>
     </genClasses>
     <genClasses ecoreClass="CAEX30.ecore#//SourceDocumentInformation">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CAEX30.ecore#//SourceDocumentInformation/lastWritingDateTime"/>

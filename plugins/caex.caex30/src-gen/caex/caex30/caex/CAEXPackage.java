@@ -3310,13 +3310,22 @@ public interface CAEXPackage extends EPackage {
 	int ROLE_REQUIREMENTS__ROLE_CLASS = CAEX_BASIC_OBJECT_FEATURE_COUNT + 3;
 
 	/**
+	 * The feature id for the '<em><b>Ref Base Role Class Path</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ROLE_REQUIREMENTS__REF_BASE_ROLE_CLASS_PATH = CAEX_BASIC_OBJECT_FEATURE_COUNT + 4;
+
+	/**
 	 * The number of structural features of the '<em>Role Requirements</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ROLE_REQUIREMENTS_FEATURE_COUNT = CAEX_BASIC_OBJECT_FEATURE_COUNT + 4;
+	int ROLE_REQUIREMENTS_FEATURE_COUNT = CAEX_BASIC_OBJECT_FEATURE_COUNT + 5;
 
 	/**
 	 * The number of operations of the '<em>Role Requirements</em>' class.
@@ -5338,6 +5347,17 @@ public interface CAEXPackage extends EPackage {
 	EReference getRoleRequirements_RoleClass();
 
 	/**
+	 * Returns the meta object for the attribute '{@link caex.caex30.caex.RoleRequirements#getRefBaseRoleClassPath <em>Ref Base Role Class Path</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Ref Base Role Class Path</em>'.
+	 * @see caex.caex30.caex.RoleRequirements#getRefBaseRoleClassPath()
+	 * @see #getRoleRequirements()
+	 * @generated
+	 */
+	EAttribute getRoleRequirements_RefBaseRoleClassPath();
+
+	/**
 	 * Returns the meta object for class '{@link caex.caex30.caex.SourceDocumentInformation <em>Source Document Information</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -6732,6 +6752,14 @@ public interface CAEXPackage extends EPackage {
 		 * @generated
 		 */
 		EReference ROLE_REQUIREMENTS__ROLE_CLASS = eINSTANCE.getRoleRequirements_RoleClass();
+
+		/**
+		 * The meta object literal for the '<em><b>Ref Base Role Class Path</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute ROLE_REQUIREMENTS__REF_BASE_ROLE_CLASS_PATH = eINSTANCE.getRoleRequirements_RefBaseRoleClassPath();
 
 		/**
 		 * The meta object literal for the '{@link caex.caex30.caex.impl.SourceDocumentInformationImpl <em>Source Document Information</em>}' class.
