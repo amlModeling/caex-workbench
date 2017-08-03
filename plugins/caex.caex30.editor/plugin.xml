@@ -9,13 +9,13 @@
    <extension point="org.eclipse.ui.newWizards">
       <!-- @generated CAEX30 -->
       <category
-            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            id="caex.Wizard.category.ID"
             name="%_UI_Wizard_category"/>
       <wizard
             id="caex.caex30.caex.presentation.CAEXModelWizardID"
             name="%_UI_CAEXModelWizard_label"
             class="caex.caex30.caex.presentation.CAEXModelWizard"
-            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            category="caex.Wizard.category.ID"
             icon="icons/full/obj16/CAEXModelFile.gif">
          <description>%_UI_CAEXModelWizard_description</description>
          <selection class="org.eclipse.core.resources.IResource"/>
