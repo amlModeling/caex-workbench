@@ -130,8 +130,8 @@ public class InterfaceNameMappingItemProvider extends CAEXBasicObjectItemProvide
 			(createItemPropertyDescriptor
 				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
 				 getResourceLocator(),
-				 getString("_UI_InterfaceNameMapping_SystemUnitInterface_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_InterfaceNameMapping_SystemUnitInterface_feature", "_UI_InterfaceNameMapping_type"),
+				 getString("_UI_InterfaceNameMapping_systemUnitInterface_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_InterfaceNameMapping_systemUnitInterface_feature", "_UI_InterfaceNameMapping_type"),
 				 CAEXPackage.Literals.INTERFACE_NAME_MAPPING__SYSTEM_UNIT_INTERFACE,
 				 true,
 				 false,

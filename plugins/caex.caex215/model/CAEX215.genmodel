@@ -94,7 +94,7 @@
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CAEX215.ecore#//InterfaceNameMapping/roleInterfaceName"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CAEX215.ecore#//InterfaceNameMapping/systemUnitInterfaceName"/>
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CAEX215.ecore#//InterfaceNameMapping/roleInterface"/>
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CAEX215.ecore#//InterfaceNameMapping/SystemUnitInterface"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CAEX215.ecore#//InterfaceNameMapping/systemUnitInterface"/>
     </genClasses>
     <genClasses ecoreClass="CAEX215.ecore#//InternalElement">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CAEX215.ecore#//InternalElement/roleRequirements"/>
