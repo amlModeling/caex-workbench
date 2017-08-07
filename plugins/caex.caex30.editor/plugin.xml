@@ -7,7 +7,7 @@
 <plugin>
 
    <extension point="org.eclipse.ui.newWizards">
-      <!-- @generated CAEX30 -->
+      <!-- @generated NOT CAEX30 -->
       <category
             id="caex.Wizard.category.ID"
             name="%_UI_Wizard_category"/>

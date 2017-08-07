@@ -9,7 +9,7 @@
    <extension point="org.eclipse.emf.edit.itemProviderAdapterFactories">
       <!-- @generated CAEX215 -->
       <factory
-            uri="http://caex/2.15"
+            uri="http://www.dke.de/CAEX/215"
             class="caex.caex215.caex.provider.CAEXItemProviderAdapterFactory"
             supportedTypes=
               "org.eclipse.emf.edit.provider.IEditingDomainItemProvider

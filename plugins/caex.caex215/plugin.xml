@@ -9,7 +9,7 @@
    <extension point="org.eclipse.emf.ecore.generated_package">
       <!-- @generated CAEX215 -->
       <package
-            uri="http://caex/2.15"
+            uri="http://www.dke.de/CAEX/215"
             class="caex.caex215.caex.CAEXPackage"
             genModel="model/CAEX215.genmodel"/>
    </extension>
