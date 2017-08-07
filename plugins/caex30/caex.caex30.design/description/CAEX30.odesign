@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<description:Group xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" name="CAEX30" version="12.0.0.2017041100">
+  <ownedViewpoints name="CAEX30Viewpoint" label="CAEX 3.0" modelFileExtension="*.caex" icon="/caex.caex30.design/icons/CAEXFile.gif">
+    <ownedRepresentations xsi:type="description_1:DiagramDescription" name="CAEX30InstanceHierarchyDiagram" label="CAEX 3.0 Instance Hierarchy Diagram" initialisation="true" domainClass="caex::InstanceHierarchy" enablePopupBars="true">
+      <metamodel href="../../caex.caex30/model/CAEX30.ecore#/"/>
+      <defaultLayer name="Default">
+        <edgeMappings name="InternalLinkEdge" label="Internal Link" semanticCandidatesExpression="[self.internalElement.internalLink/]" sourceMapping="//@ownedViewpoints[name='CAEX30Viewpoint']/@ownedRepresentations[name='CAEX30InstanceHierarchyDiagram']/@defaultLayer/@containerMappings[name='InternalElement']/@borderedNodeMappings[name='ExternalInterface']" targetMapping="//@ownedViewpoints[name='CAEX30Viewpoint']/@ownedRepresentations[name='CAEX30InstanceHierarchyDiagram']/@defaultLayer/@containerMappings[name='InternalElement']/@borderedNodeMappings[name='ExternalInterface']" targetFinderExpression="feature:partnerSideB" sourceFinderExpression="feature:partnerSideA" domainClass="caex::InternalLink" useDomainElement="true">
+          <style targetArrow="NoDecoration">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <centerLabelStyleDescription>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+        <containerMappings name="InternalElement" label="Internal Element" semanticCandidatesExpression="feature:internalElement" domainClass="caex::InternalElement" childrenPresentation="VerticalStack">
+          <borderedNodeMappings name="ExternalInterface" label="External Interface" semanticCandidatesExpression="feature:externalInterface" domainClass="caex::ExternalInterface">
+            <style xsi:type="style:SquareDescription" labelSize="7" showIcon="false" labelAlignment="LEFT" sizeComputationExpression="2">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+            </style>
+          </borderedNodeMappings>
+          <subContainerMappings name="AttributeContainer" label="Attributes" preconditionExpression="[self.attribute->size() > 0/]" semanticCandidatesExpression="[self/]" domainClass="caex::InternalElement" childrenPresentation="List">
+            <subNodeMappings name="Attribute" label="Attribute" semanticCandidatesExpression="feature:attribute" domainClass="caex::Attribute">
+              <style xsi:type="style:BundledImageDescription" showIcon="false" labelExpression="['   ' + self.name + ' : ' + self.attributeDataType + ' = ' + self.value/]" labelAlignment="LEFT" labelPosition="node" resizeKind="NSEW">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+              </style>
+            </subNodeMappings>
+            <style xsi:type="style:FlatContainerStyleDescription" showIcon="false" labelExpression="Attributes">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+              <labelFormat>italic</labelFormat>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+              <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+            </style>
+          </subContainerMappings>
+          <subContainerMappings name="RoleRequirementsContainer" label="Role Requirements" preconditionExpression="[self.roleRequirements->size() > 0/]" semanticCandidatesExpression="[self/]" domainClass="caex::InternalElement" childrenPresentation="List">
+            <subNodeMappings name="RoleRequirements" label="Role Requirements" semanticCandidatesExpression="feature:roleRequirements" domainClass="caex::RoleRequirements">
+              <style xsi:type="style:SquareDescription" showIcon="false" labelExpression="['   ' + self.roleClass.name/]" labelAlignment="LEFT">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+              </style>
+            </subNodeMappings>
+            <style xsi:type="style:FlatContainerStyleDescription" showIcon="false" labelExpression="Role Requirements">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+              <labelFormat>italic</labelFormat>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+              <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+            </style>
+          </subContainerMappings>
+          <subContainerMappings name="SupportedRoleClassesContainer" label="Supported Role Classes" preconditionExpression="[self.supportedRoleClass->size() > 0/]" semanticCandidatesExpression="[self/]" domainClass="caex::InternalElement" childrenPresentation="List">
+            <subNodeMappings name="SupportedRoleClass" label="Supported Role Class" semanticCandidatesExpression="feature:supportedRoleClass" domainClass="caex::SupportedRoleClass">
+              <style xsi:type="style:BundledImageDescription" borderSizeComputationExpression="1" showIcon="false" labelExpression="['   ' + self.roleClass.name/]" labelAlignment="LEFT" labelPosition="node" resizeKind="NSEW">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+              </style>
+            </subNodeMappings>
+            <style xsi:type="style:FlatContainerStyleDescription" showIcon="false" labelExpression="Supported Role Classes">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+              <labelFormat>italic</labelFormat>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+              <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+            </style>
+          </subContainerMappings>
+          <subContainerMappings name="InternalElementsContainer" label="Internal Elements" preconditionExpression="[self.internalElement->size() > 0/]" semanticCandidatesExpression="[self/]" domainClass="caex::InternalElement" reusedContainerMappings="//@ownedViewpoints[name='CAEX30Viewpoint']/@ownedRepresentations[name='CAEX30InstanceHierarchyDiagram']/@defaultLayer/@containerMappings[name='InternalElement']">
+            <style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" showIcon="false" labelExpression="">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+              <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+            </style>
+          </subContainerMappings>
+          <style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelSize="10" iconPath="/caex.caex30.design/icons/InternalElement.png">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelFormat>bold</labelFormat>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+            <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+          </style>
+        </containerMappings>
+      </defaultLayer>
+    </ownedRepresentations>
+    <ownedJavaExtensions qualifiedClassName="caex.caex30.design.Services"/>
+  </ownedViewpoints>
+</description:Group>
