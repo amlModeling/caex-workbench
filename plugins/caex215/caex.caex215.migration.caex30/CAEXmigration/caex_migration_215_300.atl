@@ -1,5 +1,5 @@
--- @path caex=/CAEXWorkbench/metamodels/2.15/CAEX_wao_215.ecore
--- @path copy=/CAEXWorkbench/metamodels/3.0/CAEX_wao_300.ecore
+-- @nsURI caex=http://www.dke.de/CAEX/215
+-- @nsURI copy=http://www.dke.de/CAEX/300
 
 
 module caex_migration;
