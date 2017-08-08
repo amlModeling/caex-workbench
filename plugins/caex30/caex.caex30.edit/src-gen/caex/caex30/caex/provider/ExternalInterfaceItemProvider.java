@@ -3,7 +3,6 @@
 package caex.caex30.caex.provider;
 
 
-import caex.caex30.caex.CAEXFactory;
 import caex.caex30.caex.CAEXPackage;
 import caex.caex30.caex.ExternalInterface;
 
@@ -12,11 +11,7 @@ import java.util.List;
 
 import org.eclipse.emf.common.notify.AdapterFactory;
 import org.eclipse.emf.common.notify.Notification;
-
-import org.eclipse.emf.ecore.EStructuralFeature;
-
 import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
-import org.eclipse.emf.edit.provider.ViewerNotification;
 
 /**
  * This is the item provider adapter for a {@link caex.caex30.caex.ExternalInterface} object.
@@ -48,36 +43,6 @@ public class ExternalInterfaceItemProvider extends InterfaceClassItemProvider {
 
 		}
 		return itemPropertyDescriptors;
-	}
-
-	/**
-	 * This specifies how to implement {@link #getChildren} and is used to deduce an appropriate feature for an
-	 * {@link org.eclipse.emf.edit.command.AddCommand}, {@link org.eclipse.emf.edit.command.RemoveCommand} or
-	 * {@link org.eclipse.emf.edit.command.MoveCommand} in {@link #createCommand}.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Collection<? extends EStructuralFeature> getChildrenFeatures(Object object) {
-		if (childrenFeatures == null) {
-			super.getChildrenFeatures(object);
-			childrenFeatures.add(CAEXPackage.Literals.EXTERNAL_INTERFACE__EXTERNAL_INTERFACE);
-		}
-		return childrenFeatures;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	protected EStructuralFeature getChildFeature(Object object, Object child) {
-		// Check the type of the specified child object and return the proper feature to use for
-		// adding (see {@link AddCommand}) it as a child.
-
-		return super.getChildFeature(object, child);
 	}
 
 	/**
@@ -116,12 +81,6 @@ public class ExternalInterfaceItemProvider extends InterfaceClassItemProvider {
 	@Override
 	public void notifyChanged(Notification notification) {
 		updateChildren(notification);
-
-		switch (notification.getFeatureID(ExternalInterface.class)) {
-			case CAEXPackage.EXTERNAL_INTERFACE__EXTERNAL_INTERFACE:
-				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
-				return;
-		}
 		super.notifyChanged(notification);
 	}
 
@@ -135,21 +94,6 @@ public class ExternalInterfaceItemProvider extends InterfaceClassItemProvider {
 	@Override
 	protected void collectNewChildDescriptors(Collection<Object> newChildDescriptors, Object object) {
 		super.collectNewChildDescriptors(newChildDescriptors, object);
-
-		newChildDescriptors.add
-			(createChildParameter
-				(CAEXPackage.Literals.EXTERNAL_INTERFACE__EXTERNAL_INTERFACE,
-				 CAEXFactory.eINSTANCE.createInterfaceClass()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(CAEXPackage.Literals.EXTERNAL_INTERFACE__EXTERNAL_INTERFACE,
-				 CAEXFactory.eINSTANCE.createExternalInterface()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(CAEXPackage.Literals.EXTERNAL_INTERFACE__EXTERNAL_INTERFACE,
-				 CAEXFactory.eINSTANCE.createInterfaceFamily()));
 	}
 
 	/**
@@ -165,7 +109,7 @@ public class ExternalInterfaceItemProvider extends InterfaceClassItemProvider {
 
 		boolean qualify =
 			childFeature == CAEXPackage.Literals.INTERFACE_CLASS__INTERFACE_CLASS ||
-			childFeature == CAEXPackage.Literals.EXTERNAL_INTERFACE__EXTERNAL_INTERFACE;
+			childFeature == CAEXPackage.Literals.INTERFACE_CLASS__EXTERNAL_INTERFACE;
 
 		if (qualify) {
 			return getString

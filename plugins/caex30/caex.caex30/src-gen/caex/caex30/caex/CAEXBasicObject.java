@@ -86,59 +86,59 @@ public interface CAEXBasicObject extends EObject {
 	boolean isSetChangeMode();
 
 	/**
-	 * Returns the value of the '<em><b>Description</b></em>' reference.
+	 * Returns the value of the '<em><b>Description</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Description</em>' reference isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Description</em>' reference.
+	 * @return the value of the '<em>Description</em>' containment reference.
 	 * @see #setDescription(Description)
 	 * @see caex.caex30.caex.CAEXPackage#getCAEXBasicObject_Description()
-	 * @model
+	 * @model containment="true"
 	 * @generated
 	 */
 	Description getDescription();
 
 	/**
-	 * Sets the value of the '{@link caex.caex30.caex.CAEXBasicObject#getDescription <em>Description</em>}' reference.
+	 * Sets the value of the '{@link caex.caex30.caex.CAEXBasicObject#getDescription <em>Description</em>}' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Description</em>' reference.
+	 * @param value the new value of the '<em>Description</em>' containment reference.
 	 * @see #getDescription()
 	 * @generated
 	 */
 	void setDescription(Description value);
 
 	/**
-	 * Returns the value of the '<em><b>Version</b></em>' reference.
+	 * Returns the value of the '<em><b>Version</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Version</em>' reference isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Version</em>' reference.
+	 * @return the value of the '<em>Version</em>' containment reference.
 	 * @see #setVersion(Version)
 	 * @see caex.caex30.caex.CAEXPackage#getCAEXBasicObject_Version()
-	 * @model
+	 * @model containment="true"
 	 * @generated
 	 */
 	Version getVersion();
 
 	/**
-	 * Sets the value of the '{@link caex.caex30.caex.CAEXBasicObject#getVersion <em>Version</em>}' reference.
+	 * Sets the value of the '{@link caex.caex30.caex.CAEXBasicObject#getVersion <em>Version</em>}' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Version</em>' reference.
+	 * @param value the new value of the '<em>Version</em>' containment reference.
 	 * @see #getVersion()
 	 * @generated
 	 */
 	void setVersion(Version value);
 
 	/**
-	 * Returns the value of the '<em><b>Revision</b></em>' reference list.
+	 * Returns the value of the '<em><b>Revision</b></em>' containment reference list.
 	 * The list contents are of type {@link caex.caex30.caex.Revision}.
 	 * <!-- begin-user-doc -->
 	 * <p>
@@ -146,63 +146,53 @@ public interface CAEXBasicObject extends EObject {
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Revision</em>' reference list.
+	 * @return the value of the '<em>Revision</em>' containment reference list.
 	 * @see caex.caex30.caex.CAEXPackage#getCAEXBasicObject_Revision()
-	 * @model
+	 * @model containment="true"
 	 * @generated
 	 */
 	EList<Revision> getRevision();
 
 	/**
-	 * Returns the value of the '<em><b>Copyright</b></em>' reference.
+	 * Returns the value of the '<em><b>Copyright</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Copyright</em>' reference isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Copyright</em>' reference.
+	 * @return the value of the '<em>Copyright</em>' containment reference.
 	 * @see #setCopyright(Copyright)
 	 * @see caex.caex30.caex.CAEXPackage#getCAEXBasicObject_Copyright()
-	 * @model
+	 * @model containment="true"
 	 * @generated
 	 */
 	Copyright getCopyright();
 
 	/**
-	 * Sets the value of the '{@link caex.caex30.caex.CAEXBasicObject#getCopyright <em>Copyright</em>}' reference.
+	 * Sets the value of the '{@link caex.caex30.caex.CAEXBasicObject#getCopyright <em>Copyright</em>}' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Copyright</em>' reference.
+	 * @param value the new value of the '<em>Copyright</em>' containment reference.
 	 * @see #getCopyright()
 	 * @generated
 	 */
 	void setCopyright(Copyright value);
 
 	/**
-	 * Returns the value of the '<em><b>Additional Information</b></em>' reference.
+	 * Returns the value of the '<em><b>Additional Information</b></em>' containment reference list.
+	 * The list contents are of type {@link caex.caex30.caex.AdditionalInformation}.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Additional Information</em>' reference isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Additional Information</em>' reference.
-	 * @see #setAdditionalInformation(AdditionalInformation)
+	 * @return the value of the '<em>Additional Information</em>' containment reference list.
 	 * @see caex.caex30.caex.CAEXPackage#getCAEXBasicObject_AdditionalInformation()
-	 * @model
+	 * @model containment="true"
 	 * @generated
 	 */
-	AdditionalInformation getAdditionalInformation();
-
-	/**
-	 * Sets the value of the '{@link caex.caex30.caex.CAEXBasicObject#getAdditionalInformation <em>Additional Information</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Additional Information</em>' reference.
-	 * @see #getAdditionalInformation()
-	 * @generated
-	 */
-	void setAdditionalInformation(AdditionalInformation value);
+	EList<AdditionalInformation> getAdditionalInformation();
 
 } // CAEXBasicObject

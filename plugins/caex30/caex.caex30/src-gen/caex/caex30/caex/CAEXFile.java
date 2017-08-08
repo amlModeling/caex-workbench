@@ -64,7 +64,7 @@ public interface CAEXFile extends CAEXBasicObject {
 
 	/**
 	 * Returns the value of the '<em><b>External Reference</b></em>' containment reference list.
-	 * The list contents are of type {@link caex.caex30.caex.ExternalReferenceType}.
+	 * The list contents are of type {@link caex.caex30.caex.ExternalReference}.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>External Reference</em>' containment reference list isn't clear,
@@ -76,7 +76,7 @@ public interface CAEXFile extends CAEXBasicObject {
 	 * @model containment="true"
 	 * @generated
 	 */
-	EList<ExternalReferenceType> getExternalReference();
+	EList<ExternalReference> getExternalReference();
 
 	/**
 	 * Returns the value of the '<em><b>Instance Hierarchy</b></em>' containment reference list.

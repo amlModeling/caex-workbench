@@ -112,6 +112,7 @@ public class InterfaceClassItemProvider extends CAEXObjectItemProvider {
 			super.getChildrenFeatures(object);
 			childrenFeatures.add(CAEXPackage.Literals.INTERFACE_CLASS__ATTRIBUTE);
 			childrenFeatures.add(CAEXPackage.Literals.INTERFACE_CLASS__INTERFACE_CLASS);
+			childrenFeatures.add(CAEXPackage.Literals.INTERFACE_CLASS__EXTERNAL_INTERFACE);
 		}
 		return childrenFeatures;
 	}
@@ -172,6 +173,7 @@ public class InterfaceClassItemProvider extends CAEXObjectItemProvider {
 				return;
 			case CAEXPackage.INTERFACE_CLASS__ATTRIBUTE:
 			case CAEXPackage.INTERFACE_CLASS__INTERFACE_CLASS:
+			case CAEXPackage.INTERFACE_CLASS__EXTERNAL_INTERFACE:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
 		}
@@ -213,6 +215,44 @@ public class InterfaceClassItemProvider extends CAEXObjectItemProvider {
 			(createChildParameter
 				(CAEXPackage.Literals.INTERFACE_CLASS__INTERFACE_CLASS,
 				 CAEXFactory.eINSTANCE.createInterfaceFamily()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(CAEXPackage.Literals.INTERFACE_CLASS__EXTERNAL_INTERFACE,
+				 CAEXFactory.eINSTANCE.createInterfaceClass()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(CAEXPackage.Literals.INTERFACE_CLASS__EXTERNAL_INTERFACE,
+				 CAEXFactory.eINSTANCE.createExternalInterface()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(CAEXPackage.Literals.INTERFACE_CLASS__EXTERNAL_INTERFACE,
+				 CAEXFactory.eINSTANCE.createInterfaceFamily()));
+	}
+
+	/**
+	 * This returns the label text for {@link org.eclipse.emf.edit.command.CreateChildCommand}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public String getCreateChildText(Object owner, Object feature, Object child, Collection<?> selection) {
+		Object childFeature = feature;
+		Object childObject = child;
+
+		boolean qualify =
+			childFeature == CAEXPackage.Literals.INTERFACE_CLASS__INTERFACE_CLASS ||
+			childFeature == CAEXPackage.Literals.INTERFACE_CLASS__EXTERNAL_INTERFACE;
+
+		if (qualify) {
+			return getString
+				("_UI_CreateChild_text2",
+				 new Object[] { getTypeText(childObject), getFeatureText(childFeature), getTypeText(owner) });
+		}
+		return super.getCreateChildText(owner, feature, child, selection);
 	}
 
 }

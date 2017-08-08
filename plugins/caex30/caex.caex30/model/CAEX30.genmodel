@@ -44,11 +44,11 @@
     </genClasses>
     <genClasses ecoreClass="CAEX30.ecore#//CAEXBasicObject">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CAEX30.ecore#//CAEXBasicObject/changeMode"/>
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CAEX30.ecore#//CAEXBasicObject/description"/>
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CAEX30.ecore#//CAEXBasicObject/version"/>
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CAEX30.ecore#//CAEXBasicObject/revision"/>
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CAEX30.ecore#//CAEXBasicObject/copyright"/>
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CAEX30.ecore#//CAEXBasicObject/additionalInformation"/>
+      <genFeatures children="true" createChild="true" propertySortChoices="true" ecoreFeature="ecore:EReference CAEX30.ecore#//CAEXBasicObject/description"/>
+      <genFeatures children="true" createChild="true" propertySortChoices="true" ecoreFeature="ecore:EReference CAEX30.ecore#//CAEXBasicObject/version"/>
+      <genFeatures children="true" createChild="true" propertySortChoices="true" ecoreFeature="ecore:EReference CAEX30.ecore#//CAEXBasicObject/revision"/>
+      <genFeatures children="true" createChild="true" propertySortChoices="true" ecoreFeature="ecore:EReference CAEX30.ecore#//CAEXBasicObject/copyright"/>
+      <genFeatures children="true" createChild="true" propertySortChoices="true" ecoreFeature="ecore:EReference CAEX30.ecore#//CAEXBasicObject/additionalInformation"/>
     </genClasses>
     <genClasses ecoreClass="CAEX30.ecore#//CAEXFile">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CAEX30.ecore#//CAEXFile/superiorStandardVersion"/>
@@ -72,12 +72,10 @@
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CAEX30.ecore#//DocumentRoot/xSISchemaLocation"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CAEX30.ecore#//DocumentRoot/cAEXFile"/>
     </genClasses>
-    <genClasses ecoreClass="CAEX30.ecore#//ExternalInterface">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CAEX30.ecore#//ExternalInterface/externalInterface"/>
-    </genClasses>
-    <genClasses ecoreClass="CAEX30.ecore#//ExternalReferenceType">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CAEX30.ecore#//ExternalReferenceType/alias"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CAEX30.ecore#//ExternalReferenceType/path"/>
+    <genClasses ecoreClass="CAEX30.ecore#//ExternalInterface"/>
+    <genClasses ecoreClass="CAEX30.ecore#//ExternalReference">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CAEX30.ecore#//ExternalReference/alias"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CAEX30.ecore#//ExternalReference/path"/>
     </genClasses>
     <genClasses ecoreClass="CAEX30.ecore#//InstanceHierarchy">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CAEX30.ecore#//InstanceHierarchy/internalElement"/>
@@ -90,6 +88,7 @@
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CAEX30.ecore#//InterfaceClass/refBaseClassPath"/>
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CAEX30.ecore#//InterfaceClass/baseClass"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CAEX30.ecore#//InterfaceClass/interfaceClass"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CAEX30.ecore#//InterfaceClass/externalInterface"/>
     </genClasses>
     <genClasses ecoreClass="CAEX30.ecore#//InterfaceFamily"/>
     <genClasses ecoreClass="CAEX30.ecore#//InterfaceIDMapping">
@@ -113,13 +112,13 @@
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CAEX30.ecore#//Mapping/attributeNameMapping"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CAEX30.ecore#//Mapping/interfaceIDMapping"/>
     </genClasses>
-    <genClasses ecoreClass="CAEX30.ecore#//NominalScaledType">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CAEX30.ecore#//NominalScaledType/requiredValue"/>
+    <genClasses ecoreClass="CAEX30.ecore#//NominalScaled">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CAEX30.ecore#//NominalScaled/requiredValue"/>
     </genClasses>
-    <genClasses ecoreClass="CAEX30.ecore#//OrdinalScaledType">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CAEX30.ecore#//OrdinalScaledType/requiredMaxValue"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CAEX30.ecore#//OrdinalScaledType/requiredValue"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CAEX30.ecore#//OrdinalScaledType/requiredMinValue"/>
+    <genClasses ecoreClass="CAEX30.ecore#//OrdinalScaled">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CAEX30.ecore#//OrdinalScaled/requiredMaxValue"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CAEX30.ecore#//OrdinalScaled/requiredValue"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CAEX30.ecore#//OrdinalScaled/requiredMinValue"/>
     </genClasses>
     <genClasses ecoreClass="CAEX30.ecore#//RefSemantic">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CAEX30.ecore#//RefSemantic/correspondingAttributePath"/>

@@ -171,12 +171,12 @@ public class AttributeValueRequirementItemProvider extends CAEXBasicObjectItemPr
 		newChildDescriptors.add
 			(createChildParameter
 				(CAEXPackage.Literals.ATTRIBUTE_VALUE_REQUIREMENT__ORDINAL_SCALED_TYPE,
-				 CAEXFactory.eINSTANCE.createOrdinalScaledType()));
+				 CAEXFactory.eINSTANCE.createOrdinalScaled()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(CAEXPackage.Literals.ATTRIBUTE_VALUE_REQUIREMENT__NOMINAL_SCALED_TYPE,
-				 CAEXFactory.eINSTANCE.createNominalScaledType()));
+				 CAEXFactory.eINSTANCE.createNominalScaled()));
 
 		newChildDescriptors.add
 			(createChildParameter

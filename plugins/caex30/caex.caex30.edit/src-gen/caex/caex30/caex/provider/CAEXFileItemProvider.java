@@ -232,7 +232,7 @@ public class CAEXFileItemProvider extends CAEXBasicObjectItemProvider {
 		newChildDescriptors.add
 			(createChildParameter
 				(CAEXPackage.Literals.CAEX_FILE__EXTERNAL_REFERENCE,
-				 CAEXFactory.eINSTANCE.createExternalReferenceType()));
+				 CAEXFactory.eINSTANCE.createExternalReference()));
 
 		newChildDescriptors.add
 			(createChildParameter

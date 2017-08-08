@@ -3,7 +3,7 @@
 package caex.caex30.caex.impl;
 
 import caex.caex30.caex.CAEXPackage;
-import caex.caex30.caex.ExternalReferenceType;
+import caex.caex30.caex.ExternalReference;
 
 import org.eclipse.emf.common.notify.Notification;
 
@@ -13,19 +13,19 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
 
 /**
  * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>External Reference Type</b></em>'.
+ * An implementation of the model object '<em><b>External Reference</b></em>'.
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link caex.caex30.caex.impl.ExternalReferenceTypeImpl#getAlias <em>Alias</em>}</li>
- *   <li>{@link caex.caex30.caex.impl.ExternalReferenceTypeImpl#getPath <em>Path</em>}</li>
+ *   <li>{@link caex.caex30.caex.impl.ExternalReferenceImpl#getAlias <em>Alias</em>}</li>
+ *   <li>{@link caex.caex30.caex.impl.ExternalReferenceImpl#getPath <em>Path</em>}</li>
  * </ul>
  *
  * @generated
  */
-public class ExternalReferenceTypeImpl extends CAEXBasicObjectImpl implements ExternalReferenceType {
+public class ExternalReferenceImpl extends CAEXBasicObjectImpl implements ExternalReference {
 	/**
 	 * The default value of the '{@link #getAlias() <em>Alias</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -71,7 +71,7 @@ public class ExternalReferenceTypeImpl extends CAEXBasicObjectImpl implements Ex
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected ExternalReferenceTypeImpl() {
+	protected ExternalReferenceImpl() {
 		super();
 	}
 
@@ -82,7 +82,7 @@ public class ExternalReferenceTypeImpl extends CAEXBasicObjectImpl implements Ex
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return CAEXPackage.Literals.EXTERNAL_REFERENCE_TYPE;
+		return CAEXPackage.Literals.EXTERNAL_REFERENCE;
 	}
 
 	/**
@@ -103,7 +103,7 @@ public class ExternalReferenceTypeImpl extends CAEXBasicObjectImpl implements Ex
 		String oldAlias = alias;
 		alias = newAlias;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, CAEXPackage.EXTERNAL_REFERENCE_TYPE__ALIAS, oldAlias, alias));
+			eNotify(new ENotificationImpl(this, Notification.SET, CAEXPackage.EXTERNAL_REFERENCE__ALIAS, oldAlias, alias));
 	}
 
 	/**
@@ -124,7 +124,7 @@ public class ExternalReferenceTypeImpl extends CAEXBasicObjectImpl implements Ex
 		String oldPath = path;
 		path = newPath;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, CAEXPackage.EXTERNAL_REFERENCE_TYPE__PATH, oldPath, path));
+			eNotify(new ENotificationImpl(this, Notification.SET, CAEXPackage.EXTERNAL_REFERENCE__PATH, oldPath, path));
 	}
 
 	/**
@@ -135,9 +135,9 @@ public class ExternalReferenceTypeImpl extends CAEXBasicObjectImpl implements Ex
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case CAEXPackage.EXTERNAL_REFERENCE_TYPE__ALIAS:
+			case CAEXPackage.EXTERNAL_REFERENCE__ALIAS:
 				return getAlias();
-			case CAEXPackage.EXTERNAL_REFERENCE_TYPE__PATH:
+			case CAEXPackage.EXTERNAL_REFERENCE__PATH:
 				return getPath();
 		}
 		return super.eGet(featureID, resolve, coreType);
@@ -151,10 +151,10 @@ public class ExternalReferenceTypeImpl extends CAEXBasicObjectImpl implements Ex
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case CAEXPackage.EXTERNAL_REFERENCE_TYPE__ALIAS:
+			case CAEXPackage.EXTERNAL_REFERENCE__ALIAS:
 				setAlias((String)newValue);
 				return;
-			case CAEXPackage.EXTERNAL_REFERENCE_TYPE__PATH:
+			case CAEXPackage.EXTERNAL_REFERENCE__PATH:
 				setPath((String)newValue);
 				return;
 		}
@@ -169,10 +169,10 @@ public class ExternalReferenceTypeImpl extends CAEXBasicObjectImpl implements Ex
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case CAEXPackage.EXTERNAL_REFERENCE_TYPE__ALIAS:
+			case CAEXPackage.EXTERNAL_REFERENCE__ALIAS:
 				setAlias(ALIAS_EDEFAULT);
 				return;
-			case CAEXPackage.EXTERNAL_REFERENCE_TYPE__PATH:
+			case CAEXPackage.EXTERNAL_REFERENCE__PATH:
 				setPath(PATH_EDEFAULT);
 				return;
 		}
@@ -187,9 +187,9 @@ public class ExternalReferenceTypeImpl extends CAEXBasicObjectImpl implements Ex
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case CAEXPackage.EXTERNAL_REFERENCE_TYPE__ALIAS:
+			case CAEXPackage.EXTERNAL_REFERENCE__ALIAS:
 				return ALIAS_EDEFAULT == null ? alias != null : !ALIAS_EDEFAULT.equals(alias);
-			case CAEXPackage.EXTERNAL_REFERENCE_TYPE__PATH:
+			case CAEXPackage.EXTERNAL_REFERENCE__PATH:
 				return PATH_EDEFAULT == null ? path != null : !PATH_EDEFAULT.equals(path);
 		}
 		return super.eIsSet(featureID);
@@ -213,4 +213,4 @@ public class ExternalReferenceTypeImpl extends CAEXBasicObjectImpl implements Ex
 		return result.toString();
 	}
 
-} //ExternalReferenceTypeImpl
+} //ExternalReferenceImpl

@@ -15,6 +15,7 @@ import java.util.Collection;
 
 import org.eclipse.emf.common.notify.Notification;
 
+import org.eclipse.emf.common.notify.NotificationChain;
 import org.eclipse.emf.common.util.EList;
 
 import org.eclipse.emf.ecore.EClass;
@@ -23,7 +24,8 @@ import org.eclipse.emf.ecore.InternalEObject;
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
 import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
-import org.eclipse.emf.ecore.util.EObjectResolvingEList;
+import org.eclipse.emf.ecore.util.EObjectContainmentEList;
+import org.eclipse.emf.ecore.util.InternalEList;
 
 /**
  * <!-- begin-user-doc -->
@@ -74,7 +76,7 @@ public class CAEXBasicObjectImpl extends MinimalEObjectImpl.Container implements
 	protected boolean changeModeESet;
 
 	/**
-	 * The cached value of the '{@link #getDescription() <em>Description</em>}' reference.
+	 * The cached value of the '{@link #getDescription() <em>Description</em>}' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see #getDescription()
@@ -84,7 +86,7 @@ public class CAEXBasicObjectImpl extends MinimalEObjectImpl.Container implements
 	protected Description description;
 
 	/**
-	 * The cached value of the '{@link #getVersion() <em>Version</em>}' reference.
+	 * The cached value of the '{@link #getVersion() <em>Version</em>}' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see #getVersion()
@@ -94,7 +96,7 @@ public class CAEXBasicObjectImpl extends MinimalEObjectImpl.Container implements
 	protected Version version;
 
 	/**
-	 * The cached value of the '{@link #getRevision() <em>Revision</em>}' reference list.
+	 * The cached value of the '{@link #getRevision() <em>Revision</em>}' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see #getRevision()
@@ -104,7 +106,7 @@ public class CAEXBasicObjectImpl extends MinimalEObjectImpl.Container implements
 	protected EList<Revision> revision;
 
 	/**
-	 * The cached value of the '{@link #getCopyright() <em>Copyright</em>}' reference.
+	 * The cached value of the '{@link #getCopyright() <em>Copyright</em>}' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see #getCopyright()
@@ -114,14 +116,14 @@ public class CAEXBasicObjectImpl extends MinimalEObjectImpl.Container implements
 	protected Copyright copyright;
 
 	/**
-	 * The cached value of the '{@link #getAdditionalInformation() <em>Additional Information</em>}' reference.
+	 * The cached value of the '{@link #getAdditionalInformation() <em>Additional Information</em>}' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see #getAdditionalInformation()
 	 * @generated
 	 * @ordered
 	 */
-	protected AdditionalInformation additionalInformation;
+	protected EList<AdditionalInformation> additionalInformation;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -194,14 +196,6 @@ public class CAEXBasicObjectImpl extends MinimalEObjectImpl.Container implements
 	 * @generated
 	 */
 	public Description getDescription() {
-		if (description != null && description.eIsProxy()) {
-			InternalEObject oldDescription = (InternalEObject)description;
-			description = (Description)eResolveProxy(oldDescription);
-			if (description != oldDescription) {
-				if (eNotificationRequired())
-					eNotify(new ENotificationImpl(this, Notification.RESOLVE, CAEXPackage.CAEX_BASIC_OBJECT__DESCRIPTION, oldDescription, description));
-			}
-		}
 		return description;
 	}
 
@@ -210,8 +204,14 @@ public class CAEXBasicObjectImpl extends MinimalEObjectImpl.Container implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Description basicGetDescription() {
-		return description;
+	public NotificationChain basicSetDescription(Description newDescription, NotificationChain msgs) {
+		Description oldDescription = description;
+		description = newDescription;
+		if (eNotificationRequired()) {
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, CAEXPackage.CAEX_BASIC_OBJECT__DESCRIPTION, oldDescription, newDescription);
+			if (msgs == null) msgs = notification; else msgs.add(notification);
+		}
+		return msgs;
 	}
 
 	/**
@@ -220,10 +220,17 @@ public class CAEXBasicObjectImpl extends MinimalEObjectImpl.Container implements
 	 * @generated
 	 */
 	public void setDescription(Description newDescription) {
-		Description oldDescription = description;
-		description = newDescription;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, CAEXPackage.CAEX_BASIC_OBJECT__DESCRIPTION, oldDescription, description));
+		if (newDescription != description) {
+			NotificationChain msgs = null;
+			if (description != null)
+				msgs = ((InternalEObject)description).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - CAEXPackage.CAEX_BASIC_OBJECT__DESCRIPTION, null, msgs);
+			if (newDescription != null)
+				msgs = ((InternalEObject)newDescription).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - CAEXPackage.CAEX_BASIC_OBJECT__DESCRIPTION, null, msgs);
+			msgs = basicSetDescription(newDescription, msgs);
+			if (msgs != null) msgs.dispatch();
+		}
+		else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, CAEXPackage.CAEX_BASIC_OBJECT__DESCRIPTION, newDescription, newDescription));
 	}
 
 	/**
@@ -232,14 +239,6 @@ public class CAEXBasicObjectImpl extends MinimalEObjectImpl.Container implements
 	 * @generated
 	 */
 	public Version getVersion() {
-		if (version != null && version.eIsProxy()) {
-			InternalEObject oldVersion = (InternalEObject)version;
-			version = (Version)eResolveProxy(oldVersion);
-			if (version != oldVersion) {
-				if (eNotificationRequired())
-					eNotify(new ENotificationImpl(this, Notification.RESOLVE, CAEXPackage.CAEX_BASIC_OBJECT__VERSION, oldVersion, version));
-			}
-		}
 		return version;
 	}
 
@@ -248,8 +247,14 @@ public class CAEXBasicObjectImpl extends MinimalEObjectImpl.Container implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Version basicGetVersion() {
-		return version;
+	public NotificationChain basicSetVersion(Version newVersion, NotificationChain msgs) {
+		Version oldVersion = version;
+		version = newVersion;
+		if (eNotificationRequired()) {
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, CAEXPackage.CAEX_BASIC_OBJECT__VERSION, oldVersion, newVersion);
+			if (msgs == null) msgs = notification; else msgs.add(notification);
+		}
+		return msgs;
 	}
 
 	/**
@@ -258,10 +263,17 @@ public class CAEXBasicObjectImpl extends MinimalEObjectImpl.Container implements
 	 * @generated
 	 */
 	public void setVersion(Version newVersion) {
-		Version oldVersion = version;
-		version = newVersion;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, CAEXPackage.CAEX_BASIC_OBJECT__VERSION, oldVersion, version));
+		if (newVersion != version) {
+			NotificationChain msgs = null;
+			if (version != null)
+				msgs = ((InternalEObject)version).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - CAEXPackage.CAEX_BASIC_OBJECT__VERSION, null, msgs);
+			if (newVersion != null)
+				msgs = ((InternalEObject)newVersion).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - CAEXPackage.CAEX_BASIC_OBJECT__VERSION, null, msgs);
+			msgs = basicSetVersion(newVersion, msgs);
+			if (msgs != null) msgs.dispatch();
+		}
+		else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, CAEXPackage.CAEX_BASIC_OBJECT__VERSION, newVersion, newVersion));
 	}
 
 	/**
@@ -271,7 +283,7 @@ public class CAEXBasicObjectImpl extends MinimalEObjectImpl.Container implements
 	 */
 	public EList<Revision> getRevision() {
 		if (revision == null) {
-			revision = new EObjectResolvingEList<Revision>(Revision.class, this, CAEXPackage.CAEX_BASIC_OBJECT__REVISION);
+			revision = new EObjectContainmentEList<Revision>(Revision.class, this, CAEXPackage.CAEX_BASIC_OBJECT__REVISION);
 		}
 		return revision;
 	}
@@ -282,14 +294,6 @@ public class CAEXBasicObjectImpl extends MinimalEObjectImpl.Container implements
 	 * @generated
 	 */
 	public Copyright getCopyright() {
-		if (copyright != null && copyright.eIsProxy()) {
-			InternalEObject oldCopyright = (InternalEObject)copyright;
-			copyright = (Copyright)eResolveProxy(oldCopyright);
-			if (copyright != oldCopyright) {
-				if (eNotificationRequired())
-					eNotify(new ENotificationImpl(this, Notification.RESOLVE, CAEXPackage.CAEX_BASIC_OBJECT__COPYRIGHT, oldCopyright, copyright));
-			}
-		}
 		return copyright;
 	}
 
@@ -298,8 +302,14 @@ public class CAEXBasicObjectImpl extends MinimalEObjectImpl.Container implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Copyright basicGetCopyright() {
-		return copyright;
+	public NotificationChain basicSetCopyright(Copyright newCopyright, NotificationChain msgs) {
+		Copyright oldCopyright = copyright;
+		copyright = newCopyright;
+		if (eNotificationRequired()) {
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, CAEXPackage.CAEX_BASIC_OBJECT__COPYRIGHT, oldCopyright, newCopyright);
+			if (msgs == null) msgs = notification; else msgs.add(notification);
+		}
+		return msgs;
 	}
 
 	/**
@@ -308,10 +318,17 @@ public class CAEXBasicObjectImpl extends MinimalEObjectImpl.Container implements
 	 * @generated
 	 */
 	public void setCopyright(Copyright newCopyright) {
-		Copyright oldCopyright = copyright;
-		copyright = newCopyright;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, CAEXPackage.CAEX_BASIC_OBJECT__COPYRIGHT, oldCopyright, copyright));
+		if (newCopyright != copyright) {
+			NotificationChain msgs = null;
+			if (copyright != null)
+				msgs = ((InternalEObject)copyright).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - CAEXPackage.CAEX_BASIC_OBJECT__COPYRIGHT, null, msgs);
+			if (newCopyright != null)
+				msgs = ((InternalEObject)newCopyright).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - CAEXPackage.CAEX_BASIC_OBJECT__COPYRIGHT, null, msgs);
+			msgs = basicSetCopyright(newCopyright, msgs);
+			if (msgs != null) msgs.dispatch();
+		}
+		else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, CAEXPackage.CAEX_BASIC_OBJECT__COPYRIGHT, newCopyright, newCopyright));
 	}
 
 	/**
@@ -319,14 +336,9 @@ public class CAEXBasicObjectImpl extends MinimalEObjectImpl.Container implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AdditionalInformation getAdditionalInformation() {
-		if (additionalInformation != null && additionalInformation.eIsProxy()) {
-			InternalEObject oldAdditionalInformation = (InternalEObject)additionalInformation;
-			additionalInformation = (AdditionalInformation)eResolveProxy(oldAdditionalInformation);
-			if (additionalInformation != oldAdditionalInformation) {
-				if (eNotificationRequired())
-					eNotify(new ENotificationImpl(this, Notification.RESOLVE, CAEXPackage.CAEX_BASIC_OBJECT__ADDITIONAL_INFORMATION, oldAdditionalInformation, additionalInformation));
-			}
+	public EList<AdditionalInformation> getAdditionalInformation() {
+		if (additionalInformation == null) {
+			additionalInformation = new EObjectContainmentEList<AdditionalInformation>(AdditionalInformation.class, this, CAEXPackage.CAEX_BASIC_OBJECT__ADDITIONAL_INFORMATION);
 		}
 		return additionalInformation;
 	}
@@ -336,20 +348,21 @@ public class CAEXBasicObjectImpl extends MinimalEObjectImpl.Container implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AdditionalInformation basicGetAdditionalInformation() {
-		return additionalInformation;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public void setAdditionalInformation(AdditionalInformation newAdditionalInformation) {
-		AdditionalInformation oldAdditionalInformation = additionalInformation;
-		additionalInformation = newAdditionalInformation;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, CAEXPackage.CAEX_BASIC_OBJECT__ADDITIONAL_INFORMATION, oldAdditionalInformation, additionalInformation));
+	@Override
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
+			case CAEXPackage.CAEX_BASIC_OBJECT__DESCRIPTION:
+				return basicSetDescription(null, msgs);
+			case CAEXPackage.CAEX_BASIC_OBJECT__VERSION:
+				return basicSetVersion(null, msgs);
+			case CAEXPackage.CAEX_BASIC_OBJECT__REVISION:
+				return ((InternalEList<?>)getRevision()).basicRemove(otherEnd, msgs);
+			case CAEXPackage.CAEX_BASIC_OBJECT__COPYRIGHT:
+				return basicSetCopyright(null, msgs);
+			case CAEXPackage.CAEX_BASIC_OBJECT__ADDITIONAL_INFORMATION:
+				return ((InternalEList<?>)getAdditionalInformation()).basicRemove(otherEnd, msgs);
+		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -363,19 +376,15 @@ public class CAEXBasicObjectImpl extends MinimalEObjectImpl.Container implements
 			case CAEXPackage.CAEX_BASIC_OBJECT__CHANGE_MODE:
 				return getChangeMode();
 			case CAEXPackage.CAEX_BASIC_OBJECT__DESCRIPTION:
-				if (resolve) return getDescription();
-				return basicGetDescription();
+				return getDescription();
 			case CAEXPackage.CAEX_BASIC_OBJECT__VERSION:
-				if (resolve) return getVersion();
-				return basicGetVersion();
+				return getVersion();
 			case CAEXPackage.CAEX_BASIC_OBJECT__REVISION:
 				return getRevision();
 			case CAEXPackage.CAEX_BASIC_OBJECT__COPYRIGHT:
-				if (resolve) return getCopyright();
-				return basicGetCopyright();
+				return getCopyright();
 			case CAEXPackage.CAEX_BASIC_OBJECT__ADDITIONAL_INFORMATION:
-				if (resolve) return getAdditionalInformation();
-				return basicGetAdditionalInformation();
+				return getAdditionalInformation();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -406,7 +415,8 @@ public class CAEXBasicObjectImpl extends MinimalEObjectImpl.Container implements
 				setCopyright((Copyright)newValue);
 				return;
 			case CAEXPackage.CAEX_BASIC_OBJECT__ADDITIONAL_INFORMATION:
-				setAdditionalInformation((AdditionalInformation)newValue);
+				getAdditionalInformation().clear();
+				getAdditionalInformation().addAll((Collection<? extends AdditionalInformation>)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -436,7 +446,7 @@ public class CAEXBasicObjectImpl extends MinimalEObjectImpl.Container implements
 				setCopyright((Copyright)null);
 				return;
 			case CAEXPackage.CAEX_BASIC_OBJECT__ADDITIONAL_INFORMATION:
-				setAdditionalInformation((AdditionalInformation)null);
+				getAdditionalInformation().clear();
 				return;
 		}
 		super.eUnset(featureID);
@@ -461,7 +471,7 @@ public class CAEXBasicObjectImpl extends MinimalEObjectImpl.Container implements
 			case CAEXPackage.CAEX_BASIC_OBJECT__COPYRIGHT:
 				return copyright != null;
 			case CAEXPackage.CAEX_BASIC_OBJECT__ADDITIONAL_INFORMATION:
-				return additionalInformation != null;
+				return additionalInformation != null && !additionalInformation.isEmpty();
 		}
 		return super.eIsSet(featureID);
 	}

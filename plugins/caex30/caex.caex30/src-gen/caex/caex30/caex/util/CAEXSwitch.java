@@ -143,10 +143,10 @@ public class CAEXSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case CAEXPackage.EXTERNAL_REFERENCE_TYPE: {
-				ExternalReferenceType externalReferenceType = (ExternalReferenceType)theEObject;
-				T result = caseExternalReferenceType(externalReferenceType);
-				if (result == null) result = caseCAEXBasicObject(externalReferenceType);
+			case CAEXPackage.EXTERNAL_REFERENCE: {
+				ExternalReference externalReference = (ExternalReference)theEObject;
+				T result = caseExternalReference(externalReference);
+				if (result == null) result = caseCAEXBasicObject(externalReference);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -214,15 +214,15 @@ public class CAEXSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case CAEXPackage.NOMINAL_SCALED_TYPE: {
-				NominalScaledType nominalScaledType = (NominalScaledType)theEObject;
-				T result = caseNominalScaledType(nominalScaledType);
+			case CAEXPackage.NOMINAL_SCALED: {
+				NominalScaled nominalScaled = (NominalScaled)theEObject;
+				T result = caseNominalScaled(nominalScaled);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case CAEXPackage.ORDINAL_SCALED_TYPE: {
-				OrdinalScaledType ordinalScaledType = (OrdinalScaledType)theEObject;
-				T result = caseOrdinalScaledType(ordinalScaledType);
+			case CAEXPackage.ORDINAL_SCALED: {
+				OrdinalScaled ordinalScaled = (OrdinalScaled)theEObject;
+				T result = caseOrdinalScaled(ordinalScaled);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -497,17 +497,17 @@ public class CAEXSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>External Reference Type</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>External Reference</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>External Reference Type</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>External Reference</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseExternalReferenceType(ExternalReferenceType object) {
+	public T caseExternalReference(ExternalReference object) {
 		return null;
 	}
 
@@ -632,32 +632,32 @@ public class CAEXSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Nominal Scaled Type</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>Nominal Scaled</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Nominal Scaled Type</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Nominal Scaled</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseNominalScaledType(NominalScaledType object) {
+	public T caseNominalScaled(NominalScaled object) {
 		return null;
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Ordinal Scaled Type</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>Ordinal Scaled</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Ordinal Scaled Type</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Ordinal Scaled</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseOrdinalScaledType(OrdinalScaledType object) {
+	public T caseOrdinalScaled(OrdinalScaled object) {
 		return null;
 	}
 

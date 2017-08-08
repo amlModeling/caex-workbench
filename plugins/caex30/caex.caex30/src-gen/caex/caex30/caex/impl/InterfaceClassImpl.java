@@ -33,6 +33,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *   <li>{@link caex.caex30.caex.impl.InterfaceClassImpl#getRefBaseClassPath <em>Ref Base Class Path</em>}</li>
  *   <li>{@link caex.caex30.caex.impl.InterfaceClassImpl#getBaseClass <em>Base Class</em>}</li>
  *   <li>{@link caex.caex30.caex.impl.InterfaceClassImpl#getInterfaceClass <em>Interface Class</em>}</li>
+ *   <li>{@link caex.caex30.caex.impl.InterfaceClassImpl#getExternalInterface <em>External Interface</em>}</li>
  * </ul>
  *
  * @generated
@@ -87,6 +88,16 @@ public class InterfaceClassImpl extends CAEXObjectImpl implements InterfaceClass
 	 * @ordered
 	 */
 	protected EList<InterfaceClass> interfaceClass;
+
+	/**
+	 * The cached value of the '{@link #getExternalInterface() <em>External Interface</em>}' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getExternalInterface()
+	 * @generated
+	 * @ordered
+	 */
+	protected EList<InterfaceClass> externalInterface;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -195,6 +206,18 @@ public class InterfaceClassImpl extends CAEXObjectImpl implements InterfaceClass
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EList<InterfaceClass> getExternalInterface() {
+		if (externalInterface == null) {
+			externalInterface = new EObjectContainmentEList<InterfaceClass>(InterfaceClass.class, this, CAEXPackage.INTERFACE_CLASS__EXTERNAL_INTERFACE);
+		}
+		return externalInterface;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
@@ -202,6 +225,8 @@ public class InterfaceClassImpl extends CAEXObjectImpl implements InterfaceClass
 				return ((InternalEList<?>)getAttribute()).basicRemove(otherEnd, msgs);
 			case CAEXPackage.INTERFACE_CLASS__INTERFACE_CLASS:
 				return ((InternalEList<?>)getInterfaceClass()).basicRemove(otherEnd, msgs);
+			case CAEXPackage.INTERFACE_CLASS__EXTERNAL_INTERFACE:
+				return ((InternalEList<?>)getExternalInterface()).basicRemove(otherEnd, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
@@ -223,6 +248,8 @@ public class InterfaceClassImpl extends CAEXObjectImpl implements InterfaceClass
 				return basicGetBaseClass();
 			case CAEXPackage.INTERFACE_CLASS__INTERFACE_CLASS:
 				return getInterfaceClass();
+			case CAEXPackage.INTERFACE_CLASS__EXTERNAL_INTERFACE:
+				return getExternalInterface();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -250,6 +277,10 @@ public class InterfaceClassImpl extends CAEXObjectImpl implements InterfaceClass
 				getInterfaceClass().clear();
 				getInterfaceClass().addAll((Collection<? extends InterfaceClass>)newValue);
 				return;
+			case CAEXPackage.INTERFACE_CLASS__EXTERNAL_INTERFACE:
+				getExternalInterface().clear();
+				getExternalInterface().addAll((Collection<? extends InterfaceClass>)newValue);
+				return;
 		}
 		super.eSet(featureID, newValue);
 	}
@@ -274,6 +305,9 @@ public class InterfaceClassImpl extends CAEXObjectImpl implements InterfaceClass
 			case CAEXPackage.INTERFACE_CLASS__INTERFACE_CLASS:
 				getInterfaceClass().clear();
 				return;
+			case CAEXPackage.INTERFACE_CLASS__EXTERNAL_INTERFACE:
+				getExternalInterface().clear();
+				return;
 		}
 		super.eUnset(featureID);
 	}
@@ -294,6 +328,8 @@ public class InterfaceClassImpl extends CAEXObjectImpl implements InterfaceClass
 				return baseClass != null;
 			case CAEXPackage.INTERFACE_CLASS__INTERFACE_CLASS:
 				return interfaceClass != null && !interfaceClass.isEmpty();
+			case CAEXPackage.INTERFACE_CLASS__EXTERNAL_INTERFACE:
+				return externalInterface != null && !externalInterface.isEmpty();
 		}
 		return super.eIsSet(featureID);
 	}

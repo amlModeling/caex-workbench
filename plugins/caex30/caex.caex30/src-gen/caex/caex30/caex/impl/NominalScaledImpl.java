@@ -3,7 +3,7 @@
 package caex.caex30.caex.impl;
 
 import caex.caex30.caex.CAEXPackage;
-import caex.caex30.caex.NominalScaledType;
+import caex.caex30.caex.NominalScaled;
 
 import java.util.Collection;
 
@@ -17,18 +17,18 @@ import org.eclipse.emf.ecore.util.EDataTypeEList;
 
 /**
  * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>Nominal Scaled Type</b></em>'.
+ * An implementation of the model object '<em><b>Nominal Scaled</b></em>'.
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link caex.caex30.caex.impl.NominalScaledTypeImpl#getRequiredValue <em>Required Value</em>}</li>
+ *   <li>{@link caex.caex30.caex.impl.NominalScaledImpl#getRequiredValue <em>Required Value</em>}</li>
  * </ul>
  *
  * @generated
  */
-public class NominalScaledTypeImpl extends MinimalEObjectImpl.Container implements NominalScaledType {
+public class NominalScaledImpl extends MinimalEObjectImpl.Container implements NominalScaled {
 	/**
 	 * The cached value of the '{@link #getRequiredValue() <em>Required Value</em>}' attribute list.
 	 * <!-- begin-user-doc -->
@@ -44,7 +44,7 @@ public class NominalScaledTypeImpl extends MinimalEObjectImpl.Container implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected NominalScaledTypeImpl() {
+	protected NominalScaledImpl() {
 		super();
 	}
 
@@ -55,7 +55,7 @@ public class NominalScaledTypeImpl extends MinimalEObjectImpl.Container implemen
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return CAEXPackage.Literals.NOMINAL_SCALED_TYPE;
+		return CAEXPackage.Literals.NOMINAL_SCALED;
 	}
 
 	/**
@@ -65,7 +65,7 @@ public class NominalScaledTypeImpl extends MinimalEObjectImpl.Container implemen
 	 */
 	public EList<String> getRequiredValue() {
 		if (requiredValue == null) {
-			requiredValue = new EDataTypeEList<String>(String.class, this, CAEXPackage.NOMINAL_SCALED_TYPE__REQUIRED_VALUE);
+			requiredValue = new EDataTypeEList<String>(String.class, this, CAEXPackage.NOMINAL_SCALED__REQUIRED_VALUE);
 		}
 		return requiredValue;
 	}
@@ -78,7 +78,7 @@ public class NominalScaledTypeImpl extends MinimalEObjectImpl.Container implemen
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case CAEXPackage.NOMINAL_SCALED_TYPE__REQUIRED_VALUE:
+			case CAEXPackage.NOMINAL_SCALED__REQUIRED_VALUE:
 				return getRequiredValue();
 		}
 		return super.eGet(featureID, resolve, coreType);
@@ -93,7 +93,7 @@ public class NominalScaledTypeImpl extends MinimalEObjectImpl.Container implemen
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case CAEXPackage.NOMINAL_SCALED_TYPE__REQUIRED_VALUE:
+			case CAEXPackage.NOMINAL_SCALED__REQUIRED_VALUE:
 				getRequiredValue().clear();
 				getRequiredValue().addAll((Collection<? extends String>)newValue);
 				return;
@@ -109,7 +109,7 @@ public class NominalScaledTypeImpl extends MinimalEObjectImpl.Container implemen
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case CAEXPackage.NOMINAL_SCALED_TYPE__REQUIRED_VALUE:
+			case CAEXPackage.NOMINAL_SCALED__REQUIRED_VALUE:
 				getRequiredValue().clear();
 				return;
 		}
@@ -124,7 +124,7 @@ public class NominalScaledTypeImpl extends MinimalEObjectImpl.Container implemen
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case CAEXPackage.NOMINAL_SCALED_TYPE__REQUIRED_VALUE:
+			case CAEXPackage.NOMINAL_SCALED__REQUIRED_VALUE:
 				return requiredValue != null && !requiredValue.isEmpty();
 		}
 		return super.eIsSet(featureID);
@@ -146,4 +146,4 @@ public class NominalScaledTypeImpl extends MinimalEObjectImpl.Container implemen
 		return result.toString();
 	}
 
-} //NominalScaledTypeImpl
+} //NominalScaledImpl

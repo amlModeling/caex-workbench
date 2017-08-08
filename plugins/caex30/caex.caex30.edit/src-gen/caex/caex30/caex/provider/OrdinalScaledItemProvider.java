@@ -4,7 +4,7 @@ package caex.caex30.caex.provider;
 
 
 import caex.caex30.caex.CAEXPackage;
-import caex.caex30.caex.NominalScaledType;
+import caex.caex30.caex.OrdinalScaled;
 
 import java.util.Collection;
 import java.util.List;
@@ -26,12 +26,12 @@ import org.eclipse.emf.edit.provider.ItemProviderAdapter;
 import org.eclipse.emf.edit.provider.ViewerNotification;
 
 /**
- * This is the item provider adapter for a {@link caex.caex30.caex.NominalScaledType} object.
+ * This is the item provider adapter for a {@link caex.caex30.caex.OrdinalScaled} object.
  * <!-- begin-user-doc -->
  * <!-- end-user-doc -->
  * @generated
  */
-public class NominalScaledTypeItemProvider 
+public class OrdinalScaledItemProvider 
 	extends ItemProviderAdapter
 	implements
 		IEditingDomainItemProvider,
@@ -45,7 +45,7 @@ public class NominalScaledTypeItemProvider
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NominalScaledTypeItemProvider(AdapterFactory adapterFactory) {
+	public OrdinalScaledItemProvider(AdapterFactory adapterFactory) {
 		super(adapterFactory);
 	}
 
@@ -60,9 +60,33 @@ public class NominalScaledTypeItemProvider
 		if (itemPropertyDescriptors == null) {
 			super.getPropertyDescriptors(object);
 
+			addRequiredMaxValuePropertyDescriptor(object);
 			addRequiredValuePropertyDescriptor(object);
+			addRequiredMinValuePropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
+	}
+
+	/**
+	 * This adds a property descriptor for the Required Max Value feature.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void addRequiredMaxValuePropertyDescriptor(Object object) {
+		itemPropertyDescriptors.add
+			(createItemPropertyDescriptor
+				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
+				 getResourceLocator(),
+				 getString("_UI_OrdinalScaled_requiredMaxValue_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_OrdinalScaled_requiredMaxValue_feature", "_UI_OrdinalScaled_type"),
+				 CAEXPackage.Literals.ORDINAL_SCALED__REQUIRED_MAX_VALUE,
+				 true,
+				 false,
+				 false,
+				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+				 null,
+				 null));
 	}
 
 	/**
@@ -76,9 +100,9 @@ public class NominalScaledTypeItemProvider
 			(createItemPropertyDescriptor
 				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
 				 getResourceLocator(),
-				 getString("_UI_NominalScaledType_requiredValue_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_NominalScaledType_requiredValue_feature", "_UI_NominalScaledType_type"),
-				 CAEXPackage.Literals.NOMINAL_SCALED_TYPE__REQUIRED_VALUE,
+				 getString("_UI_OrdinalScaled_requiredValue_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_OrdinalScaled_requiredValue_feature", "_UI_OrdinalScaled_type"),
+				 CAEXPackage.Literals.ORDINAL_SCALED__REQUIRED_VALUE,
 				 true,
 				 false,
 				 false,
@@ -88,14 +112,36 @@ public class NominalScaledTypeItemProvider
 	}
 
 	/**
-	 * This returns NominalScaledType.gif.
+	 * This adds a property descriptor for the Required Min Value feature.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void addRequiredMinValuePropertyDescriptor(Object object) {
+		itemPropertyDescriptors.add
+			(createItemPropertyDescriptor
+				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
+				 getResourceLocator(),
+				 getString("_UI_OrdinalScaled_requiredMinValue_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_OrdinalScaled_requiredMinValue_feature", "_UI_OrdinalScaled_type"),
+				 CAEXPackage.Literals.ORDINAL_SCALED__REQUIRED_MIN_VALUE,
+				 true,
+				 false,
+				 false,
+				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+				 null,
+				 null));
+	}
+
+	/**
+	 * This returns OrdinalScaled.gif.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
 	public Object getImage(Object object) {
-		return overlayImage(object, getResourceLocator().getImage("full/obj16/NominalScaledType"));
+		return overlayImage(object, getResourceLocator().getImage("full/obj16/OrdinalScaled"));
 	}
 
 	/**
@@ -106,7 +152,10 @@ public class NominalScaledTypeItemProvider
 	 */
 	@Override
 	public String getText(Object object) {
-		return getString("_UI_NominalScaledType_type");
+		String label = ((OrdinalScaled)object).getRequiredMaxValue();
+		return label == null || label.length() == 0 ?
+			getString("_UI_OrdinalScaled_type") :
+			getString("_UI_OrdinalScaled_type") + " " + label;
 	}
 	
 
@@ -121,8 +170,10 @@ public class NominalScaledTypeItemProvider
 	public void notifyChanged(Notification notification) {
 		updateChildren(notification);
 
-		switch (notification.getFeatureID(NominalScaledType.class)) {
-			case CAEXPackage.NOMINAL_SCALED_TYPE__REQUIRED_VALUE:
+		switch (notification.getFeatureID(OrdinalScaled.class)) {
+			case CAEXPackage.ORDINAL_SCALED__REQUIRED_MAX_VALUE:
+			case CAEXPackage.ORDINAL_SCALED__REQUIRED_VALUE:
+			case CAEXPackage.ORDINAL_SCALED__REQUIRED_MIN_VALUE:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
 		}

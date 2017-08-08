@@ -111,8 +111,8 @@ public class CAEXAdapterFactory extends AdapterFactoryImpl {
 				return createExternalInterfaceAdapter();
 			}
 			@Override
-			public Adapter caseExternalReferenceType(ExternalReferenceType object) {
-				return createExternalReferenceTypeAdapter();
+			public Adapter caseExternalReference(ExternalReference object) {
+				return createExternalReferenceAdapter();
 			}
 			@Override
 			public Adapter caseInstanceHierarchy(InstanceHierarchy object) {
@@ -147,12 +147,12 @@ public class CAEXAdapterFactory extends AdapterFactoryImpl {
 				return createMappingAdapter();
 			}
 			@Override
-			public Adapter caseNominalScaledType(NominalScaledType object) {
-				return createNominalScaledTypeAdapter();
+			public Adapter caseNominalScaled(NominalScaled object) {
+				return createNominalScaledAdapter();
 			}
 			@Override
-			public Adapter caseOrdinalScaledType(OrdinalScaledType object) {
-				return createOrdinalScaledTypeAdapter();
+			public Adapter caseOrdinalScaled(OrdinalScaled object) {
+				return createOrdinalScaledAdapter();
 			}
 			@Override
 			public Adapter caseRefSemantic(RefSemantic object) {
@@ -387,16 +387,16 @@ public class CAEXAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link caex.caex30.caex.ExternalReferenceType <em>External Reference Type</em>}'.
+	 * Creates a new adapter for an object of class '{@link caex.caex30.caex.ExternalReference <em>External Reference</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see caex.caex30.caex.ExternalReferenceType
+	 * @see caex.caex30.caex.ExternalReference
 	 * @generated
 	 */
-	public Adapter createExternalReferenceTypeAdapter() {
+	public Adapter createExternalReferenceAdapter() {
 		return null;
 	}
 
@@ -513,30 +513,30 @@ public class CAEXAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link caex.caex30.caex.NominalScaledType <em>Nominal Scaled Type</em>}'.
+	 * Creates a new adapter for an object of class '{@link caex.caex30.caex.NominalScaled <em>Nominal Scaled</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see caex.caex30.caex.NominalScaledType
+	 * @see caex.caex30.caex.NominalScaled
 	 * @generated
 	 */
-	public Adapter createNominalScaledTypeAdapter() {
+	public Adapter createNominalScaledAdapter() {
 		return null;
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link caex.caex30.caex.OrdinalScaledType <em>Ordinal Scaled Type</em>}'.
+	 * Creates a new adapter for an object of class '{@link caex.caex30.caex.OrdinalScaled <em>Ordinal Scaled</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see caex.caex30.caex.OrdinalScaledType
+	 * @see caex.caex30.caex.OrdinalScaled
 	 * @generated
 	 */
-	public Adapter createOrdinalScaledTypeAdapter() {
+	public Adapter createOrdinalScaledAdapter() {
 		return null;
 	}
 

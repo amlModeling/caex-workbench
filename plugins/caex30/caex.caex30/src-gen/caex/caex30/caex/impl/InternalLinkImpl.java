@@ -3,7 +3,7 @@
 package caex.caex30.caex.impl;
 
 import caex.caex30.caex.CAEXPackage;
-import caex.caex30.caex.ExternalInterface;
+import caex.caex30.caex.InterfaceClass;
 import caex.caex30.caex.InternalLink;
 
 import org.eclipse.emf.common.notify.Notification;
@@ -78,7 +78,7 @@ public class InternalLinkImpl extends CAEXObjectImpl implements InternalLink {
 	 * @generated
 	 * @ordered
 	 */
-	protected ExternalInterface partnerSideA;
+	protected InterfaceClass partnerSideA;
 
 	/**
 	 * The cached value of the '{@link #getPartnerSideB() <em>Partner Side B</em>}' reference.
@@ -88,7 +88,7 @@ public class InternalLinkImpl extends CAEXObjectImpl implements InternalLink {
 	 * @generated
 	 * @ordered
 	 */
-	protected ExternalInterface partnerSideB;
+	protected InterfaceClass partnerSideB;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -156,10 +156,10 @@ public class InternalLinkImpl extends CAEXObjectImpl implements InternalLink {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ExternalInterface getPartnerSideA() {
+	public InterfaceClass getPartnerSideA() {
 		if (partnerSideA != null && partnerSideA.eIsProxy()) {
 			InternalEObject oldPartnerSideA = (InternalEObject)partnerSideA;
-			partnerSideA = (ExternalInterface)eResolveProxy(oldPartnerSideA);
+			partnerSideA = (InterfaceClass)eResolveProxy(oldPartnerSideA);
 			if (partnerSideA != oldPartnerSideA) {
 				if (eNotificationRequired())
 					eNotify(new ENotificationImpl(this, Notification.RESOLVE, CAEXPackage.INTERNAL_LINK__PARTNER_SIDE_A, oldPartnerSideA, partnerSideA));
@@ -173,7 +173,7 @@ public class InternalLinkImpl extends CAEXObjectImpl implements InternalLink {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ExternalInterface basicGetPartnerSideA() {
+	public InterfaceClass basicGetPartnerSideA() {
 		return partnerSideA;
 	}
 
@@ -182,8 +182,8 @@ public class InternalLinkImpl extends CAEXObjectImpl implements InternalLink {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setPartnerSideA(ExternalInterface newPartnerSideA) {
-		ExternalInterface oldPartnerSideA = partnerSideA;
+	public void setPartnerSideA(InterfaceClass newPartnerSideA) {
+		InterfaceClass oldPartnerSideA = partnerSideA;
 		partnerSideA = newPartnerSideA;
 		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET, CAEXPackage.INTERNAL_LINK__PARTNER_SIDE_A, oldPartnerSideA, partnerSideA));
@@ -194,10 +194,10 @@ public class InternalLinkImpl extends CAEXObjectImpl implements InternalLink {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ExternalInterface getPartnerSideB() {
+	public InterfaceClass getPartnerSideB() {
 		if (partnerSideB != null && partnerSideB.eIsProxy()) {
 			InternalEObject oldPartnerSideB = (InternalEObject)partnerSideB;
-			partnerSideB = (ExternalInterface)eResolveProxy(oldPartnerSideB);
+			partnerSideB = (InterfaceClass)eResolveProxy(oldPartnerSideB);
 			if (partnerSideB != oldPartnerSideB) {
 				if (eNotificationRequired())
 					eNotify(new ENotificationImpl(this, Notification.RESOLVE, CAEXPackage.INTERNAL_LINK__PARTNER_SIDE_B, oldPartnerSideB, partnerSideB));
@@ -211,7 +211,7 @@ public class InternalLinkImpl extends CAEXObjectImpl implements InternalLink {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ExternalInterface basicGetPartnerSideB() {
+	public InterfaceClass basicGetPartnerSideB() {
 		return partnerSideB;
 	}
 
@@ -220,8 +220,8 @@ public class InternalLinkImpl extends CAEXObjectImpl implements InternalLink {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setPartnerSideB(ExternalInterface newPartnerSideB) {
-		ExternalInterface oldPartnerSideB = partnerSideB;
+	public void setPartnerSideB(InterfaceClass newPartnerSideB) {
+		InterfaceClass oldPartnerSideB = partnerSideB;
 		partnerSideB = newPartnerSideB;
 		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET, CAEXPackage.INTERNAL_LINK__PARTNER_SIDE_B, oldPartnerSideB, partnerSideB));
@@ -264,10 +264,10 @@ public class InternalLinkImpl extends CAEXObjectImpl implements InternalLink {
 				setRefPartnerSideB((String)newValue);
 				return;
 			case CAEXPackage.INTERNAL_LINK__PARTNER_SIDE_A:
-				setPartnerSideA((ExternalInterface)newValue);
+				setPartnerSideA((InterfaceClass)newValue);
 				return;
 			case CAEXPackage.INTERNAL_LINK__PARTNER_SIDE_B:
-				setPartnerSideB((ExternalInterface)newValue);
+				setPartnerSideB((InterfaceClass)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -288,10 +288,10 @@ public class InternalLinkImpl extends CAEXObjectImpl implements InternalLink {
 				setRefPartnerSideB(REF_PARTNER_SIDE_B_EDEFAULT);
 				return;
 			case CAEXPackage.INTERNAL_LINK__PARTNER_SIDE_A:
-				setPartnerSideA((ExternalInterface)null);
+				setPartnerSideA((InterfaceClass)null);
 				return;
 			case CAEXPackage.INTERNAL_LINK__PARTNER_SIDE_B:
-				setPartnerSideB((ExternalInterface)null);
+				setPartnerSideB((InterfaceClass)null);
 				return;
 		}
 		super.eUnset(featureID);

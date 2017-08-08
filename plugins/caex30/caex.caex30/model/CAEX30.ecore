@@ -31,9 +31,9 @@
         eType="#//Attribute" containment="true" resolveProxies="false"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="AttributeValueRequirement" eSuperTypes="#//CAEXBasicObject">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="ordinalScaledType" eType="#//OrdinalScaledType"
+    <eStructuralFeatures xsi:type="ecore:EReference" name="ordinalScaledType" eType="#//OrdinalScaled"
         containment="true" resolveProxies="false"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="nominalScaledType" eType="#//NominalScaledType"
+    <eStructuralFeatures xsi:type="ecore:EReference" name="nominalScaledType" eType="#//NominalScaled"
         containment="true" resolveProxies="false"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="unknownType" eType="#//UnknownType"
         containment="true" resolveProxies="false"/>
@@ -42,13 +42,16 @@
   <eClassifiers xsi:type="ecore:EClass" name="CAEXBasicObject">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="changeMode" eType="#//ChangeMode"
         defaultValueLiteral="state" unsettable="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="description" eType="#//Description"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="version" eType="#//Version"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="description" eType="#//Description"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="version" eType="#//Version"
+        containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="revision" upperBound="-1"
-        eType="#//Revision"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="copyright" eType="#//Copyright"/>
+        eType="#//Revision" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="copyright" eType="#//Copyright"
+        containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="additionalInformation"
-        eType="#//AdditionalInformation"/>
+        upperBound="-1" eType="#//AdditionalInformation" containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="CAEXFile" eSuperTypes="#//CAEXBasicObject">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="superiorStandardVersion"
@@ -57,7 +60,7 @@
         lowerBound="1" upperBound="-1" eType="#//SourceDocumentInformation" containment="true"
         resolveProxies="false"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="externalReference" upperBound="-1"
-        eType="#//ExternalReferenceType" containment="true" resolveProxies="false"/>
+        eType="#//ExternalReference" containment="true" resolveProxies="false"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="instanceHierarchy" upperBound="-1"
         eType="#//InstanceHierarchy" containment="true" resolveProxies="false"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="interfaceClassLib" upperBound="-1"
@@ -98,11 +101,8 @@
         eType="#//CAEXFile" volatile="true" transient="true" derived="true" containment="true"
         resolveProxies="false"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="ExternalInterface" eSuperTypes="#//InterfaceClass">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="externalInterface" upperBound="-1"
-        eType="#//InterfaceClass" containment="true" resolveProxies="false"/>
-  </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="ExternalReferenceType" eSuperTypes="#//CAEXBasicObject">
+  <eClassifiers xsi:type="ecore:EClass" name="ExternalInterface" eSuperTypes="#//InterfaceClass"/>
+  <eClassifiers xsi:type="ecore:EClass" name="ExternalReference" eSuperTypes="#//CAEXBasicObject">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="alias" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//String"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="path" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//String"/>
   </eClassifiers>
@@ -121,6 +121,8 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="baseClass" eType="#//InterfaceClass"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="interfaceClass" upperBound="-1"
         eType="#//InterfaceClass" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="externalInterface" upperBound="-1"
+        eType="#//InterfaceClass" containment="true" resolveProxies="false"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="InterfaceFamily" eSuperTypes="#//InterfaceClass"/>
   <eClassifiers xsi:type="ecore:EClass" name="InterfaceIDMapping" eSuperTypes="#//CAEXBasicObject">
@@ -146,9 +148,9 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="refPartnerSideB" lowerBound="1"
         eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//String"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="partnerSideA" lowerBound="1"
-        eType="#//ExternalInterface"/>
+        eType="#//InterfaceClass"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="partnerSideB" lowerBound="1"
-        eType="#//ExternalInterface"/>
+        eType="#//InterfaceClass"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Mapping" eSuperTypes="#//CAEXBasicObject">
     <eStructuralFeatures xsi:type="ecore:EReference" name="attributeNameMapping" upperBound="-1"
@@ -156,11 +158,11 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="interfaceIDMapping" upperBound="-1"
         eType="#//InterfaceIDMapping" containment="true" resolveProxies="false"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="NominalScaledType">
+  <eClassifiers xsi:type="ecore:EClass" name="NominalScaled">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="requiredValue" unique="false"
         upperBound="-1" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//String"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="OrdinalScaledType">
+  <eClassifiers xsi:type="ecore:EClass" name="OrdinalScaled">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="requiredMaxValue" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//String"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="requiredValue" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//String"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="requiredMinValue" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//String"/>

@@ -5,7 +5,7 @@ package caex.caex30.caex.impl;
 import caex.caex30.caex.AttributeLib;
 import caex.caex30.caex.CAEXFile;
 import caex.caex30.caex.CAEXPackage;
-import caex.caex30.caex.ExternalReferenceType;
+import caex.caex30.caex.ExternalReference;
 import caex.caex30.caex.InstanceHierarchy;
 import caex.caex30.caex.InterfaceClassLib;
 import caex.caex30.caex.RoleClassLib;
@@ -79,7 +79,7 @@ public class CAEXFileImpl extends CAEXBasicObjectImpl implements CAEXFile {
 	 * @generated
 	 * @ordered
 	 */
-	protected EList<ExternalReferenceType> externalReference;
+	protected EList<ExternalReference> externalReference;
 
 	/**
 	 * The cached value of the '{@link #getInstanceHierarchy() <em>Instance Hierarchy</em>}' containment reference list.
@@ -228,9 +228,9 @@ public class CAEXFileImpl extends CAEXBasicObjectImpl implements CAEXFile {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<ExternalReferenceType> getExternalReference() {
+	public EList<ExternalReference> getExternalReference() {
 		if (externalReference == null) {
-			externalReference = new EObjectContainmentEList<ExternalReferenceType>(ExternalReferenceType.class, this, CAEXPackage.CAEX_FILE__EXTERNAL_REFERENCE);
+			externalReference = new EObjectContainmentEList<ExternalReference>(ExternalReference.class, this, CAEXPackage.CAEX_FILE__EXTERNAL_REFERENCE);
 		}
 		return externalReference;
 	}
@@ -439,7 +439,7 @@ public class CAEXFileImpl extends CAEXBasicObjectImpl implements CAEXFile {
 				return;
 			case CAEXPackage.CAEX_FILE__EXTERNAL_REFERENCE:
 				getExternalReference().clear();
-				getExternalReference().addAll((Collection<? extends ExternalReferenceType>)newValue);
+				getExternalReference().addAll((Collection<? extends ExternalReference>)newValue);
 				return;
 			case CAEXPackage.CAEX_FILE__INSTANCE_HIERARCHY:
 				getInstanceHierarchy().clear();

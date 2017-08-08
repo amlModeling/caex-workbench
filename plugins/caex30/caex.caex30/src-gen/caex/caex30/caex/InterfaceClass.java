@@ -17,6 +17,7 @@ import org.eclipse.emf.common.util.EList;
  *   <li>{@link caex.caex30.caex.InterfaceClass#getRefBaseClassPath <em>Ref Base Class Path</em>}</li>
  *   <li>{@link caex.caex30.caex.InterfaceClass#getBaseClass <em>Base Class</em>}</li>
  *   <li>{@link caex.caex30.caex.InterfaceClass#getInterfaceClass <em>Interface Class</em>}</li>
+ *   <li>{@link caex.caex30.caex.InterfaceClass#getExternalInterface <em>External Interface</em>}</li>
  * </ul>
  *
  * @see caex.caex30.caex.CAEXPackage#getInterfaceClass()
@@ -107,5 +108,21 @@ public interface InterfaceClass extends CAEXObject {
 	 * @generated
 	 */
 	EList<InterfaceClass> getInterfaceClass();
+
+	/**
+	 * Returns the value of the '<em><b>External Interface</b></em>' containment reference list.
+	 * The list contents are of type {@link caex.caex30.caex.InterfaceClass}.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>External Interface</em>' containment reference list isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>External Interface</em>' containment reference list.
+	 * @see caex.caex30.caex.CAEXPackage#getInterfaceClass_ExternalInterface()
+	 * @model containment="true"
+	 * @generated
+	 */
+	EList<InterfaceClass> getExternalInterface();
 
 } // InterfaceClass

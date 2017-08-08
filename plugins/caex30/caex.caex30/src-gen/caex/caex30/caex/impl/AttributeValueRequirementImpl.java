@@ -4,8 +4,8 @@ package caex.caex30.caex.impl;
 
 import caex.caex30.caex.AttributeValueRequirement;
 import caex.caex30.caex.CAEXPackage;
-import caex.caex30.caex.NominalScaledType;
-import caex.caex30.caex.OrdinalScaledType;
+import caex.caex30.caex.NominalScaled;
+import caex.caex30.caex.OrdinalScaled;
 import caex.caex30.caex.UnknownType;
 
 import org.eclipse.emf.common.notify.Notification;
@@ -41,7 +41,7 @@ public class AttributeValueRequirementImpl extends CAEXBasicObjectImpl implement
 	 * @generated
 	 * @ordered
 	 */
-	protected OrdinalScaledType ordinalScaledType;
+	protected OrdinalScaled ordinalScaledType;
 
 	/**
 	 * The cached value of the '{@link #getNominalScaledType() <em>Nominal Scaled Type</em>}' containment reference.
@@ -51,7 +51,7 @@ public class AttributeValueRequirementImpl extends CAEXBasicObjectImpl implement
 	 * @generated
 	 * @ordered
 	 */
-	protected NominalScaledType nominalScaledType;
+	protected NominalScaled nominalScaledType;
 
 	/**
 	 * The cached value of the '{@link #getUnknownType() <em>Unknown Type</em>}' containment reference.
@@ -107,7 +107,7 @@ public class AttributeValueRequirementImpl extends CAEXBasicObjectImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public OrdinalScaledType getOrdinalScaledType() {
+	public OrdinalScaled getOrdinalScaledType() {
 		return ordinalScaledType;
 	}
 
@@ -116,8 +116,8 @@ public class AttributeValueRequirementImpl extends CAEXBasicObjectImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetOrdinalScaledType(OrdinalScaledType newOrdinalScaledType, NotificationChain msgs) {
-		OrdinalScaledType oldOrdinalScaledType = ordinalScaledType;
+	public NotificationChain basicSetOrdinalScaledType(OrdinalScaled newOrdinalScaledType, NotificationChain msgs) {
+		OrdinalScaled oldOrdinalScaledType = ordinalScaledType;
 		ordinalScaledType = newOrdinalScaledType;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, CAEXPackage.ATTRIBUTE_VALUE_REQUIREMENT__ORDINAL_SCALED_TYPE, oldOrdinalScaledType, newOrdinalScaledType);
@@ -131,7 +131,7 @@ public class AttributeValueRequirementImpl extends CAEXBasicObjectImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setOrdinalScaledType(OrdinalScaledType newOrdinalScaledType) {
+	public void setOrdinalScaledType(OrdinalScaled newOrdinalScaledType) {
 		if (newOrdinalScaledType != ordinalScaledType) {
 			NotificationChain msgs = null;
 			if (ordinalScaledType != null)
@@ -150,7 +150,7 @@ public class AttributeValueRequirementImpl extends CAEXBasicObjectImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NominalScaledType getNominalScaledType() {
+	public NominalScaled getNominalScaledType() {
 		return nominalScaledType;
 	}
 
@@ -159,8 +159,8 @@ public class AttributeValueRequirementImpl extends CAEXBasicObjectImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetNominalScaledType(NominalScaledType newNominalScaledType, NotificationChain msgs) {
-		NominalScaledType oldNominalScaledType = nominalScaledType;
+	public NotificationChain basicSetNominalScaledType(NominalScaled newNominalScaledType, NotificationChain msgs) {
+		NominalScaled oldNominalScaledType = nominalScaledType;
 		nominalScaledType = newNominalScaledType;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, CAEXPackage.ATTRIBUTE_VALUE_REQUIREMENT__NOMINAL_SCALED_TYPE, oldNominalScaledType, newNominalScaledType);
@@ -174,7 +174,7 @@ public class AttributeValueRequirementImpl extends CAEXBasicObjectImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setNominalScaledType(NominalScaledType newNominalScaledType) {
+	public void setNominalScaledType(NominalScaled newNominalScaledType) {
 		if (newNominalScaledType != nominalScaledType) {
 			NotificationChain msgs = null;
 			if (nominalScaledType != null)
@@ -299,10 +299,10 @@ public class AttributeValueRequirementImpl extends CAEXBasicObjectImpl implement
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
 			case CAEXPackage.ATTRIBUTE_VALUE_REQUIREMENT__ORDINAL_SCALED_TYPE:
-				setOrdinalScaledType((OrdinalScaledType)newValue);
+				setOrdinalScaledType((OrdinalScaled)newValue);
 				return;
 			case CAEXPackage.ATTRIBUTE_VALUE_REQUIREMENT__NOMINAL_SCALED_TYPE:
-				setNominalScaledType((NominalScaledType)newValue);
+				setNominalScaledType((NominalScaled)newValue);
 				return;
 			case CAEXPackage.ATTRIBUTE_VALUE_REQUIREMENT__UNKNOWN_TYPE:
 				setUnknownType((UnknownType)newValue);
@@ -323,10 +323,10 @@ public class AttributeValueRequirementImpl extends CAEXBasicObjectImpl implement
 	public void eUnset(int featureID) {
 		switch (featureID) {
 			case CAEXPackage.ATTRIBUTE_VALUE_REQUIREMENT__ORDINAL_SCALED_TYPE:
-				setOrdinalScaledType((OrdinalScaledType)null);
+				setOrdinalScaledType((OrdinalScaled)null);
 				return;
 			case CAEXPackage.ATTRIBUTE_VALUE_REQUIREMENT__NOMINAL_SCALED_TYPE:
-				setNominalScaledType((NominalScaledType)null);
+				setNominalScaledType((NominalScaled)null);
 				return;
 			case CAEXPackage.ATTRIBUTE_VALUE_REQUIREMENT__UNKNOWN_TYPE:
 				setUnknownType((UnknownType)null);

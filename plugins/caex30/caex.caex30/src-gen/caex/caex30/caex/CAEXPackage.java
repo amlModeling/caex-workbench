@@ -80,7 +80,7 @@ public interface CAEXPackage extends EPackage {
 	int CAEX_BASIC_OBJECT__CHANGE_MODE = 0;
 
 	/**
-	 * The feature id for the '<em><b>Description</b></em>' reference.
+	 * The feature id for the '<em><b>Description</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -89,7 +89,7 @@ public interface CAEXPackage extends EPackage {
 	int CAEX_BASIC_OBJECT__DESCRIPTION = 1;
 
 	/**
-	 * The feature id for the '<em><b>Version</b></em>' reference.
+	 * The feature id for the '<em><b>Version</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -98,7 +98,7 @@ public interface CAEXPackage extends EPackage {
 	int CAEX_BASIC_OBJECT__VERSION = 2;
 
 	/**
-	 * The feature id for the '<em><b>Revision</b></em>' reference list.
+	 * The feature id for the '<em><b>Revision</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -107,7 +107,7 @@ public interface CAEXPackage extends EPackage {
 	int CAEX_BASIC_OBJECT__REVISION = 3;
 
 	/**
-	 * The feature id for the '<em><b>Copyright</b></em>' reference.
+	 * The feature id for the '<em><b>Copyright</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -116,7 +116,7 @@ public interface CAEXPackage extends EPackage {
 	int CAEX_BASIC_OBJECT__COPYRIGHT = 4;
 
 	/**
-	 * The feature id for the '<em><b>Additional Information</b></em>' reference.
+	 * The feature id for the '<em><b>Additional Information</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -162,7 +162,7 @@ public interface CAEXPackage extends EPackage {
 	int CAEX_OBJECT__CHANGE_MODE = CAEX_BASIC_OBJECT__CHANGE_MODE;
 
 	/**
-	 * The feature id for the '<em><b>Description</b></em>' reference.
+	 * The feature id for the '<em><b>Description</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -171,7 +171,7 @@ public interface CAEXPackage extends EPackage {
 	int CAEX_OBJECT__DESCRIPTION = CAEX_BASIC_OBJECT__DESCRIPTION;
 
 	/**
-	 * The feature id for the '<em><b>Version</b></em>' reference.
+	 * The feature id for the '<em><b>Version</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -180,7 +180,7 @@ public interface CAEXPackage extends EPackage {
 	int CAEX_OBJECT__VERSION = CAEX_BASIC_OBJECT__VERSION;
 
 	/**
-	 * The feature id for the '<em><b>Revision</b></em>' reference list.
+	 * The feature id for the '<em><b>Revision</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -189,7 +189,7 @@ public interface CAEXPackage extends EPackage {
 	int CAEX_OBJECT__REVISION = CAEX_BASIC_OBJECT__REVISION;
 
 	/**
-	 * The feature id for the '<em><b>Copyright</b></em>' reference.
+	 * The feature id for the '<em><b>Copyright</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -198,7 +198,7 @@ public interface CAEXPackage extends EPackage {
 	int CAEX_OBJECT__COPYRIGHT = CAEX_BASIC_OBJECT__COPYRIGHT;
 
 	/**
-	 * The feature id for the '<em><b>Additional Information</b></em>' reference.
+	 * The feature id for the '<em><b>Additional Information</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -262,7 +262,7 @@ public interface CAEXPackage extends EPackage {
 	int ATTRIBUTE__CHANGE_MODE = CAEX_OBJECT__CHANGE_MODE;
 
 	/**
-	 * The feature id for the '<em><b>Description</b></em>' reference.
+	 * The feature id for the '<em><b>Description</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -271,7 +271,7 @@ public interface CAEXPackage extends EPackage {
 	int ATTRIBUTE__DESCRIPTION = CAEX_OBJECT__DESCRIPTION;
 
 	/**
-	 * The feature id for the '<em><b>Version</b></em>' reference.
+	 * The feature id for the '<em><b>Version</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -280,7 +280,7 @@ public interface CAEXPackage extends EPackage {
 	int ATTRIBUTE__VERSION = CAEX_OBJECT__VERSION;
 
 	/**
-	 * The feature id for the '<em><b>Revision</b></em>' reference list.
+	 * The feature id for the '<em><b>Revision</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -289,7 +289,7 @@ public interface CAEXPackage extends EPackage {
 	int ATTRIBUTE__REVISION = CAEX_OBJECT__REVISION;
 
 	/**
-	 * The feature id for the '<em><b>Copyright</b></em>' reference.
+	 * The feature id for the '<em><b>Copyright</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -298,7 +298,7 @@ public interface CAEXPackage extends EPackage {
 	int ATTRIBUTE__COPYRIGHT = CAEX_OBJECT__COPYRIGHT;
 
 	/**
-	 * The feature id for the '<em><b>Additional Information</b></em>' reference.
+	 * The feature id for the '<em><b>Additional Information</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -434,7 +434,7 @@ public interface CAEXPackage extends EPackage {
 	int ATTRIBUTE_FAMILY__CHANGE_MODE = ATTRIBUTE__CHANGE_MODE;
 
 	/**
-	 * The feature id for the '<em><b>Description</b></em>' reference.
+	 * The feature id for the '<em><b>Description</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -443,7 +443,7 @@ public interface CAEXPackage extends EPackage {
 	int ATTRIBUTE_FAMILY__DESCRIPTION = ATTRIBUTE__DESCRIPTION;
 
 	/**
-	 * The feature id for the '<em><b>Version</b></em>' reference.
+	 * The feature id for the '<em><b>Version</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -452,7 +452,7 @@ public interface CAEXPackage extends EPackage {
 	int ATTRIBUTE_FAMILY__VERSION = ATTRIBUTE__VERSION;
 
 	/**
-	 * The feature id for the '<em><b>Revision</b></em>' reference list.
+	 * The feature id for the '<em><b>Revision</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -461,7 +461,7 @@ public interface CAEXPackage extends EPackage {
 	int ATTRIBUTE_FAMILY__REVISION = ATTRIBUTE__REVISION;
 
 	/**
-	 * The feature id for the '<em><b>Copyright</b></em>' reference.
+	 * The feature id for the '<em><b>Copyright</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -470,7 +470,7 @@ public interface CAEXPackage extends EPackage {
 	int ATTRIBUTE_FAMILY__COPYRIGHT = ATTRIBUTE__COPYRIGHT;
 
 	/**
-	 * The feature id for the '<em><b>Additional Information</b></em>' reference.
+	 * The feature id for the '<em><b>Additional Information</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -606,7 +606,7 @@ public interface CAEXPackage extends EPackage {
 	int ATTRIBUTE_NAME_MAPPING__CHANGE_MODE = CAEX_BASIC_OBJECT__CHANGE_MODE;
 
 	/**
-	 * The feature id for the '<em><b>Description</b></em>' reference.
+	 * The feature id for the '<em><b>Description</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -615,7 +615,7 @@ public interface CAEXPackage extends EPackage {
 	int ATTRIBUTE_NAME_MAPPING__DESCRIPTION = CAEX_BASIC_OBJECT__DESCRIPTION;
 
 	/**
-	 * The feature id for the '<em><b>Version</b></em>' reference.
+	 * The feature id for the '<em><b>Version</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -624,7 +624,7 @@ public interface CAEXPackage extends EPackage {
 	int ATTRIBUTE_NAME_MAPPING__VERSION = CAEX_BASIC_OBJECT__VERSION;
 
 	/**
-	 * The feature id for the '<em><b>Revision</b></em>' reference list.
+	 * The feature id for the '<em><b>Revision</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -633,7 +633,7 @@ public interface CAEXPackage extends EPackage {
 	int ATTRIBUTE_NAME_MAPPING__REVISION = CAEX_BASIC_OBJECT__REVISION;
 
 	/**
-	 * The feature id for the '<em><b>Copyright</b></em>' reference.
+	 * The feature id for the '<em><b>Copyright</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -642,7 +642,7 @@ public interface CAEXPackage extends EPackage {
 	int ATTRIBUTE_NAME_MAPPING__COPYRIGHT = CAEX_BASIC_OBJECT__COPYRIGHT;
 
 	/**
-	 * The feature id for the '<em><b>Additional Information</b></em>' reference.
+	 * The feature id for the '<em><b>Additional Information</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -724,7 +724,7 @@ public interface CAEXPackage extends EPackage {
 	int ATTRIBUTE_LIB__CHANGE_MODE = CAEX_OBJECT__CHANGE_MODE;
 
 	/**
-	 * The feature id for the '<em><b>Description</b></em>' reference.
+	 * The feature id for the '<em><b>Description</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -733,7 +733,7 @@ public interface CAEXPackage extends EPackage {
 	int ATTRIBUTE_LIB__DESCRIPTION = CAEX_OBJECT__DESCRIPTION;
 
 	/**
-	 * The feature id for the '<em><b>Version</b></em>' reference.
+	 * The feature id for the '<em><b>Version</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -742,7 +742,7 @@ public interface CAEXPackage extends EPackage {
 	int ATTRIBUTE_LIB__VERSION = CAEX_OBJECT__VERSION;
 
 	/**
-	 * The feature id for the '<em><b>Revision</b></em>' reference list.
+	 * The feature id for the '<em><b>Revision</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -751,7 +751,7 @@ public interface CAEXPackage extends EPackage {
 	int ATTRIBUTE_LIB__REVISION = CAEX_OBJECT__REVISION;
 
 	/**
-	 * The feature id for the '<em><b>Copyright</b></em>' reference.
+	 * The feature id for the '<em><b>Copyright</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -760,7 +760,7 @@ public interface CAEXPackage extends EPackage {
 	int ATTRIBUTE_LIB__COPYRIGHT = CAEX_OBJECT__COPYRIGHT;
 
 	/**
-	 * The feature id for the '<em><b>Additional Information</b></em>' reference.
+	 * The feature id for the '<em><b>Additional Information</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -833,7 +833,7 @@ public interface CAEXPackage extends EPackage {
 	int ATTRIBUTE_VALUE_REQUIREMENT__CHANGE_MODE = CAEX_BASIC_OBJECT__CHANGE_MODE;
 
 	/**
-	 * The feature id for the '<em><b>Description</b></em>' reference.
+	 * The feature id for the '<em><b>Description</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -842,7 +842,7 @@ public interface CAEXPackage extends EPackage {
 	int ATTRIBUTE_VALUE_REQUIREMENT__DESCRIPTION = CAEX_BASIC_OBJECT__DESCRIPTION;
 
 	/**
-	 * The feature id for the '<em><b>Version</b></em>' reference.
+	 * The feature id for the '<em><b>Version</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -851,7 +851,7 @@ public interface CAEXPackage extends EPackage {
 	int ATTRIBUTE_VALUE_REQUIREMENT__VERSION = CAEX_BASIC_OBJECT__VERSION;
 
 	/**
-	 * The feature id for the '<em><b>Revision</b></em>' reference list.
+	 * The feature id for the '<em><b>Revision</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -860,7 +860,7 @@ public interface CAEXPackage extends EPackage {
 	int ATTRIBUTE_VALUE_REQUIREMENT__REVISION = CAEX_BASIC_OBJECT__REVISION;
 
 	/**
-	 * The feature id for the '<em><b>Copyright</b></em>' reference.
+	 * The feature id for the '<em><b>Copyright</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -869,7 +869,7 @@ public interface CAEXPackage extends EPackage {
 	int ATTRIBUTE_VALUE_REQUIREMENT__COPYRIGHT = CAEX_BASIC_OBJECT__COPYRIGHT;
 
 	/**
-	 * The feature id for the '<em><b>Additional Information</b></em>' reference.
+	 * The feature id for the '<em><b>Additional Information</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -951,7 +951,7 @@ public interface CAEXPackage extends EPackage {
 	int CAEX_FILE__CHANGE_MODE = CAEX_BASIC_OBJECT__CHANGE_MODE;
 
 	/**
-	 * The feature id for the '<em><b>Description</b></em>' reference.
+	 * The feature id for the '<em><b>Description</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -960,7 +960,7 @@ public interface CAEXPackage extends EPackage {
 	int CAEX_FILE__DESCRIPTION = CAEX_BASIC_OBJECT__DESCRIPTION;
 
 	/**
-	 * The feature id for the '<em><b>Version</b></em>' reference.
+	 * The feature id for the '<em><b>Version</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -969,7 +969,7 @@ public interface CAEXPackage extends EPackage {
 	int CAEX_FILE__VERSION = CAEX_BASIC_OBJECT__VERSION;
 
 	/**
-	 * The feature id for the '<em><b>Revision</b></em>' reference list.
+	 * The feature id for the '<em><b>Revision</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -978,7 +978,7 @@ public interface CAEXPackage extends EPackage {
 	int CAEX_FILE__REVISION = CAEX_BASIC_OBJECT__REVISION;
 
 	/**
-	 * The feature id for the '<em><b>Copyright</b></em>' reference.
+	 * The feature id for the '<em><b>Copyright</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -987,7 +987,7 @@ public interface CAEXPackage extends EPackage {
 	int CAEX_FILE__COPYRIGHT = CAEX_BASIC_OBJECT__COPYRIGHT;
 
 	/**
-	 * The feature id for the '<em><b>Additional Information</b></em>' reference.
+	 * The feature id for the '<em><b>Additional Information</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -1187,7 +1187,7 @@ public interface CAEXPackage extends EPackage {
 	int INTERFACE_CLASS__CHANGE_MODE = CAEX_OBJECT__CHANGE_MODE;
 
 	/**
-	 * The feature id for the '<em><b>Description</b></em>' reference.
+	 * The feature id for the '<em><b>Description</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -1196,7 +1196,7 @@ public interface CAEXPackage extends EPackage {
 	int INTERFACE_CLASS__DESCRIPTION = CAEX_OBJECT__DESCRIPTION;
 
 	/**
-	 * The feature id for the '<em><b>Version</b></em>' reference.
+	 * The feature id for the '<em><b>Version</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -1205,7 +1205,7 @@ public interface CAEXPackage extends EPackage {
 	int INTERFACE_CLASS__VERSION = CAEX_OBJECT__VERSION;
 
 	/**
-	 * The feature id for the '<em><b>Revision</b></em>' reference list.
+	 * The feature id for the '<em><b>Revision</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -1214,7 +1214,7 @@ public interface CAEXPackage extends EPackage {
 	int INTERFACE_CLASS__REVISION = CAEX_OBJECT__REVISION;
 
 	/**
-	 * The feature id for the '<em><b>Copyright</b></em>' reference.
+	 * The feature id for the '<em><b>Copyright</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -1223,7 +1223,7 @@ public interface CAEXPackage extends EPackage {
 	int INTERFACE_CLASS__COPYRIGHT = CAEX_OBJECT__COPYRIGHT;
 
 	/**
-	 * The feature id for the '<em><b>Additional Information</b></em>' reference.
+	 * The feature id for the '<em><b>Additional Information</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -1286,13 +1286,22 @@ public interface CAEXPackage extends EPackage {
 	int INTERFACE_CLASS__INTERFACE_CLASS = CAEX_OBJECT_FEATURE_COUNT + 3;
 
 	/**
+	 * The feature id for the '<em><b>External Interface</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERFACE_CLASS__EXTERNAL_INTERFACE = CAEX_OBJECT_FEATURE_COUNT + 4;
+
+	/**
 	 * The number of structural features of the '<em>Interface Class</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int INTERFACE_CLASS_FEATURE_COUNT = CAEX_OBJECT_FEATURE_COUNT + 4;
+	int INTERFACE_CLASS_FEATURE_COUNT = CAEX_OBJECT_FEATURE_COUNT + 5;
 
 	/**
 	 * The number of operations of the '<em>Interface Class</em>' class.
@@ -1323,7 +1332,7 @@ public interface CAEXPackage extends EPackage {
 	int EXTERNAL_INTERFACE__CHANGE_MODE = INTERFACE_CLASS__CHANGE_MODE;
 
 	/**
-	 * The feature id for the '<em><b>Description</b></em>' reference.
+	 * The feature id for the '<em><b>Description</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -1332,7 +1341,7 @@ public interface CAEXPackage extends EPackage {
 	int EXTERNAL_INTERFACE__DESCRIPTION = INTERFACE_CLASS__DESCRIPTION;
 
 	/**
-	 * The feature id for the '<em><b>Version</b></em>' reference.
+	 * The feature id for the '<em><b>Version</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -1341,7 +1350,7 @@ public interface CAEXPackage extends EPackage {
 	int EXTERNAL_INTERFACE__VERSION = INTERFACE_CLASS__VERSION;
 
 	/**
-	 * The feature id for the '<em><b>Revision</b></em>' reference list.
+	 * The feature id for the '<em><b>Revision</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -1350,7 +1359,7 @@ public interface CAEXPackage extends EPackage {
 	int EXTERNAL_INTERFACE__REVISION = INTERFACE_CLASS__REVISION;
 
 	/**
-	 * The feature id for the '<em><b>Copyright</b></em>' reference.
+	 * The feature id for the '<em><b>Copyright</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -1359,7 +1368,7 @@ public interface CAEXPackage extends EPackage {
 	int EXTERNAL_INTERFACE__COPYRIGHT = INTERFACE_CLASS__COPYRIGHT;
 
 	/**
-	 * The feature id for the '<em><b>Additional Information</b></em>' reference.
+	 * The feature id for the '<em><b>Additional Information</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -1428,7 +1437,7 @@ public interface CAEXPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EXTERNAL_INTERFACE__EXTERNAL_INTERFACE = INTERFACE_CLASS_FEATURE_COUNT + 0;
+	int EXTERNAL_INTERFACE__EXTERNAL_INTERFACE = INTERFACE_CLASS__EXTERNAL_INTERFACE;
 
 	/**
 	 * The number of structural features of the '<em>External Interface</em>' class.
@@ -1437,7 +1446,7 @@ public interface CAEXPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EXTERNAL_INTERFACE_FEATURE_COUNT = INTERFACE_CLASS_FEATURE_COUNT + 1;
+	int EXTERNAL_INTERFACE_FEATURE_COUNT = INTERFACE_CLASS_FEATURE_COUNT + 0;
 
 	/**
 	 * The number of operations of the '<em>External Interface</em>' class.
@@ -1449,14 +1458,14 @@ public interface CAEXPackage extends EPackage {
 	int EXTERNAL_INTERFACE_OPERATION_COUNT = INTERFACE_CLASS_OPERATION_COUNT + 0;
 
 	/**
-	 * The meta object id for the '{@link caex.caex30.caex.impl.ExternalReferenceTypeImpl <em>External Reference Type</em>}' class.
+	 * The meta object id for the '{@link caex.caex30.caex.impl.ExternalReferenceImpl <em>External Reference</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see caex.caex30.caex.impl.ExternalReferenceTypeImpl
-	 * @see caex.caex30.caex.impl.CAEXPackageImpl#getExternalReferenceType()
+	 * @see caex.caex30.caex.impl.ExternalReferenceImpl
+	 * @see caex.caex30.caex.impl.CAEXPackageImpl#getExternalReference()
 	 * @generated
 	 */
-	int EXTERNAL_REFERENCE_TYPE = 10;
+	int EXTERNAL_REFERENCE = 10;
 
 	/**
 	 * The feature id for the '<em><b>Change Mode</b></em>' attribute.
@@ -1465,52 +1474,52 @@ public interface CAEXPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EXTERNAL_REFERENCE_TYPE__CHANGE_MODE = CAEX_BASIC_OBJECT__CHANGE_MODE;
+	int EXTERNAL_REFERENCE__CHANGE_MODE = CAEX_BASIC_OBJECT__CHANGE_MODE;
 
 	/**
-	 * The feature id for the '<em><b>Description</b></em>' reference.
+	 * The feature id for the '<em><b>Description</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int EXTERNAL_REFERENCE_TYPE__DESCRIPTION = CAEX_BASIC_OBJECT__DESCRIPTION;
+	int EXTERNAL_REFERENCE__DESCRIPTION = CAEX_BASIC_OBJECT__DESCRIPTION;
 
 	/**
-	 * The feature id for the '<em><b>Version</b></em>' reference.
+	 * The feature id for the '<em><b>Version</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int EXTERNAL_REFERENCE_TYPE__VERSION = CAEX_BASIC_OBJECT__VERSION;
+	int EXTERNAL_REFERENCE__VERSION = CAEX_BASIC_OBJECT__VERSION;
 
 	/**
-	 * The feature id for the '<em><b>Revision</b></em>' reference list.
+	 * The feature id for the '<em><b>Revision</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int EXTERNAL_REFERENCE_TYPE__REVISION = CAEX_BASIC_OBJECT__REVISION;
+	int EXTERNAL_REFERENCE__REVISION = CAEX_BASIC_OBJECT__REVISION;
 
 	/**
-	 * The feature id for the '<em><b>Copyright</b></em>' reference.
+	 * The feature id for the '<em><b>Copyright</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int EXTERNAL_REFERENCE_TYPE__COPYRIGHT = CAEX_BASIC_OBJECT__COPYRIGHT;
+	int EXTERNAL_REFERENCE__COPYRIGHT = CAEX_BASIC_OBJECT__COPYRIGHT;
 
 	/**
-	 * The feature id for the '<em><b>Additional Information</b></em>' reference.
+	 * The feature id for the '<em><b>Additional Information</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int EXTERNAL_REFERENCE_TYPE__ADDITIONAL_INFORMATION = CAEX_BASIC_OBJECT__ADDITIONAL_INFORMATION;
+	int EXTERNAL_REFERENCE__ADDITIONAL_INFORMATION = CAEX_BASIC_OBJECT__ADDITIONAL_INFORMATION;
 
 	/**
 	 * The feature id for the '<em><b>Alias</b></em>' attribute.
@@ -1519,7 +1528,7 @@ public interface CAEXPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EXTERNAL_REFERENCE_TYPE__ALIAS = CAEX_BASIC_OBJECT_FEATURE_COUNT + 0;
+	int EXTERNAL_REFERENCE__ALIAS = CAEX_BASIC_OBJECT_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Path</b></em>' attribute.
@@ -1528,25 +1537,25 @@ public interface CAEXPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EXTERNAL_REFERENCE_TYPE__PATH = CAEX_BASIC_OBJECT_FEATURE_COUNT + 1;
+	int EXTERNAL_REFERENCE__PATH = CAEX_BASIC_OBJECT_FEATURE_COUNT + 1;
 
 	/**
-	 * The number of structural features of the '<em>External Reference Type</em>' class.
+	 * The number of structural features of the '<em>External Reference</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int EXTERNAL_REFERENCE_TYPE_FEATURE_COUNT = CAEX_BASIC_OBJECT_FEATURE_COUNT + 2;
+	int EXTERNAL_REFERENCE_FEATURE_COUNT = CAEX_BASIC_OBJECT_FEATURE_COUNT + 2;
 
 	/**
-	 * The number of operations of the '<em>External Reference Type</em>' class.
+	 * The number of operations of the '<em>External Reference</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int EXTERNAL_REFERENCE_TYPE_OPERATION_COUNT = CAEX_BASIC_OBJECT_OPERATION_COUNT + 0;
+	int EXTERNAL_REFERENCE_OPERATION_COUNT = CAEX_BASIC_OBJECT_OPERATION_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link caex.caex30.caex.impl.InstanceHierarchyImpl <em>Instance Hierarchy</em>}' class.
@@ -1568,7 +1577,7 @@ public interface CAEXPackage extends EPackage {
 	int INSTANCE_HIERARCHY__CHANGE_MODE = CAEX_OBJECT__CHANGE_MODE;
 
 	/**
-	 * The feature id for the '<em><b>Description</b></em>' reference.
+	 * The feature id for the '<em><b>Description</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -1577,7 +1586,7 @@ public interface CAEXPackage extends EPackage {
 	int INSTANCE_HIERARCHY__DESCRIPTION = CAEX_OBJECT__DESCRIPTION;
 
 	/**
-	 * The feature id for the '<em><b>Version</b></em>' reference.
+	 * The feature id for the '<em><b>Version</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -1586,7 +1595,7 @@ public interface CAEXPackage extends EPackage {
 	int INSTANCE_HIERARCHY__VERSION = CAEX_OBJECT__VERSION;
 
 	/**
-	 * The feature id for the '<em><b>Revision</b></em>' reference list.
+	 * The feature id for the '<em><b>Revision</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -1595,7 +1604,7 @@ public interface CAEXPackage extends EPackage {
 	int INSTANCE_HIERARCHY__REVISION = CAEX_OBJECT__REVISION;
 
 	/**
-	 * The feature id for the '<em><b>Copyright</b></em>' reference.
+	 * The feature id for the '<em><b>Copyright</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -1604,7 +1613,7 @@ public interface CAEXPackage extends EPackage {
 	int INSTANCE_HIERARCHY__COPYRIGHT = CAEX_OBJECT__COPYRIGHT;
 
 	/**
-	 * The feature id for the '<em><b>Additional Information</b></em>' reference.
+	 * The feature id for the '<em><b>Additional Information</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -1677,7 +1686,7 @@ public interface CAEXPackage extends EPackage {
 	int INTERFACE_CLASS_LIB__CHANGE_MODE = CAEX_OBJECT__CHANGE_MODE;
 
 	/**
-	 * The feature id for the '<em><b>Description</b></em>' reference.
+	 * The feature id for the '<em><b>Description</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -1686,7 +1695,7 @@ public interface CAEXPackage extends EPackage {
 	int INTERFACE_CLASS_LIB__DESCRIPTION = CAEX_OBJECT__DESCRIPTION;
 
 	/**
-	 * The feature id for the '<em><b>Version</b></em>' reference.
+	 * The feature id for the '<em><b>Version</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -1695,7 +1704,7 @@ public interface CAEXPackage extends EPackage {
 	int INTERFACE_CLASS_LIB__VERSION = CAEX_OBJECT__VERSION;
 
 	/**
-	 * The feature id for the '<em><b>Revision</b></em>' reference list.
+	 * The feature id for the '<em><b>Revision</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -1704,7 +1713,7 @@ public interface CAEXPackage extends EPackage {
 	int INTERFACE_CLASS_LIB__REVISION = CAEX_OBJECT__REVISION;
 
 	/**
-	 * The feature id for the '<em><b>Copyright</b></em>' reference.
+	 * The feature id for the '<em><b>Copyright</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -1713,7 +1722,7 @@ public interface CAEXPackage extends EPackage {
 	int INTERFACE_CLASS_LIB__COPYRIGHT = CAEX_OBJECT__COPYRIGHT;
 
 	/**
-	 * The feature id for the '<em><b>Additional Information</b></em>' reference.
+	 * The feature id for the '<em><b>Additional Information</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -1786,7 +1795,7 @@ public interface CAEXPackage extends EPackage {
 	int INTERFACE_FAMILY__CHANGE_MODE = INTERFACE_CLASS__CHANGE_MODE;
 
 	/**
-	 * The feature id for the '<em><b>Description</b></em>' reference.
+	 * The feature id for the '<em><b>Description</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -1795,7 +1804,7 @@ public interface CAEXPackage extends EPackage {
 	int INTERFACE_FAMILY__DESCRIPTION = INTERFACE_CLASS__DESCRIPTION;
 
 	/**
-	 * The feature id for the '<em><b>Version</b></em>' reference.
+	 * The feature id for the '<em><b>Version</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -1804,7 +1813,7 @@ public interface CAEXPackage extends EPackage {
 	int INTERFACE_FAMILY__VERSION = INTERFACE_CLASS__VERSION;
 
 	/**
-	 * The feature id for the '<em><b>Revision</b></em>' reference list.
+	 * The feature id for the '<em><b>Revision</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -1813,7 +1822,7 @@ public interface CAEXPackage extends EPackage {
 	int INTERFACE_FAMILY__REVISION = INTERFACE_CLASS__REVISION;
 
 	/**
-	 * The feature id for the '<em><b>Copyright</b></em>' reference.
+	 * The feature id for the '<em><b>Copyright</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -1822,7 +1831,7 @@ public interface CAEXPackage extends EPackage {
 	int INTERFACE_FAMILY__COPYRIGHT = INTERFACE_CLASS__COPYRIGHT;
 
 	/**
-	 * The feature id for the '<em><b>Additional Information</b></em>' reference.
+	 * The feature id for the '<em><b>Additional Information</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -1885,6 +1894,15 @@ public interface CAEXPackage extends EPackage {
 	int INTERFACE_FAMILY__INTERFACE_CLASS = INTERFACE_CLASS__INTERFACE_CLASS;
 
 	/**
+	 * The feature id for the '<em><b>External Interface</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERFACE_FAMILY__EXTERNAL_INTERFACE = INTERFACE_CLASS__EXTERNAL_INTERFACE;
+
+	/**
 	 * The number of structural features of the '<em>Interface Family</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1922,7 +1940,7 @@ public interface CAEXPackage extends EPackage {
 	int INTERFACE_ID_MAPPING__CHANGE_MODE = CAEX_BASIC_OBJECT__CHANGE_MODE;
 
 	/**
-	 * The feature id for the '<em><b>Description</b></em>' reference.
+	 * The feature id for the '<em><b>Description</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -1931,7 +1949,7 @@ public interface CAEXPackage extends EPackage {
 	int INTERFACE_ID_MAPPING__DESCRIPTION = CAEX_BASIC_OBJECT__DESCRIPTION;
 
 	/**
-	 * The feature id for the '<em><b>Version</b></em>' reference.
+	 * The feature id for the '<em><b>Version</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -1940,7 +1958,7 @@ public interface CAEXPackage extends EPackage {
 	int INTERFACE_ID_MAPPING__VERSION = CAEX_BASIC_OBJECT__VERSION;
 
 	/**
-	 * The feature id for the '<em><b>Revision</b></em>' reference list.
+	 * The feature id for the '<em><b>Revision</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -1949,7 +1967,7 @@ public interface CAEXPackage extends EPackage {
 	int INTERFACE_ID_MAPPING__REVISION = CAEX_BASIC_OBJECT__REVISION;
 
 	/**
-	 * The feature id for the '<em><b>Copyright</b></em>' reference.
+	 * The feature id for the '<em><b>Copyright</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -1958,7 +1976,7 @@ public interface CAEXPackage extends EPackage {
 	int INTERFACE_ID_MAPPING__COPYRIGHT = CAEX_BASIC_OBJECT__COPYRIGHT;
 
 	/**
-	 * The feature id for the '<em><b>Additional Information</b></em>' reference.
+	 * The feature id for the '<em><b>Additional Information</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -2040,7 +2058,7 @@ public interface CAEXPackage extends EPackage {
 	int SYSTEM_UNIT_CLASS__CHANGE_MODE = CAEX_OBJECT__CHANGE_MODE;
 
 	/**
-	 * The feature id for the '<em><b>Description</b></em>' reference.
+	 * The feature id for the '<em><b>Description</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -2049,7 +2067,7 @@ public interface CAEXPackage extends EPackage {
 	int SYSTEM_UNIT_CLASS__DESCRIPTION = CAEX_OBJECT__DESCRIPTION;
 
 	/**
-	 * The feature id for the '<em><b>Version</b></em>' reference.
+	 * The feature id for the '<em><b>Version</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -2058,7 +2076,7 @@ public interface CAEXPackage extends EPackage {
 	int SYSTEM_UNIT_CLASS__VERSION = CAEX_OBJECT__VERSION;
 
 	/**
-	 * The feature id for the '<em><b>Revision</b></em>' reference list.
+	 * The feature id for the '<em><b>Revision</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -2067,7 +2085,7 @@ public interface CAEXPackage extends EPackage {
 	int SYSTEM_UNIT_CLASS__REVISION = CAEX_OBJECT__REVISION;
 
 	/**
-	 * The feature id for the '<em><b>Copyright</b></em>' reference.
+	 * The feature id for the '<em><b>Copyright</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -2076,7 +2094,7 @@ public interface CAEXPackage extends EPackage {
 	int SYSTEM_UNIT_CLASS__COPYRIGHT = CAEX_OBJECT__COPYRIGHT;
 
 	/**
-	 * The feature id for the '<em><b>Additional Information</b></em>' reference.
+	 * The feature id for the '<em><b>Additional Information</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -2212,7 +2230,7 @@ public interface CAEXPackage extends EPackage {
 	int INTERNAL_ELEMENT__CHANGE_MODE = SYSTEM_UNIT_CLASS__CHANGE_MODE;
 
 	/**
-	 * The feature id for the '<em><b>Description</b></em>' reference.
+	 * The feature id for the '<em><b>Description</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -2221,7 +2239,7 @@ public interface CAEXPackage extends EPackage {
 	int INTERNAL_ELEMENT__DESCRIPTION = SYSTEM_UNIT_CLASS__DESCRIPTION;
 
 	/**
-	 * The feature id for the '<em><b>Version</b></em>' reference.
+	 * The feature id for the '<em><b>Version</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -2230,7 +2248,7 @@ public interface CAEXPackage extends EPackage {
 	int INTERNAL_ELEMENT__VERSION = SYSTEM_UNIT_CLASS__VERSION;
 
 	/**
-	 * The feature id for the '<em><b>Revision</b></em>' reference list.
+	 * The feature id for the '<em><b>Revision</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -2239,7 +2257,7 @@ public interface CAEXPackage extends EPackage {
 	int INTERNAL_ELEMENT__REVISION = SYSTEM_UNIT_CLASS__REVISION;
 
 	/**
-	 * The feature id for the '<em><b>Copyright</b></em>' reference.
+	 * The feature id for the '<em><b>Copyright</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -2248,7 +2266,7 @@ public interface CAEXPackage extends EPackage {
 	int INTERNAL_ELEMENT__COPYRIGHT = SYSTEM_UNIT_CLASS__COPYRIGHT;
 
 	/**
-	 * The feature id for the '<em><b>Additional Information</b></em>' reference.
+	 * The feature id for the '<em><b>Additional Information</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -2411,7 +2429,7 @@ public interface CAEXPackage extends EPackage {
 	int INTERNAL_LINK__CHANGE_MODE = CAEX_OBJECT__CHANGE_MODE;
 
 	/**
-	 * The feature id for the '<em><b>Description</b></em>' reference.
+	 * The feature id for the '<em><b>Description</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -2420,7 +2438,7 @@ public interface CAEXPackage extends EPackage {
 	int INTERNAL_LINK__DESCRIPTION = CAEX_OBJECT__DESCRIPTION;
 
 	/**
-	 * The feature id for the '<em><b>Version</b></em>' reference.
+	 * The feature id for the '<em><b>Version</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -2429,7 +2447,7 @@ public interface CAEXPackage extends EPackage {
 	int INTERNAL_LINK__VERSION = CAEX_OBJECT__VERSION;
 
 	/**
-	 * The feature id for the '<em><b>Revision</b></em>' reference list.
+	 * The feature id for the '<em><b>Revision</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -2438,7 +2456,7 @@ public interface CAEXPackage extends EPackage {
 	int INTERNAL_LINK__REVISION = CAEX_OBJECT__REVISION;
 
 	/**
-	 * The feature id for the '<em><b>Copyright</b></em>' reference.
+	 * The feature id for the '<em><b>Copyright</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -2447,7 +2465,7 @@ public interface CAEXPackage extends EPackage {
 	int INTERNAL_LINK__COPYRIGHT = CAEX_OBJECT__COPYRIGHT;
 
 	/**
-	 * The feature id for the '<em><b>Additional Information</b></em>' reference.
+	 * The feature id for the '<em><b>Additional Information</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -2547,7 +2565,7 @@ public interface CAEXPackage extends EPackage {
 	int MAPPING__CHANGE_MODE = CAEX_BASIC_OBJECT__CHANGE_MODE;
 
 	/**
-	 * The feature id for the '<em><b>Description</b></em>' reference.
+	 * The feature id for the '<em><b>Description</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -2556,7 +2574,7 @@ public interface CAEXPackage extends EPackage {
 	int MAPPING__DESCRIPTION = CAEX_BASIC_OBJECT__DESCRIPTION;
 
 	/**
-	 * The feature id for the '<em><b>Version</b></em>' reference.
+	 * The feature id for the '<em><b>Version</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -2565,7 +2583,7 @@ public interface CAEXPackage extends EPackage {
 	int MAPPING__VERSION = CAEX_BASIC_OBJECT__VERSION;
 
 	/**
-	 * The feature id for the '<em><b>Revision</b></em>' reference list.
+	 * The feature id for the '<em><b>Revision</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -2574,7 +2592,7 @@ public interface CAEXPackage extends EPackage {
 	int MAPPING__REVISION = CAEX_BASIC_OBJECT__REVISION;
 
 	/**
-	 * The feature id for the '<em><b>Copyright</b></em>' reference.
+	 * The feature id for the '<em><b>Copyright</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -2583,7 +2601,7 @@ public interface CAEXPackage extends EPackage {
 	int MAPPING__COPYRIGHT = CAEX_BASIC_OBJECT__COPYRIGHT;
 
 	/**
-	 * The feature id for the '<em><b>Additional Information</b></em>' reference.
+	 * The feature id for the '<em><b>Additional Information</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -2628,14 +2646,14 @@ public interface CAEXPackage extends EPackage {
 	int MAPPING_OPERATION_COUNT = CAEX_BASIC_OBJECT_OPERATION_COUNT + 0;
 
 	/**
-	 * The meta object id for the '{@link caex.caex30.caex.impl.NominalScaledTypeImpl <em>Nominal Scaled Type</em>}' class.
+	 * The meta object id for the '{@link caex.caex30.caex.impl.NominalScaledImpl <em>Nominal Scaled</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see caex.caex30.caex.impl.NominalScaledTypeImpl
-	 * @see caex.caex30.caex.impl.CAEXPackageImpl#getNominalScaledType()
+	 * @see caex.caex30.caex.impl.NominalScaledImpl
+	 * @see caex.caex30.caex.impl.CAEXPackageImpl#getNominalScaled()
 	 * @generated
 	 */
-	int NOMINAL_SCALED_TYPE = 19;
+	int NOMINAL_SCALED = 19;
 
 	/**
 	 * The feature id for the '<em><b>Required Value</b></em>' attribute list.
@@ -2644,35 +2662,35 @@ public interface CAEXPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NOMINAL_SCALED_TYPE__REQUIRED_VALUE = 0;
+	int NOMINAL_SCALED__REQUIRED_VALUE = 0;
 
 	/**
-	 * The number of structural features of the '<em>Nominal Scaled Type</em>' class.
+	 * The number of structural features of the '<em>Nominal Scaled</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int NOMINAL_SCALED_TYPE_FEATURE_COUNT = 1;
+	int NOMINAL_SCALED_FEATURE_COUNT = 1;
 
 	/**
-	 * The number of operations of the '<em>Nominal Scaled Type</em>' class.
+	 * The number of operations of the '<em>Nominal Scaled</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int NOMINAL_SCALED_TYPE_OPERATION_COUNT = 0;
+	int NOMINAL_SCALED_OPERATION_COUNT = 0;
 
 	/**
-	 * The meta object id for the '{@link caex.caex30.caex.impl.OrdinalScaledTypeImpl <em>Ordinal Scaled Type</em>}' class.
+	 * The meta object id for the '{@link caex.caex30.caex.impl.OrdinalScaledImpl <em>Ordinal Scaled</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see caex.caex30.caex.impl.OrdinalScaledTypeImpl
-	 * @see caex.caex30.caex.impl.CAEXPackageImpl#getOrdinalScaledType()
+	 * @see caex.caex30.caex.impl.OrdinalScaledImpl
+	 * @see caex.caex30.caex.impl.CAEXPackageImpl#getOrdinalScaled()
 	 * @generated
 	 */
-	int ORDINAL_SCALED_TYPE = 20;
+	int ORDINAL_SCALED = 20;
 
 	/**
 	 * The feature id for the '<em><b>Required Max Value</b></em>' attribute.
@@ -2681,7 +2699,7 @@ public interface CAEXPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ORDINAL_SCALED_TYPE__REQUIRED_MAX_VALUE = 0;
+	int ORDINAL_SCALED__REQUIRED_MAX_VALUE = 0;
 
 	/**
 	 * The feature id for the '<em><b>Required Value</b></em>' attribute.
@@ -2690,7 +2708,7 @@ public interface CAEXPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ORDINAL_SCALED_TYPE__REQUIRED_VALUE = 1;
+	int ORDINAL_SCALED__REQUIRED_VALUE = 1;
 
 	/**
 	 * The feature id for the '<em><b>Required Min Value</b></em>' attribute.
@@ -2699,25 +2717,25 @@ public interface CAEXPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ORDINAL_SCALED_TYPE__REQUIRED_MIN_VALUE = 2;
+	int ORDINAL_SCALED__REQUIRED_MIN_VALUE = 2;
 
 	/**
-	 * The number of structural features of the '<em>Ordinal Scaled Type</em>' class.
+	 * The number of structural features of the '<em>Ordinal Scaled</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ORDINAL_SCALED_TYPE_FEATURE_COUNT = 3;
+	int ORDINAL_SCALED_FEATURE_COUNT = 3;
 
 	/**
-	 * The number of operations of the '<em>Ordinal Scaled Type</em>' class.
+	 * The number of operations of the '<em>Ordinal Scaled</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ORDINAL_SCALED_TYPE_OPERATION_COUNT = 0;
+	int ORDINAL_SCALED_OPERATION_COUNT = 0;
 
 	/**
 	 * The meta object id for the '{@link caex.caex30.caex.impl.RefSemanticImpl <em>Ref Semantic</em>}' class.
@@ -2739,7 +2757,7 @@ public interface CAEXPackage extends EPackage {
 	int REF_SEMANTIC__CHANGE_MODE = CAEX_BASIC_OBJECT__CHANGE_MODE;
 
 	/**
-	 * The feature id for the '<em><b>Description</b></em>' reference.
+	 * The feature id for the '<em><b>Description</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -2748,7 +2766,7 @@ public interface CAEXPackage extends EPackage {
 	int REF_SEMANTIC__DESCRIPTION = CAEX_BASIC_OBJECT__DESCRIPTION;
 
 	/**
-	 * The feature id for the '<em><b>Version</b></em>' reference.
+	 * The feature id for the '<em><b>Version</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -2757,7 +2775,7 @@ public interface CAEXPackage extends EPackage {
 	int REF_SEMANTIC__VERSION = CAEX_BASIC_OBJECT__VERSION;
 
 	/**
-	 * The feature id for the '<em><b>Revision</b></em>' reference list.
+	 * The feature id for the '<em><b>Revision</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -2766,7 +2784,7 @@ public interface CAEXPackage extends EPackage {
 	int REF_SEMANTIC__REVISION = CAEX_BASIC_OBJECT__REVISION;
 
 	/**
-	 * The feature id for the '<em><b>Copyright</b></em>' reference.
+	 * The feature id for the '<em><b>Copyright</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -2775,7 +2793,7 @@ public interface CAEXPackage extends EPackage {
 	int REF_SEMANTIC__COPYRIGHT = CAEX_BASIC_OBJECT__COPYRIGHT;
 
 	/**
-	 * The feature id for the '<em><b>Additional Information</b></em>' reference.
+	 * The feature id for the '<em><b>Additional Information</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -2830,7 +2848,7 @@ public interface CAEXPackage extends EPackage {
 	int ROLE_CLASS_LIB__CHANGE_MODE = CAEX_OBJECT__CHANGE_MODE;
 
 	/**
-	 * The feature id for the '<em><b>Description</b></em>' reference.
+	 * The feature id for the '<em><b>Description</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -2839,7 +2857,7 @@ public interface CAEXPackage extends EPackage {
 	int ROLE_CLASS_LIB__DESCRIPTION = CAEX_OBJECT__DESCRIPTION;
 
 	/**
-	 * The feature id for the '<em><b>Version</b></em>' reference.
+	 * The feature id for the '<em><b>Version</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -2848,7 +2866,7 @@ public interface CAEXPackage extends EPackage {
 	int ROLE_CLASS_LIB__VERSION = CAEX_OBJECT__VERSION;
 
 	/**
-	 * The feature id for the '<em><b>Revision</b></em>' reference list.
+	 * The feature id for the '<em><b>Revision</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -2857,7 +2875,7 @@ public interface CAEXPackage extends EPackage {
 	int ROLE_CLASS_LIB__REVISION = CAEX_OBJECT__REVISION;
 
 	/**
-	 * The feature id for the '<em><b>Copyright</b></em>' reference.
+	 * The feature id for the '<em><b>Copyright</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -2866,7 +2884,7 @@ public interface CAEXPackage extends EPackage {
 	int ROLE_CLASS_LIB__COPYRIGHT = CAEX_OBJECT__COPYRIGHT;
 
 	/**
-	 * The feature id for the '<em><b>Additional Information</b></em>' reference.
+	 * The feature id for the '<em><b>Additional Information</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -2939,7 +2957,7 @@ public interface CAEXPackage extends EPackage {
 	int ROLE_CLASS__CHANGE_MODE = CAEX_OBJECT__CHANGE_MODE;
 
 	/**
-	 * The feature id for the '<em><b>Description</b></em>' reference.
+	 * The feature id for the '<em><b>Description</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -2948,7 +2966,7 @@ public interface CAEXPackage extends EPackage {
 	int ROLE_CLASS__DESCRIPTION = CAEX_OBJECT__DESCRIPTION;
 
 	/**
-	 * The feature id for the '<em><b>Version</b></em>' reference.
+	 * The feature id for the '<em><b>Version</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -2957,7 +2975,7 @@ public interface CAEXPackage extends EPackage {
 	int ROLE_CLASS__VERSION = CAEX_OBJECT__VERSION;
 
 	/**
-	 * The feature id for the '<em><b>Revision</b></em>' reference list.
+	 * The feature id for the '<em><b>Revision</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -2966,7 +2984,7 @@ public interface CAEXPackage extends EPackage {
 	int ROLE_CLASS__REVISION = CAEX_OBJECT__REVISION;
 
 	/**
-	 * The feature id for the '<em><b>Copyright</b></em>' reference.
+	 * The feature id for the '<em><b>Copyright</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -2975,7 +2993,7 @@ public interface CAEXPackage extends EPackage {
 	int ROLE_CLASS__COPYRIGHT = CAEX_OBJECT__COPYRIGHT;
 
 	/**
-	 * The feature id for the '<em><b>Additional Information</b></em>' reference.
+	 * The feature id for the '<em><b>Additional Information</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -3084,7 +3102,7 @@ public interface CAEXPackage extends EPackage {
 	int ROLE_FAMILY__CHANGE_MODE = ROLE_CLASS__CHANGE_MODE;
 
 	/**
-	 * The feature id for the '<em><b>Description</b></em>' reference.
+	 * The feature id for the '<em><b>Description</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -3093,7 +3111,7 @@ public interface CAEXPackage extends EPackage {
 	int ROLE_FAMILY__DESCRIPTION = ROLE_CLASS__DESCRIPTION;
 
 	/**
-	 * The feature id for the '<em><b>Version</b></em>' reference.
+	 * The feature id for the '<em><b>Version</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -3102,7 +3120,7 @@ public interface CAEXPackage extends EPackage {
 	int ROLE_FAMILY__VERSION = ROLE_CLASS__VERSION;
 
 	/**
-	 * The feature id for the '<em><b>Revision</b></em>' reference list.
+	 * The feature id for the '<em><b>Revision</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -3111,7 +3129,7 @@ public interface CAEXPackage extends EPackage {
 	int ROLE_FAMILY__REVISION = ROLE_CLASS__REVISION;
 
 	/**
-	 * The feature id for the '<em><b>Copyright</b></em>' reference.
+	 * The feature id for the '<em><b>Copyright</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -3120,7 +3138,7 @@ public interface CAEXPackage extends EPackage {
 	int ROLE_FAMILY__COPYRIGHT = ROLE_CLASS__COPYRIGHT;
 
 	/**
-	 * The feature id for the '<em><b>Additional Information</b></em>' reference.
+	 * The feature id for the '<em><b>Additional Information</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -3229,7 +3247,7 @@ public interface CAEXPackage extends EPackage {
 	int ROLE_REQUIREMENTS__CHANGE_MODE = CAEX_BASIC_OBJECT__CHANGE_MODE;
 
 	/**
-	 * The feature id for the '<em><b>Description</b></em>' reference.
+	 * The feature id for the '<em><b>Description</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -3238,7 +3256,7 @@ public interface CAEXPackage extends EPackage {
 	int ROLE_REQUIREMENTS__DESCRIPTION = CAEX_BASIC_OBJECT__DESCRIPTION;
 
 	/**
-	 * The feature id for the '<em><b>Version</b></em>' reference.
+	 * The feature id for the '<em><b>Version</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -3247,7 +3265,7 @@ public interface CAEXPackage extends EPackage {
 	int ROLE_REQUIREMENTS__VERSION = CAEX_BASIC_OBJECT__VERSION;
 
 	/**
-	 * The feature id for the '<em><b>Revision</b></em>' reference list.
+	 * The feature id for the '<em><b>Revision</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -3256,7 +3274,7 @@ public interface CAEXPackage extends EPackage {
 	int ROLE_REQUIREMENTS__REVISION = CAEX_BASIC_OBJECT__REVISION;
 
 	/**
-	 * The feature id for the '<em><b>Copyright</b></em>' reference.
+	 * The feature id for the '<em><b>Copyright</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -3265,7 +3283,7 @@ public interface CAEXPackage extends EPackage {
 	int ROLE_REQUIREMENTS__COPYRIGHT = CAEX_BASIC_OBJECT__COPYRIGHT;
 
 	/**
-	 * The feature id for the '<em><b>Additional Information</b></em>' reference.
+	 * The feature id for the '<em><b>Additional Information</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -3465,7 +3483,7 @@ public interface CAEXPackage extends EPackage {
 	int SUPPORTED_ROLE_CLASS__CHANGE_MODE = CAEX_BASIC_OBJECT__CHANGE_MODE;
 
 	/**
-	 * The feature id for the '<em><b>Description</b></em>' reference.
+	 * The feature id for the '<em><b>Description</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -3474,7 +3492,7 @@ public interface CAEXPackage extends EPackage {
 	int SUPPORTED_ROLE_CLASS__DESCRIPTION = CAEX_BASIC_OBJECT__DESCRIPTION;
 
 	/**
-	 * The feature id for the '<em><b>Version</b></em>' reference.
+	 * The feature id for the '<em><b>Version</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -3483,7 +3501,7 @@ public interface CAEXPackage extends EPackage {
 	int SUPPORTED_ROLE_CLASS__VERSION = CAEX_BASIC_OBJECT__VERSION;
 
 	/**
-	 * The feature id for the '<em><b>Revision</b></em>' reference list.
+	 * The feature id for the '<em><b>Revision</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -3492,7 +3510,7 @@ public interface CAEXPackage extends EPackage {
 	int SUPPORTED_ROLE_CLASS__REVISION = CAEX_BASIC_OBJECT__REVISION;
 
 	/**
-	 * The feature id for the '<em><b>Copyright</b></em>' reference.
+	 * The feature id for the '<em><b>Copyright</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -3501,7 +3519,7 @@ public interface CAEXPackage extends EPackage {
 	int SUPPORTED_ROLE_CLASS__COPYRIGHT = CAEX_BASIC_OBJECT__COPYRIGHT;
 
 	/**
-	 * The feature id for the '<em><b>Additional Information</b></em>' reference.
+	 * The feature id for the '<em><b>Additional Information</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -3574,7 +3592,7 @@ public interface CAEXPackage extends EPackage {
 	int SYSTEM_UNIT_CLASS_LIB__CHANGE_MODE = CAEX_OBJECT__CHANGE_MODE;
 
 	/**
-	 * The feature id for the '<em><b>Description</b></em>' reference.
+	 * The feature id for the '<em><b>Description</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -3583,7 +3601,7 @@ public interface CAEXPackage extends EPackage {
 	int SYSTEM_UNIT_CLASS_LIB__DESCRIPTION = CAEX_OBJECT__DESCRIPTION;
 
 	/**
-	 * The feature id for the '<em><b>Version</b></em>' reference.
+	 * The feature id for the '<em><b>Version</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -3592,7 +3610,7 @@ public interface CAEXPackage extends EPackage {
 	int SYSTEM_UNIT_CLASS_LIB__VERSION = CAEX_OBJECT__VERSION;
 
 	/**
-	 * The feature id for the '<em><b>Revision</b></em>' reference list.
+	 * The feature id for the '<em><b>Revision</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -3601,7 +3619,7 @@ public interface CAEXPackage extends EPackage {
 	int SYSTEM_UNIT_CLASS_LIB__REVISION = CAEX_OBJECT__REVISION;
 
 	/**
-	 * The feature id for the '<em><b>Copyright</b></em>' reference.
+	 * The feature id for the '<em><b>Copyright</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -3610,7 +3628,7 @@ public interface CAEXPackage extends EPackage {
 	int SYSTEM_UNIT_CLASS_LIB__COPYRIGHT = CAEX_OBJECT__COPYRIGHT;
 
 	/**
-	 * The feature id for the '<em><b>Additional Information</b></em>' reference.
+	 * The feature id for the '<em><b>Additional Information</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -3683,7 +3701,7 @@ public interface CAEXPackage extends EPackage {
 	int SYSTEM_UNIT_FAMILY__CHANGE_MODE = SYSTEM_UNIT_CLASS__CHANGE_MODE;
 
 	/**
-	 * The feature id for the '<em><b>Description</b></em>' reference.
+	 * The feature id for the '<em><b>Description</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -3692,7 +3710,7 @@ public interface CAEXPackage extends EPackage {
 	int SYSTEM_UNIT_FAMILY__DESCRIPTION = SYSTEM_UNIT_CLASS__DESCRIPTION;
 
 	/**
-	 * The feature id for the '<em><b>Version</b></em>' reference.
+	 * The feature id for the '<em><b>Version</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -3701,7 +3719,7 @@ public interface CAEXPackage extends EPackage {
 	int SYSTEM_UNIT_FAMILY__VERSION = SYSTEM_UNIT_CLASS__VERSION;
 
 	/**
-	 * The feature id for the '<em><b>Revision</b></em>' reference list.
+	 * The feature id for the '<em><b>Revision</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -3710,7 +3728,7 @@ public interface CAEXPackage extends EPackage {
 	int SYSTEM_UNIT_FAMILY__REVISION = SYSTEM_UNIT_CLASS__REVISION;
 
 	/**
-	 * The feature id for the '<em><b>Copyright</b></em>' reference.
+	 * The feature id for the '<em><b>Copyright</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -3719,7 +3737,7 @@ public interface CAEXPackage extends EPackage {
 	int SYSTEM_UNIT_FAMILY__COPYRIGHT = SYSTEM_UNIT_CLASS__COPYRIGHT;
 
 	/**
-	 * The feature id for the '<em><b>Additional Information</b></em>' reference.
+	 * The feature id for the '<em><b>Additional Information</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -3984,7 +4002,7 @@ public interface CAEXPackage extends EPackage {
 	int REVISION__CHANGE_MODE = CAEX_BASIC_OBJECT__CHANGE_MODE;
 
 	/**
-	 * The feature id for the '<em><b>Description</b></em>' reference.
+	 * The feature id for the '<em><b>Description</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -3993,7 +4011,7 @@ public interface CAEXPackage extends EPackage {
 	int REVISION__DESCRIPTION = CAEX_BASIC_OBJECT__DESCRIPTION;
 
 	/**
-	 * The feature id for the '<em><b>Version</b></em>' reference.
+	 * The feature id for the '<em><b>Version</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -4002,7 +4020,7 @@ public interface CAEXPackage extends EPackage {
 	int REVISION__VERSION = CAEX_BASIC_OBJECT__VERSION;
 
 	/**
-	 * The feature id for the '<em><b>Revision</b></em>' reference list.
+	 * The feature id for the '<em><b>Revision</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -4011,7 +4029,7 @@ public interface CAEXPackage extends EPackage {
 	int REVISION__REVISION = CAEX_BASIC_OBJECT__REVISION;
 
 	/**
-	 * The feature id for the '<em><b>Copyright</b></em>' reference.
+	 * The feature id for the '<em><b>Copyright</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -4020,7 +4038,7 @@ public interface CAEXPackage extends EPackage {
 	int REVISION__COPYRIGHT = CAEX_BASIC_OBJECT__COPYRIGHT;
 
 	/**
-	 * The feature id for the '<em><b>Additional Information</b></em>' reference.
+	 * The feature id for the '<em><b>Additional Information</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -4509,10 +4527,10 @@ public interface CAEXPackage extends EPackage {
 	EAttribute getCAEXBasicObject_ChangeMode();
 
 	/**
-	 * Returns the meta object for the reference '{@link caex.caex30.caex.CAEXBasicObject#getDescription <em>Description</em>}'.
+	 * Returns the meta object for the containment reference '{@link caex.caex30.caex.CAEXBasicObject#getDescription <em>Description</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Description</em>'.
+	 * @return the meta object for the containment reference '<em>Description</em>'.
 	 * @see caex.caex30.caex.CAEXBasicObject#getDescription()
 	 * @see #getCAEXBasicObject()
 	 * @generated
@@ -4520,10 +4538,10 @@ public interface CAEXPackage extends EPackage {
 	EReference getCAEXBasicObject_Description();
 
 	/**
-	 * Returns the meta object for the reference '{@link caex.caex30.caex.CAEXBasicObject#getVersion <em>Version</em>}'.
+	 * Returns the meta object for the containment reference '{@link caex.caex30.caex.CAEXBasicObject#getVersion <em>Version</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Version</em>'.
+	 * @return the meta object for the containment reference '<em>Version</em>'.
 	 * @see caex.caex30.caex.CAEXBasicObject#getVersion()
 	 * @see #getCAEXBasicObject()
 	 * @generated
@@ -4531,10 +4549,10 @@ public interface CAEXPackage extends EPackage {
 	EReference getCAEXBasicObject_Version();
 
 	/**
-	 * Returns the meta object for the reference list '{@link caex.caex30.caex.CAEXBasicObject#getRevision <em>Revision</em>}'.
+	 * Returns the meta object for the containment reference list '{@link caex.caex30.caex.CAEXBasicObject#getRevision <em>Revision</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference list '<em>Revision</em>'.
+	 * @return the meta object for the containment reference list '<em>Revision</em>'.
 	 * @see caex.caex30.caex.CAEXBasicObject#getRevision()
 	 * @see #getCAEXBasicObject()
 	 * @generated
@@ -4542,10 +4560,10 @@ public interface CAEXPackage extends EPackage {
 	EReference getCAEXBasicObject_Revision();
 
 	/**
-	 * Returns the meta object for the reference '{@link caex.caex30.caex.CAEXBasicObject#getCopyright <em>Copyright</em>}'.
+	 * Returns the meta object for the containment reference '{@link caex.caex30.caex.CAEXBasicObject#getCopyright <em>Copyright</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Copyright</em>'.
+	 * @return the meta object for the containment reference '<em>Copyright</em>'.
 	 * @see caex.caex30.caex.CAEXBasicObject#getCopyright()
 	 * @see #getCAEXBasicObject()
 	 * @generated
@@ -4553,10 +4571,10 @@ public interface CAEXPackage extends EPackage {
 	EReference getCAEXBasicObject_Copyright();
 
 	/**
-	 * Returns the meta object for the reference '{@link caex.caex30.caex.CAEXBasicObject#getAdditionalInformation <em>Additional Information</em>}'.
+	 * Returns the meta object for the containment reference list '{@link caex.caex30.caex.CAEXBasicObject#getAdditionalInformation <em>Additional Information</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Additional Information</em>'.
+	 * @return the meta object for the containment reference list '<em>Additional Information</em>'.
 	 * @see caex.caex30.caex.CAEXBasicObject#getAdditionalInformation()
 	 * @see #getCAEXBasicObject()
 	 * @generated
@@ -4780,47 +4798,36 @@ public interface CAEXPackage extends EPackage {
 	EClass getExternalInterface();
 
 	/**
-	 * Returns the meta object for the containment reference list '{@link caex.caex30.caex.ExternalInterface#getExternalInterface <em>External Interface</em>}'.
+	 * Returns the meta object for class '{@link caex.caex30.caex.ExternalReference <em>External Reference</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>External Interface</em>'.
-	 * @see caex.caex30.caex.ExternalInterface#getExternalInterface()
-	 * @see #getExternalInterface()
+	 * @return the meta object for class '<em>External Reference</em>'.
+	 * @see caex.caex30.caex.ExternalReference
 	 * @generated
 	 */
-	EReference getExternalInterface_ExternalInterface();
+	EClass getExternalReference();
 
 	/**
-	 * Returns the meta object for class '{@link caex.caex30.caex.ExternalReferenceType <em>External Reference Type</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>External Reference Type</em>'.
-	 * @see caex.caex30.caex.ExternalReferenceType
-	 * @generated
-	 */
-	EClass getExternalReferenceType();
-
-	/**
-	 * Returns the meta object for the attribute '{@link caex.caex30.caex.ExternalReferenceType#getAlias <em>Alias</em>}'.
+	 * Returns the meta object for the attribute '{@link caex.caex30.caex.ExternalReference#getAlias <em>Alias</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Alias</em>'.
-	 * @see caex.caex30.caex.ExternalReferenceType#getAlias()
-	 * @see #getExternalReferenceType()
+	 * @see caex.caex30.caex.ExternalReference#getAlias()
+	 * @see #getExternalReference()
 	 * @generated
 	 */
-	EAttribute getExternalReferenceType_Alias();
+	EAttribute getExternalReference_Alias();
 
 	/**
-	 * Returns the meta object for the attribute '{@link caex.caex30.caex.ExternalReferenceType#getPath <em>Path</em>}'.
+	 * Returns the meta object for the attribute '{@link caex.caex30.caex.ExternalReference#getPath <em>Path</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Path</em>'.
-	 * @see caex.caex30.caex.ExternalReferenceType#getPath()
-	 * @see #getExternalReferenceType()
+	 * @see caex.caex30.caex.ExternalReference#getPath()
+	 * @see #getExternalReference()
 	 * @generated
 	 */
-	EAttribute getExternalReferenceType_Path();
+	EAttribute getExternalReference_Path();
 
 	/**
 	 * Returns the meta object for class '{@link caex.caex30.caex.InstanceHierarchy <em>Instance Hierarchy</em>}'.
@@ -4917,6 +4924,17 @@ public interface CAEXPackage extends EPackage {
 	 * @generated
 	 */
 	EReference getInterfaceClass_InterfaceClass();
+
+	/**
+	 * Returns the meta object for the containment reference list '{@link caex.caex30.caex.InterfaceClass#getExternalInterface <em>External Interface</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference list '<em>External Interface</em>'.
+	 * @see caex.caex30.caex.InterfaceClass#getExternalInterface()
+	 * @see #getInterfaceClass()
+	 * @generated
+	 */
+	EReference getInterfaceClass_ExternalInterface();
 
 	/**
 	 * Returns the meta object for class '{@link caex.caex30.caex.InterfaceFamily <em>Interface Family</em>}'.
@@ -5112,68 +5130,68 @@ public interface CAEXPackage extends EPackage {
 	EReference getMapping_InterfaceIDMapping();
 
 	/**
-	 * Returns the meta object for class '{@link caex.caex30.caex.NominalScaledType <em>Nominal Scaled Type</em>}'.
+	 * Returns the meta object for class '{@link caex.caex30.caex.NominalScaled <em>Nominal Scaled</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Nominal Scaled Type</em>'.
-	 * @see caex.caex30.caex.NominalScaledType
+	 * @return the meta object for class '<em>Nominal Scaled</em>'.
+	 * @see caex.caex30.caex.NominalScaled
 	 * @generated
 	 */
-	EClass getNominalScaledType();
+	EClass getNominalScaled();
 
 	/**
-	 * Returns the meta object for the attribute list '{@link caex.caex30.caex.NominalScaledType#getRequiredValue <em>Required Value</em>}'.
+	 * Returns the meta object for the attribute list '{@link caex.caex30.caex.NominalScaled#getRequiredValue <em>Required Value</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute list '<em>Required Value</em>'.
-	 * @see caex.caex30.caex.NominalScaledType#getRequiredValue()
-	 * @see #getNominalScaledType()
+	 * @see caex.caex30.caex.NominalScaled#getRequiredValue()
+	 * @see #getNominalScaled()
 	 * @generated
 	 */
-	EAttribute getNominalScaledType_RequiredValue();
+	EAttribute getNominalScaled_RequiredValue();
 
 	/**
-	 * Returns the meta object for class '{@link caex.caex30.caex.OrdinalScaledType <em>Ordinal Scaled Type</em>}'.
+	 * Returns the meta object for class '{@link caex.caex30.caex.OrdinalScaled <em>Ordinal Scaled</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Ordinal Scaled Type</em>'.
-	 * @see caex.caex30.caex.OrdinalScaledType
+	 * @return the meta object for class '<em>Ordinal Scaled</em>'.
+	 * @see caex.caex30.caex.OrdinalScaled
 	 * @generated
 	 */
-	EClass getOrdinalScaledType();
+	EClass getOrdinalScaled();
 
 	/**
-	 * Returns the meta object for the attribute '{@link caex.caex30.caex.OrdinalScaledType#getRequiredMaxValue <em>Required Max Value</em>}'.
+	 * Returns the meta object for the attribute '{@link caex.caex30.caex.OrdinalScaled#getRequiredMaxValue <em>Required Max Value</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Required Max Value</em>'.
-	 * @see caex.caex30.caex.OrdinalScaledType#getRequiredMaxValue()
-	 * @see #getOrdinalScaledType()
+	 * @see caex.caex30.caex.OrdinalScaled#getRequiredMaxValue()
+	 * @see #getOrdinalScaled()
 	 * @generated
 	 */
-	EAttribute getOrdinalScaledType_RequiredMaxValue();
+	EAttribute getOrdinalScaled_RequiredMaxValue();
 
 	/**
-	 * Returns the meta object for the attribute '{@link caex.caex30.caex.OrdinalScaledType#getRequiredValue <em>Required Value</em>}'.
+	 * Returns the meta object for the attribute '{@link caex.caex30.caex.OrdinalScaled#getRequiredValue <em>Required Value</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Required Value</em>'.
-	 * @see caex.caex30.caex.OrdinalScaledType#getRequiredValue()
-	 * @see #getOrdinalScaledType()
+	 * @see caex.caex30.caex.OrdinalScaled#getRequiredValue()
+	 * @see #getOrdinalScaled()
 	 * @generated
 	 */
-	EAttribute getOrdinalScaledType_RequiredValue();
+	EAttribute getOrdinalScaled_RequiredValue();
 
 	/**
-	 * Returns the meta object for the attribute '{@link caex.caex30.caex.OrdinalScaledType#getRequiredMinValue <em>Required Min Value</em>}'.
+	 * Returns the meta object for the attribute '{@link caex.caex30.caex.OrdinalScaled#getRequiredMinValue <em>Required Min Value</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Required Min Value</em>'.
-	 * @see caex.caex30.caex.OrdinalScaledType#getRequiredMinValue()
-	 * @see #getOrdinalScaledType()
+	 * @see caex.caex30.caex.OrdinalScaled#getRequiredMinValue()
+	 * @see #getOrdinalScaled()
 	 * @generated
 	 */
-	EAttribute getOrdinalScaledType_RequiredMinValue();
+	EAttribute getOrdinalScaled_RequiredMinValue();
 
 	/**
 	 * Returns the meta object for class '{@link caex.caex30.caex.RefSemantic <em>Ref Semantic</em>}'.
@@ -6090,7 +6108,7 @@ public interface CAEXPackage extends EPackage {
 		EAttribute CAEX_BASIC_OBJECT__CHANGE_MODE = eINSTANCE.getCAEXBasicObject_ChangeMode();
 
 		/**
-		 * The meta object literal for the '<em><b>Description</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Description</b></em>' containment reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
@@ -6098,7 +6116,7 @@ public interface CAEXPackage extends EPackage {
 		EReference CAEX_BASIC_OBJECT__DESCRIPTION = eINSTANCE.getCAEXBasicObject_Description();
 
 		/**
-		 * The meta object literal for the '<em><b>Version</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Version</b></em>' containment reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
@@ -6106,7 +6124,7 @@ public interface CAEXPackage extends EPackage {
 		EReference CAEX_BASIC_OBJECT__VERSION = eINSTANCE.getCAEXBasicObject_Version();
 
 		/**
-		 * The meta object literal for the '<em><b>Revision</b></em>' reference list feature.
+		 * The meta object literal for the '<em><b>Revision</b></em>' containment reference list feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
@@ -6114,7 +6132,7 @@ public interface CAEXPackage extends EPackage {
 		EReference CAEX_BASIC_OBJECT__REVISION = eINSTANCE.getCAEXBasicObject_Revision();
 
 		/**
-		 * The meta object literal for the '<em><b>Copyright</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Copyright</b></em>' containment reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
@@ -6122,7 +6140,7 @@ public interface CAEXPackage extends EPackage {
 		EReference CAEX_BASIC_OBJECT__COPYRIGHT = eINSTANCE.getCAEXBasicObject_Copyright();
 
 		/**
-		 * The meta object literal for the '<em><b>Additional Information</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Additional Information</b></em>' containment reference list feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
@@ -6298,22 +6316,14 @@ public interface CAEXPackage extends EPackage {
 		EClass EXTERNAL_INTERFACE = eINSTANCE.getExternalInterface();
 
 		/**
-		 * The meta object literal for the '<em><b>External Interface</b></em>' containment reference list feature.
+		 * The meta object literal for the '{@link caex.caex30.caex.impl.ExternalReferenceImpl <em>External Reference</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
+		 * @see caex.caex30.caex.impl.ExternalReferenceImpl
+		 * @see caex.caex30.caex.impl.CAEXPackageImpl#getExternalReference()
 		 * @generated
 		 */
-		EReference EXTERNAL_INTERFACE__EXTERNAL_INTERFACE = eINSTANCE.getExternalInterface_ExternalInterface();
-
-		/**
-		 * The meta object literal for the '{@link caex.caex30.caex.impl.ExternalReferenceTypeImpl <em>External Reference Type</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see caex.caex30.caex.impl.ExternalReferenceTypeImpl
-		 * @see caex.caex30.caex.impl.CAEXPackageImpl#getExternalReferenceType()
-		 * @generated
-		 */
-		EClass EXTERNAL_REFERENCE_TYPE = eINSTANCE.getExternalReferenceType();
+		EClass EXTERNAL_REFERENCE = eINSTANCE.getExternalReference();
 
 		/**
 		 * The meta object literal for the '<em><b>Alias</b></em>' attribute feature.
@@ -6321,7 +6331,7 @@ public interface CAEXPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute EXTERNAL_REFERENCE_TYPE__ALIAS = eINSTANCE.getExternalReferenceType_Alias();
+		EAttribute EXTERNAL_REFERENCE__ALIAS = eINSTANCE.getExternalReference_Alias();
 
 		/**
 		 * The meta object literal for the '<em><b>Path</b></em>' attribute feature.
@@ -6329,7 +6339,7 @@ public interface CAEXPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute EXTERNAL_REFERENCE_TYPE__PATH = eINSTANCE.getExternalReferenceType_Path();
+		EAttribute EXTERNAL_REFERENCE__PATH = eINSTANCE.getExternalReference_Path();
 
 		/**
 		 * The meta object literal for the '{@link caex.caex30.caex.impl.InstanceHierarchyImpl <em>Instance Hierarchy</em>}' class.
@@ -6408,6 +6418,14 @@ public interface CAEXPackage extends EPackage {
 		 * @generated
 		 */
 		EReference INTERFACE_CLASS__INTERFACE_CLASS = eINSTANCE.getInterfaceClass_InterfaceClass();
+
+		/**
+		 * The meta object literal for the '<em><b>External Interface</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference INTERFACE_CLASS__EXTERNAL_INTERFACE = eINSTANCE.getInterfaceClass_ExternalInterface();
 
 		/**
 		 * The meta object literal for the '{@link caex.caex30.caex.impl.InterfaceFamilyImpl <em>Interface Family</em>}' class.
@@ -6564,14 +6582,14 @@ public interface CAEXPackage extends EPackage {
 		EReference MAPPING__INTERFACE_ID_MAPPING = eINSTANCE.getMapping_InterfaceIDMapping();
 
 		/**
-		 * The meta object literal for the '{@link caex.caex30.caex.impl.NominalScaledTypeImpl <em>Nominal Scaled Type</em>}' class.
+		 * The meta object literal for the '{@link caex.caex30.caex.impl.NominalScaledImpl <em>Nominal Scaled</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see caex.caex30.caex.impl.NominalScaledTypeImpl
-		 * @see caex.caex30.caex.impl.CAEXPackageImpl#getNominalScaledType()
+		 * @see caex.caex30.caex.impl.NominalScaledImpl
+		 * @see caex.caex30.caex.impl.CAEXPackageImpl#getNominalScaled()
 		 * @generated
 		 */
-		EClass NOMINAL_SCALED_TYPE = eINSTANCE.getNominalScaledType();
+		EClass NOMINAL_SCALED = eINSTANCE.getNominalScaled();
 
 		/**
 		 * The meta object literal for the '<em><b>Required Value</b></em>' attribute list feature.
@@ -6579,17 +6597,17 @@ public interface CAEXPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute NOMINAL_SCALED_TYPE__REQUIRED_VALUE = eINSTANCE.getNominalScaledType_RequiredValue();
+		EAttribute NOMINAL_SCALED__REQUIRED_VALUE = eINSTANCE.getNominalScaled_RequiredValue();
 
 		/**
-		 * The meta object literal for the '{@link caex.caex30.caex.impl.OrdinalScaledTypeImpl <em>Ordinal Scaled Type</em>}' class.
+		 * The meta object literal for the '{@link caex.caex30.caex.impl.OrdinalScaledImpl <em>Ordinal Scaled</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see caex.caex30.caex.impl.OrdinalScaledTypeImpl
-		 * @see caex.caex30.caex.impl.CAEXPackageImpl#getOrdinalScaledType()
+		 * @see caex.caex30.caex.impl.OrdinalScaledImpl
+		 * @see caex.caex30.caex.impl.CAEXPackageImpl#getOrdinalScaled()
 		 * @generated
 		 */
-		EClass ORDINAL_SCALED_TYPE = eINSTANCE.getOrdinalScaledType();
+		EClass ORDINAL_SCALED = eINSTANCE.getOrdinalScaled();
 
 		/**
 		 * The meta object literal for the '<em><b>Required Max Value</b></em>' attribute feature.
@@ -6597,7 +6615,7 @@ public interface CAEXPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute ORDINAL_SCALED_TYPE__REQUIRED_MAX_VALUE = eINSTANCE.getOrdinalScaledType_RequiredMaxValue();
+		EAttribute ORDINAL_SCALED__REQUIRED_MAX_VALUE = eINSTANCE.getOrdinalScaled_RequiredMaxValue();
 
 		/**
 		 * The meta object literal for the '<em><b>Required Value</b></em>' attribute feature.
@@ -6605,7 +6623,7 @@ public interface CAEXPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute ORDINAL_SCALED_TYPE__REQUIRED_VALUE = eINSTANCE.getOrdinalScaledType_RequiredValue();
+		EAttribute ORDINAL_SCALED__REQUIRED_VALUE = eINSTANCE.getOrdinalScaled_RequiredValue();
 
 		/**
 		 * The meta object literal for the '<em><b>Required Min Value</b></em>' attribute feature.
@@ -6613,7 +6631,7 @@ public interface CAEXPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute ORDINAL_SCALED_TYPE__REQUIRED_MIN_VALUE = eINSTANCE.getOrdinalScaledType_RequiredMinValue();
+		EAttribute ORDINAL_SCALED__REQUIRED_MIN_VALUE = eINSTANCE.getOrdinalScaled_RequiredMinValue();
 
 		/**
 		 * The meta object literal for the '{@link caex.caex30.caex.impl.RefSemanticImpl <em>Ref Semantic</em>}' class.

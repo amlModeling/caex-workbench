@@ -84,12 +84,12 @@ public interface InternalLink extends CAEXObject {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Partner Side A</em>' reference.
-	 * @see #setPartnerSideA(ExternalInterface)
+	 * @see #setPartnerSideA(InterfaceClass)
 	 * @see caex.caex30.caex.CAEXPackage#getInternalLink_PartnerSideA()
 	 * @model required="true"
 	 * @generated
 	 */
-	ExternalInterface getPartnerSideA();
+	InterfaceClass getPartnerSideA();
 
 	/**
 	 * Sets the value of the '{@link caex.caex30.caex.InternalLink#getPartnerSideA <em>Partner Side A</em>}' reference.
@@ -99,7 +99,7 @@ public interface InternalLink extends CAEXObject {
 	 * @see #getPartnerSideA()
 	 * @generated
 	 */
-	void setPartnerSideA(ExternalInterface value);
+	void setPartnerSideA(InterfaceClass value);
 
 	/**
 	 * Returns the value of the '<em><b>Partner Side B</b></em>' reference.
@@ -110,12 +110,12 @@ public interface InternalLink extends CAEXObject {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Partner Side B</em>' reference.
-	 * @see #setPartnerSideB(ExternalInterface)
+	 * @see #setPartnerSideB(InterfaceClass)
 	 * @see caex.caex30.caex.CAEXPackage#getInternalLink_PartnerSideB()
 	 * @model required="true"
 	 * @generated
 	 */
-	ExternalInterface getPartnerSideB();
+	InterfaceClass getPartnerSideB();
 
 	/**
 	 * Sets the value of the '{@link caex.caex30.caex.InternalLink#getPartnerSideB <em>Partner Side B</em>}' reference.
@@ -125,6 +125,6 @@ public interface InternalLink extends CAEXObject {
 	 * @see #getPartnerSideB()
 	 * @generated
 	 */
-	void setPartnerSideB(ExternalInterface value);
+	void setPartnerSideB(InterfaceClass value);
 
 } // InternalLink

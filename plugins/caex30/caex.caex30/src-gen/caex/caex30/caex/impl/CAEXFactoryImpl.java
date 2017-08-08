@@ -69,7 +69,7 @@ public class CAEXFactoryImpl extends EFactoryImpl implements CAEXFactory {
 			case CAEXPackage.CAEX_OBJECT: return createCAEXObject();
 			case CAEXPackage.DOCUMENT_ROOT: return createDocumentRoot();
 			case CAEXPackage.EXTERNAL_INTERFACE: return createExternalInterface();
-			case CAEXPackage.EXTERNAL_REFERENCE_TYPE: return createExternalReferenceType();
+			case CAEXPackage.EXTERNAL_REFERENCE: return createExternalReference();
 			case CAEXPackage.INSTANCE_HIERARCHY: return createInstanceHierarchy();
 			case CAEXPackage.INTERFACE_CLASS_LIB: return createInterfaceClassLib();
 			case CAEXPackage.INTERFACE_CLASS: return createInterfaceClass();
@@ -78,8 +78,8 @@ public class CAEXFactoryImpl extends EFactoryImpl implements CAEXFactory {
 			case CAEXPackage.INTERNAL_ELEMENT: return createInternalElement();
 			case CAEXPackage.INTERNAL_LINK: return createInternalLink();
 			case CAEXPackage.MAPPING: return createMapping();
-			case CAEXPackage.NOMINAL_SCALED_TYPE: return createNominalScaledType();
-			case CAEXPackage.ORDINAL_SCALED_TYPE: return createOrdinalScaledType();
+			case CAEXPackage.NOMINAL_SCALED: return createNominalScaled();
+			case CAEXPackage.ORDINAL_SCALED: return createOrdinalScaled();
 			case CAEXPackage.REF_SEMANTIC: return createRefSemantic();
 			case CAEXPackage.ROLE_CLASS_LIB: return createRoleClassLib();
 			case CAEXPackage.ROLE_CLASS: return createRoleClass();
@@ -244,9 +244,9 @@ public class CAEXFactoryImpl extends EFactoryImpl implements CAEXFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ExternalReferenceType createExternalReferenceType() {
-		ExternalReferenceTypeImpl externalReferenceType = new ExternalReferenceTypeImpl();
-		return externalReferenceType;
+	public ExternalReference createExternalReference() {
+		ExternalReferenceImpl externalReference = new ExternalReferenceImpl();
+		return externalReference;
 	}
 
 	/**
@@ -334,9 +334,9 @@ public class CAEXFactoryImpl extends EFactoryImpl implements CAEXFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NominalScaledType createNominalScaledType() {
-		NominalScaledTypeImpl nominalScaledType = new NominalScaledTypeImpl();
-		return nominalScaledType;
+	public NominalScaled createNominalScaled() {
+		NominalScaledImpl nominalScaled = new NominalScaledImpl();
+		return nominalScaled;
 	}
 
 	/**
@@ -344,9 +344,9 @@ public class CAEXFactoryImpl extends EFactoryImpl implements CAEXFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public OrdinalScaledType createOrdinalScaledType() {
-		OrdinalScaledTypeImpl ordinalScaledType = new OrdinalScaledTypeImpl();
-		return ordinalScaledType;
+	public OrdinalScaled createOrdinalScaled() {
+		OrdinalScaledImpl ordinalScaled = new OrdinalScaledImpl();
+		return ordinalScaled;
 	}
 
 	/**

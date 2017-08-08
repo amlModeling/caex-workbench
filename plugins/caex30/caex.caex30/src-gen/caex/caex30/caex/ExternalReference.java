@@ -5,22 +5,22 @@ package caex.caex30.caex;
 
 /**
  * <!-- begin-user-doc -->
- * A representation of the model object '<em><b>External Reference Type</b></em>'.
+ * A representation of the model object '<em><b>External Reference</b></em>'.
  * <!-- end-user-doc -->
  *
  * <p>
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link caex.caex30.caex.ExternalReferenceType#getAlias <em>Alias</em>}</li>
- *   <li>{@link caex.caex30.caex.ExternalReferenceType#getPath <em>Path</em>}</li>
+ *   <li>{@link caex.caex30.caex.ExternalReference#getAlias <em>Alias</em>}</li>
+ *   <li>{@link caex.caex30.caex.ExternalReference#getPath <em>Path</em>}</li>
  * </ul>
  *
- * @see caex.caex30.caex.CAEXPackage#getExternalReferenceType()
+ * @see caex.caex30.caex.CAEXPackage#getExternalReference()
  * @model
  * @generated
  */
-public interface ExternalReferenceType extends CAEXBasicObject {
+public interface ExternalReference extends CAEXBasicObject {
 	/**
 	 * Returns the value of the '<em><b>Alias</b></em>' attribute.
 	 * <!-- begin-user-doc -->
@@ -31,14 +31,14 @@ public interface ExternalReferenceType extends CAEXBasicObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Alias</em>' attribute.
 	 * @see #setAlias(String)
-	 * @see caex.caex30.caex.CAEXPackage#getExternalReferenceType_Alias()
+	 * @see caex.caex30.caex.CAEXPackage#getExternalReference_Alias()
 	 * @model dataType="org.eclipse.emf.ecore.xml.type.String" required="true"
 	 * @generated
 	 */
 	String getAlias();
 
 	/**
-	 * Sets the value of the '{@link caex.caex30.caex.ExternalReferenceType#getAlias <em>Alias</em>}' attribute.
+	 * Sets the value of the '{@link caex.caex30.caex.ExternalReference#getAlias <em>Alias</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Alias</em>' attribute.
@@ -57,14 +57,14 @@ public interface ExternalReferenceType extends CAEXBasicObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Path</em>' attribute.
 	 * @see #setPath(String)
-	 * @see caex.caex30.caex.CAEXPackage#getExternalReferenceType_Path()
+	 * @see caex.caex30.caex.CAEXPackage#getExternalReference_Path()
 	 * @model dataType="org.eclipse.emf.ecore.xml.type.String" required="true"
 	 * @generated
 	 */
 	String getPath();
 
 	/**
-	 * Sets the value of the '{@link caex.caex30.caex.ExternalReferenceType#getPath <em>Path</em>}' attribute.
+	 * Sets the value of the '{@link caex.caex30.caex.ExternalReference#getPath <em>Path</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Path</em>' attribute.
@@ -73,4 +73,4 @@ public interface ExternalReferenceType extends CAEXBasicObject {
 	 */
 	void setPath(String value);
 
-} // ExternalReferenceType
+} // ExternalReference

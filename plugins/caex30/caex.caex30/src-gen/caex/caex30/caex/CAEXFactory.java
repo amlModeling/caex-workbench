@@ -112,13 +112,13 @@ public interface CAEXFactory extends EFactory {
 	ExternalInterface createExternalInterface();
 
 	/**
-	 * Returns a new object of class '<em>External Reference Type</em>'.
+	 * Returns a new object of class '<em>External Reference</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>External Reference Type</em>'.
+	 * @return a new object of class '<em>External Reference</em>'.
 	 * @generated
 	 */
-	ExternalReferenceType createExternalReferenceType();
+	ExternalReference createExternalReference();
 
 	/**
 	 * Returns a new object of class '<em>Instance Hierarchy</em>'.
@@ -193,22 +193,22 @@ public interface CAEXFactory extends EFactory {
 	Mapping createMapping();
 
 	/**
-	 * Returns a new object of class '<em>Nominal Scaled Type</em>'.
+	 * Returns a new object of class '<em>Nominal Scaled</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Nominal Scaled Type</em>'.
+	 * @return a new object of class '<em>Nominal Scaled</em>'.
 	 * @generated
 	 */
-	NominalScaledType createNominalScaledType();
+	NominalScaled createNominalScaled();
 
 	/**
-	 * Returns a new object of class '<em>Ordinal Scaled Type</em>'.
+	 * Returns a new object of class '<em>Ordinal Scaled</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Ordinal Scaled Type</em>'.
+	 * @return a new object of class '<em>Ordinal Scaled</em>'.
 	 * @generated
 	 */
-	OrdinalScaledType createOrdinalScaledType();
+	OrdinalScaled createOrdinalScaled();
 
 	/**
 	 * Returns a new object of class '<em>Ref Semantic</em>'.

@@ -5,7 +5,7 @@ package caex.caex30.caex.provider;
 
 import caex.caex30.caex.CAEXPackage;
 import caex.caex30.caex.ChangeMode;
-import caex.caex30.caex.ExternalReferenceType;
+import caex.caex30.caex.ExternalReference;
 
 import java.util.Collection;
 import java.util.List;
@@ -19,19 +19,19 @@ import org.eclipse.emf.edit.provider.ItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ViewerNotification;
 
 /**
- * This is the item provider adapter for a {@link caex.caex30.caex.ExternalReferenceType} object.
+ * This is the item provider adapter for a {@link caex.caex30.caex.ExternalReference} object.
  * <!-- begin-user-doc -->
  * <!-- end-user-doc -->
  * @generated
  */
-public class ExternalReferenceTypeItemProvider extends CAEXBasicObjectItemProvider {
+public class ExternalReferenceItemProvider extends CAEXBasicObjectItemProvider {
 	/**
 	 * This constructs an instance from a factory and a notifier.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ExternalReferenceTypeItemProvider(AdapterFactory adapterFactory) {
+	public ExternalReferenceItemProvider(AdapterFactory adapterFactory) {
 		super(adapterFactory);
 	}
 
@@ -63,9 +63,9 @@ public class ExternalReferenceTypeItemProvider extends CAEXBasicObjectItemProvid
 			(createItemPropertyDescriptor
 				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
 				 getResourceLocator(),
-				 getString("_UI_ExternalReferenceType_alias_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_ExternalReferenceType_alias_feature", "_UI_ExternalReferenceType_type"),
-				 CAEXPackage.Literals.EXTERNAL_REFERENCE_TYPE__ALIAS,
+				 getString("_UI_ExternalReference_alias_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_ExternalReference_alias_feature", "_UI_ExternalReference_type"),
+				 CAEXPackage.Literals.EXTERNAL_REFERENCE__ALIAS,
 				 true,
 				 false,
 				 false,
@@ -85,9 +85,9 @@ public class ExternalReferenceTypeItemProvider extends CAEXBasicObjectItemProvid
 			(createItemPropertyDescriptor
 				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
 				 getResourceLocator(),
-				 getString("_UI_ExternalReferenceType_path_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_ExternalReferenceType_path_feature", "_UI_ExternalReferenceType_type"),
-				 CAEXPackage.Literals.EXTERNAL_REFERENCE_TYPE__PATH,
+				 getString("_UI_ExternalReference_path_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_ExternalReference_path_feature", "_UI_ExternalReference_type"),
+				 CAEXPackage.Literals.EXTERNAL_REFERENCE__PATH,
 				 true,
 				 false,
 				 false,
@@ -97,14 +97,14 @@ public class ExternalReferenceTypeItemProvider extends CAEXBasicObjectItemProvid
 	}
 
 	/**
-	 * This returns ExternalReferenceType.gif.
+	 * This returns ExternalReference.gif.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
 	public Object getImage(Object object) {
-		return overlayImage(object, getResourceLocator().getImage("full/obj16/ExternalReferenceType"));
+		return overlayImage(object, getResourceLocator().getImage("full/obj16/ExternalReference"));
 	}
 
 	/**
@@ -115,11 +115,11 @@ public class ExternalReferenceTypeItemProvider extends CAEXBasicObjectItemProvid
 	 */
 	@Override
 	public String getText(Object object) {
-		ChangeMode labelValue = ((ExternalReferenceType)object).getChangeMode();
+		ChangeMode labelValue = ((ExternalReference)object).getChangeMode();
 		String label = labelValue == null ? null : labelValue.toString();
 		return label == null || label.length() == 0 ?
-			getString("_UI_ExternalReferenceType_type") :
-			getString("_UI_ExternalReferenceType_type") + " " + label;
+			getString("_UI_ExternalReference_type") :
+			getString("_UI_ExternalReference_type") + " " + label;
 	}
 	
 
@@ -134,9 +134,9 @@ public class ExternalReferenceTypeItemProvider extends CAEXBasicObjectItemProvid
 	public void notifyChanged(Notification notification) {
 		updateChildren(notification);
 
-		switch (notification.getFeatureID(ExternalReferenceType.class)) {
-			case CAEXPackage.EXTERNAL_REFERENCE_TYPE__ALIAS:
-			case CAEXPackage.EXTERNAL_REFERENCE_TYPE__PATH:
+		switch (notification.getFeatureID(ExternalReference.class)) {
+			case CAEXPackage.EXTERNAL_REFERENCE__ALIAS:
+			case CAEXPackage.EXTERNAL_REFERENCE__PATH:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
 		}

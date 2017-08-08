@@ -302,26 +302,26 @@ public class CAEXItemProviderAdapterFactory extends CAEXAdapterFactory implement
 	}
 
 	/**
-	 * This keeps track of the one adapter used for all {@link caex.caex30.caex.ExternalReferenceType} instances.
+	 * This keeps track of the one adapter used for all {@link caex.caex30.caex.ExternalReference} instances.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected ExternalReferenceTypeItemProvider externalReferenceTypeItemProvider;
+	protected ExternalReferenceItemProvider externalReferenceItemProvider;
 
 	/**
-	 * This creates an adapter for a {@link caex.caex30.caex.ExternalReferenceType}.
+	 * This creates an adapter for a {@link caex.caex30.caex.ExternalReference}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
-	public Adapter createExternalReferenceTypeAdapter() {
-		if (externalReferenceTypeItemProvider == null) {
-			externalReferenceTypeItemProvider = new ExternalReferenceTypeItemProvider(this);
+	public Adapter createExternalReferenceAdapter() {
+		if (externalReferenceItemProvider == null) {
+			externalReferenceItemProvider = new ExternalReferenceItemProvider(this);
 		}
 
-		return externalReferenceTypeItemProvider;
+		return externalReferenceItemProvider;
 	}
 
 	/**
@@ -509,49 +509,49 @@ public class CAEXItemProviderAdapterFactory extends CAEXAdapterFactory implement
 	}
 
 	/**
-	 * This keeps track of the one adapter used for all {@link caex.caex30.caex.NominalScaledType} instances.
+	 * This keeps track of the one adapter used for all {@link caex.caex30.caex.NominalScaled} instances.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected NominalScaledTypeItemProvider nominalScaledTypeItemProvider;
+	protected NominalScaledItemProvider nominalScaledItemProvider;
 
 	/**
-	 * This creates an adapter for a {@link caex.caex30.caex.NominalScaledType}.
+	 * This creates an adapter for a {@link caex.caex30.caex.NominalScaled}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
-	public Adapter createNominalScaledTypeAdapter() {
-		if (nominalScaledTypeItemProvider == null) {
-			nominalScaledTypeItemProvider = new NominalScaledTypeItemProvider(this);
+	public Adapter createNominalScaledAdapter() {
+		if (nominalScaledItemProvider == null) {
+			nominalScaledItemProvider = new NominalScaledItemProvider(this);
 		}
 
-		return nominalScaledTypeItemProvider;
+		return nominalScaledItemProvider;
 	}
 
 	/**
-	 * This keeps track of the one adapter used for all {@link caex.caex30.caex.OrdinalScaledType} instances.
+	 * This keeps track of the one adapter used for all {@link caex.caex30.caex.OrdinalScaled} instances.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected OrdinalScaledTypeItemProvider ordinalScaledTypeItemProvider;
+	protected OrdinalScaledItemProvider ordinalScaledItemProvider;
 
 	/**
-	 * This creates an adapter for a {@link caex.caex30.caex.OrdinalScaledType}.
+	 * This creates an adapter for a {@link caex.caex30.caex.OrdinalScaled}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
-	public Adapter createOrdinalScaledTypeAdapter() {
-		if (ordinalScaledTypeItemProvider == null) {
-			ordinalScaledTypeItemProvider = new OrdinalScaledTypeItemProvider(this);
+	public Adapter createOrdinalScaledAdapter() {
+		if (ordinalScaledItemProvider == null) {
+			ordinalScaledItemProvider = new OrdinalScaledItemProvider(this);
 		}
 
-		return ordinalScaledTypeItemProvider;
+		return ordinalScaledItemProvider;
 	}
 
 	/**
@@ -1031,7 +1031,7 @@ public class CAEXItemProviderAdapterFactory extends CAEXAdapterFactory implement
 		if (caexObjectItemProvider != null) caexObjectItemProvider.dispose();
 		if (documentRootItemProvider != null) documentRootItemProvider.dispose();
 		if (externalInterfaceItemProvider != null) externalInterfaceItemProvider.dispose();
-		if (externalReferenceTypeItemProvider != null) externalReferenceTypeItemProvider.dispose();
+		if (externalReferenceItemProvider != null) externalReferenceItemProvider.dispose();
 		if (instanceHierarchyItemProvider != null) instanceHierarchyItemProvider.dispose();
 		if (interfaceClassLibItemProvider != null) interfaceClassLibItemProvider.dispose();
 		if (interfaceClassItemProvider != null) interfaceClassItemProvider.dispose();
@@ -1040,8 +1040,8 @@ public class CAEXItemProviderAdapterFactory extends CAEXAdapterFactory implement
 		if (internalElementItemProvider != null) internalElementItemProvider.dispose();
 		if (internalLinkItemProvider != null) internalLinkItemProvider.dispose();
 		if (mappingItemProvider != null) mappingItemProvider.dispose();
-		if (nominalScaledTypeItemProvider != null) nominalScaledTypeItemProvider.dispose();
-		if (ordinalScaledTypeItemProvider != null) ordinalScaledTypeItemProvider.dispose();
+		if (nominalScaledItemProvider != null) nominalScaledItemProvider.dispose();
+		if (ordinalScaledItemProvider != null) ordinalScaledItemProvider.dispose();
 		if (refSemanticItemProvider != null) refSemanticItemProvider.dispose();
 		if (roleClassLibItemProvider != null) roleClassLibItemProvider.dispose();
 		if (roleClassItemProvider != null) roleClassItemProvider.dispose();

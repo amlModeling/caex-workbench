@@ -32,12 +32,12 @@ public interface AttributeValueRequirement extends CAEXBasicObject {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Ordinal Scaled Type</em>' containment reference.
-	 * @see #setOrdinalScaledType(OrdinalScaledType)
+	 * @see #setOrdinalScaledType(OrdinalScaled)
 	 * @see caex.caex30.caex.CAEXPackage#getAttributeValueRequirement_OrdinalScaledType()
 	 * @model containment="true"
 	 * @generated
 	 */
-	OrdinalScaledType getOrdinalScaledType();
+	OrdinalScaled getOrdinalScaledType();
 
 	/**
 	 * Sets the value of the '{@link caex.caex30.caex.AttributeValueRequirement#getOrdinalScaledType <em>Ordinal Scaled Type</em>}' containment reference.
@@ -47,7 +47,7 @@ public interface AttributeValueRequirement extends CAEXBasicObject {
 	 * @see #getOrdinalScaledType()
 	 * @generated
 	 */
-	void setOrdinalScaledType(OrdinalScaledType value);
+	void setOrdinalScaledType(OrdinalScaled value);
 
 	/**
 	 * Returns the value of the '<em><b>Nominal Scaled Type</b></em>' containment reference.
@@ -58,12 +58,12 @@ public interface AttributeValueRequirement extends CAEXBasicObject {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Nominal Scaled Type</em>' containment reference.
-	 * @see #setNominalScaledType(NominalScaledType)
+	 * @see #setNominalScaledType(NominalScaled)
 	 * @see caex.caex30.caex.CAEXPackage#getAttributeValueRequirement_NominalScaledType()
 	 * @model containment="true"
 	 * @generated
 	 */
-	NominalScaledType getNominalScaledType();
+	NominalScaled getNominalScaledType();
 
 	/**
 	 * Sets the value of the '{@link caex.caex30.caex.AttributeValueRequirement#getNominalScaledType <em>Nominal Scaled Type</em>}' containment reference.
@@ -73,7 +73,7 @@ public interface AttributeValueRequirement extends CAEXBasicObject {
 	 * @see #getNominalScaledType()
 	 * @generated
 	 */
-	void setNominalScaledType(NominalScaledType value);
+	void setNominalScaledType(NominalScaled value);
 
 	/**
 	 * Returns the value of the '<em><b>Unknown Type</b></em>' containment reference.

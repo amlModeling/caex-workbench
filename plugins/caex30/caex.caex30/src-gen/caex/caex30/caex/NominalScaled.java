@@ -8,21 +8,21 @@ import org.eclipse.emf.ecore.EObject;
 
 /**
  * <!-- begin-user-doc -->
- * A representation of the model object '<em><b>Nominal Scaled Type</b></em>'.
+ * A representation of the model object '<em><b>Nominal Scaled</b></em>'.
  * <!-- end-user-doc -->
  *
  * <p>
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link caex.caex30.caex.NominalScaledType#getRequiredValue <em>Required Value</em>}</li>
+ *   <li>{@link caex.caex30.caex.NominalScaled#getRequiredValue <em>Required Value</em>}</li>
  * </ul>
  *
- * @see caex.caex30.caex.CAEXPackage#getNominalScaledType()
+ * @see caex.caex30.caex.CAEXPackage#getNominalScaled()
  * @model
  * @generated
  */
-public interface NominalScaledType extends EObject {
+public interface NominalScaled extends EObject {
 	/**
 	 * Returns the value of the '<em><b>Required Value</b></em>' attribute list.
 	 * The list contents are of type {@link java.lang.String}.
@@ -33,10 +33,10 @@ public interface NominalScaledType extends EObject {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Required Value</em>' attribute list.
-	 * @see caex.caex30.caex.CAEXPackage#getNominalScaledType_RequiredValue()
+	 * @see caex.caex30.caex.CAEXPackage#getNominalScaled_RequiredValue()
 	 * @model unique="false" dataType="org.eclipse.emf.ecore.xml.type.String"
 	 * @generated
 	 */
 	EList<String> getRequiredValue();
 
-} // NominalScaledType
+} // NominalScaled

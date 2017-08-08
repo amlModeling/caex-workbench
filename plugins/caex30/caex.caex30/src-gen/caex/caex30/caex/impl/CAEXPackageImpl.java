@@ -20,7 +20,7 @@ import caex.caex30.caex.Copyright;
 import caex.caex30.caex.Description;
 import caex.caex30.caex.DocumentRoot;
 import caex.caex30.caex.ExternalInterface;
-import caex.caex30.caex.ExternalReferenceType;
+import caex.caex30.caex.ExternalReference;
 import caex.caex30.caex.InstanceHierarchy;
 import caex.caex30.caex.InterfaceClass;
 import caex.caex30.caex.InterfaceClassLib;
@@ -29,8 +29,8 @@ import caex.caex30.caex.InterfaceIDMapping;
 import caex.caex30.caex.InternalElement;
 import caex.caex30.caex.InternalLink;
 import caex.caex30.caex.Mapping;
-import caex.caex30.caex.NominalScaledType;
-import caex.caex30.caex.OrdinalScaledType;
+import caex.caex30.caex.NominalScaled;
+import caex.caex30.caex.OrdinalScaled;
 import caex.caex30.caex.RefSemantic;
 import caex.caex30.caex.Revision;
 import caex.caex30.caex.RoleClass;
@@ -140,7 +140,7 @@ public class CAEXPackageImpl extends EPackageImpl implements CAEXPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass externalReferenceTypeEClass = null;
+	private EClass externalReferenceEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -203,14 +203,14 @@ public class CAEXPackageImpl extends EPackageImpl implements CAEXPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass nominalScaledTypeEClass = null;
+	private EClass nominalScaledEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass ordinalScaledTypeEClass = null;
+	private EClass ordinalScaledEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -856,8 +856,8 @@ public class CAEXPackageImpl extends EPackageImpl implements CAEXPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getExternalInterface_ExternalInterface() {
-		return (EReference)externalInterfaceEClass.getEStructuralFeatures().get(0);
+	public EClass getExternalReference() {
+		return externalReferenceEClass;
 	}
 
 	/**
@@ -865,8 +865,8 @@ public class CAEXPackageImpl extends EPackageImpl implements CAEXPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getExternalReferenceType() {
-		return externalReferenceTypeEClass;
+	public EAttribute getExternalReference_Alias() {
+		return (EAttribute)externalReferenceEClass.getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -874,17 +874,8 @@ public class CAEXPackageImpl extends EPackageImpl implements CAEXPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getExternalReferenceType_Alias() {
-		return (EAttribute)externalReferenceTypeEClass.getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EAttribute getExternalReferenceType_Path() {
-		return (EAttribute)externalReferenceTypeEClass.getEStructuralFeatures().get(1);
+	public EAttribute getExternalReference_Path() {
+		return (EAttribute)externalReferenceEClass.getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -966,6 +957,15 @@ public class CAEXPackageImpl extends EPackageImpl implements CAEXPackage {
 	 */
 	public EReference getInterfaceClass_InterfaceClass() {
 		return (EReference)interfaceClassEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getInterfaceClass_ExternalInterface() {
+		return (EReference)interfaceClassEClass.getEStructuralFeatures().get(4);
 	}
 
 	/**
@@ -1135,8 +1135,8 @@ public class CAEXPackageImpl extends EPackageImpl implements CAEXPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getNominalScaledType() {
-		return nominalScaledTypeEClass;
+	public EClass getNominalScaled() {
+		return nominalScaledEClass;
 	}
 
 	/**
@@ -1144,8 +1144,8 @@ public class CAEXPackageImpl extends EPackageImpl implements CAEXPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getNominalScaledType_RequiredValue() {
-		return (EAttribute)nominalScaledTypeEClass.getEStructuralFeatures().get(0);
+	public EAttribute getNominalScaled_RequiredValue() {
+		return (EAttribute)nominalScaledEClass.getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -1153,8 +1153,8 @@ public class CAEXPackageImpl extends EPackageImpl implements CAEXPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getOrdinalScaledType() {
-		return ordinalScaledTypeEClass;
+	public EClass getOrdinalScaled() {
+		return ordinalScaledEClass;
 	}
 
 	/**
@@ -1162,8 +1162,8 @@ public class CAEXPackageImpl extends EPackageImpl implements CAEXPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getOrdinalScaledType_RequiredMaxValue() {
-		return (EAttribute)ordinalScaledTypeEClass.getEStructuralFeatures().get(0);
+	public EAttribute getOrdinalScaled_RequiredMaxValue() {
+		return (EAttribute)ordinalScaledEClass.getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -1171,8 +1171,8 @@ public class CAEXPackageImpl extends EPackageImpl implements CAEXPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getOrdinalScaledType_RequiredValue() {
-		return (EAttribute)ordinalScaledTypeEClass.getEStructuralFeatures().get(1);
+	public EAttribute getOrdinalScaled_RequiredValue() {
+		return (EAttribute)ordinalScaledEClass.getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -1180,8 +1180,8 @@ public class CAEXPackageImpl extends EPackageImpl implements CAEXPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getOrdinalScaledType_RequiredMinValue() {
-		return (EAttribute)ordinalScaledTypeEClass.getEStructuralFeatures().get(2);
+	public EAttribute getOrdinalScaled_RequiredMinValue() {
+		return (EAttribute)ordinalScaledEClass.getEStructuralFeatures().get(2);
 	}
 
 	/**
@@ -1846,11 +1846,10 @@ public class CAEXPackageImpl extends EPackageImpl implements CAEXPackage {
 		createEReference(documentRootEClass, DOCUMENT_ROOT__CAEX_FILE);
 
 		externalInterfaceEClass = createEClass(EXTERNAL_INTERFACE);
-		createEReference(externalInterfaceEClass, EXTERNAL_INTERFACE__EXTERNAL_INTERFACE);
 
-		externalReferenceTypeEClass = createEClass(EXTERNAL_REFERENCE_TYPE);
-		createEAttribute(externalReferenceTypeEClass, EXTERNAL_REFERENCE_TYPE__ALIAS);
-		createEAttribute(externalReferenceTypeEClass, EXTERNAL_REFERENCE_TYPE__PATH);
+		externalReferenceEClass = createEClass(EXTERNAL_REFERENCE);
+		createEAttribute(externalReferenceEClass, EXTERNAL_REFERENCE__ALIAS);
+		createEAttribute(externalReferenceEClass, EXTERNAL_REFERENCE__PATH);
 
 		instanceHierarchyEClass = createEClass(INSTANCE_HIERARCHY);
 		createEReference(instanceHierarchyEClass, INSTANCE_HIERARCHY__INTERNAL_ELEMENT);
@@ -1863,6 +1862,7 @@ public class CAEXPackageImpl extends EPackageImpl implements CAEXPackage {
 		createEAttribute(interfaceClassEClass, INTERFACE_CLASS__REF_BASE_CLASS_PATH);
 		createEReference(interfaceClassEClass, INTERFACE_CLASS__BASE_CLASS);
 		createEReference(interfaceClassEClass, INTERFACE_CLASS__INTERFACE_CLASS);
+		createEReference(interfaceClassEClass, INTERFACE_CLASS__EXTERNAL_INTERFACE);
 
 		interfaceFamilyEClass = createEClass(INTERFACE_FAMILY);
 
@@ -1887,13 +1887,13 @@ public class CAEXPackageImpl extends EPackageImpl implements CAEXPackage {
 		createEReference(mappingEClass, MAPPING__ATTRIBUTE_NAME_MAPPING);
 		createEReference(mappingEClass, MAPPING__INTERFACE_ID_MAPPING);
 
-		nominalScaledTypeEClass = createEClass(NOMINAL_SCALED_TYPE);
-		createEAttribute(nominalScaledTypeEClass, NOMINAL_SCALED_TYPE__REQUIRED_VALUE);
+		nominalScaledEClass = createEClass(NOMINAL_SCALED);
+		createEAttribute(nominalScaledEClass, NOMINAL_SCALED__REQUIRED_VALUE);
 
-		ordinalScaledTypeEClass = createEClass(ORDINAL_SCALED_TYPE);
-		createEAttribute(ordinalScaledTypeEClass, ORDINAL_SCALED_TYPE__REQUIRED_MAX_VALUE);
-		createEAttribute(ordinalScaledTypeEClass, ORDINAL_SCALED_TYPE__REQUIRED_VALUE);
-		createEAttribute(ordinalScaledTypeEClass, ORDINAL_SCALED_TYPE__REQUIRED_MIN_VALUE);
+		ordinalScaledEClass = createEClass(ORDINAL_SCALED);
+		createEAttribute(ordinalScaledEClass, ORDINAL_SCALED__REQUIRED_MAX_VALUE);
+		createEAttribute(ordinalScaledEClass, ORDINAL_SCALED__REQUIRED_VALUE);
+		createEAttribute(ordinalScaledEClass, ORDINAL_SCALED__REQUIRED_MIN_VALUE);
 
 		refSemanticEClass = createEClass(REF_SEMANTIC);
 		createEAttribute(refSemanticEClass, REF_SEMANTIC__CORRESPONDING_ATTRIBUTE_PATH);
@@ -2020,7 +2020,7 @@ public class CAEXPackageImpl extends EPackageImpl implements CAEXPackage {
 		caexFileEClass.getESuperTypes().add(this.getCAEXBasicObject());
 		caexObjectEClass.getESuperTypes().add(this.getCAEXBasicObject());
 		externalInterfaceEClass.getESuperTypes().add(this.getInterfaceClass());
-		externalReferenceTypeEClass.getESuperTypes().add(this.getCAEXBasicObject());
+		externalReferenceEClass.getESuperTypes().add(this.getCAEXBasicObject());
 		instanceHierarchyEClass.getESuperTypes().add(this.getCAEXObject());
 		interfaceClassLibEClass.getESuperTypes().add(this.getCAEXObject());
 		interfaceClassEClass.getESuperTypes().add(this.getCAEXObject());
@@ -2064,23 +2064,23 @@ public class CAEXPackageImpl extends EPackageImpl implements CAEXPackage {
 		initEReference(getAttributeLib_AttributeType(), this.getAttribute(), null, "attributeType", null, 0, -1, AttributeLib.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(attributeValueRequirementEClass, AttributeValueRequirement.class, "AttributeValueRequirement", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getAttributeValueRequirement_OrdinalScaledType(), this.getOrdinalScaledType(), null, "ordinalScaledType", null, 0, 1, AttributeValueRequirement.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getAttributeValueRequirement_NominalScaledType(), this.getNominalScaledType(), null, "nominalScaledType", null, 0, 1, AttributeValueRequirement.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getAttributeValueRequirement_OrdinalScaledType(), this.getOrdinalScaled(), null, "ordinalScaledType", null, 0, 1, AttributeValueRequirement.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getAttributeValueRequirement_NominalScaledType(), this.getNominalScaled(), null, "nominalScaledType", null, 0, 1, AttributeValueRequirement.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getAttributeValueRequirement_UnknownType(), this.getUnknownType(), null, "unknownType", null, 0, 1, AttributeValueRequirement.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getAttributeValueRequirement_Name(), theXMLTypePackage.getString(), "name", null, 1, 1, AttributeValueRequirement.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(caexBasicObjectEClass, CAEXBasicObject.class, "CAEXBasicObject", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getCAEXBasicObject_ChangeMode(), this.getChangeMode(), "changeMode", "state", 0, 1, CAEXBasicObject.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getCAEXBasicObject_Description(), this.getDescription(), null, "description", null, 0, 1, CAEXBasicObject.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getCAEXBasicObject_Version(), this.getVersion(), null, "version", null, 0, 1, CAEXBasicObject.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getCAEXBasicObject_Revision(), this.getRevision(), null, "revision", null, 0, -1, CAEXBasicObject.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getCAEXBasicObject_Copyright(), this.getCopyright(), null, "copyright", null, 0, 1, CAEXBasicObject.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getCAEXBasicObject_AdditionalInformation(), this.getAdditionalInformation(), null, "additionalInformation", null, 0, 1, CAEXBasicObject.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getCAEXBasicObject_Description(), this.getDescription(), null, "description", null, 0, 1, CAEXBasicObject.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getCAEXBasicObject_Version(), this.getVersion(), null, "version", null, 0, 1, CAEXBasicObject.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getCAEXBasicObject_Revision(), this.getRevision(), null, "revision", null, 0, -1, CAEXBasicObject.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getCAEXBasicObject_Copyright(), this.getCopyright(), null, "copyright", null, 0, 1, CAEXBasicObject.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getCAEXBasicObject_AdditionalInformation(), this.getAdditionalInformation(), null, "additionalInformation", null, 0, -1, CAEXBasicObject.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(caexFileEClass, CAEXFile.class, "CAEXFile", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getCAEXFile_SuperiorStandardVersion(), theXMLTypePackage.getString(), "superiorStandardVersion", null, 0, -1, CAEXFile.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, !IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getCAEXFile_SourceDocumentInformation(), this.getSourceDocumentInformation(), null, "sourceDocumentInformation", null, 1, -1, CAEXFile.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getCAEXFile_ExternalReference(), this.getExternalReferenceType(), null, "externalReference", null, 0, -1, CAEXFile.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getCAEXFile_ExternalReference(), this.getExternalReference(), null, "externalReference", null, 0, -1, CAEXFile.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getCAEXFile_InstanceHierarchy(), this.getInstanceHierarchy(), null, "instanceHierarchy", null, 0, -1, CAEXFile.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getCAEXFile_InterfaceClassLib(), this.getInterfaceClassLib(), null, "interfaceClassLib", null, 0, -1, CAEXFile.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getCAEXFile_RoleClassLib(), this.getRoleClassLib(), null, "roleClassLib", null, 0, -1, CAEXFile.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -2100,11 +2100,10 @@ public class CAEXPackageImpl extends EPackageImpl implements CAEXPackage {
 		initEReference(getDocumentRoot_CAEXFile(), this.getCAEXFile(), null, "cAEXFile", null, 0, -2, DocumentRoot.class, IS_TRANSIENT, IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
 
 		initEClass(externalInterfaceEClass, ExternalInterface.class, "ExternalInterface", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getExternalInterface_ExternalInterface(), this.getInterfaceClass(), null, "externalInterface", null, 0, -1, ExternalInterface.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
-		initEClass(externalReferenceTypeEClass, ExternalReferenceType.class, "ExternalReferenceType", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEAttribute(getExternalReferenceType_Alias(), theXMLTypePackage.getString(), "alias", null, 1, 1, ExternalReferenceType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getExternalReferenceType_Path(), theXMLTypePackage.getString(), "path", null, 1, 1, ExternalReferenceType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEClass(externalReferenceEClass, ExternalReference.class, "ExternalReference", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getExternalReference_Alias(), theXMLTypePackage.getString(), "alias", null, 1, 1, ExternalReference.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getExternalReference_Path(), theXMLTypePackage.getString(), "path", null, 1, 1, ExternalReference.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(instanceHierarchyEClass, InstanceHierarchy.class, "InstanceHierarchy", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getInstanceHierarchy_InternalElement(), this.getInternalElement(), null, "internalElement", null, 0, -1, InstanceHierarchy.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -2117,6 +2116,7 @@ public class CAEXPackageImpl extends EPackageImpl implements CAEXPackage {
 		initEAttribute(getInterfaceClass_RefBaseClassPath(), theXMLTypePackage.getString(), "refBaseClassPath", null, 0, 1, InterfaceClass.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getInterfaceClass_BaseClass(), this.getInterfaceClass(), null, "baseClass", null, 0, 1, InterfaceClass.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getInterfaceClass_InterfaceClass(), this.getInterfaceClass(), null, "interfaceClass", null, 0, -1, InterfaceClass.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getInterfaceClass_ExternalInterface(), this.getInterfaceClass(), null, "externalInterface", null, 0, -1, InterfaceClass.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(interfaceFamilyEClass, InterfaceFamily.class, "InterfaceFamily", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
@@ -2134,20 +2134,20 @@ public class CAEXPackageImpl extends EPackageImpl implements CAEXPackage {
 		initEClass(internalLinkEClass, InternalLink.class, "InternalLink", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getInternalLink_RefPartnerSideA(), theXMLTypePackage.getString(), "refPartnerSideA", null, 1, 1, InternalLink.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getInternalLink_RefPartnerSideB(), theXMLTypePackage.getString(), "refPartnerSideB", null, 1, 1, InternalLink.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getInternalLink_PartnerSideA(), this.getExternalInterface(), null, "partnerSideA", null, 1, 1, InternalLink.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getInternalLink_PartnerSideB(), this.getExternalInterface(), null, "partnerSideB", null, 1, 1, InternalLink.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getInternalLink_PartnerSideA(), this.getInterfaceClass(), null, "partnerSideA", null, 1, 1, InternalLink.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getInternalLink_PartnerSideB(), this.getInterfaceClass(), null, "partnerSideB", null, 1, 1, InternalLink.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(mappingEClass, Mapping.class, "Mapping", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getMapping_AttributeNameMapping(), this.getAttributeNameMapping(), null, "attributeNameMapping", null, 0, -1, Mapping.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getMapping_InterfaceIDMapping(), this.getInterfaceIDMapping(), null, "interfaceIDMapping", null, 0, -1, Mapping.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
-		initEClass(nominalScaledTypeEClass, NominalScaledType.class, "NominalScaledType", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEAttribute(getNominalScaledType_RequiredValue(), theXMLTypePackage.getString(), "requiredValue", null, 0, -1, NominalScaledType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, !IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEClass(nominalScaledEClass, NominalScaled.class, "NominalScaled", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getNominalScaled_RequiredValue(), theXMLTypePackage.getString(), "requiredValue", null, 0, -1, NominalScaled.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, !IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
-		initEClass(ordinalScaledTypeEClass, OrdinalScaledType.class, "OrdinalScaledType", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEAttribute(getOrdinalScaledType_RequiredMaxValue(), theXMLTypePackage.getString(), "requiredMaxValue", null, 0, 1, OrdinalScaledType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getOrdinalScaledType_RequiredValue(), theXMLTypePackage.getString(), "requiredValue", null, 0, 1, OrdinalScaledType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getOrdinalScaledType_RequiredMinValue(), theXMLTypePackage.getString(), "requiredMinValue", null, 0, 1, OrdinalScaledType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEClass(ordinalScaledEClass, OrdinalScaled.class, "OrdinalScaled", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getOrdinalScaled_RequiredMaxValue(), theXMLTypePackage.getString(), "requiredMaxValue", null, 0, 1, OrdinalScaled.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getOrdinalScaled_RequiredValue(), theXMLTypePackage.getString(), "requiredValue", null, 0, 1, OrdinalScaled.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getOrdinalScaled_RequiredMinValue(), theXMLTypePackage.getString(), "requiredMinValue", null, 0, 1, OrdinalScaled.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(refSemanticEClass, RefSemantic.class, "RefSemantic", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getRefSemantic_CorrespondingAttributePath(), theXMLTypePackage.getString(), "correspondingAttributePath", null, 1, 1, RefSemantic.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
