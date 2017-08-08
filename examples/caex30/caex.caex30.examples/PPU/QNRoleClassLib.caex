@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<caex:CAEXFile xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:caex="http://www.dke.de/CAEX/300" fileName="QNRoleClassLib">
+  <roleClassLib name="Queuing Network Role Class Library">
+    <roleClass name="Server">
+      <attribute name="quantity" value="1" unit=""/>
+      <externalInterface name="Output"/>
+      <externalInterface name="Input"/>
+    </roleClass>
+    <roleClass name="Arc"/>
+  </roleClassLib>
+</caex:CAEXFile>

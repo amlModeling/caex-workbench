@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<caex:CAEXFile xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:caex="http://www.dke.de/CAEX/215" fileName="PPU">
+  <instanceHierarchy name="Pick and Place Unit">
+    <internalElement name="Stack"/>
+    <internalElement name="Crane"/>
+    <internalElement name="Ramp"/>
+  </instanceHierarchy>
+</caex:CAEXFile>
