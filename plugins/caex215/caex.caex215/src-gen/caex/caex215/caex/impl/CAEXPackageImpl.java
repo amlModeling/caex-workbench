@@ -1932,7 +1932,7 @@ public class CAEXPackageImpl extends EPackageImpl implements CAEXPackage {
 		initEReference(getMapping_InterfaceNameMapping(), this.getInterfaceNameMapping(), null, "interfaceNameMapping", null, 0, -1, Mapping.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(nominalScaledEClass, NominalScaled.class, "NominalScaled", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEAttribute(getNominalScaled_RequiredValue(), theXMLTypePackage.getString(), "requiredValue", null, 0, 1, NominalScaled.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getNominalScaled_RequiredValue(), theXMLTypePackage.getString(), "requiredValue", null, 0, -1, NominalScaled.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(ordinalScaledEClass, OrdinalScaled.class, "OrdinalScaled", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getOrdinalScaled_RequiredMaxValue(), theXMLTypePackage.getString(), "requiredMaxValue", null, 0, 1, OrdinalScaled.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);

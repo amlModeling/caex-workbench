@@ -5,12 +5,11 @@ package caex.caex215.caex.impl;
 import caex.caex215.caex.CAEXPackage;
 import caex.caex215.caex.NominalScaled;
 
-import org.eclipse.emf.common.notify.Notification;
-
+import java.util.Collection;
+import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
-
-import org.eclipse.emf.ecore.impl.ENotificationImpl;
 import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
+import org.eclipse.emf.ecore.util.EDataTypeUniqueEList;
 
 /**
  * <!-- begin-user-doc -->
@@ -27,24 +26,14 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  */
 public class NominalScaledImpl extends MinimalEObjectImpl.Container implements NominalScaled {
 	/**
-	 * The default value of the '{@link #getRequiredValue() <em>Required Value</em>}' attribute.
+	 * The cached value of the '{@link #getRequiredValue() <em>Required Value</em>}' attribute list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see #getRequiredValue()
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String REQUIRED_VALUE_EDEFAULT = null;
-
-	/**
-	 * The cached value of the '{@link #getRequiredValue() <em>Required Value</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getRequiredValue()
-	 * @generated
-	 * @ordered
-	 */
-	protected String requiredValue = REQUIRED_VALUE_EDEFAULT;
+	protected EList<String> requiredValue;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -70,20 +59,11 @@ public class NominalScaledImpl extends MinimalEObjectImpl.Container implements N
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getRequiredValue() {
+	public EList<String> getRequiredValue() {
+		if (requiredValue == null) {
+			requiredValue = new EDataTypeUniqueEList<String>(String.class, this, CAEXPackage.NOMINAL_SCALED__REQUIRED_VALUE);
+		}
 		return requiredValue;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public void setRequiredValue(String newRequiredValue) {
-		String oldRequiredValue = requiredValue;
-		requiredValue = newRequiredValue;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, CAEXPackage.NOMINAL_SCALED__REQUIRED_VALUE, oldRequiredValue, requiredValue));
 	}
 
 	/**
@@ -105,11 +85,13 @@ public class NominalScaledImpl extends MinimalEObjectImpl.Container implements N
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@SuppressWarnings("unchecked")
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
 			case CAEXPackage.NOMINAL_SCALED__REQUIRED_VALUE:
-				setRequiredValue((String)newValue);
+				getRequiredValue().clear();
+				getRequiredValue().addAll((Collection<? extends String>)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -124,7 +106,7 @@ public class NominalScaledImpl extends MinimalEObjectImpl.Container implements N
 	public void eUnset(int featureID) {
 		switch (featureID) {
 			case CAEXPackage.NOMINAL_SCALED__REQUIRED_VALUE:
-				setRequiredValue(REQUIRED_VALUE_EDEFAULT);
+				getRequiredValue().clear();
 				return;
 		}
 		super.eUnset(featureID);
@@ -139,7 +121,7 @@ public class NominalScaledImpl extends MinimalEObjectImpl.Container implements N
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
 			case CAEXPackage.NOMINAL_SCALED__REQUIRED_VALUE:
-				return REQUIRED_VALUE_EDEFAULT == null ? requiredValue != null : !REQUIRED_VALUE_EDEFAULT.equals(requiredValue);
+				return requiredValue != null && !requiredValue.isEmpty();
 		}
 		return super.eIsSet(featureID);
 	}

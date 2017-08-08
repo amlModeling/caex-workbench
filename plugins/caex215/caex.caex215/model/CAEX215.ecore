@@ -152,7 +152,8 @@
         eType="#//InterfaceNameMapping" containment="true" resolveProxies="false"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="NominalScaled">
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="requiredValue" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//String"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="requiredValue" upperBound="-1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//String"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="OrdinalScaled">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="requiredMaxValue" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//String"/>

@@ -2413,7 +2413,7 @@ public interface CAEXPackage extends EPackage {
 	int NOMINAL_SCALED = 19;
 
 	/**
-	 * The feature id for the '<em><b>Required Value</b></em>' attribute.
+	 * The feature id for the '<em><b>Required Value</b></em>' attribute list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -4676,10 +4676,10 @@ public interface CAEXPackage extends EPackage {
 	EClass getNominalScaled();
 
 	/**
-	 * Returns the meta object for the attribute '{@link caex.caex215.caex.NominalScaled#getRequiredValue <em>Required Value</em>}'.
+	 * Returns the meta object for the attribute list '{@link caex.caex215.caex.NominalScaled#getRequiredValue <em>Required Value</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Required Value</em>'.
+	 * @return the meta object for the attribute list '<em>Required Value</em>'.
 	 * @see caex.caex215.caex.NominalScaled#getRequiredValue()
 	 * @see #getNominalScaled()
 	 * @generated
@@ -5936,7 +5936,7 @@ public interface CAEXPackage extends EPackage {
 		EClass NOMINAL_SCALED = eINSTANCE.getNominalScaled();
 
 		/**
-		 * The meta object literal for the '<em><b>Required Value</b></em>' attribute feature.
+		 * The meta object literal for the '<em><b>Required Value</b></em>' attribute list feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
