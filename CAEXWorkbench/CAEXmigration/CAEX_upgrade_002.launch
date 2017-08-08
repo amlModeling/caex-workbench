@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <launchConfiguration type="org.eclipse.m2m.atl.adt.launching.atlTransformation">
-<stringAttribute key="ATL File Name" value="/CAEXWorkbench/CAEXmigration/caex_migration_215_300.atl"/>
+<stringAttribute key="ATL File Name" value="/CAEX30Migration/CAEXmigration/caex_migration_215_300.atl"/>
 <stringAttribute key="ATL VM" value="EMF-specific VM"/>
 <stringAttribute key="ATL_COMPILER" value="atl2006"/>
 <booleanAttribute key="IS_REFINING" value="false"/>
@@ -37,10 +37,10 @@
 <mapEntry key="OUT" value="copy"/>
 </mapAttribute>
 <mapAttribute key="Path">
-<mapEntry key="IN" value="/CAEXWorkbench/models/215/002/input/002_2_PPU_CAEX215_simplified.xmi"/>
-<mapEntry key="OUT" value="/CAEXWorkbench/models/300/002/output/002_2_PPU_CAEX300_simplified.xmi"/>
-<mapEntry key="caex" value="/CAEXWorkbench/metamodels/2.15/CAEX_wao_215.ecore"/>
-<mapEntry key="copy" value="/CAEXWorkbench/metamodels/3.0/CAEX_wao_300.ecore"/>
+<mapEntry key="IN" value="/CAEX30Migration/models/215/002/input/002_2_PPU_CAEX215_simplified.xmi"/>
+<mapEntry key="OUT" value="/CAEX30Migration/models/300/002/output/002_2_PPU_CAEX300_simplified.xmi"/>
+<mapEntry key="caex" value="/caex.caex215/model/CAEX215.ecore"/>
+<mapEntry key="copy" value="/caex.caex30/model/CAEX30.ecore"/>
 </mapAttribute>
 <listAttribute key="Superimpose"/>
 </launchConfiguration>
