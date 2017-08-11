@@ -194,8 +194,7 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="externalInterface" upperBound="-1"
         eType="#//InterfaceClass" containment="true" resolveProxies="false"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="refBaseRoleClassPath" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//String"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="roleClass" lowerBound="1"
-        eType="#//RoleClass"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="roleClass" eType="#//RoleClass"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="SupportedRoleClass" eSuperTypes="#//CAEXBasicObject">
     <eStructuralFeatures xsi:type="ecore:EReference" name="mappingObject" eType="#//Mapping"

@@ -93,7 +93,7 @@ public interface RoleRequirements extends CAEXBasicObject {
 	 * @return the value of the '<em>Role Class</em>' reference.
 	 * @see #setRoleClass(RoleClass)
 	 * @see caex.caex215.caex.CAEXPackage#getRoleRequirements_RoleClass()
-	 * @model required="true"
+	 * @model
 	 * @generated
 	 */
 	RoleClass getRoleClass();
