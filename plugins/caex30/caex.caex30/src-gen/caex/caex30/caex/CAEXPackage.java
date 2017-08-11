@@ -397,13 +397,22 @@ public interface CAEXPackage extends EPackage {
 	int ATTRIBUTE__UNIT = CAEX_OBJECT_FEATURE_COUNT + 7;
 
 	/**
+	 * The feature id for the '<em><b>Reference Attribute</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ATTRIBUTE__REFERENCE_ATTRIBUTE = CAEX_OBJECT_FEATURE_COUNT + 8;
+
+	/**
 	 * The number of structural features of the '<em>Attribute</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ATTRIBUTE_FEATURE_COUNT = CAEX_OBJECT_FEATURE_COUNT + 8;
+	int ATTRIBUTE_FEATURE_COUNT = CAEX_OBJECT_FEATURE_COUNT + 9;
 
 	/**
 	 * The number of operations of the '<em>Attribute</em>' class.
@@ -567,6 +576,15 @@ public interface CAEXPackage extends EPackage {
 	 * @ordered
 	 */
 	int ATTRIBUTE_FAMILY__UNIT = ATTRIBUTE__UNIT;
+
+	/**
+	 * The feature id for the '<em><b>Reference Attribute</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ATTRIBUTE_FAMILY__REFERENCE_ATTRIBUTE = ATTRIBUTE__REFERENCE_ATTRIBUTE;
 
 	/**
 	 * The number of structural features of the '<em>Attribute Family</em>' class.
@@ -4431,6 +4449,17 @@ public interface CAEXPackage extends EPackage {
 	EAttribute getAttribute_Unit();
 
 	/**
+	 * Returns the meta object for the reference '{@link caex.caex30.caex.Attribute#getReferenceAttribute <em>Reference Attribute</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Reference Attribute</em>'.
+	 * @see caex.caex30.caex.Attribute#getReferenceAttribute()
+	 * @see #getAttribute()
+	 * @generated
+	 */
+	EReference getAttribute_ReferenceAttribute();
+
+	/**
 	 * Returns the meta object for class '{@link caex.caex30.caex.AttributeLib <em>Attribute Lib</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -6028,6 +6057,14 @@ public interface CAEXPackage extends EPackage {
 		 * @generated
 		 */
 		EAttribute ATTRIBUTE__UNIT = eINSTANCE.getAttribute_Unit();
+
+		/**
+		 * The meta object literal for the '<em><b>Reference Attribute</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference ATTRIBUTE__REFERENCE_ATTRIBUTE = eINSTANCE.getAttribute_ReferenceAttribute();
 
 		/**
 		 * The meta object literal for the '{@link caex.caex30.caex.impl.AttributeLibImpl <em>Attribute Lib</em>}' class.

@@ -38,6 +38,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *   <li>{@link caex.caex30.caex.impl.AttributeImpl#getAttributeDataType <em>Attribute Data Type</em>}</li>
  *   <li>{@link caex.caex30.caex.impl.AttributeImpl#getRefAttributeType <em>Ref Attribute Type</em>}</li>
  *   <li>{@link caex.caex30.caex.impl.AttributeImpl#getUnit <em>Unit</em>}</li>
+ *   <li>{@link caex.caex30.caex.impl.AttributeImpl#getReferenceAttribute <em>Reference Attribute</em>}</li>
  * </ul>
  *
  * @generated
@@ -172,6 +173,16 @@ public class AttributeImpl extends CAEXObjectImpl implements Attribute {
 	 * @ordered
 	 */
 	protected String unit = UNIT_EDEFAULT;
+
+	/**
+	 * The cached value of the '{@link #getReferenceAttribute() <em>Reference Attribute</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getReferenceAttribute()
+	 * @generated
+	 * @ordered
+	 */
+	protected Attribute referenceAttribute;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -338,6 +349,44 @@ public class AttributeImpl extends CAEXObjectImpl implements Attribute {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public Attribute getReferenceAttribute() {
+		if (referenceAttribute != null && referenceAttribute.eIsProxy()) {
+			InternalEObject oldReferenceAttribute = (InternalEObject)referenceAttribute;
+			referenceAttribute = (Attribute)eResolveProxy(oldReferenceAttribute);
+			if (referenceAttribute != oldReferenceAttribute) {
+				if (eNotificationRequired())
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, CAEXPackage.ATTRIBUTE__REFERENCE_ATTRIBUTE, oldReferenceAttribute, referenceAttribute));
+			}
+		}
+		return referenceAttribute;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Attribute basicGetReferenceAttribute() {
+		return referenceAttribute;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setReferenceAttribute(Attribute newReferenceAttribute) {
+		Attribute oldReferenceAttribute = referenceAttribute;
+		referenceAttribute = newReferenceAttribute;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, CAEXPackage.ATTRIBUTE__REFERENCE_ATTRIBUTE, oldReferenceAttribute, referenceAttribute));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
@@ -375,6 +424,9 @@ public class AttributeImpl extends CAEXObjectImpl implements Attribute {
 				return getRefAttributeType();
 			case CAEXPackage.ATTRIBUTE__UNIT:
 				return getUnit();
+			case CAEXPackage.ATTRIBUTE__REFERENCE_ATTRIBUTE:
+				if (resolve) return getReferenceAttribute();
+				return basicGetReferenceAttribute();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -415,6 +467,9 @@ public class AttributeImpl extends CAEXObjectImpl implements Attribute {
 			case CAEXPackage.ATTRIBUTE__UNIT:
 				setUnit((String)newValue);
 				return;
+			case CAEXPackage.ATTRIBUTE__REFERENCE_ATTRIBUTE:
+				setReferenceAttribute((Attribute)newValue);
+				return;
 		}
 		super.eSet(featureID, newValue);
 	}
@@ -451,6 +506,9 @@ public class AttributeImpl extends CAEXObjectImpl implements Attribute {
 			case CAEXPackage.ATTRIBUTE__UNIT:
 				setUnit(UNIT_EDEFAULT);
 				return;
+			case CAEXPackage.ATTRIBUTE__REFERENCE_ATTRIBUTE:
+				setReferenceAttribute((Attribute)null);
+				return;
 		}
 		super.eUnset(featureID);
 	}
@@ -479,6 +537,8 @@ public class AttributeImpl extends CAEXObjectImpl implements Attribute {
 				return REF_ATTRIBUTE_TYPE_EDEFAULT == null ? refAttributeType != null : !REF_ATTRIBUTE_TYPE_EDEFAULT.equals(refAttributeType);
 			case CAEXPackage.ATTRIBUTE__UNIT:
 				return UNIT_EDEFAULT == null ? unit != null : !UNIT_EDEFAULT.equals(unit);
+			case CAEXPackage.ATTRIBUTE__REFERENCE_ATTRIBUTE:
+				return referenceAttribute != null;
 		}
 		return super.eIsSet(featureID);
 	}

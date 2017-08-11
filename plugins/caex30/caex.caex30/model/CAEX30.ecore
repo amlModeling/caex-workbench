@@ -25,6 +25,7 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="attributeDataType" eType="#//AttributeDataType"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="refAttributeType" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//String"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="unit" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//String"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="referenceAttribute" eType="#//Attribute"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="AttributeLib" eSuperTypes="#//CAEXObject">
     <eStructuralFeatures xsi:type="ecore:EReference" name="attributeType" upperBound="-1"

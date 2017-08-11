@@ -53,6 +53,7 @@ public class AttributeItemProvider extends CAEXObjectItemProvider {
 			addAttributeDataTypePropertyDescriptor(object);
 			addRefAttributeTypePropertyDescriptor(object);
 			addUnitPropertyDescriptor(object);
+			addReferenceAttributePropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
 	}
@@ -163,6 +164,28 @@ public class AttributeItemProvider extends CAEXObjectItemProvider {
 				 false,
 				 false,
 				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+				 null,
+				 null));
+	}
+
+	/**
+	 * This adds a property descriptor for the Reference Attribute feature.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void addReferenceAttributePropertyDescriptor(Object object) {
+		itemPropertyDescriptors.add
+			(createItemPropertyDescriptor
+				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
+				 getResourceLocator(),
+				 getString("_UI_Attribute_referenceAttribute_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_Attribute_referenceAttribute_feature", "_UI_Attribute_type"),
+				 CAEXPackage.Literals.ATTRIBUTE__REFERENCE_ATTRIBUTE,
+				 true,
+				 false,
+				 true,
+				 null,
 				 null,
 				 null));
 	}

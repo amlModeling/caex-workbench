@@ -32,6 +32,7 @@
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CAEX30.ecore#//Attribute/attributeDataType"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CAEX30.ecore#//Attribute/refAttributeType"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CAEX30.ecore#//Attribute/unit"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CAEX30.ecore#//Attribute/referenceAttribute"/>
     </genClasses>
     <genClasses ecoreClass="CAEX30.ecore#//AttributeLib">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CAEX30.ecore#//AttributeLib/attributeType"/>

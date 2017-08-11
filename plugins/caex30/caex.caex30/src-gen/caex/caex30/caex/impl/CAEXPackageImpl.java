@@ -550,6 +550,15 @@ public class CAEXPackageImpl extends EPackageImpl implements CAEXPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EReference getAttribute_ReferenceAttribute() {
+		return (EReference)attributeEClass.getEStructuralFeatures().get(8);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EClass getAttributeLib() {
 		return attributeLibEClass;
 	}
@@ -1805,6 +1814,7 @@ public class CAEXPackageImpl extends EPackageImpl implements CAEXPackage {
 		createEAttribute(attributeEClass, ATTRIBUTE__ATTRIBUTE_DATA_TYPE);
 		createEAttribute(attributeEClass, ATTRIBUTE__REF_ATTRIBUTE_TYPE);
 		createEAttribute(attributeEClass, ATTRIBUTE__UNIT);
+		createEReference(attributeEClass, ATTRIBUTE__REFERENCE_ATTRIBUTE);
 
 		attributeLibEClass = createEClass(ATTRIBUTE_LIB);
 		createEReference(attributeLibEClass, ATTRIBUTE_LIB__ATTRIBUTE_TYPE);
@@ -2059,6 +2069,7 @@ public class CAEXPackageImpl extends EPackageImpl implements CAEXPackage {
 		initEAttribute(getAttribute_AttributeDataType(), this.getAttributeDataType(), "attributeDataType", null, 0, 1, Attribute.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getAttribute_RefAttributeType(), theXMLTypePackage.getString(), "refAttributeType", null, 0, 1, Attribute.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getAttribute_Unit(), theXMLTypePackage.getString(), "unit", null, 0, 1, Attribute.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getAttribute_ReferenceAttribute(), this.getAttribute(), null, "referenceAttribute", null, 0, 1, Attribute.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(attributeLibEClass, AttributeLib.class, "AttributeLib", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getAttributeLib_AttributeType(), this.getAttribute(), null, "attributeType", null, 0, -1, AttributeLib.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);

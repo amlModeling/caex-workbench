@@ -21,6 +21,7 @@ import org.eclipse.emf.common.util.EList;
  *   <li>{@link caex.caex30.caex.Attribute#getAttributeDataType <em>Attribute Data Type</em>}</li>
  *   <li>{@link caex.caex30.caex.Attribute#getRefAttributeType <em>Ref Attribute Type</em>}</li>
  *   <li>{@link caex.caex30.caex.Attribute#getUnit <em>Unit</em>}</li>
+ *   <li>{@link caex.caex30.caex.Attribute#getReferenceAttribute <em>Reference Attribute</em>}</li>
  * </ul>
  *
  * @see caex.caex30.caex.CAEXPackage#getAttribute()
@@ -205,5 +206,31 @@ public interface Attribute extends CAEXObject {
 	 * @generated
 	 */
 	void setUnit(String value);
+
+	/**
+	 * Returns the value of the '<em><b>Reference Attribute</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Reference Attribute</em>' reference isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Reference Attribute</em>' reference.
+	 * @see #setReferenceAttribute(Attribute)
+	 * @see caex.caex30.caex.CAEXPackage#getAttribute_ReferenceAttribute()
+	 * @model
+	 * @generated
+	 */
+	Attribute getReferenceAttribute();
+
+	/**
+	 * Sets the value of the '{@link caex.caex30.caex.Attribute#getReferenceAttribute <em>Reference Attribute</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Reference Attribute</em>' reference.
+	 * @see #getReferenceAttribute()
+	 * @generated
+	 */
+	void setReferenceAttribute(Attribute value);
 
 } // Attribute
