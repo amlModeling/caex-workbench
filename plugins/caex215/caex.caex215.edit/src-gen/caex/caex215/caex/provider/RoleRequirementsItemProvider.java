@@ -3,23 +3,21 @@
 package caex.caex215.caex.provider;
 
 
-import caex.caex215.caex.CAEXFactory;
-import caex.caex215.caex.CAEXPackage;
-import caex.caex215.caex.ChangeMode;
-import caex.caex215.caex.RoleRequirements;
-
 import java.util.Collection;
 import java.util.List;
 
 import org.eclipse.emf.common.notify.AdapterFactory;
 import org.eclipse.emf.common.notify.Notification;
-
 import org.eclipse.emf.ecore.EStructuralFeature;
-
 import org.eclipse.emf.edit.provider.ComposeableAdapterFactory;
 import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ViewerNotification;
+
+import caex.caex215.caex.CAEXFactory;
+import caex.caex215.caex.CAEXPackage;
+import caex.caex215.caex.RoleClass;
+import caex.caex215.caex.RoleRequirements;
 
 /**
  * This is the item provider adapter for a {@link caex.caex215.caex.RoleRequirements} object.
@@ -145,15 +143,17 @@ public class RoleRequirementsItemProvider extends CAEXBasicObjectItemProvider {
 	 * This returns the label text for the adapted class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
+	 * @generated NOT
 	 */
 	@Override
 	public String getText(Object object) {
-		ChangeMode labelValue = ((RoleRequirements)object).getChangeMode();
-		String label = labelValue == null ? null : labelValue.toString();
+		RoleClass roleClass = ((RoleRequirements)object).getRoleClass();
+		String labelValue = roleClass == null ? null : roleClass.getName();
+		String label = labelValue == null ? null : labelValue;
 		return label == null || label.length() == 0 ?
 			getString("_UI_RoleRequirements_type") :
-			getString("_UI_RoleRequirements_type") + " " + label;
+				label;
+//			getString("_UI_RoleRequirements_type") + " " + label;
 	}
 	
 

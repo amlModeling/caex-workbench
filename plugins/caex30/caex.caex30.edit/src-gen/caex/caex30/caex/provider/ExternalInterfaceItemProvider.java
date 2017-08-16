@@ -60,14 +60,16 @@ public class ExternalInterfaceItemProvider extends InterfaceClassItemProvider {
 	 * This returns the label text for the adapted class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
+	 * @generated NOT
 	 */
 	@Override
 	public String getText(Object object) {
-		String label = ((ExternalInterface)object).getName();
-		return label == null || label.length() == 0 ?
+		ExternalInterface externalInterface = (ExternalInterface)object;
+		String externalInterfaceLabel = externalInterface.getName();
+		return externalInterfaceLabel == null || externalInterfaceLabel.length() == 0 ?
 			getString("_UI_ExternalInterface_type") :
-			getString("_UI_ExternalInterface_type") + " " + label;
+				externalInterfaceLabel;
+//			getString("_UI_ExternalInterface_type") + " " + label;
 	}
 	
 

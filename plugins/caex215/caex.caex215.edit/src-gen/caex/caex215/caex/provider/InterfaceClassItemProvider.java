@@ -144,14 +144,15 @@ public class InterfaceClassItemProvider extends CAEXObjectItemProvider {
 	 * This returns the label text for the adapted class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
+	 * @generated NOT
 	 */
 	@Override
 	public String getText(Object object) {
 		String label = ((InterfaceClass)object).getName();
 		return label == null || label.length() == 0 ?
 			getString("_UI_InterfaceClass_type") :
-			getString("_UI_InterfaceClass_type") + " " + label;
+				label;
+//			getString("_UI_InterfaceClass_type") + " " + label;
 	}
 	
 

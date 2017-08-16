@@ -163,7 +163,8 @@ public class InternalLinkItemProvider extends CAEXObjectItemProvider {
 		String label = ((InternalLink)object).getName();
 		return label == null || label.length() == 0 ?
 			getString("_UI_InternalLink_type") :
-			getString("_UI_InternalLink_type") + " " + label;
+				label;
+//			getString("_UI_InternalLink_type") + " " + label;
 	}
 	
 
