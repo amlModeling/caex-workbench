@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<caex:CAEXFile xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:caex="http://www.dke.de/CAEX/215" fileName="AMLRoleClassLib" schemaVersion="2.15">
+  <roleClassLib name="AMLRoleClassLibrary">
+    <roleClass name="Product"/>
+    <roleClass name="Process"/>
+    <roleClass name="Resource"/>
+  </roleClassLib>
+</caex:CAEXFile>

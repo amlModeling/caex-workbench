@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<caex:CAEXFile xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:caex="http://www.dke.de/CAEX/300" fileName="AMLBaseInterfaceClassLib">
-  <roleClassLib name="AML Role Class Library">
+<caex:CAEXFile xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:caex="http://www.dke.de/CAEX/300" fileName="AMLRoleClassLib" schemaVersion="3.00">
+  <superiorStandardVersion>AML 2.0</superiorStandardVersion>
+  <sourceDocumentInformation lastWritingDateTime="2017-08-16" originID="caex.caex30.caex.presentation.CAEXEditorID" originName="CAEX30 Editor" originVersion="1.0.0"/>
+  <roleClassLib name="AMLRoleClassLibrary">
     <roleClass name="Product"/>
     <roleClass name="Process"/>
     <roleClass name="Resource"/>
