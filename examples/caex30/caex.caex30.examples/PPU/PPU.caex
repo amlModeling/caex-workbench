@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <caex:CAEXFile xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:caex="http://www.dke.de/CAEX/300" fileName="PPU" schemaVersion="3.00">
-  <sourceDocumentInformation lastWritingDateTime="2017-08-16" originID="caex.caex30.caex.presentation.CAEXEditorID" originName="CAEX30 Editor" originProjectID="" originVersion="1.0.0"/>
+  <sourceDocumentInformation lastWritingDateTime="2017-08-16" originID="caex.caex30.caex.presentation.CAEXEditorID" originName="CAEX 3.0 EMF Editor" originProjectID="" originVersion="1.0.0"/>
   <instanceHierarchy name="PickAndPlaceUnit">
-    <internalElement name="Stack">
+    <internalElement name="Stack" refBaseClassPath="PPUSystemUnitClassLib.PickAndPlaceUnitSystemUnitLibrary.Stack" refBaseSystemUnitPath="PPUSystemUnitClassLib.PickAndPlaceUnitSystemUnitLibrary.Stack">
       <externalInterface xsi:type="caex:ExternalInterface" iD="" name="Output" refBaseClassPath="AMLBaseInterfaceClassLib.AMLBaseInterfaceClassLibrary.PPRConnector">
         <baseClass href="AMLBaseInterfaceClassLib.caex#//@interfaceClassLib.0/@interfaceClass.0"/>
       </externalInterface>
@@ -12,7 +12,7 @@
         <roleClass href="AMLRoleClassLib.caex#//@roleClassLib.0/@roleClass.2"/>
       </roleRequirements>
     </internalElement>
-    <internalElement name="Crane">
+    <internalElement name="Crane" refBaseClassPath="PPUSystemUnitClassLib.PickAndPlaceUnitSystemUnitLibrary.Crane" refBaseSystemUnitPath="PPUSystemUnitClassLib.PickAndPlaceUnitSystemUnitLibrary.Crane">
       <externalInterface xsi:type="caex:ExternalInterface" name="Input" refBaseClassPath="AMLBaseInterfaceClassLib.AMLBaseInterfaceClassLibrary.PPRConnector">
         <baseClass href="AMLBaseInterfaceClassLib.caex#//@interfaceClassLib.0/@interfaceClass.0"/>
       </externalInterface>
@@ -25,7 +25,7 @@
         <roleClass href="AMLRoleClassLib.caex#//@roleClassLib.0/@roleClass.2"/>
       </roleRequirements>
     </internalElement>
-    <internalElement name="Ramp">
+    <internalElement name="Ramp" refBaseClassPath="PPUSystemUnitClassLib.PickAndPlaceUnitSystemUnitLibrary.Ramp" refBaseSystemUnitPath="PPUSystemUnitClassLib.PickAndPlaceUnitSystemUnitLibrary.Ramp">
       <externalInterface xsi:type="caex:ExternalInterface" name="Input" refBaseClassPath="AMLBaseInterfaceClassLib.AMLBaseInterfaceClassLibrary.PPRConnector">
         <baseClass href="AMLBaseInterfaceClassLib.caex#//@interfaceClassLib.0/@interfaceClass.0"/>
       </externalInterface>
