@@ -103,7 +103,7 @@ public class InstanceHierarchyItemProvider extends CAEXObjectItemProvider {
 		return label == null || label.length() == 0 ?
 			getString("_UI_InstanceHierarchy_type") :
 				label;
-//			getString("_UI_InstanceHierarchy_type") + " " + label;
+//				label + " (" + getString("_UI_InstanceHierarchy_type") + ")";
 	}
 	
 

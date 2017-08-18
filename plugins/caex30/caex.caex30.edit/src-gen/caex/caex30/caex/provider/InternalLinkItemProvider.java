@@ -164,7 +164,7 @@ public class InternalLinkItemProvider extends CAEXObjectItemProvider {
 		return label == null || label.length() == 0 ?
 			getString("_UI_InternalLink_type") :
 				label;
-//			getString("_UI_InternalLink_type") + " " + label;
+//				label + " (" + getString("_UI_InternalLink_type") + ")";
 	}
 	
 

@@ -68,7 +68,7 @@ public class ExternalInterfaceItemProvider extends InterfaceClassItemProvider {
 		return label == null || label.length() == 0 ?
 			getString("_UI_ExternalInterface_type") :
 				label;
-//			getString("_UI_ExternalInterface_type") + " " + label;
+//				label + " (" + getString("_UI_ExternalInterface_type") + ")";
 	}
 	
 

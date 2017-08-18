@@ -150,7 +150,7 @@ public class SupportedRoleClassItemProvider extends CAEXBasicObjectItemProvider 
 		return label == null || label.length() == 0 ?
 			getString("_UI_SupportedRoleClass_type") :
 				label;
-//			getString("_UI_SupportedRoleClass_type") + " " + label;
+//				label + " (" + getString("_UI_SupportedRoleClass_type") + ")";
 	}
 	
 

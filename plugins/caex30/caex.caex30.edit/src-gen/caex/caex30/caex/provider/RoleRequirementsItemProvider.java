@@ -154,7 +154,7 @@ public class RoleRequirementsItemProvider extends CAEXBasicObjectItemProvider {
 		return label == null || label.length() == 0 ?
 			getString("_UI_RoleRequirements_type") :
 				label;
-//			getString("_UI_RoleRequirements_type") + " " + label;
+//				label + " (" + getString("_UI_RoleRequirements_type") + ")";
 	}
 	
 

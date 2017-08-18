@@ -152,7 +152,7 @@ public class InternalElementItemProvider extends SystemUnitClassItemProvider {
 		return label == null || label.length() == 0 ?
 			getString("_UI_InternalElement_type") :
 				label;
-//			getString("_UI_InternalElement_type") + " " + label;
+//				label + " (" + getString("_UI_InternalElement_type") + ")";
 	}
 	
 

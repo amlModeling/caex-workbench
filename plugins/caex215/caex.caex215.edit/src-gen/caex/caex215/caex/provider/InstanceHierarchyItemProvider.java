@@ -102,8 +102,8 @@ public class InstanceHierarchyItemProvider extends CAEXObjectItemProvider {
 		String label = ((InstanceHierarchy)object).getName();
 		return label == null || label.length() == 0 ?
 			getString("_UI_InstanceHierarchy_type") :
-			label;
-//			getString("_UI_InstanceHierarchy_type") + " " + label;
+				label;
+//				label + " (" + getString("_UI_InstanceHierarchy_type") + ")";
 	}
 	
 

@@ -153,7 +153,7 @@ public class RoleClassItemProvider extends CAEXObjectItemProvider {
 		return label == null || label.length() == 0 ?
 			getString("_UI_RoleClass_type") :
 				label;
-//			getString("_UI_RoleClass_type") + " " + label;
+//				label + " (" + getString("_UI_RoleClass_type") + ")";
 	}
 	
 
