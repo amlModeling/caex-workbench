@@ -1,0 +1,86 @@
+context caex30!CAEXFile {
+
+	constraint superiorStandardVersionIsMandatory {
+	
+		check {
+			return self.superiorStandardVersion->exists(v | v= 'AutomationML 3.0');
+		}
+		
+		message {
+			return 'The File ' + self.fileName + ' must define the superior standard version AutomationML 3.0';
+		}
+	}
+}
+
+context caex30!CAEXObject {
+	
+	constraint idIsMandatory {
+	
+		check {
+			return self.iD <> null;
+		} 
+			
+		message {
+			return 'The Object ' + self.name + ' has no ID.';
+		}	
+	}
+}
+
+context caex30!SystemUnitClass {
+	
+	constraint inheritanceMustPointToSUC {
+	
+		check {
+			return self.baseClass <> null implies
+				self.baseClass.isTypeOf(caex30!SystemUnitClass);
+		} 
+			
+		message {
+			return 'The System Unit Class ' + self.name + ' is inheriting from an element that is not a System Unit Class (reference baseClass).';
+		}	
+	}
+}
+
+context caex30!InternalElement {
+	
+	constraint strongConformanceSUC2IE {
+	
+		guard {
+			return self.baseSystemUnit <> null;
+		}
+		
+		check {
+			return self.baseSystemUnit.attribute->forAll(aC | self.attribute->one(cI | aC.name = cI.name and aC.value = cI.value));
+		} 
+			
+		message {
+			return 'The Internal Element ' + self.name + ' has some missing attributes or nonconforming values.';
+		}
+	}
+	
+	constraint strongConformanceIE2SUC {
+	
+		guard {
+			return self.baseSystemUnit <> null;
+		}
+		
+		check {
+			return self.attribute->forAll(aI | self.baseSystemUnit.attribute->one(aC | aC.name = aI.name and aC.value = aI.value));
+		} 
+			
+		message {
+			return 'The Internal Element ' + self.name + ' has too many attributes or nonconforming values.';
+		}
+	}
+	
+	constraint noInheritanceForIEs {
+			check {
+				return self.baseClass == null;
+			} 
+			
+			message {
+				return 'Inheritance is not allowed for Internal Elements (reference baseClass).';
+			}	
+	}
+}
+
