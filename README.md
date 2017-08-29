@@ -27,7 +27,7 @@ Install the Sirius, Xtext, OCL, ATL, ATL EMFTVM, and Epsilon plugins from the fo
 
 ### Install the CAEX MDE Workbench
 
-To install the CAEX MDE Workbench, import all projects contained in the [*plugins folder*](https://github.com/amlModeling/caex-workbench/tree/master/plugins) of this repository into your Eclipse workspace. Then, start a new Eclipse instance. 
+To install the CAEX MDE Workbench, import all projects contained in the [*plugins folder*](plugins) of this repository into your Eclipse workspace. Then, start a new Eclipse instance. 
 
 In the new Eclipse instance, all features of the CAEX MDE Workbench are available.
 
@@ -35,15 +35,15 @@ In the new Eclipse instance, all features of the CAEX MDE Workbench are availabl
 
 ### CAEX Metamodels
 
-The CAEX MDE Workbench provides metamodels for CAEX 2.15 and CAEX 3.0 defined with [Ecore](http://www.eclipse.org/modeling/emf/). You can find the metamodels in the plugin projects [*caex.caex215*](https://github.com/amlModeling/caex-workbench/tree/master/plugins/caex215/caex.caex215) and [*caex.caex30*](https://github.com/amlModeling/caex-workbench/tree/master/plugins/caex30/caex.caex30). In these projects, you can also find Java APIs that allow tool developers to programmatically access CAEX 2.15 and CAEX 3.0 models.
+The CAEX MDE Workbench provides metamodels for CAEX 2.15 and CAEX 3.0 defined with [Ecore](http://www.eclipse.org/modeling/emf/). You can find the metamodels in the plugin projects [*caex.caex215*](plugins/caex215/caex.caex215) and [*caex.caex30*](plugins/caex30/caex.caex30). In these projects, you can also find Java APIs that allow tool developers to programmatically access CAEX 2.15 and CAEX 3.0 models.
 
-Further documentation on the metamodels can be found in the [*documentation folder*](https://github.com/amlModeling/caex-workbench/tree/master/documentation) of this repository.
+Further documentation on the metamodels can be found in the [*documentation folder*](documentation) of this repository.
 
 ### Tree-Based CAEX Editors
 
 To create a CAEX 2.15 or CAEX 3.0 model, first create an empty project (*File* > *New* > *Project...* > *General*/*Project*). Within this project, you can create a new CAEX model by selecting *File* > *New* > *Other...* > *CAEX*/*CAEX 2.15 Model* or *CAEX*/*CAEX 3.0 Model*. The newly created CAEX model will be immediately opened in the tree-based editor. It will contain already the root element *CAEX File*. Use the context menu *New Child* to add further elements to your CAEX model as well as the *Properties* view to set attributes for the elements.
 
-You can find example CAEX models in the [*examples folder*](https://github.com/amlModeling/caex-workbench/tree/master/examples) of this repository.
+You can find example CAEX models in the [*examples folder*](examples) of this repository.
 
 ### Graphical CAEX 3.0 Editor
 
@@ -55,11 +55,11 @@ TODO
 
 ### AutomationML Modeling Rules
 
-The AutomationML modeling rules for CAEX 3.0 are implemented by the [EVL](https://www.eclipse.org/epsilon/doc/evl/) script located in the project [*caex.caex30.aml.validation*](https://github.com/amlModeling/caex-workbench/tree/master/plugins/aml/caex.caex30.aml.validation). To validate these modeling rules on your CAEX 3.0 model, copy and adapt the provided sample launch configuration *CAEX30_AMLRules*. For this, right-click on *CAEX30_AMLRules* and select *Run As* > *Run configurations...*. Click on the second item in the menu bar, which will copy the launch configuration. Give an appropriate name and switch to the *Models* tab. Select the entry *caex30* and hit the *Edit...* button. Select your model using the *Browse Workspace...* button located next to the *Model file* field. Confirm your changes by hitting *OK*. Now hit the *Run* button to validate the modeling rules. In the *Validation* view, you will see the evaluation result, in particular, all violations of AML modeling rules.
+The AutomationML modeling rules for CAEX 3.0 are implemented by the [EVL](https://www.eclipse.org/epsilon/doc/evl/) script located in the project [*caex.caex30.aml.validation*](plugins/aml/caex.caex30.aml.validation). To validate these modeling rules on your CAEX 3.0 model, copy and adapt the provided sample launch configuration *CAEX30_AMLRules*. For this, right-click on *CAEX30_AMLRules* and select *Run As* > *Run configurations...*. Click on the second item in the menu bar, which will copy the launch configuration. Give an appropriate name and switch to the *Models* tab. Select the entry *caex30* and hit the *Edit...* button. Select your model using the *Browse Workspace...* button located next to the *Model file* field. Confirm your changes by hitting *OK*. Now hit the *Run* button to validate the modeling rules. In the *Validation* view, you will see the evaluation result, in particular, all violations of AML modeling rules.
 
 ### CAEX 2.15 to 3.0 Migration
 
-The CAEX 2.15 to 3.0 Migrator comprises two components: One *Checker Component* that checks whether a CAEX 2.15 model can be migrated to CAEX 3.0 and one *Transformation Component* that migrates CAEX 2.15 models to CAEX 3.0. Both components are implemented in the project [*caex.caex215.migration.caex30*](https://github.com/amlModeling/caex-workbench/tree/master/plugins/caex215/caex.caex215.migration.caex30).
+The CAEX 2.15 to 3.0 Migrator comprises two components: One *Checker Component* that checks whether a CAEX 2.15 model can be migrated to CAEX 3.0 and one *Transformation Component* that migrates CAEX 2.15 models to CAEX 3.0. Both components are implemented in the project [*caex.caex215.migration.caex30*](plugins/caex215/caex.caex215.migration.caex30).
 
 The Checker Component is implemented by the [EVL](https://www.eclipse.org/epsilon/doc/evl/) script [*caexMigrationChecker*](plugins/caex215/caex.caex215.migration.caex30/checkers/caexMigrationChecker.evl). It identifies elements in CAEX 2.15 models that need to be adapted in order to migrate it to CAEX 3.0. For instance, it checks whether all *InternalLink* elements have both partner sides set. If an *InternalLink* element does not have both partner sides set, this first has to be fixed manually in order to achieve a fully automated migration to CAEX 3.0. This is because CAEX 3.0 requires that both partner sides are set.
 
