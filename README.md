@@ -54,7 +54,8 @@ A new *.aird file will be created as a result. Unfold the *.aird file in the Pro
 TODO
 
 ### AutomationML Modeling Rules
-TODO
+
+The AutomationML modeling rules for CAEX 3.0 are implemented by the [EVL](https://www.eclipse.org/epsilon/doc/evl/) script located in the project [*caex.caex30.aml.validation*](https://github.com/amlModeling/caex-workbench/tree/master/plugins/aml/caex.caex30.aml.validation). To validate these modeling rules on your CAEX 3.0 model, copy and adapt the provided sample launch configuration *CAEX30_AMLRules*. For this, right-click on *CAEX30_AMLRules* and select *Run As* > *Run configurations...*. Click on the second item in the menu bar, which will duplicate the launch configuration. Give an appropriate name and switch to the *Models* tab. Select the entry *caex30* and hit the *Edit...* button. Select your model using the *Browse Workspace...* button located next to the *Model file* field. Confirm your changes by hitting *OK*. Now hit the *Run* button to validate the modeling rules. In the *Validation* view, you will see the evaluation result, in particular, all violations of AML modeling rules.
 
 ### CAEX 2.15 to 3.0 Migration
 TODO
