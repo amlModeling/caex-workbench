@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="ASCII"?>
+<caex:CAEXFile xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:caex="http://www.dke.de/CAEX/300" changeMode="state" fileName="PPU AML" schemaVersion="3.0">
+  <superiorStandardVersion>AutomationML 2.0</superiorStandardVersion>
+  <sourceDocumentInformation lastWritingDateTime="2015-11-09T14:22:58.670+01:00" originID="TODO" originName="TODO" originProjectID="TODO" originProjectTitle="TODO" originRelease="TODO" originVendor="TODO" originVendorURL="TODO" originVersion="3.0"/>
+  <instanceHierarchy changeMode="state" iD="1" name="PPU">
+    <internalElement changeMode="state" iD="3659bef7-f6ea-418b-835b-d41ed0f55833" name="R2_Crane" refBaseClassPath="" refBaseSystemUnitPath="" baseSystemUnit="//@systemUnitClassLib.0/@systemUnitClass.0">
+      <externalInterface changeMode="state" iD="99d579fe-78d2-4297-b975-7bd69494fc85" name="CraneInterface"/>
+      <supportedRoleClass changeMode="state" refRoleClassPath="" roleClass="//@roleClassLib.1/@roleClass.6">
+        <mappingObject changeMode="state">
+          <interfaceIDMapping changeMode="state" roleInterfaceID="3659bef7-f6ea-418b-835b-d41ed0f55866" systemUnitInterfaceID="3659bef7-f6ea-418b-835b-d41ed0f55777" roleInterface="//@roleClassLib.1/@roleClass.6/@externalInterface.0" systemUnitInterface="//@systemUnitClassLib.0/@systemUnitClass.0/@externalInterface.0"/>
+        </mappingObject>
+      </supportedRoleClass>
+    </internalElement>
+    <internalElement changeMode="state" iD="0" name="0" refBaseClassPath="" refBaseSystemUnitPath="" baseSystemUnit="//@systemUnitClassLib.0/@systemUnitClass.0">
+      <externalInterface changeMode="state" iD="99d579fe-78d2-4297-b975-7bd69494fc85" name="CraneInterface"/>
+      <supportedRoleClass changeMode="state" refRoleClassPath="" roleClass="//@roleClassLib.1/@roleClass.6">
+        <mappingObject changeMode="state">
+          <interfaceIDMapping changeMode="state" roleInterfaceID="3659bef7-f6ea-418b-835b-d41ed0f55866" systemUnitInterfaceID="3659bef7-f6ea-418b-835b-d41ed0f55777" roleInterface="//@roleClassLib.1/@roleClass.6/@externalInterface.0" systemUnitInterface="//@systemUnitClassLib.0/@systemUnitClass.0/@externalInterface.0"/>
+        </mappingObject>
+      </supportedRoleClass>
+    </internalElement>
+    <internalElement changeMode="state" iD="1" name="1" refBaseClassPath="" refBaseSystemUnitPath="" baseSystemUnit="//@systemUnitClassLib.0/@systemUnitClass.0">
+      <externalInterface changeMode="state" iD="99d579fe-78d2-4297-b975-7bd69494fc85" name="CraneInterface"/>
+      <supportedRoleClass changeMode="state" refRoleClassPath="" roleClass="//@roleClassLib.1/@roleClass.6">
+        <mappingObject changeMode="state">
+          <interfaceIDMapping changeMode="state" roleInterfaceID="3659bef7-f6ea-418b-835b-d41ed0f55866" systemUnitInterfaceID="3659bef7-f6ea-418b-835b-d41ed0f55777" roleInterface="//@roleClassLib.1/@roleClass.6/@externalInterface.0" systemUnitInterface="//@systemUnitClassLib.0/@systemUnitClass.0/@externalInterface.0"/>
+        </mappingObject>
+      </supportedRoleClass>
+    </internalElement>
+    <internalElement changeMode="state" iD="2" name="2" refBaseClassPath="" refBaseSystemUnitPath="" baseSystemUnit="//@systemUnitClassLib.0/@systemUnitClass.0">
+      <externalInterface changeMode="state" iD="99d579fe-78d2-4297-b975-7bd69494fc85" name="CraneInterface"/>
+      <supportedRoleClass changeMode="state" refRoleClassPath="" roleClass="//@roleClassLib.1/@roleClass.6">
+        <mappingObject changeMode="state">
+          <interfaceIDMapping changeMode="state" roleInterfaceID="3659bef7-f6ea-418b-835b-d41ed0f55866" systemUnitInterfaceID="3659bef7-f6ea-418b-835b-d41ed0f55777" roleInterface="//@roleClassLib.1/@roleClass.6/@externalInterface.0" systemUnitInterface="//@systemUnitClassLib.0/@systemUnitClass.0/@externalInterface.0"/>
+        </mappingObject>
+      </supportedRoleClass>
+    </internalElement>
+    <internalElement changeMode="state" iD="3" name="3" refBaseClassPath="" refBaseSystemUnitPath="" baseSystemUnit="//@systemUnitClassLib.0/@systemUnitClass.0">
+      <externalInterface changeMode="state" iD="99d579fe-78d2-4297-b975-7bd69494fc85" name="CraneInterface"/>
+      <supportedRoleClass changeMode="state" refRoleClassPath="" roleClass="//@roleClassLib.1/@roleClass.6">
+        <mappingObject changeMode="state">
+          <interfaceIDMapping changeMode="state" roleInterfaceID="3659bef7-f6ea-418b-835b-d41ed0f55866" systemUnitInterfaceID="3659bef7-f6ea-418b-835b-d41ed0f55777" roleInterface="//@roleClassLib.1/@roleClass.6/@externalInterface.0" systemUnitInterface="//@systemUnitClassLib.0/@systemUnitClass.0/@externalInterface.0"/>
+        </mappingObject>
+      </supportedRoleClass>
+    </internalElement>
+    <internalElement changeMode="state" iD="4" name="4" refBaseClassPath="" refBaseSystemUnitPath="" baseSystemUnit="//@systemUnitClassLib.0/@systemUnitClass.0">
+      <externalInterface changeMode="state" iD="99d579fe-78d2-4297-b975-7bd69494fc85" name="CraneInterface"/>
+      <supportedRoleClass changeMode="state" refRoleClassPath="" roleClass="//@roleClassLib.1/@roleClass.6">
+        <mappingObject changeMode="state">
+          <interfaceIDMapping changeMode="state" roleInterfaceID="3659bef7-f6ea-418b-835b-d41ed0f55866" systemUnitInterfaceID="3659bef7-f6ea-418b-835b-d41ed0f55777" roleInterface="//@roleClassLib.1/@roleClass.6/@externalInterface.0" systemUnitInterface="//@systemUnitClassLib.0/@systemUnitClass.0/@externalInterface.0"/>
+        </mappingObject>
+      </supportedRoleClass>
+    </internalElement>
+    <internalElement changeMode="state" iD="5" name="5" refBaseClassPath="" refBaseSystemUnitPath="" baseSystemUnit="//@systemUnitClassLib.0/@systemUnitClass.0">
+      <externalInterface changeMode="state" iD="99d579fe-78d2-4297-b975-7bd69494fc85" name="CraneInterface"/>
+      <supportedRoleClass changeMode="state" refRoleClassPath="" roleClass="//@roleClassLib.1/@roleClass.6">
+        <mappingObject changeMode="state">
+          <interfaceIDMapping changeMode="state" roleInterfaceID="3659bef7-f6ea-418b-835b-d41ed0f55866" systemUnitInterfaceID="3659bef7-f6ea-418b-835b-d41ed0f55777" roleInterface="//@roleClassLib.1/@roleClass.6/@externalInterface.0" systemUnitInterface="//@systemUnitClassLib.0/@systemUnitClass.0/@externalInterface.0"/>
+        </mappingObject>
+      </supportedRoleClass>
+    </internalElement>
+    <internalElement changeMode="state" iD="6" name="6" refBaseClassPath="" refBaseSystemUnitPath="" baseSystemUnit="//@systemUnitClassLib.0/@systemUnitClass.0">
+      <externalInterface changeMode="state" iD="99d579fe-78d2-4297-b975-7bd69494fc85" name="CraneInterface"/>
+      <supportedRoleClass changeMode="state" refRoleClassPath="" roleClass="//@roleClassLib.1/@roleClass.6">
+        <mappingObject changeMode="state">
+          <interfaceIDMapping changeMode="state" roleInterfaceID="3659bef7-f6ea-418b-835b-d41ed0f55866" systemUnitInterfaceID="3659bef7-f6ea-418b-835b-d41ed0f55777" roleInterface="//@roleClassLib.1/@roleClass.6/@externalInterface.0" systemUnitInterface="//@systemUnitClassLib.0/@systemUnitClass.0/@externalInterface.0"/>
+        </mappingObject>
+      </supportedRoleClass>
+    </internalElement>
+    <internalElement changeMode="state" iD="7" name="7" refBaseClassPath="" refBaseSystemUnitPath="" baseSystemUnit="//@systemUnitClassLib.0/@systemUnitClass.0">
+      <externalInterface changeMode="state" iD="99d579fe-78d2-4297-b975-7bd69494fc85" name="CraneInterface"/>
+      <supportedRoleClass changeMode="state" refRoleClassPath="" roleClass="//@roleClassLib.1/@roleClass.6">
+        <mappingObject changeMode="state">
+          <interfaceIDMapping changeMode="state" roleInterfaceID="3659bef7-f6ea-418b-835b-d41ed0f55866" systemUnitInterfaceID="3659bef7-f6ea-418b-835b-d41ed0f55777" roleInterface="//@roleClassLib.1/@roleClass.6/@externalInterface.0" systemUnitInterface="//@systemUnitClassLib.0/@systemUnitClass.0/@externalInterface.0"/>
+        </mappingObject>
+      </supportedRoleClass>
+    </internalElement>
+    <internalElement changeMode="state" iD="8" name="8" refBaseClassPath="" refBaseSystemUnitPath="" baseSystemUnit="//@systemUnitClassLib.0/@systemUnitClass.0">
+      <externalInterface changeMode="state" iD="99d579fe-78d2-4297-b975-7bd69494fc85" name="CraneInterface"/>
+      <supportedRoleClass changeMode="state" refRoleClassPath="" roleClass="//@roleClassLib.1/@roleClass.6">
+        <mappingObject changeMode="state">
+          <interfaceIDMapping changeMode="state" roleInterfaceID="3659bef7-f6ea-418b-835b-d41ed0f55866" systemUnitInterfaceID="3659bef7-f6ea-418b-835b-d41ed0f55777" roleInterface="//@roleClassLib.1/@roleClass.6/@externalInterface.0" systemUnitInterface="//@systemUnitClassLib.0/@systemUnitClass.0/@externalInterface.0"/>
+        </mappingObject>
+      </supportedRoleClass>
+    </internalElement>
+    <internalElement changeMode="state" iD="9" name="9" refBaseClassPath="" refBaseSystemUnitPath="" baseSystemUnit="//@systemUnitClassLib.0/@systemUnitClass.0">
+      <externalInterface changeMode="state" iD="99d579fe-78d2-4297-b975-7bd69494fc85" name="CraneInterface"/>
+      <supportedRoleClass changeMode="state" refRoleClassPath="" roleClass="//@roleClassLib.1/@roleClass.6">
+        <mappingObject changeMode="state">
+          <interfaceIDMapping changeMode="state" roleInterfaceID="3659bef7-f6ea-418b-835b-d41ed0f55866" systemUnitInterfaceID="3659bef7-f6ea-418b-835b-d41ed0f55777" roleInterface="//@roleClassLib.1/@roleClass.6/@externalInterface.0" systemUnitInterface="//@systemUnitClassLib.0/@systemUnitClass.0/@externalInterface.0"/>
+        </mappingObject>
+      </supportedRoleClass>
+    </internalElement>
+  </instanceHierarchy>
+  <interfaceClassLib changeMode="state" iD="ed768594-419d-46f5-9242-481b357a573d" name="AutomationMLInterfaceClassLib">
+    <interfaceClass changeMode="state" iD="98e00b0f-5abc-4b87-8e53-3f2a134d2b90" name="AutomationMLBaseInterface">
+      <interfaceClass changeMode="state" name="Order" refBaseClassPath="" baseClass="//@interfaceClassLib.0/@interfaceClass.0"/>
+      <interfaceClass changeMode="state" name="PortConnector" refBaseClassPath="" baseClass="//@interfaceClassLib.0/@interfaceClass.0"/>
+      <interfaceClass changeMode="state" name="InterlockingConnector" refBaseClassPath="" baseClass="//@interfaceClassLib.0/@interfaceClass.0"/>
+      <interfaceClass changeMode="state" name="PPRConnector" refBaseClassPath="" baseClass="//@interfaceClassLib.0/@interfaceClass.0"/>
+      <interfaceClass changeMode="state" name="ExternalDataConnector" refBaseClassPath="" baseClass="//@interfaceClassLib.0/@interfaceClass.0">
+        <interfaceClass changeMode="state" name="COLLADAInterface" baseClass="//@interfaceClassLib.0/@interfaceClass.0/@interfaceClass.4"/>
+        <interfaceClass changeMode="state" name="PLCOpenXMLConnector" refBaseClassPath="" baseClass="//@interfaceClassLib.0/@interfaceClass.0/@interfaceClass.4"/>
+      </interfaceClass>
+      <interfaceClass changeMode="state" name="Communication" refBaseClassPath="" baseClass="//@interfaceClassLib.0/@interfaceClass.0">
+        <interfaceClass changeMode="state" name="SignalInterface" baseClass="//@interfaceClassLib.0/@interfaceClass.0/@interfaceClass.5"/>
+      </interfaceClass>
+    </interfaceClass>
+  </interfaceClassLib>
+  <roleClassLib changeMode="state" name="PPUPropertySetRoleClassLib">
+    <roleClass changeMode="state" name="GeometryPropertySet">
+      <attribute changeMode="state" name="Geometry_Length"/>
+      <attribute changeMode="state" name="Geometry_Width"/>
+      <attribute changeMode="state" name="Geometry_Height"/>
+    </roleClass>
+  </roleClassLib>
+  <roleClassLib changeMode="state" iD="2d911384-a01c-43e0-bd49-6f39bf2c7220" name="AutomationMLBaseRole">
+    <roleClass changeMode="state" name="Product" baseClass="//@roleClassLib.1/@roleClass.8"/>
+    <roleClass changeMode="state" name="Process" baseClass="//@roleClassLib.1/@roleClass.8"/>
+    <roleClass changeMode="state" name="Resource" baseClass="//@roleClassLib.1/@roleClass.8"/>
+    <roleClass changeMode="state" name="PropertySet" baseClass="//@roleClassLib.1/@roleClass.8"/>
+    <roleClass changeMode="state" name="Group" baseClass="//@roleClassLib.1/@roleClass.8"/>
+    <roleClass changeMode="state" name="Facet" baseClass="//@roleClassLib.1/@roleClass.8"/>
+    <roleClass changeMode="state" iD="3659bef7-f6ea-418b-835b-d41ed0f55899" name="Port" baseClass="//@roleClassLib.1/@roleClass.8">
+      <externalInterface changeMode="state" iD="3659bef7-f6ea-418b-835b-d41ed0f55866" name="ConnectionPoint"/>
+    </roleClass>
+    <roleClass changeMode="state" name="Structure" baseClass="//@roleClassLib.1/@roleClass.8">
+      <roleClass changeMode="state" name="ProductStructure" baseClass="//@roleClassLib.1/@roleClass.7"/>
+      <roleClass changeMode="state" name="ProcessStructure" baseClass="//@roleClassLib.1/@roleClass.7"/>
+      <roleClass changeMode="state" name="ResourceStructure" baseClass="//@roleClassLib.1/@roleClass.7"/>
+    </roleClass>
+    <roleClass changeMode="state" iD="8a4f367a-c6c6-4fb2-a489-a47094b0c8eb" name="AutomationMLBaseRole"/>
+  </roleClassLib>
+  <systemUnitClassLib changeMode="state" name="PPU SUClib">
+    <systemUnitClass changeMode="state" iD="3659bef7-f6ea-418b-835b-d41ed0f55888" name="Crane">
+      <externalInterface xsi:type="caex:ExternalInterface" changeMode="state" iD="3659bef7-f6ea-418b-835b-d41ed0f55777" name="Crane_Input" refBaseClassPath="" baseClass="//@interfaceClassLib.0/@interfaceClass.0/@interfaceClass.3"/>
+      <externalInterface xsi:type="caex:ExternalInterface" changeMode="state" iD="3659bef7-f6ea-418b-835b-d41ed0f55877" name="Crane_Output" refBaseClassPath="" baseClass="//@interfaceClassLib.0/@interfaceClass.0/@interfaceClass.3"/>
+    </systemUnitClass>
+  </systemUnitClassLib>
+</caex:CAEXFile>
