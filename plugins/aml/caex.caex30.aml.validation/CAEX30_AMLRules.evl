@@ -84,3 +84,51 @@ context caex30!InternalElement {
 	}
 }
 
+context caex30!InternalElement{
+	
+	constraint processContainsProcesses{
+			guard {
+				return self.roleRequirements.roleClass.name->exists(r | r = 'Process');
+			}
+			check {
+				return self.internalElement->forAll(ie | ie.roleRequirements.roleClass.name->exists(r | r = 'Process'));
+			} 
+			
+			message {
+				return 'The Internal Element ' + self.name + ' is a process which contains Internal Elements that are not processes.';
+			}
+	}
+}
+
+context caex30!InternalElement{
+	
+	constraint resourceContainsResources{
+			guard {
+				return self.roleRequirements.roleClass.name->exists(r | r = 'Resource');
+			}
+			check {
+				return self.internalElement->forAll(ie | ie.roleRequirements.roleClass.name->exists(r | r = 'Resource'));
+			} 
+			
+			message {
+				return 'The Internal Element ' + self.name + ' is a resource which contains Internal Elements that are not resources.';
+			}
+	}
+}
+
+context caex30!InternalElement{
+	
+	constraint productContainsProducts{
+			guard {
+				return self.roleRequirements.roleClass.name->exists(r | r = 'Product');
+			}
+			check {
+				return self.internalElement->forAll(ie | ie.roleRequirements.roleClass.name>exists(r | r = 'Product'));
+			} 
+			
+			message {
+				return 'The Internal Element ' + self.name + ' is a product which contains Internal Elements that are not products.';
+			}
+	}
+}
+
