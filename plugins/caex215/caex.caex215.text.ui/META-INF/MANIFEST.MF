@@ -1,0 +1,26 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: caex.caex215.text.ui
+Bundle-Version: 1.0.0.qualifier
+Bundle-SymbolicName: caex.caex215.text.ui; singleton:=true
+Bundle-ActivationPolicy: lazy
+Require-Bundle: caex.caex215.text,
+ caex.caex215.text.ide,
+ caex.caex215,
+ caex.anytype,
+ org.eclipse.xtext.ui,
+ org.eclipse.xtext.ui.shared,
+ org.eclipse.xtext.ui.codetemplates.ui,
+ org.eclipse.ui.editors;bundle-version="3.5.0",
+ org.eclipse.ui.ide;bundle-version="3.5.0",
+ org.eclipse.ui,
+ org.eclipse.compare,
+ org.eclipse.xtext.builder,
+ org.eclipse.xtend.lib;resolution:=optional,
+ org.eclipse.xtext.xbase.lib
+Import-Package: org.apache.log4j
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Export-Package: caex.caex215.ui.quickfix,
+ caex.caex215.ui.contentassist,
+ caex.caex215.text.ui.internal
+Bundle-Activator: caex.caex215.text.ui.internal.TextActivator
