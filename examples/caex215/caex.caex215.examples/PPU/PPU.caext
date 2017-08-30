@@ -1,0 +1,72 @@
+CAEXFile [] {
+	fileName PPU
+	schemaVersion CAEX215
+	
+	IH PickAndPlaceUnit [] {
+		 
+		IE Stack []{
+			provides {
+		 		ExternalInterface {
+		 			name Stack_Output
+		 		}
+		 	}
+		 	IL StackToCrane from Stack_Output to Crane_Input []
+		 },
+		 	
+		 IE Crane [] {
+		 	provides {
+		 		ExternalInterface {
+					name Crane_Input
+				},
+				ExternalInterface {	
+		 			name Crane_Output 
+		 		}
+		 	}
+		 	IL CraneToRamp from Crane_Output to Ramp_Input []
+		},
+		 		
+		IE Ramp [] {
+			provides {
+				ExternalInterface {
+					name Ramp_Input
+		 		}
+		 	}
+		}
+	}
+	
+	icLib {
+		name AMLBaseInterfaceClassLibrary
+		
+		ExternalInterface {
+			name PPRConnector
+		}
+	}
+	
+	rcLib {
+		name AMLRoleClassLibrary
+		RoleClass {
+			name Product
+		},
+		RoleClass {
+			name Process
+		},
+		RoleClass {
+			name Resource
+		}
+	}
+	
+	sucLib {
+		name PickAndPlaceUnitSystemUnitLibrary
+		
+		SystemUnitClass {
+			name StackSUC
+		},
+		SystemUnitClass {
+			name CraneSUC
+		},
+		SystemUnitClass {
+			name RampSUC
+		}
+	} 
+	
+}
