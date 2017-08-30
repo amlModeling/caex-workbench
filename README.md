@@ -8,7 +8,7 @@ The Model-Driven Engineering Workbench for CAEX is based on the [Eclipse Modelin
 1. Metamodels for CAEX version 2.15 and version 3.0.
 2. A tree-based editor for creating, modifying and inspecting CAEX 2.15 and CAEX 3.0 models.
 3. A graphical editor for visualizing CAEX 3.0 Instance Hierarchies.
-4. A textual editor for creating, modifying and inspecting CAEX 3.0 Instance Hierarchies.
+4. A textual editor for creating, modifying and inspecting CAEX 2.15 Instance Hierarchies.
 5. Modeling rules for the correct usage of CAEX with AutomationML.
 6. Migration operations for converting CAEX 2.15 models into CAEX 3.0 models.
 
@@ -50,8 +50,12 @@ You can find example CAEX models in the [*examples folder*](examples) of this re
 To visualize a CEAX 3.0 Instance Hierarchy graphically, you first need to create a *Representations File*. For this, select *File* > *New* > *Other...* > *Sirius*/*Representations File*. Select "Initialization from a semantic resource" as initialization kind and your CAEX model file (*.caex) in the next wizard pages. Select the Viewpoint "CAEX 3.0" in the following Viewpoints Selection dialog. 
 A new *.aird file will be created as a result. Unfold the *.aird file in the Project Explorer to the lowest level, which is labeled "CAEX 3.0 Instance Hierarchy Diagram". Open the diagram by double-clicking on this item. This will open the graphical representation of your CAEX model where you can inspect your CAEX Instance Hierarchy and update its graphical representation.
 
-### Textual CAEX 3.0 Editor
-TODO
+### Textual CAEX 2.15 Editor
+
+The CAEX MDE Workbench also provides a textual editor for CAEX 2.15 that allows to create, modify and inspect CAEX 2.15 Instance Hierarchies in a textual representation. To create a textual CAEX 2.15 model, create a new File using the menu *File* > *New* > *File* and specify an appropriate file name with the file extension ".caext". Hit the *Finish* button to create the file. If the dialog *Configure Xtext* shows up, confirm it by hitting *Yes*.
+
+Your newly created textual CAEX 2.15 model will be automatically opened in the textual editor. Start defining your CAEX File by typing *CAEXFile". Explore elements that you can create by using the auto-completion feature of the editor that you can activate by pressing *Ctrl+Space*.
+An example of a textual CAEX 2.15 model can be found in the [*caex.caex215.examples*project](examples/caex215/caex.caex215.examples/PPU/PPU.caext).
 
 ### AutomationML Modeling Rules
 
