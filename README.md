@@ -54,8 +54,8 @@ A new *.aird file will be created as a result. Unfold the *.aird file in the Pro
 
 The CAEX MDE Workbench also provides a textual editor for CAEX 2.15 that allows to create, modify and inspect CAEX 2.15 Instance Hierarchies in a textual representation. To create a textual CAEX 2.15 model, create a new File using the menu *File* > *New* > *File* and specify an appropriate file name with the file extension ".caext". Hit the *Finish* button to create the file. If the dialog *Configure Xtext* shows up, confirm it by hitting *Yes*.
 
-Your newly created textual CAEX 2.15 model will be automatically opened in the textual editor. Start defining your CAEX File by typing *CAEXFile". Explore elements that you can create by using the auto-completion feature of the editor that you can activate by pressing *Ctrl+Space*.
-An example of a textual CAEX 2.15 model can be found in the [*caex.caex215.examples*project](examples/caex215/caex.caex215.examples/PPU/PPU.caext).
+Your newly created textual CAEX 2.15 model will be automatically opened in the textual editor. Start defining your CAEX File by typing "CAEXFile". Explore elements that can be created by using the auto-completion feature of the editor that you can activate by pressing *Ctrl+Space*.
+An example of a textual CAEX 2.15 model can be found in the [*caex.caex215.examples* project](examples/caex215/caex.caex215.examples/PPU/PPU.caext).
 
 ### AutomationML Modeling Rules
 
