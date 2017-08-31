@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="ASCII"?>
+<caex:CAEXFile xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:caex="http://www.dke.de/CAEX/215" fileName="PPU AML" schemaVersion="2.16">
+  <instanceHierarchy iD="1" name="PPU">
+    <internalElement iD="3659bef7-f6ea-418b-835b-d41ed0f55833" name="R2_Crane" refBaseClassPath="" refBaseSystemUnitPath="" baseSystemUnit="//@systemUnitClassLib.0/@systemUnitClass.0">
+      <externalInterface iD="99d579fe-78d2-4297-b975-7bd69494fc85" name="CraneInterface"/>
+      <supportedRoleClass refRoleClassPath="" roleClass="//@roleClassLib.1/@roleClass.6">
+        <mappingObject>
+          <interfaceNameMapping roleInterfaceName="{3659bef7-f6ea-418b-835b-d41ed0f55899}:ConnectionPoint" systemUnitInterfaceName="{3659bef7-f6ea-418b-835b-d41ed0f55888}:Crane_Input" roleInterface="//@roleClassLib.1/@roleClass.6/@externalInterface.0" systemUnitInterface="//@systemUnitClassLib.0/@systemUnitClass.0/@externalInterface.0"/>
+        </mappingObject>
+      </supportedRoleClass>
+    </internalElement>
+  </instanceHierarchy>
+  <interfaceClassLib iD="ed768594-419d-46f5-9242-481b357a573d" name="AutomationMLInterfaceClassLib">
+    <interfaceClass iD="98e00b0f-5abc-4b87-8e53-3f2a134d2b90" name="AutomationMLBaseInterface">
+      <interfaceClass name="Order" refBaseClassPath="" baseClass="//@interfaceClassLib.0/@interfaceClass.0"/>
+      <interfaceClass name="PortConnector" refBaseClassPath="" baseClass="//@interfaceClassLib.0/@interfaceClass.0"/>
+      <interfaceClass name="InterlockingConnector" refBaseClassPath="" baseClass="//@interfaceClassLib.0/@interfaceClass.0"/>
+      <interfaceClass name="PPRConnector" refBaseClassPath="" baseClass="//@interfaceClassLib.0/@interfaceClass.0"/>
+      <interfaceClass name="ExternalDataConnector" refBaseClassPath="" baseClass="//@interfaceClassLib.0/@interfaceClass.0">
+        <interfaceClass name="COLLADAInterface" baseClass="//@interfaceClassLib.0/@interfaceClass.0/@interfaceClass.4"/>
+        <interfaceClass name="PLCOpenXMLConnector" refBaseClassPath="" baseClass="//@interfaceClassLib.0/@interfaceClass.0/@interfaceClass.4"/>
+      </interfaceClass>
+      <interfaceClass name="Communication" refBaseClassPath="" baseClass="//@interfaceClassLib.0/@interfaceClass.0">
+        <interfaceClass name="SignalInterface" baseClass="//@interfaceClassLib.0/@interfaceClass.0/@interfaceClass.5"/>
+      </interfaceClass>
+    </interfaceClass>
+  </interfaceClassLib>
+  <roleClassLib name="PPUPropertySetRoleClassLib">
+    <roleClass name="GeometryPropertySet">
+      <attribute name="Geometry_Length"/>
+      <attribute name="Geometry_Width"/>
+      <attribute name="Geometry_Height"/>
+    </roleClass>
+  </roleClassLib>
+  <roleClassLib iD="2d911384-a01c-43e0-bd49-6f39bf2c7220" name="AutomationMLBaseRole">
+    <roleClass name="Product" baseClass="//@roleClassLib.1/@roleClass.8"/>
+    <roleClass name="Process" baseClass="//@roleClassLib.1/@roleClass.8"/>
+    <roleClass name="Resource" baseClass="//@roleClassLib.1/@roleClass.8"/>
+    <roleClass name="PropertySet" baseClass="//@roleClassLib.1/@roleClass.8"/>
+    <roleClass name="Group" baseClass="//@roleClassLib.1/@roleClass.8"/>
+    <roleClass name="Facet" baseClass="//@roleClassLib.1/@roleClass.8"/>
+    <roleClass iD="3659bef7-f6ea-418b-835b-d41ed0f55899" name="Port" baseClass="//@roleClassLib.1/@roleClass.8">
+      <externalInterface iD="3659bef7-f6ea-418b-835b-d41ed0f55866" name="ConnectionPoint"/>
+    </roleClass>
+    <roleClass name="Structure" baseClass="//@roleClassLib.1/@roleClass.8">
+      <roleClass name="ProductStructure" baseClass="//@roleClassLib.1/@roleClass.7"/>
+      <roleClass name="ProcessStructure" baseClass="//@roleClassLib.1/@roleClass.7"/>
+      <roleClass name="ResourceStructure" baseClass="//@roleClassLib.1/@roleClass.7"/>
+    </roleClass>
+    <roleClass iD="8a4f367a-c6c6-4fb2-a489-a47094b0c8eb" name="AutomationMLBaseRole"/>
+  </roleClassLib>
+  <systemUnitClassLib name="PPU SUClib">
+    <systemUnitClass iD="3659bef7-f6ea-418b-835b-d41ed0f55888" name="Crane">
+      <externalInterface xsi:type="caex:ExternalInterface" iD="3659bef7-f6ea-418b-835b-d41ed0f55777" name="Crane_Input" refBaseClassPath="" baseClass="//@interfaceClassLib.0/@interfaceClass.0/@interfaceClass.3"/>
+      <externalInterface xsi:type="caex:ExternalInterface" iD="3659bef7-f6ea-418b-835b-d41ed0f55877" name="Crane_Output" refBaseClassPath="" baseClass="//@interfaceClassLib.0/@interfaceClass.0/@interfaceClass.3"/>
+    </systemUnitClass>
+  </systemUnitClassLib>
+</caex:CAEXFile>
