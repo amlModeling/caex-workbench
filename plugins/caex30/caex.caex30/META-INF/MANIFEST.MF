@@ -12,5 +12,7 @@ Export-Package: caex.caex30.caex,
  caex.caex30.caex.util
 Require-Bundle: org.eclipse.emf.ecore;visibility:=reexport,
  org.eclipse.core.runtime,
- caex.anytype;bundle-version="0.1.0";visibility:=reexport
+ caex.anytype;bundle-version="0.1.0";visibility:=reexport,
+ org.eclipse.emf.ecore.xmi;bundle-version="2.13.0";visibility:=reexport,
+ org.junit;bundle-version="4.12.0"
 Bundle-ActivationPolicy: lazy

@@ -17,7 +17,7 @@ import org.eclipse.emf.common.util.EList;
  * </ul>
  *
  * @see caex.caex30.caex.CAEXPackage#getInstanceHierarchy()
- * @model
+ * @model extendedMetaData="name='InstanceHierarchy_._type' kind='elementOnly'"
  * @generated
  */
 public interface InstanceHierarchy extends CAEXObject {
@@ -30,9 +30,13 @@ public interface InstanceHierarchy extends CAEXObject {
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * Shall be used in order to define nested objects inside of a SystemUnitClass or another InternalElement. Allows description of the internal structure of a CAEX object.
+	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Internal Element</em>' containment reference list.
 	 * @see caex.caex30.caex.CAEXPackage#getInstanceHierarchy_InternalElement()
 	 * @model containment="true"
+	 *        extendedMetaData="kind='element' name='InternalElement' namespace='##targetNamespace'"
 	 * @generated
 	 */
 	EList<InternalElement> getInternalElement();

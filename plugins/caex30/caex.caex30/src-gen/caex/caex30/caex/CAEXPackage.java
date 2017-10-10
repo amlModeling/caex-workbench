@@ -25,6 +25,7 @@ import org.eclipse.emf.ecore.EReference;
  * <!-- end-user-doc -->
  * @see caex.caex30.caex.CAEXFactory
  * @model kind="package"
+ *        extendedMetaData="qualified='false'"
  * @generated
  */
 public interface CAEXPackage extends EPackage {
@@ -4279,7 +4280,7 @@ public interface CAEXPackage extends EPackage {
 	 * The meta object id for the '<em>Change Mode Object</em>' data type.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see org.eclipse.emf.common.util.Enumerator
+	 * @see caex.caex30.caex.ChangeMode
 	 * @see caex.caex30.caex.impl.CAEXPackageImpl#getChangeModeObject()
 	 * @generated
 	 */
@@ -5894,17 +5895,19 @@ public interface CAEXPackage extends EPackage {
 	 * @return the meta object for data type '<em>Attribute Data Type</em>'.
 	 * @see java.lang.String
 	 * @model instanceClass="java.lang.String"
+	 *        extendedMetaData="name='AttributeDataType_._type' baseType='http://www.eclipse.org/emf/2003/XMLType#string'"
 	 * @generated
 	 */
 	EDataType getAttributeDataType();
 
 	/**
-	 * Returns the meta object for data type '{@link org.eclipse.emf.common.util.Enumerator <em>Change Mode Object</em>}'.
+	 * Returns the meta object for data type '{@link caex.caex30.caex.ChangeMode <em>Change Mode Object</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for data type '<em>Change Mode Object</em>'.
-	 * @see org.eclipse.emf.common.util.Enumerator
-	 * @model instanceClass="org.eclipse.emf.common.util.Enumerator"
+	 * @see caex.caex30.caex.ChangeMode
+	 * @model instanceClass="caex.caex30.caex.ChangeMode"
+	 *        extendedMetaData="name='ChangeMode:Object' baseType='ChangeMode'"
 	 * @generated
 	 */
 	EDataType getChangeModeObject();
@@ -7214,7 +7217,7 @@ public interface CAEXPackage extends EPackage {
 		 * The meta object literal for the '<em>Change Mode Object</em>' data type.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see org.eclipse.emf.common.util.Enumerator
+		 * @see caex.caex30.caex.ChangeMode
 		 * @see caex.caex30.caex.impl.CAEXPackageImpl#getChangeModeObject()
 		 * @generated
 		 */

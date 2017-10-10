@@ -19,7 +19,7 @@ package caex.caex30.caex;
  * </ul>
  *
  * @see caex.caex30.caex.CAEXPackage#getAttributeNameMapping()
- * @model
+ * @model extendedMetaData="name='AttributeNameMapping_._type' kind='elementOnly'"
  * @generated
  */
 public interface AttributeNameMapping extends CAEXBasicObject {
@@ -35,6 +35,7 @@ public interface AttributeNameMapping extends CAEXBasicObject {
 	 * @see #setRoleAttributeName(String)
 	 * @see caex.caex30.caex.CAEXPackage#getAttributeNameMapping_RoleAttributeName()
 	 * @model dataType="org.eclipse.emf.ecore.xml.type.String" required="true"
+	 *        extendedMetaData="kind='attribute' name='RoleAttributeName'"
 	 * @generated
 	 */
 	String getRoleAttributeName();
@@ -61,6 +62,7 @@ public interface AttributeNameMapping extends CAEXBasicObject {
 	 * @see #setSystemUnitAttributeName(String)
 	 * @see caex.caex30.caex.CAEXPackage#getAttributeNameMapping_SystemUnitAttributeName()
 	 * @model dataType="org.eclipse.emf.ecore.xml.type.String" required="true"
+	 *        extendedMetaData="kind='attribute' name='SystemUnitAttributeName'"
 	 * @generated
 	 */
 	String getSystemUnitAttributeName();

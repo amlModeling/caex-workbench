@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:diagram="http://www.eclipse.org/sirius/diagram/1.1.0" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xsi:schemaLocation="http://www.eclipse.org/sirius/description/1.1.0 http://www.eclipse.org/sirius/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/style/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description/style">
   <viewpoint:DAnalysis xmi:id="_UbgswHbMEeeWJLsPQq89ow" selectedViews="_UhZ5YHbMEeeWJLsPQq89ow" version="12.0.0.201704271200">
-    <semanticResources>CAEX30.ecore</semanticResources>
     <semanticResources>http://www.eclipse.org/emf/2003/XMLType</semanticResources>
     <semanticResources>http://www.eclipse.org/emf/2002/Ecore</semanticResources>
     <semanticResources>platform:/resource/caex.anytype/model/GenericAnyType.ecore</semanticResources>
     <semanticResources>CAEX30.genmodel</semanticResources>
     <semanticResources>platform:/resource/caex.anytype/model/GenericAnyType.genmodel</semanticResources>
+    <semanticResources>CAEX30.ecore</semanticResources>
     <ownedViews xmi:type="viewpoint:DView" xmi:id="_UhZ5YHbMEeeWJLsPQq89ow">
       <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']"/>
       <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" xmi:id="_UlxcBXbMEeeWJLsPQq89ow" name="CAEX 3.0" repPath="#_UlxcAHbMEeeWJLsPQq89ow">
@@ -8878,7 +8878,7 @@
       </ownedStyle>
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='EC%20ESupertypes']"/>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DNodeList" xmi:id="_d7ZpUHhmEeefou4gscbv3w" name="InterfaceClass" tooltipText="" outgoingEdges="_d7uZcHhmEeefou4gscbv3w _d7vAgHhmEeefou4gscbv3w _d7vnkHhmEeefou4gscbv3w _d7zR8HhmEeefou4gscbv3w _RHMs0HwxEeec1bT0W2I3Zg" incomingEdges="_d7tLUHhmEeefou4gscbv3w _d7vAgHhmEeefou4gscbv3w _d7vnkHhmEeefou4gscbv3w _oz-8cHhmEeefou4gscbv3w _oz6rA3hmEeefou4gscbv3w _oz7SEHhmEeefou4gscbv3w _RHMs0HwxEeec1bT0W2I3Zg" width="12" height="10">
+    <ownedDiagramElements xmi:type="diagram:DNodeList" xmi:id="_d7ZpUHhmEeefou4gscbv3w" name="InterfaceClass" tooltipText="" outgoingEdges="_d7uZcHhmEeefou4gscbv3w _d7vAgHhmEeefou4gscbv3w _d7vnkHhmEeefou4gscbv3w _d7zR8HhmEeefou4gscbv3w _RHMs0HwxEeec1bT0W2I3Zg" incomingEdges="_d7tLUHhmEeefou4gscbv3w _d7vAgHhmEeefou4gscbv3w _d7vnkHhmEeefou4gscbv3w _oz6rA3hmEeefou4gscbv3w _oz7SEHhmEeefou4gscbv3w _oz-8cHhmEeefou4gscbv3w _RHMs0HwxEeec1bT0W2I3Zg" width="12" height="10">
       <target xmi:type="ecore:EClass" href="CAEX30.ecore#//InterfaceClass"/>
       <semanticElements xmi:type="ecore:EClass" href="CAEX30.ecore#//InterfaceClass"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>

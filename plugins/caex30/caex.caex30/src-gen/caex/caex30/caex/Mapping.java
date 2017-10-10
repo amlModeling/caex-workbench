@@ -9,6 +9,10 @@ import org.eclipse.emf.common.util.EList;
  * A representation of the model object '<em><b>Mapping</b></em>'.
  * <!-- end-user-doc -->
  *
+ * <!-- begin-model-doc -->
+ * Base element for AttributeNameMapping and InterfaceIDMapping.
+ * <!-- end-model-doc -->
+ *
  * <p>
  * The following features are supported:
  * </p>
@@ -18,7 +22,7 @@ import org.eclipse.emf.common.util.EList;
  * </ul>
  *
  * @see caex.caex30.caex.CAEXPackage#getMapping()
- * @model
+ * @model extendedMetaData="name='MappingType' kind='elementOnly'"
  * @generated
  */
 public interface Mapping extends CAEXBasicObject {
@@ -31,9 +35,13 @@ public interface Mapping extends CAEXBasicObject {
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * Allows the definition of the mapping between attributes of a related role class or its interfaces and attributes of the hosting system unit
+	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Attribute Name Mapping</em>' containment reference list.
 	 * @see caex.caex30.caex.CAEXPackage#getMapping_AttributeNameMapping()
 	 * @model containment="true"
+	 *        extendedMetaData="kind='element' name='AttributeNameMapping' namespace='##targetNamespace'"
 	 * @generated
 	 */
 	EList<AttributeNameMapping> getAttributeNameMapping();
@@ -47,9 +55,13 @@ public interface Mapping extends CAEXBasicObject {
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * Allows the definition of the mapping between interfaces of a related role class and interfaces of the hosting system unit.
+	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Interface ID Mapping</em>' containment reference list.
 	 * @see caex.caex30.caex.CAEXPackage#getMapping_InterfaceIDMapping()
 	 * @model containment="true"
+	 *        extendedMetaData="kind='element' name='InterfaceIDMapping' namespace='##targetNamespace'"
 	 * @generated
 	 */
 	EList<InterfaceIDMapping> getInterfaceIDMapping();

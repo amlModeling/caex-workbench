@@ -11,6 +11,10 @@ import org.eclipse.emf.ecore.EObject;
  * A representation of the model object '<em><b>Source Document Information</b></em>'.
  * <!-- end-user-doc -->
  *
+ * <!-- begin-model-doc -->
+ * Defines a structure to model information about the data source of the present CAEX document.
+ * <!-- end-model-doc -->
+ *
  * <p>
  * The following features are supported:
  * </p>
@@ -27,7 +31,7 @@ import org.eclipse.emf.ecore.EObject;
  * </ul>
  *
  * @see caex.caex30.caex.CAEXPackage#getSourceDocumentInformation()
- * @model
+ * @model extendedMetaData="name='SourceDocumentInformationType' kind='empty'"
  * @generated
  */
 public interface SourceDocumentInformation extends EObject {
@@ -39,10 +43,14 @@ public interface SourceDocumentInformation extends EObject {
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * Date and time of the creation of the CAEX document.
+	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Last Writing Date Time</em>' attribute.
 	 * @see #setLastWritingDateTime(XMLGregorianCalendar)
 	 * @see caex.caex30.caex.CAEXPackage#getSourceDocumentInformation_LastWritingDateTime()
 	 * @model dataType="org.eclipse.emf.ecore.xml.type.DateTime" required="true"
+	 *        extendedMetaData="kind='attribute' name='LastWritingDateTime'"
 	 * @generated
 	 */
 	XMLGregorianCalendar getLastWritingDateTime();
@@ -65,10 +73,14 @@ public interface SourceDocumentInformation extends EObject {
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * Unique identifier of the origin of the CAEX document, e.g. a unique identifier of a source engineering tool or an exporter software. The ID shall not change even if the origin gets renamed. 
+	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Origin ID</em>' attribute.
 	 * @see #setOriginID(String)
 	 * @see caex.caex30.caex.CAEXPackage#getSourceDocumentInformation_OriginID()
 	 * @model dataType="org.eclipse.emf.ecore.xml.type.String" required="true"
+	 *        extendedMetaData="kind='attribute' name='OriginID'"
 	 * @generated
 	 */
 	String getOriginID();
@@ -91,10 +103,14 @@ public interface SourceDocumentInformation extends EObject {
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * Name of the origin of the CAEX document, e.g. the source engineering tool or an exporter software
+	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Origin Name</em>' attribute.
 	 * @see #setOriginName(String)
 	 * @see caex.caex30.caex.CAEXPackage#getSourceDocumentInformation_OriginName()
 	 * @model dataType="org.eclipse.emf.ecore.xml.type.String" required="true"
+	 *        extendedMetaData="kind='attribute' name='OriginName'"
 	 * @generated
 	 */
 	String getOriginName();
@@ -117,10 +133,14 @@ public interface SourceDocumentInformation extends EObject {
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * Optional: a unique identifier of the corresponding source project
+	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Origin Project ID</em>' attribute.
 	 * @see #setOriginProjectID(String)
 	 * @see caex.caex30.caex.CAEXPackage#getSourceDocumentInformation_OriginProjectID()
 	 * @model dataType="org.eclipse.emf.ecore.xml.type.String"
+	 *        extendedMetaData="kind='attribute' name='OriginProjectID'"
 	 * @generated
 	 */
 	String getOriginProjectID();
@@ -143,10 +163,14 @@ public interface SourceDocumentInformation extends EObject {
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * Optional: the title of the corresponding source project
+	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Origin Project Title</em>' attribute.
 	 * @see #setOriginProjectTitle(String)
 	 * @see caex.caex30.caex.CAEXPackage#getSourceDocumentInformation_OriginProjectTitle()
 	 * @model dataType="org.eclipse.emf.ecore.xml.type.String"
+	 *        extendedMetaData="kind='attribute' name='OriginProjectTitle'"
 	 * @generated
 	 */
 	String getOriginProjectTitle();
@@ -169,10 +193,14 @@ public interface SourceDocumentInformation extends EObject {
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * Optional: release information of the origin of the CAEX document, e.g. the version of the source engineering tool or the exporter software.
+	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Origin Release</em>' attribute.
 	 * @see #setOriginRelease(String)
 	 * @see caex.caex30.caex.CAEXPackage#getSourceDocumentInformation_OriginRelease()
 	 * @model dataType="org.eclipse.emf.ecore.xml.type.String"
+	 *        extendedMetaData="kind='attribute' name='OriginRelease'"
 	 * @generated
 	 */
 	String getOriginRelease();
@@ -195,10 +223,14 @@ public interface SourceDocumentInformation extends EObject {
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * Optional: the vendor of the data source of the CAEX document
+	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Origin Vendor</em>' attribute.
 	 * @see #setOriginVendor(String)
 	 * @see caex.caex30.caex.CAEXPackage#getSourceDocumentInformation_OriginVendor()
 	 * @model dataType="org.eclipse.emf.ecore.xml.type.String"
+	 *        extendedMetaData="kind='attribute' name='OriginVendor'"
 	 * @generated
 	 */
 	String getOriginVendor();
@@ -221,10 +253,14 @@ public interface SourceDocumentInformation extends EObject {
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * Optional: the vendors URL of the data source of the CAEX document
+	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Origin Vendor URL</em>' attribute.
 	 * @see #setOriginVendorURL(String)
 	 * @see caex.caex30.caex.CAEXPackage#getSourceDocumentInformation_OriginVendorURL()
 	 * @model dataType="org.eclipse.emf.ecore.xml.type.String"
+	 *        extendedMetaData="kind='attribute' name='OriginVendorURL'"
 	 * @generated
 	 */
 	String getOriginVendorURL();
@@ -247,10 +283,14 @@ public interface SourceDocumentInformation extends EObject {
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * Version of the origin of the CAEX document, e.g. the version of the source engineering tool or the exporter software.
+	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Origin Version</em>' attribute.
 	 * @see #setOriginVersion(String)
 	 * @see caex.caex30.caex.CAEXPackage#getSourceDocumentInformation_OriginVersion()
 	 * @model dataType="org.eclipse.emf.ecore.xml.type.String" required="true"
+	 *        extendedMetaData="kind='attribute' name='OriginVersion'"
 	 * @generated
 	 */
 	String getOriginVersion();

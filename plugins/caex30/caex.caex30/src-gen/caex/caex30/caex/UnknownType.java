@@ -17,7 +17,7 @@ import org.eclipse.emf.ecore.EObject;
  * </ul>
  *
  * @see caex.caex30.caex.CAEXPackage#getUnknownType()
- * @model
+ * @model extendedMetaData="name='UnknownType_._type' kind='elementOnly'"
  * @generated
  */
 public interface UnknownType extends EObject {
@@ -29,10 +29,14 @@ public interface UnknownType extends EObject {
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * Defines informative requirements as a constraint for an attribute value.
+	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Requirements</em>' attribute.
 	 * @see #setRequirements(String)
 	 * @see caex.caex30.caex.CAEXPackage#getUnknownType_Requirements()
 	 * @model dataType="org.eclipse.emf.ecore.xml.type.String"
+	 *        extendedMetaData="kind='element' name='Requirements' namespace='##targetNamespace'"
 	 * @generated
 	 */
 	String getRequirements();

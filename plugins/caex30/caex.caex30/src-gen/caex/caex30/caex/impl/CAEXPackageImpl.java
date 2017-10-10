@@ -44,9 +44,6 @@ import caex.caex30.caex.SystemUnitClassLib;
 import caex.caex30.caex.SystemUnitFamily;
 import caex.caex30.caex.UnknownType;
 import caex.caex30.caex.Version;
-
-import org.eclipse.emf.common.util.Enumerator;
-
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EDataType;
@@ -2105,10 +2102,10 @@ public class CAEXPackageImpl extends EPackageImpl implements CAEXPackage {
 		initEAttribute(getCAEXObject_Name(), theXMLTypePackage.getString(), "name", null, 1, 1, CAEXObject.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(documentRootEClass, DocumentRoot.class, "DocumentRoot", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEAttribute(getDocumentRoot_Mixed(), ecorePackage.getEFeatureMapEntry(), "mixed", null, 0, -1, DocumentRoot.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, !IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getDocumentRoot_XMLNSPrefixMap(), ecorePackage.getEStringToStringMapEntry(), null, "xMLNSPrefixMap", null, 0, -1, DocumentRoot.class, IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getDocumentRoot_XSISchemaLocation(), ecorePackage.getEStringToStringMapEntry(), null, "xSISchemaLocation", null, 0, -1, DocumentRoot.class, IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getDocumentRoot_CAEXFile(), this.getCAEXFile(), null, "cAEXFile", null, 0, -2, DocumentRoot.class, IS_TRANSIENT, IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
+		initEAttribute(getDocumentRoot_Mixed(), ecorePackage.getEFeatureMapEntry(), "mixed", null, 0, -1, null, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, !IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getDocumentRoot_XMLNSPrefixMap(), ecorePackage.getEStringToStringMapEntry(), null, "xMLNSPrefixMap", null, 0, -1, null, IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getDocumentRoot_XSISchemaLocation(), ecorePackage.getEStringToStringMapEntry(), null, "xSISchemaLocation", null, 0, -1, null, IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getDocumentRoot_CAEXFile(), this.getCAEXFile(), null, "cAEXFile", null, 0, -2, null, IS_TRANSIENT, IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
 
 		initEClass(externalInterfaceEClass, ExternalInterface.class, "ExternalInterface", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
@@ -2246,10 +2243,947 @@ public class CAEXPackageImpl extends EPackageImpl implements CAEXPackage {
 
 		// Initialize data types
 		initEDataType(attributeDataTypeEDataType, String.class, "AttributeDataType", IS_SERIALIZABLE, !IS_GENERATED_INSTANCE_CLASS);
-		initEDataType(changeModeObjectEDataType, Enumerator.class, "ChangeModeObject", IS_SERIALIZABLE, !IS_GENERATED_INSTANCE_CLASS);
+		initEDataType(changeModeObjectEDataType, ChangeMode.class, "ChangeModeObject", IS_SERIALIZABLE, IS_GENERATED_INSTANCE_CLASS);
 
 		// Create resource
 		createResource(eNS_URI);
+
+		// Create annotations
+		// http:///org/eclipse/emf/ecore/util/ExtendedMetaData
+		createExtendedMetaDataAnnotations();
+	}
+
+	/**
+	 * Initializes the annotations for <b>http:///org/eclipse/emf/ecore/util/ExtendedMetaData</b>.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void createExtendedMetaDataAnnotations() {
+		String source = "http:///org/eclipse/emf/ecore/util/ExtendedMetaData";	
+		addAnnotation
+		  (this, 
+		   source, 
+		   new String[] {
+			 "qualified", "false"
+		   });	
+		addAnnotation
+		  (attributeDataTypeEDataType, 
+		   source, 
+		   new String[] {
+			 "name", "AttributeDataType_._type",
+			 "baseType", "http://www.eclipse.org/emf/2003/XMLType#string"
+		   });	
+		addAnnotation
+		  (attributeFamilyEClass, 
+		   source, 
+		   new String[] {
+			 "name", "AttributeFamilyType",
+			 "kind", "elementOnly"
+		   });	
+		addAnnotation
+		  (attributeNameMappingEClass, 
+		   source, 
+		   new String[] {
+			 "name", "AttributeNameMapping_._type",
+			 "kind", "elementOnly"
+		   });	
+		addAnnotation
+		  (getAttributeNameMapping_RoleAttributeName(), 
+		   source, 
+		   new String[] {
+			 "kind", "attribute",
+			 "name", "RoleAttributeName"
+		   });	
+		addAnnotation
+		  (getAttributeNameMapping_SystemUnitAttributeName(), 
+		   source, 
+		   new String[] {
+			 "kind", "attribute",
+			 "name", "SystemUnitAttributeName"
+		   });	
+		addAnnotation
+		  (attributeEClass, 
+		   source, 
+		   new String[] {
+			 "name", "AttributeType",
+			 "kind", "elementOnly"
+		   });	
+		addAnnotation
+		  (getAttribute_DefaultValue(), 
+		   source, 
+		   new String[] {
+			 "kind", "element",
+			 "name", "DefaultValue",
+			 "namespace", "##targetNamespace"
+		   });	
+		addAnnotation
+		  (getAttribute_Value(), 
+		   source, 
+		   new String[] {
+			 "kind", "element",
+			 "name", "Value",
+			 "namespace", "##targetNamespace"
+		   });	
+		addAnnotation
+		  (getAttribute_RefSemantic(), 
+		   source, 
+		   new String[] {
+			 "kind", "element",
+			 "name", "RefSemantic",
+			 "namespace", "##targetNamespace"
+		   });	
+		addAnnotation
+		  (getAttribute_Constraint(), 
+		   source, 
+		   new String[] {
+			 "kind", "element",
+			 "name", "Constraint",
+			 "namespace", "##targetNamespace"
+		   });	
+		addAnnotation
+		  (getAttribute_Attribute(), 
+		   source, 
+		   new String[] {
+			 "kind", "element",
+			 "name", "Attribute",
+			 "namespace", "##targetNamespace"
+		   });	
+		addAnnotation
+		  (getAttribute_AttributeDataType(), 
+		   source, 
+		   new String[] {
+			 "kind", "attribute",
+			 "name", "AttributeDataType"
+		   });	
+		addAnnotation
+		  (getAttribute_RefAttributeType(), 
+		   source, 
+		   new String[] {
+			 "kind", "attribute",
+			 "name", "RefAttributeType"
+		   });	
+		addAnnotation
+		  (getAttribute_Unit(), 
+		   source, 
+		   new String[] {
+			 "kind", "attribute",
+			 "name", "Unit"
+		   });	
+		addAnnotation
+		  (attributeValueRequirementEClass, 
+		   source, 
+		   new String[] {
+			 "name", "AttributeValueRequirementType",
+			 "kind", "elementOnly"
+		   });	
+		addAnnotation
+		  (getAttributeValueRequirement_OrdinalScaledType(), 
+		   source, 
+		   new String[] {
+			 "kind", "element",
+			 "name", "OrdinalScaledType",
+			 "namespace", "##targetNamespace"
+		   });	
+		addAnnotation
+		  (getAttributeValueRequirement_NominalScaledType(), 
+		   source, 
+		   new String[] {
+			 "kind", "element",
+			 "name", "NominalScaledType",
+			 "namespace", "##targetNamespace"
+		   });	
+		addAnnotation
+		  (getAttributeValueRequirement_UnknownType(), 
+		   source, 
+		   new String[] {
+			 "kind", "element",
+			 "name", "UnknownType",
+			 "namespace", "##targetNamespace"
+		   });	
+		addAnnotation
+		  (getAttributeValueRequirement_Name(), 
+		   source, 
+		   new String[] {
+			 "kind", "attribute",
+			 "name", "Name"
+		   });	
+		addAnnotation
+		  (caexBasicObjectEClass, 
+		   source, 
+		   new String[] {
+			 "name", "CAEXBasicObject",
+			 "kind", "elementOnly"
+		   });	
+		addAnnotation
+		  (getCAEXBasicObject_ChangeMode(), 
+		   source, 
+		   new String[] {
+			 "kind", "attribute",
+			 "name", "ChangeMode"
+		   });	
+		addAnnotation
+		  (getCAEXBasicObject_Description(), 
+		   source, 
+		   new String[] {
+			 "kind", "element",
+			 "name", "Description",
+			 "namespace", "##targetNamespace"
+		   });	
+		addAnnotation
+		  (getCAEXBasicObject_Version(), 
+		   source, 
+		   new String[] {
+			 "kind", "element",
+			 "name", "Version",
+			 "namespace", "##targetNamespace"
+		   });	
+		addAnnotation
+		  (getCAEXBasicObject_Revision(), 
+		   source, 
+		   new String[] {
+			 "kind", "element",
+			 "name", "Revision",
+			 "namespace", "##targetNamespace"
+		   });	
+		addAnnotation
+		  (getCAEXBasicObject_Copyright(), 
+		   source, 
+		   new String[] {
+			 "kind", "element",
+			 "name", "Copyright",
+			 "namespace", "##targetNamespace"
+		   });	
+		addAnnotation
+		  (caexFileEClass, 
+		   source, 
+		   new String[] {
+			 "name", "CAEXFile_._type",
+			 "kind", "elementOnly"
+		   });	
+		addAnnotation
+		  (getCAEXFile_SuperiorStandardVersion(), 
+		   source, 
+		   new String[] {
+			 "kind", "element",
+			 "name", "SuperiorStandardVersion",
+			 "namespace", "##targetNamespace"
+		   });	
+		addAnnotation
+		  (getCAEXFile_SourceDocumentInformation(), 
+		   source, 
+		   new String[] {
+			 "kind", "element",
+			 "name", "SourceDocumentInformation",
+			 "namespace", "##targetNamespace"
+		   });	
+		addAnnotation
+		  (getCAEXFile_ExternalReference(), 
+		   source, 
+		   new String[] {
+			 "kind", "element",
+			 "name", "ExternalReference",
+			 "namespace", "##targetNamespace"
+		   });	
+		addAnnotation
+		  (getCAEXFile_InstanceHierarchy(), 
+		   source, 
+		   new String[] {
+			 "kind", "element",
+			 "name", "InstanceHierarchy",
+			 "namespace", "##targetNamespace"
+		   });	
+		addAnnotation
+		  (getCAEXFile_InterfaceClassLib(), 
+		   source, 
+		   new String[] {
+			 "kind", "element",
+			 "name", "InterfaceClassLib",
+			 "namespace", "##targetNamespace"
+		   });	
+		addAnnotation
+		  (getCAEXFile_RoleClassLib(), 
+		   source, 
+		   new String[] {
+			 "kind", "element",
+			 "name", "RoleClassLib",
+			 "namespace", "##targetNamespace"
+		   });	
+		addAnnotation
+		  (getCAEXFile_SystemUnitClassLib(), 
+		   source, 
+		   new String[] {
+			 "kind", "element",
+			 "name", "SystemUnitClassLib",
+			 "namespace", "##targetNamespace"
+		   });	
+		addAnnotation
+		  (getCAEXFile_AttributeTypeLib(), 
+		   source, 
+		   new String[] {
+			 "kind", "element",
+			 "name", "AttributeTypeLib",
+			 "namespace", "##targetNamespace"
+		   });	
+		addAnnotation
+		  (getCAEXFile_FileName(), 
+		   source, 
+		   new String[] {
+			 "kind", "attribute",
+			 "name", "FileName"
+		   });	
+		addAnnotation
+		  (getCAEXFile_SchemaVersion(), 
+		   source, 
+		   new String[] {
+			 "kind", "attribute",
+			 "name", "SchemaVersion"
+		   });	
+		addAnnotation
+		  (caexObjectEClass, 
+		   source, 
+		   new String[] {
+			 "name", "CAEXObject",
+			 "kind", "elementOnly"
+		   });	
+		addAnnotation
+		  (getCAEXObject_ID(), 
+		   source, 
+		   new String[] {
+			 "kind", "attribute",
+			 "name", "ID"
+		   });	
+		addAnnotation
+		  (getCAEXObject_Name(), 
+		   source, 
+		   new String[] {
+			 "kind", "attribute",
+			 "name", "Name"
+		   });	
+		addAnnotation
+		  (changeModeEEnum, 
+		   source, 
+		   new String[] {
+			 "name", "ChangeMode"
+		   });	
+		addAnnotation
+		  (changeModeObjectEDataType, 
+		   source, 
+		   new String[] {
+			 "name", "ChangeMode:Object",
+			 "baseType", "ChangeMode"
+		   });	
+		addAnnotation
+		  (documentRootEClass, 
+		   source, 
+		   new String[] {
+			 "name", "",
+			 "kind", "mixed"
+		   });	
+		addAnnotation
+		  (getDocumentRoot_Mixed(), 
+		   source, 
+		   new String[] {
+			 "kind", "elementWildcard",
+			 "name", ":mixed"
+		   });	
+		addAnnotation
+		  (getDocumentRoot_XMLNSPrefixMap(), 
+		   source, 
+		   new String[] {
+			 "kind", "attribute",
+			 "name", "xmlns:prefix"
+		   });	
+		addAnnotation
+		  (getDocumentRoot_XSISchemaLocation(), 
+		   source, 
+		   new String[] {
+			 "kind", "attribute",
+			 "name", "xsi:schemaLocation"
+		   });	
+		addAnnotation
+		  (getDocumentRoot_CAEXFile(), 
+		   source, 
+		   new String[] {
+			 "kind", "element",
+			 "name", "CAEXFile",
+			 "namespace", "##targetNamespace"
+		   });	
+		addAnnotation
+		  (externalInterfaceEClass, 
+		   source, 
+		   new String[] {
+			 "name", "ExternalInterface_._type",
+			 "kind", "elementOnly"
+		   });	
+		addAnnotation
+		  (externalReferenceEClass, 
+		   source, 
+		   new String[] {
+			 "name", "ExternalReference_._type",
+			 "kind", "elementOnly"
+		   });	
+		addAnnotation
+		  (getExternalReference_Alias(), 
+		   source, 
+		   new String[] {
+			 "kind", "attribute",
+			 "name", "Alias"
+		   });	
+		addAnnotation
+		  (getExternalReference_Path(), 
+		   source, 
+		   new String[] {
+			 "kind", "attribute",
+			 "name", "Path"
+		   });	
+		addAnnotation
+		  (instanceHierarchyEClass, 
+		   source, 
+		   new String[] {
+			 "name", "InstanceHierarchy_._type",
+			 "kind", "elementOnly"
+		   });	
+		addAnnotation
+		  (getInstanceHierarchy_InternalElement(), 
+		   source, 
+		   new String[] {
+			 "kind", "element",
+			 "name", "InternalElement",
+			 "namespace", "##targetNamespace"
+		   });	
+		addAnnotation
+		  (interfaceClassLibEClass, 
+		   source, 
+		   new String[] {
+			 "name", "InterfaceClassLib_._type",
+			 "kind", "elementOnly"
+		   });	
+		addAnnotation
+		  (getInterfaceClassLib_InterfaceClass(), 
+		   source, 
+		   new String[] {
+			 "kind", "element",
+			 "name", "InterfaceClass",
+			 "namespace", "##targetNamespace"
+		   });	
+		addAnnotation
+		  (interfaceClassEClass, 
+		   source, 
+		   new String[] {
+			 "name", "InterfaceClassType",
+			 "kind", "elementOnly"
+		   });	
+		addAnnotation
+		  (getInterfaceClass_Attribute(), 
+		   source, 
+		   new String[] {
+			 "kind", "element",
+			 "name", "Attribute",
+			 "namespace", "##targetNamespace"
+		   });	
+		addAnnotation
+		  (getInterfaceClass_RefBaseClassPath(), 
+		   source, 
+		   new String[] {
+			 "kind", "attribute",
+			 "name", "RefBaseClassPath"
+		   });	
+		addAnnotation
+		  (getInterfaceClass_ExternalInterface(), 
+		   source, 
+		   new String[] {
+			 "kind", "element",
+			 "name", "ExternalInterface",
+			 "namespace", "##targetNamespace"
+		   });	
+		addAnnotation
+		  (interfaceFamilyEClass, 
+		   source, 
+		   new String[] {
+			 "name", "InterfaceFamilyType",
+			 "kind", "elementOnly"
+		   });	
+		addAnnotation
+		  (interfaceIDMappingEClass, 
+		   source, 
+		   new String[] {
+			 "name", "InterfaceIDMapping_._type",
+			 "kind", "elementOnly"
+		   });	
+		addAnnotation
+		  (getInterfaceIDMapping_RoleInterfaceID(), 
+		   source, 
+		   new String[] {
+			 "kind", "attribute",
+			 "name", "RoleInterfaceID"
+		   });	
+		addAnnotation
+		  (getInterfaceIDMapping_SystemUnitInterfaceID(), 
+		   source, 
+		   new String[] {
+			 "kind", "attribute",
+			 "name", "SystemUnitInterfaceID"
+		   });	
+		addAnnotation
+		  (internalElementEClass, 
+		   source, 
+		   new String[] {
+			 "name", "InternalElementType",
+			 "kind", "elementOnly"
+		   });	
+		addAnnotation
+		  (getInternalElement_RoleRequirements(), 
+		   source, 
+		   new String[] {
+			 "kind", "element",
+			 "name", "RoleRequirements",
+			 "namespace", "##targetNamespace"
+		   });	
+		addAnnotation
+		  (getInternalElement_RefBaseSystemUnitPath(), 
+		   source, 
+		   new String[] {
+			 "kind", "attribute",
+			 "name", "RefBaseSystemUnitPath"
+		   });	
+		addAnnotation
+		  (internalLinkEClass, 
+		   source, 
+		   new String[] {
+			 "name", "InternalLink_._type",
+			 "kind", "elementOnly"
+		   });	
+		addAnnotation
+		  (getInternalLink_RefPartnerSideA(), 
+		   source, 
+		   new String[] {
+			 "kind", "attribute",
+			 "name", "RefPartnerSideA"
+		   });	
+		addAnnotation
+		  (getInternalLink_RefPartnerSideB(), 
+		   source, 
+		   new String[] {
+			 "kind", "attribute",
+			 "name", "RefPartnerSideB"
+		   });	
+		addAnnotation
+		  (mappingEClass, 
+		   source, 
+		   new String[] {
+			 "name", "MappingType",
+			 "kind", "elementOnly"
+		   });	
+		addAnnotation
+		  (getMapping_AttributeNameMapping(), 
+		   source, 
+		   new String[] {
+			 "kind", "element",
+			 "name", "AttributeNameMapping",
+			 "namespace", "##targetNamespace"
+		   });	
+		addAnnotation
+		  (getMapping_InterfaceIDMapping(), 
+		   source, 
+		   new String[] {
+			 "kind", "element",
+			 "name", "InterfaceIDMapping",
+			 "namespace", "##targetNamespace"
+		   });	
+		addAnnotation
+		  (refSemanticEClass, 
+		   source, 
+		   new String[] {
+			 "name", "RefSemantic_._type",
+			 "kind", "elementOnly"
+		   });	
+		addAnnotation
+		  (getRefSemantic_CorrespondingAttributePath(), 
+		   source, 
+		   new String[] {
+			 "kind", "attribute",
+			 "name", "CorrespondingAttributePath"
+		   });	
+		addAnnotation
+		  (roleClassLibEClass, 
+		   source, 
+		   new String[] {
+			 "name", "RoleClassLib_._type",
+			 "kind", "elementOnly"
+		   });	
+		addAnnotation
+		  (getRoleClassLib_RoleClass(), 
+		   source, 
+		   new String[] {
+			 "kind", "element",
+			 "name", "RoleClass",
+			 "namespace", "##targetNamespace"
+		   });	
+		addAnnotation
+		  (roleClassEClass, 
+		   source, 
+		   new String[] {
+			 "name", "RoleClassType",
+			 "kind", "elementOnly"
+		   });	
+		addAnnotation
+		  (getRoleClass_Attribute(), 
+		   source, 
+		   new String[] {
+			 "kind", "element",
+			 "name", "Attribute",
+			 "namespace", "##targetNamespace"
+		   });	
+		addAnnotation
+		  (getRoleClass_ExternalInterface(), 
+		   source, 
+		   new String[] {
+			 "kind", "element",
+			 "name", "ExternalInterface",
+			 "namespace", "##targetNamespace"
+		   });	
+		addAnnotation
+		  (getRoleClass_RefBaseClassPath(), 
+		   source, 
+		   new String[] {
+			 "kind", "attribute",
+			 "name", "RefBaseClassPath"
+		   });	
+		addAnnotation
+		  (roleFamilyEClass, 
+		   source, 
+		   new String[] {
+			 "name", "RoleFamilyType",
+			 "kind", "elementOnly"
+		   });	
+		addAnnotation
+		  (roleRequirementsEClass, 
+		   source, 
+		   new String[] {
+			 "name", "RoleRequirements_._type",
+			 "kind", "elementOnly"
+		   });	
+		addAnnotation
+		  (getRoleRequirements_Attribute(), 
+		   source, 
+		   new String[] {
+			 "kind", "element",
+			 "name", "Attribute",
+			 "namespace", "##targetNamespace"
+		   });	
+		addAnnotation
+		  (getRoleRequirements_ExternalInterface(), 
+		   source, 
+		   new String[] {
+			 "kind", "element",
+			 "name", "ExternalInterface",
+			 "namespace", "##targetNamespace"
+		   });	
+		addAnnotation
+		  (getRoleRequirements_MappingObject(), 
+		   source, 
+		   new String[] {
+			 "kind", "element",
+			 "name", "MappingObject",
+			 "namespace", "##targetNamespace"
+		   });	
+		addAnnotation
+		  (getRoleRequirements_RefBaseRoleClassPath(), 
+		   source, 
+		   new String[] {
+			 "kind", "attribute",
+			 "name", "RefBaseRoleClassPath"
+		   });	
+		addAnnotation
+		  (sourceDocumentInformationEClass, 
+		   source, 
+		   new String[] {
+			 "name", "SourceDocumentInformationType",
+			 "kind", "empty"
+		   });	
+		addAnnotation
+		  (getSourceDocumentInformation_LastWritingDateTime(), 
+		   source, 
+		   new String[] {
+			 "kind", "attribute",
+			 "name", "LastWritingDateTime"
+		   });	
+		addAnnotation
+		  (getSourceDocumentInformation_OriginID(), 
+		   source, 
+		   new String[] {
+			 "kind", "attribute",
+			 "name", "OriginID"
+		   });	
+		addAnnotation
+		  (getSourceDocumentInformation_OriginName(), 
+		   source, 
+		   new String[] {
+			 "kind", "attribute",
+			 "name", "OriginName"
+		   });	
+		addAnnotation
+		  (getSourceDocumentInformation_OriginProjectID(), 
+		   source, 
+		   new String[] {
+			 "kind", "attribute",
+			 "name", "OriginProjectID"
+		   });	
+		addAnnotation
+		  (getSourceDocumentInformation_OriginProjectTitle(), 
+		   source, 
+		   new String[] {
+			 "kind", "attribute",
+			 "name", "OriginProjectTitle"
+		   });	
+		addAnnotation
+		  (getSourceDocumentInformation_OriginRelease(), 
+		   source, 
+		   new String[] {
+			 "kind", "attribute",
+			 "name", "OriginRelease"
+		   });	
+		addAnnotation
+		  (getSourceDocumentInformation_OriginVendor(), 
+		   source, 
+		   new String[] {
+			 "kind", "attribute",
+			 "name", "OriginVendor"
+		   });	
+		addAnnotation
+		  (getSourceDocumentInformation_OriginVendorURL(), 
+		   source, 
+		   new String[] {
+			 "kind", "attribute",
+			 "name", "OriginVendorURL"
+		   });	
+		addAnnotation
+		  (getSourceDocumentInformation_OriginVersion(), 
+		   source, 
+		   new String[] {
+			 "kind", "attribute",
+			 "name", "OriginVersion"
+		   });	
+		addAnnotation
+		  (supportedRoleClassEClass, 
+		   source, 
+		   new String[] {
+			 "name", "SupportedRoleClass_._type",
+			 "kind", "elementOnly"
+		   });	
+		addAnnotation
+		  (getSupportedRoleClass_MappingObject(), 
+		   source, 
+		   new String[] {
+			 "kind", "element",
+			 "name", "MappingObject",
+			 "namespace", "##targetNamespace"
+		   });	
+		addAnnotation
+		  (getSupportedRoleClass_RefRoleClassPath(), 
+		   source, 
+		   new String[] {
+			 "kind", "attribute",
+			 "name", "RefRoleClassPath"
+		   });	
+		addAnnotation
+		  (systemUnitClassLibEClass, 
+		   source, 
+		   new String[] {
+			 "name", "SystemUnitClassLib_._type",
+			 "kind", "elementOnly"
+		   });	
+		addAnnotation
+		  (getSystemUnitClassLib_SystemUnitClass(), 
+		   source, 
+		   new String[] {
+			 "kind", "element",
+			 "name", "SystemUnitClass",
+			 "namespace", "##targetNamespace"
+		   });	
+		addAnnotation
+		  (systemUnitClassEClass, 
+		   source, 
+		   new String[] {
+			 "name", "SystemUnitClassType",
+			 "kind", "elementOnly"
+		   });	
+		addAnnotation
+		  (getSystemUnitClass_Attribute(), 
+		   source, 
+		   new String[] {
+			 "kind", "element",
+			 "name", "Attribute",
+			 "namespace", "##targetNamespace"
+		   });	
+		addAnnotation
+		  (getSystemUnitClass_ExternalInterface(), 
+		   source, 
+		   new String[] {
+			 "kind", "element",
+			 "name", "ExternalInterface",
+			 "namespace", "##targetNamespace"
+		   });	
+		addAnnotation
+		  (getSystemUnitClass_InternalElement(), 
+		   source, 
+		   new String[] {
+			 "kind", "element",
+			 "name", "InternalElement",
+			 "namespace", "##targetNamespace"
+		   });	
+		addAnnotation
+		  (getSystemUnitClass_SupportedRoleClass(), 
+		   source, 
+		   new String[] {
+			 "kind", "element",
+			 "name", "SupportedRoleClass",
+			 "namespace", "##targetNamespace"
+		   });	
+		addAnnotation
+		  (getSystemUnitClass_InternalLink(), 
+		   source, 
+		   new String[] {
+			 "kind", "element",
+			 "name", "InternalLink",
+			 "namespace", "##targetNamespace"
+		   });	
+		addAnnotation
+		  (systemUnitFamilyEClass, 
+		   source, 
+		   new String[] {
+			 "name", "SystemUnitFamilyType",
+			 "kind", "elementOnly"
+		   });	
+		addAnnotation
+		  (unknownTypeEClass, 
+		   source, 
+		   new String[] {
+			 "name", "UnknownType_._type",
+			 "kind", "elementOnly"
+		   });	
+		addAnnotation
+		  (getUnknownType_Requirements(), 
+		   source, 
+		   new String[] {
+			 "kind", "element",
+			 "name", "Requirements",
+			 "namespace", "##targetNamespace"
+		   });	
+		addAnnotation
+		  (copyrightEClass, 
+		   source, 
+		   new String[] {
+			 "name", "Copyright",
+			 "kind", "simple"
+		   });	
+		addAnnotation
+		  (getCopyright_Value(), 
+		   source, 
+		   new String[] {
+			 "name", ":0",
+			 "kind", "simple"
+		   });	
+		addAnnotation
+		  (getCopyright_ChangeMode(), 
+		   source, 
+		   new String[] {
+			 "kind", "attribute",
+			 "name", "ChangeMode",
+			 "namespace", "##targetNamespace"
+		   });	
+		addAnnotation
+		  (descriptionEClass, 
+		   source, 
+		   new String[] {
+			 "name", "Description",
+			 "kind", "simple"
+		   });	
+		addAnnotation
+		  (getDescription_Value(), 
+		   source, 
+		   new String[] {
+			 "name", ":0",
+			 "kind", "simple"
+		   });	
+		addAnnotation
+		  (getDescription_ChangeMode(), 
+		   source, 
+		   new String[] {
+			 "kind", "attribute",
+			 "name", "ChangeMode",
+			 "namespace", "##targetNamespace"
+		   });	
+		addAnnotation
+		  (revisionEClass, 
+		   source, 
+		   new String[] {
+			 "name", "Revision",
+			 "kind", "elementOnly"
+		   });	
+		addAnnotation
+		  (getRevision_RevisionDate(), 
+		   source, 
+		   new String[] {
+			 "kind", "element",
+			 "name", "RevisionDate",
+			 "namespace", "##targetNamespace"
+		   });	
+		addAnnotation
+		  (getRevision_OldVersion(), 
+		   source, 
+		   new String[] {
+			 "kind", "element",
+			 "name", "OldVersion",
+			 "namespace", "##targetNamespace"
+		   });	
+		addAnnotation
+		  (getRevision_NewVersion(), 
+		   source, 
+		   new String[] {
+			 "kind", "element",
+			 "name", "NewVersion",
+			 "namespace", "##targetNamespace"
+		   });	
+		addAnnotation
+		  (getRevision_AuthorName(), 
+		   source, 
+		   new String[] {
+			 "kind", "element",
+			 "name", "AuthorName",
+			 "namespace", "##targetNamespace"
+		   });	
+		addAnnotation
+		  (getRevision_Comment(), 
+		   source, 
+		   new String[] {
+			 "kind", "element",
+			 "name", "Comment",
+			 "namespace", "##targetNamespace"
+		   });	
+		addAnnotation
+		  (versionEClass, 
+		   source, 
+		   new String[] {
+			 "name", "Version",
+			 "kind", "simple"
+		   });	
+		addAnnotation
+		  (getVersion_Value(), 
+		   source, 
+		   new String[] {
+			 "name", ":0",
+			 "kind", "simple"
+		   });	
+		addAnnotation
+		  (getVersion_ChangeMode(), 
+		   source, 
+		   new String[] {
+			 "kind", "attribute",
+			 "name", "ChangeMode",
+			 "namespace", "##targetNamespace"
+		   });
 	}
 
 } //CAEXPackageImpl

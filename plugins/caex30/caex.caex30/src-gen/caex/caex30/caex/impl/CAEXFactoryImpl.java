@@ -3,9 +3,6 @@
 package caex.caex30.caex.impl;
 
 import caex.caex30.caex.*;
-
-import org.eclipse.emf.common.util.Enumerator;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EDataType;
 import org.eclipse.emf.ecore.EObject;
@@ -14,6 +11,8 @@ import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.impl.EFactoryImpl;
 
 import org.eclipse.emf.ecore.plugin.EcorePlugin;
+import org.eclipse.emf.ecore.xml.type.XMLTypeFactory;
+import org.eclipse.emf.ecore.xml.type.XMLTypePackage;
 
 /**
  * <!-- begin-user-doc -->
@@ -535,7 +534,7 @@ public class CAEXFactoryImpl extends EFactoryImpl implements CAEXFactory {
 	 * @generated
 	 */
 	public String createAttributeDataTypeFromString(EDataType eDataType, String initialValue) {
-		return (String)super.createFromString(eDataType, initialValue);
+		return (String)XMLTypeFactory.eINSTANCE.createFromString(XMLTypePackage.Literals.STRING, initialValue);
 	}
 
 	/**
@@ -544,7 +543,7 @@ public class CAEXFactoryImpl extends EFactoryImpl implements CAEXFactory {
 	 * @generated
 	 */
 	public String convertAttributeDataTypeToString(EDataType eDataType, Object instanceValue) {
-		return super.convertToString(eDataType, instanceValue);
+		return XMLTypeFactory.eINSTANCE.convertToString(XMLTypePackage.Literals.STRING, instanceValue);
 	}
 
 	/**
@@ -552,8 +551,8 @@ public class CAEXFactoryImpl extends EFactoryImpl implements CAEXFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Enumerator createChangeModeObjectFromString(EDataType eDataType, String initialValue) {
-		return (Enumerator)super.createFromString(eDataType, initialValue);
+	public ChangeMode createChangeModeObjectFromString(EDataType eDataType, String initialValue) {
+		return createChangeModeFromString(CAEXPackage.Literals.CHANGE_MODE, initialValue);
 	}
 
 	/**
@@ -562,7 +561,7 @@ public class CAEXFactoryImpl extends EFactoryImpl implements CAEXFactory {
 	 * @generated
 	 */
 	public String convertChangeModeObjectToString(EDataType eDataType, Object instanceValue) {
-		return super.convertToString(eDataType, instanceValue);
+		return convertChangeModeToString(CAEXPackage.Literals.CHANGE_MODE, instanceValue);
 	}
 
 	/**

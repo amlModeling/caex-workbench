@@ -11,6 +11,10 @@ import org.eclipse.emf.ecore.EObject;
  * A representation of the model object '<em><b>Basic Object</b></em>'.
  * <!-- end-user-doc -->
  *
+ * <!-- begin-model-doc -->
+ * CAEX basis object that comprises a basic set of attributes and header information which exist for all CAEX elements.
+ * <!-- end-model-doc -->
+ *
  * <p>
  * The following features are supported:
  * </p>
@@ -24,7 +28,7 @@ import org.eclipse.emf.ecore.EObject;
  * </ul>
  *
  * @see caex.caex30.caex.CAEXPackage#getCAEXBasicObject()
- * @model
+ * @model extendedMetaData="name='CAEXBasicObject' kind='elementOnly'"
  * @generated
  */
 public interface CAEXBasicObject extends EObject {
@@ -38,6 +42,9 @@ public interface CAEXBasicObject extends EObject {
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * Optionally describes the change state of a CAEX object. If used, the ChangeMode shall have the following value range: state, create, delete and change. This information should be used for further change management applications.
+	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Change Mode</em>' attribute.
 	 * @see caex.caex30.caex.ChangeMode
 	 * @see #isSetChangeMode()
@@ -45,6 +52,7 @@ public interface CAEXBasicObject extends EObject {
 	 * @see #setChangeMode(ChangeMode)
 	 * @see caex.caex30.caex.CAEXPackage#getCAEXBasicObject_ChangeMode()
 	 * @model default="state" unsettable="true"
+	 *        extendedMetaData="kind='attribute' name='ChangeMode'"
 	 * @generated
 	 */
 	ChangeMode getChangeMode();
@@ -93,10 +101,14 @@ public interface CAEXBasicObject extends EObject {
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * Textual description for CAEX objects.
+	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Description</em>' containment reference.
 	 * @see #setDescription(Description)
 	 * @see caex.caex30.caex.CAEXPackage#getCAEXBasicObject_Description()
 	 * @model containment="true"
+	 *        extendedMetaData="kind='element' name='Description' namespace='##targetNamespace'"
 	 * @generated
 	 */
 	Description getDescription();
@@ -119,10 +131,14 @@ public interface CAEXBasicObject extends EObject {
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * Organizational information about the state of the version.
+	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Version</em>' containment reference.
 	 * @see #setVersion(Version)
 	 * @see caex.caex30.caex.CAEXPackage#getCAEXBasicObject_Version()
 	 * @model containment="true"
+	 *        extendedMetaData="kind='element' name='Version' namespace='##targetNamespace'"
 	 * @generated
 	 */
 	Version getVersion();
@@ -146,9 +162,13 @@ public interface CAEXBasicObject extends EObject {
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * Organizational information about the state of the revision.
+	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Revision</em>' containment reference list.
 	 * @see caex.caex30.caex.CAEXPackage#getCAEXBasicObject_Revision()
 	 * @model containment="true"
+	 *        extendedMetaData="kind='element' name='Revision' namespace='##targetNamespace'"
 	 * @generated
 	 */
 	EList<Revision> getRevision();
@@ -161,10 +181,14 @@ public interface CAEXBasicObject extends EObject {
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * Organizational information about copyright.
+	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Copyright</em>' containment reference.
 	 * @see #setCopyright(Copyright)
 	 * @see caex.caex30.caex.CAEXPackage#getCAEXBasicObject_Copyright()
 	 * @model containment="true"
+	 *        extendedMetaData="kind='element' name='Copyright' namespace='##targetNamespace'"
 	 * @generated
 	 */
 	Copyright getCopyright();

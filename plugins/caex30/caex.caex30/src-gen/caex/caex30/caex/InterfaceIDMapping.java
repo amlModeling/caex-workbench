@@ -19,7 +19,7 @@ package caex.caex30.caex;
  * </ul>
  *
  * @see caex.caex30.caex.CAEXPackage#getInterfaceIDMapping()
- * @model
+ * @model extendedMetaData="name='InterfaceIDMapping_._type' kind='elementOnly'"
  * @generated
  */
 public interface InterfaceIDMapping extends CAEXBasicObject {
@@ -35,6 +35,7 @@ public interface InterfaceIDMapping extends CAEXBasicObject {
 	 * @see #setRoleInterfaceID(String)
 	 * @see caex.caex30.caex.CAEXPackage#getInterfaceIDMapping_RoleInterfaceID()
 	 * @model dataType="org.eclipse.emf.ecore.xml.type.String" required="true"
+	 *        extendedMetaData="kind='attribute' name='RoleInterfaceID'"
 	 * @generated
 	 */
 	String getRoleInterfaceID();
@@ -61,6 +62,7 @@ public interface InterfaceIDMapping extends CAEXBasicObject {
 	 * @see #setSystemUnitInterfaceID(String)
 	 * @see caex.caex30.caex.CAEXPackage#getInterfaceIDMapping_SystemUnitInterfaceID()
 	 * @model dataType="org.eclipse.emf.ecore.xml.type.String" required="true"
+	 *        extendedMetaData="kind='attribute' name='SystemUnitInterfaceID'"
 	 * @generated
 	 */
 	String getSystemUnitInterfaceID();

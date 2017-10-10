@@ -17,7 +17,7 @@ package caex.caex30.caex;
  * </ul>
  *
  * @see caex.caex30.caex.CAEXPackage#getExternalReference()
- * @model
+ * @model extendedMetaData="name='ExternalReference_._type' kind='elementOnly'"
  * @generated
  */
 public interface ExternalReference extends CAEXBasicObject {
@@ -29,10 +29,14 @@ public interface ExternalReference extends CAEXBasicObject {
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * Describes the alias name of an external CAEX file to enable referencing elements of the external CAEX file.
+	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Alias</em>' attribute.
 	 * @see #setAlias(String)
 	 * @see caex.caex30.caex.CAEXPackage#getExternalReference_Alias()
 	 * @model dataType="org.eclipse.emf.ecore.xml.type.String" required="true"
+	 *        extendedMetaData="kind='attribute' name='Alias'"
 	 * @generated
 	 */
 	String getAlias();
@@ -55,10 +59,14 @@ public interface ExternalReference extends CAEXBasicObject {
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * Describes the path of the external CAEX file. Absolute and relative paths are allowed.
+	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Path</em>' attribute.
 	 * @see #setPath(String)
 	 * @see caex.caex30.caex.CAEXPackage#getExternalReference_Path()
 	 * @model dataType="org.eclipse.emf.ecore.xml.type.String" required="true"
+	 *        extendedMetaData="kind='attribute' name='Path'"
 	 * @generated
 	 */
 	String getPath();
