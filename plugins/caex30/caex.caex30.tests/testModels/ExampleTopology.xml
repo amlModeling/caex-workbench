@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><!-- Mit XMLSpy v2011 rel. 3 (http://www.altova.com) von Josef Prinz (INPRO) bearbeitet --><CAEXFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" FileName="ExampleTopology.aml" SchemaVersion="2.15" xsi:noNamespaceSchemaLocation="./Source/CAEX_ClassModel_V2.15.xsd">
+	<ExternalReference Alias="BaseRoleClassLib" Path="Libs/RoleClass Libraries/AutomationMLBaseRoleClassLib.aml"/>
+	<ExternalReference Alias="BaseInterfaceClassLib" Path="Libs/InterfaceClass Libraries/AutomationMLInterfaceClassLib.aml"/>
+	<InstanceHierarchy Name="ManufacturingSystem">
+		<InternalElement ID="{788eb291-f103-4fdc-aba0-4893b599f556}" Name="firstScrewdriver" RefBaseSystemUnitPath="LibOfCommonTools/ElectricScrewdriver">
+			<Attribute Name="New Attribute"/>
+			<ExternalInterface ID="{5f535d4c-dd46-4c1c-898c-4e58419048b6}" Name="EnergySupply" RefBaseClassPath="MyInterfaces/Energy"/>
+			<SupportedRoleClass RefRoleClassPath="ManufacturingRoleClasses/Tool"/>
+			<RoleRequirements RefBaseRoleClassPath="ManufacturingRoleClasses/Tool"/>
+		</InternalElement>
+		<InternalElement ID="{19dcf818-4716-4fc1-a85f-28e1938c4c3a}" Name="secondScrewdriver" RefBaseSystemUnitPath="LibOfCommonTools/ElectricScrewdriver">
+			<ExternalInterface ID="50e10905-ac18-413c-afab-ad8ed1569fff" Name="EnergySupply" RefBaseClassPath="MyInterfaces/Energy"/>
+			<SupportedRoleClass RefRoleClassPath="ManufacturingRoleClasses/Tool"/>
+			<RoleRequirements RefBaseRoleClassPath="ManufacturingRoleClasses/Tool"/>
+		</InternalElement>
+	</InstanceHierarchy>
+	<InterfaceClassLib Name="MyInterfaces">
+		<Version>1.0</Version>
+		<InterfaceClass Name="Energy" RefBaseClassPath="BaseInterfaceClassLib@AutomationMLInterfaceClassLib/AutomationMLBaseInterface"/>
+	</InterfaceClassLib>
+	<RoleClassLib Name="ManufacturingRoleClasses">
+		<Version>1.0</Version>
+		<RoleClass Name="Tool" RefBaseClassPath="BaseRoleClassLib@AutomationMLBaseRoleClassLib/AutomationMLBaseRole"/>
+	</RoleClassLib>
+	<SystemUnitClassLib Name="LibOfCommonTools">
+		<Version>1.0</Version>
+		<SystemUnitClass Name="ElectricScrewdriver">
+			<ExternalInterface ID="dd0e0dfe-10f8-4068-845b-9c29699ac79b" Name="EnergySupply" RefBaseClassPath="MyInterfaces/Energy"/>
+			<SupportedRoleClass RefRoleClassPath="ManufacturingRoleClasses/Tool"/>
+		</SystemUnitClass>
+	</SystemUnitClassLib>
+</CAEXFile>
