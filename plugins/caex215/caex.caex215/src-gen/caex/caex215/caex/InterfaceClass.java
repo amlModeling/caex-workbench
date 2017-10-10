@@ -9,6 +9,10 @@ import org.eclipse.emf.common.util.EList;
  * A representation of the model object '<em><b>Interface Class</b></em>'.
  * <!-- end-user-doc -->
  *
+ * <!-- begin-model-doc -->
+ * Shall be used for InterfaceClass definition, provides base structures for an interface class definition.
+ * <!-- end-model-doc -->
+ *
  * <p>
  * The following features are supported:
  * </p>
@@ -20,7 +24,7 @@ import org.eclipse.emf.common.util.EList;
  * </ul>
  *
  * @see caex.caex215.caex.CAEXPackage#getInterfaceClass()
- * @model
+ * @model extendedMetaData="name='InterfaceClassType' kind='elementOnly'"
  * @generated
  */
 public interface InterfaceClass extends CAEXObject {
@@ -33,9 +37,13 @@ public interface InterfaceClass extends CAEXObject {
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * Characterizes properties of the InterfaceClass.
+	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Attribute</em>' containment reference list.
 	 * @see caex.caex215.caex.CAEXPackage#getInterfaceClass_Attribute()
 	 * @model containment="true"
+	 *        extendedMetaData="kind='element' name='Attribute' namespace='##targetNamespace'"
 	 * @generated
 	 */
 	EList<Attribute> getAttribute();
@@ -48,10 +56,14 @@ public interface InterfaceClass extends CAEXObject {
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * Stores the reference of a class to its base class. References contain the full path to the refered class object.
+	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Ref Base Class Path</em>' attribute.
 	 * @see #setRefBaseClassPath(String)
 	 * @see caex.caex215.caex.CAEXPackage#getInterfaceClass_RefBaseClassPath()
 	 * @model dataType="org.eclipse.emf.ecore.xml.type.String"
+	 *        extendedMetaData="kind='attribute' name='RefBaseClassPath' namespace='##targetNamespace'"
 	 * @generated
 	 */
 	String getRefBaseClassPath();

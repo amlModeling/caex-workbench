@@ -18,7 +18,7 @@ import org.eclipse.emf.ecore.EObject;
  * </ul>
  *
  * @see caex.caex215.caex.CAEXPackage#getNominalScaled()
- * @model
+ * @model extendedMetaData="name='NominalScaledType' kind='elementOnly'"
  * @generated
  */
 public interface NominalScaled extends EObject {
@@ -31,9 +31,13 @@ public interface NominalScaled extends EObject {
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * Element to define a required value of an attribute. It may be defined multiple times in order to define a discrete value range of the attribute.
+	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Required Value</em>' attribute list.
 	 * @see caex.caex215.caex.CAEXPackage#getNominalScaled_RequiredValue()
 	 * @model dataType="org.eclipse.emf.ecore.xml.type.String"
+	 *        extendedMetaData="kind='element' name='RequiredValue' namespace='##targetNamespace'"
 	 * @generated
 	 */
 	EList<String> getRequiredValue();

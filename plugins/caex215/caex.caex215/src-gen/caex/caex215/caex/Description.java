@@ -18,7 +18,7 @@ import org.eclipse.emf.ecore.EObject;
  * </ul>
  *
  * @see caex.caex215.caex.CAEXPackage#getDescription()
- * @model
+ * @model extendedMetaData="name='Description' kind='simple'"
  * @generated
  */
 public interface Description extends EObject {
@@ -34,6 +34,7 @@ public interface Description extends EObject {
 	 * @see #setValue(String)
 	 * @see caex.caex215.caex.CAEXPackage#getDescription_Value()
 	 * @model dataType="org.eclipse.emf.ecore.xml.type.String"
+	 *        extendedMetaData="name=':0' kind='simple'"
 	 * @generated
 	 */
 	String getValue();
@@ -65,6 +66,7 @@ public interface Description extends EObject {
 	 * @see #setChangeMode(ChangeMode)
 	 * @see caex.caex215.caex.CAEXPackage#getDescription_ChangeMode()
 	 * @model default="state" unsettable="true"
+	 *        extendedMetaData="kind='attribute' name='ChangeMode' namespace='##targetNamespace'"
 	 * @generated
 	 */
 	ChangeMode getChangeMode();

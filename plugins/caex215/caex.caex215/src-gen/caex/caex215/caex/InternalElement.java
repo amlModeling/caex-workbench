@@ -19,7 +19,7 @@ package caex.caex215.caex;
  * </ul>
  *
  * @see caex.caex215.caex.CAEXPackage#getInternalElement()
- * @model
+ * @model extendedMetaData="name='InternalElementType' kind='elementOnly'"
  * @generated
  */
 public interface InternalElement extends SystemUnitClass {
@@ -31,10 +31,14 @@ public interface InternalElement extends SystemUnitClass {
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * Describes role requirements of an InternalElement. It allows the definition of a reference to a RoleClass and the specification of role requirements like required attributes and required interfaces. 
+	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Role Requirements</em>' containment reference.
 	 * @see #setRoleRequirements(RoleRequirements)
 	 * @see caex.caex215.caex.CAEXPackage#getInternalElement_RoleRequirements()
 	 * @model containment="true"
+	 *        extendedMetaData="kind='element' name='RoleRequirements' namespace='##targetNamespace'"
 	 * @generated
 	 */
 	RoleRequirements getRoleRequirements();
@@ -57,10 +61,14 @@ public interface InternalElement extends SystemUnitClass {
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * Host element for AttributeNameMapping and InterfaceNameMapping.
+	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Mapping Object</em>' containment reference.
 	 * @see #setMappingObject(Mapping)
 	 * @see caex.caex215.caex.CAEXPackage#getInternalElement_MappingObject()
 	 * @model containment="true"
+	 *        extendedMetaData="kind='element' name='MappingObject' namespace='##targetNamespace'"
 	 * @generated
 	 */
 	Mapping getMappingObject();
@@ -83,10 +91,14 @@ public interface InternalElement extends SystemUnitClass {
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * Stores the reference of an InternalElement to a class or instance definition. References contain the full path information. 
+	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Ref Base System Unit Path</em>' attribute.
 	 * @see #setRefBaseSystemUnitPath(String)
 	 * @see caex.caex215.caex.CAEXPackage#getInternalElement_RefBaseSystemUnitPath()
 	 * @model dataType="org.eclipse.emf.ecore.xml.type.String"
+	 *        extendedMetaData="kind='attribute' name='RefBaseSystemUnitPath' namespace='##targetNamespace'"
 	 * @generated
 	 */
 	String getRefBaseSystemUnitPath();

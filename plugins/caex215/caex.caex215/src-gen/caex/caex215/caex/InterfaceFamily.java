@@ -8,9 +8,13 @@ package caex.caex215.caex;
  * A representation of the model object '<em><b>Interface Family</b></em>'.
  * <!-- end-user-doc -->
  *
+ * <!-- begin-model-doc -->
+ * Defines base structures for a hierarchical InterfaceClass tree. The hierarchical structure of an interface library has organizational character only.  
+ * <!-- end-model-doc -->
+ *
  *
  * @see caex.caex215.caex.CAEXPackage#getInterfaceFamily()
- * @model
+ * @model extendedMetaData="name='InterfaceFamilyType' kind='elementOnly'"
  * @generated
  */
 public interface InterfaceFamily extends InterfaceClass {

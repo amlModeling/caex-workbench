@@ -3,10 +3,10 @@
   <viewpoint:DAnalysis xmi:id="_gIrtQHbGEeeWJLsPQq89ow" selectedViews="_gu1HQHbGEeeWJLsPQq89ow" version="12.0.0.201704271200">
     <semanticResources>http://www.eclipse.org/emf/2003/XMLType</semanticResources>
     <semanticResources>http://www.eclipse.org/emf/2002/Ecore</semanticResources>
-    <semanticResources>CAEX215.ecore</semanticResources>
     <semanticResources>platform:/resource/caex.anytype/model/GenericAnyType.ecore</semanticResources>
     <semanticResources>platform:/resource/caex.anytype/model/GenericAnyType.genmodel</semanticResources>
     <semanticResources>CAEX215.genmodel</semanticResources>
+    <semanticResources>CAEX215.ecore</semanticResources>
     <ownedViews xmi:type="viewpoint:DView" xmi:id="_gu1HQHbGEeeWJLsPQq89ow">
       <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']"/>
       <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" xmi:id="_YvP2AHbQEeefou4gscbv3w" name="CAEX 2.15 Object" repPath="#_YvJvYHbQEeefou4gscbv3w">

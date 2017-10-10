@@ -9,6 +9,10 @@ import org.eclipse.emf.common.util.EList;
  * A representation of the model object '<em><b>Attribute</b></em>'.
  * <!-- end-user-doc -->
  *
+ * <!-- begin-model-doc -->
+ * Defines base structures for attribute definitions.
+ * <!-- end-model-doc -->
+ *
  * <p>
  * The following features are supported:
  * </p>
@@ -23,7 +27,7 @@ import org.eclipse.emf.common.util.EList;
  * </ul>
  *
  * @see caex.caex215.caex.CAEXPackage#getAttribute()
- * @model
+ * @model extendedMetaData="name='AttributeType' kind='elementOnly'"
  * @generated
  */
 public interface Attribute extends CAEXObject {
@@ -36,9 +40,13 @@ public interface Attribute extends CAEXObject {
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * A reference to a definition of a defined attribute, e. g. to an attribute in a standardized library, this allows the semantic definition of the attribute.
+	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Ref Semantic</em>' containment reference list.
 	 * @see caex.caex215.caex.CAEXPackage#getAttribute_RefSemantic()
 	 * @model containment="true"
+	 *        extendedMetaData="kind='element' name='RefSemantic' namespace='##targetNamespace'"
 	 * @generated
 	 */
 	EList<RefSemantic> getRefSemantic();
@@ -52,9 +60,13 @@ public interface Attribute extends CAEXObject {
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * Element to restrict the range of validity of a defined attribute.
+	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Constraint</em>' containment reference list.
 	 * @see caex.caex215.caex.CAEXPackage#getAttribute_Constraint()
 	 * @model containment="true"
+	 *        extendedMetaData="kind='element' name='Constraint' namespace='##targetNamespace'"
 	 * @generated
 	 */
 	EList<AttributeValueRequirement> getConstraint();
@@ -68,9 +80,13 @@ public interface Attribute extends CAEXObject {
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * Element that allows the description of nested attributes.
+	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Attribute</em>' containment reference list.
 	 * @see caex.caex215.caex.CAEXPackage#getAttribute_Attribute()
 	 * @model containment="true"
+	 *        extendedMetaData="kind='element' name='Attribute' namespace='##targetNamespace'"
 	 * @generated
 	 */
 	EList<Attribute> getAttribute();
@@ -83,10 +99,14 @@ public interface Attribute extends CAEXObject {
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * Describes the data type of the attribute using XML notation.
+	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Attribute Data Type</em>' attribute.
 	 * @see #setAttributeDataType(String)
 	 * @see caex.caex215.caex.CAEXPackage#getAttribute_AttributeDataType()
 	 * @model dataType="caex.caex215.caex.AttributeDataType"
+	 *        extendedMetaData="kind='attribute' name='AttributeDataType' namespace='##targetNamespace'"
 	 * @generated
 	 */
 	String getAttributeDataType();
@@ -109,10 +129,14 @@ public interface Attribute extends CAEXObject {
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * Describes the unit of the attribute.
+	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Unit</em>' attribute.
 	 * @see #setUnit(String)
 	 * @see caex.caex215.caex.CAEXPackage#getAttribute_Unit()
 	 * @model dataType="org.eclipse.emf.ecore.xml.type.String"
+	 *        extendedMetaData="kind='attribute' name='Unit' namespace='##targetNamespace'"
 	 * @generated
 	 */
 	String getUnit();
@@ -135,10 +159,14 @@ public interface Attribute extends CAEXObject {
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * Element describing the value of an attribute.
+	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Value</em>' attribute.
 	 * @see #setValue(String)
 	 * @see caex.caex215.caex.CAEXPackage#getAttribute_Value()
 	 * @model dataType="org.eclipse.emf.ecore.xml.type.String"
+	 *        extendedMetaData="kind='element' name='Value' namespace='##targetNamespace'"
 	 * @generated
 	 */
 	String getValue();
@@ -161,10 +189,14 @@ public interface Attribute extends CAEXObject {
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * A predefined default value for an attribute.
+	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Default Value</em>' attribute.
 	 * @see #setDefaultValue(String)
 	 * @see caex.caex215.caex.CAEXPackage#getAttribute_DefaultValue()
 	 * @model dataType="org.eclipse.emf.ecore.xml.type.String"
+	 *        extendedMetaData="kind='element' name='DefaultValue' namespace='##targetNamespace'"
 	 * @generated
 	 */
 	String getDefaultValue();

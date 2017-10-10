@@ -18,7 +18,7 @@ package caex.caex215.caex;
  * </ul>
  *
  * @see caex.caex215.caex.CAEXPackage#getSupportedRoleClass()
- * @model
+ * @model extendedMetaData="name='SupportedRoleClass' kind='elementOnly'"
  * @generated
  */
 public interface SupportedRoleClass extends CAEXBasicObject {
@@ -34,6 +34,7 @@ public interface SupportedRoleClass extends CAEXBasicObject {
 	 * @see #setMappingObject(Mapping)
 	 * @see caex.caex215.caex.CAEXPackage#getSupportedRoleClass_MappingObject()
 	 * @model containment="true"
+	 *        extendedMetaData="kind='element' name='MappingObject' namespace='##targetNamespace'"
 	 * @generated
 	 */
 	Mapping getMappingObject();
@@ -60,6 +61,7 @@ public interface SupportedRoleClass extends CAEXBasicObject {
 	 * @see #setRefRoleClassPath(String)
 	 * @see caex.caex215.caex.CAEXPackage#getSupportedRoleClass_RefRoleClassPath()
 	 * @model dataType="org.eclipse.emf.ecore.xml.type.String" required="true"
+	 *        extendedMetaData="kind='attribute' name='RefRoleClassPath' namespace='##targetNamespace'"
 	 * @generated
 	 */
 	String getRefRoleClassPath();

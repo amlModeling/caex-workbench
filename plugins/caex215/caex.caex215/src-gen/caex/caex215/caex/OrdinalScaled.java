@@ -19,7 +19,7 @@ import org.eclipse.emf.ecore.EObject;
  * </ul>
  *
  * @see caex.caex215.caex.CAEXPackage#getOrdinalScaled()
- * @model
+ * @model extendedMetaData="name='OrdinalScaledType' kind='elementOnly'"
  * @generated
  */
 public interface OrdinalScaled extends EObject {
@@ -31,10 +31,14 @@ public interface OrdinalScaled extends EObject {
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * Element to define a maximum value of an attribute.
+	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Required Max Value</em>' attribute.
 	 * @see #setRequiredMaxValue(String)
 	 * @see caex.caex215.caex.CAEXPackage#getOrdinalScaled_RequiredMaxValue()
 	 * @model dataType="org.eclipse.emf.ecore.xml.type.String"
+	 *        extendedMetaData="kind='element' name='RequiredMaxValue' namespace='##targetNamespace'"
 	 * @generated
 	 */
 	String getRequiredMaxValue();
@@ -57,10 +61,14 @@ public interface OrdinalScaled extends EObject {
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * Element to define a required value of an attribute. 
+	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Required Value</em>' attribute.
 	 * @see #setRequiredValue(String)
 	 * @see caex.caex215.caex.CAEXPackage#getOrdinalScaled_RequiredValue()
 	 * @model dataType="org.eclipse.emf.ecore.xml.type.String"
+	 *        extendedMetaData="kind='element' name='RequiredValue' namespace='##targetNamespace'"
 	 * @generated
 	 */
 	String getRequiredValue();
@@ -83,10 +91,14 @@ public interface OrdinalScaled extends EObject {
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * Element to define a minimum value of an attribute.
+	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Required Min Value</em>' attribute.
 	 * @see #setRequiredMinValue(String)
 	 * @see caex.caex215.caex.CAEXPackage#getOrdinalScaled_RequiredMinValue()
 	 * @model dataType="org.eclipse.emf.ecore.xml.type.String"
+	 *        extendedMetaData="kind='element' name='RequiredMinValue' namespace='##targetNamespace'"
 	 * @generated
 	 */
 	String getRequiredMinValue();

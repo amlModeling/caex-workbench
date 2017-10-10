@@ -8,6 +8,11 @@ package caex.caex215.caex;
  * A representation of the model object '<em><b>Object</b></em>'.
  * <!-- end-user-doc -->
  *
+ * <!-- begin-model-doc -->
+ * CAEX basis object derived from CAEXBasicObject, augmented by 
+ * Name (required) and ID (optional).
+ * <!-- end-model-doc -->
+ *
  * <p>
  * The following features are supported:
  * </p>
@@ -17,7 +22,7 @@ package caex.caex215.caex;
  * </ul>
  *
  * @see caex.caex215.caex.CAEXPackage#getCAEXObject()
- * @model
+ * @model extendedMetaData="name='CAEXObject' kind='elementOnly'"
  * @generated
  */
 public interface CAEXObject extends CAEXBasicObject {
@@ -29,10 +34,14 @@ public interface CAEXObject extends CAEXBasicObject {
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * Optional attribute that describes a unique identifier of the CAEX object.
+	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>ID</em>' attribute.
 	 * @see #setID(String)
 	 * @see caex.caex215.caex.CAEXPackage#getCAEXObject_ID()
 	 * @model dataType="org.eclipse.emf.ecore.xml.type.String"
+	 *        extendedMetaData="kind='attribute' name='ID' namespace='##targetNamespace'"
 	 * @generated
 	 */
 	String getID();
@@ -55,10 +64,14 @@ public interface CAEXObject extends CAEXBasicObject {
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * Describes the name of the CAEX object.
+	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Name</em>' attribute.
 	 * @see #setName(String)
 	 * @see caex.caex215.caex.CAEXPackage#getCAEXObject_Name()
 	 * @model dataType="org.eclipse.emf.ecore.xml.type.String" required="true"
+	 *        extendedMetaData="kind='attribute' name='Name' namespace='##targetNamespace'"
 	 * @generated
 	 */
 	String getName();

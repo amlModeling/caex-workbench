@@ -9,6 +9,10 @@ import org.eclipse.emf.common.util.EList;
  * A representation of the model object '<em><b>Role Class</b></em>'.
  * <!-- end-user-doc -->
  *
+ * <!-- begin-model-doc -->
+ * Shall be used for RoleClass definition, provides base structures for a role class definition.
+ * <!-- end-model-doc -->
+ *
  * <p>
  * The following features are supported:
  * </p>
@@ -21,7 +25,7 @@ import org.eclipse.emf.common.util.EList;
  * </ul>
  *
  * @see caex.caex215.caex.CAEXPackage#getRoleClass()
- * @model
+ * @model extendedMetaData="name='RoleClassType' kind='elementOnly'"
  * @generated
  */
 public interface RoleClass extends CAEXObject {
@@ -34,9 +38,13 @@ public interface RoleClass extends CAEXObject {
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * Characterizes properties of the RoleClass.
+	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Attribute</em>' containment reference list.
 	 * @see caex.caex215.caex.CAEXPackage#getRoleClass_Attribute()
 	 * @model containment="true"
+	 *        extendedMetaData="kind='element' name='Attribute' namespace='##targetNamespace'"
 	 * @generated
 	 */
 	EList<Attribute> getAttribute();
@@ -50,9 +58,13 @@ public interface RoleClass extends CAEXObject {
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * Description of an external interface.
+	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>External Interface</em>' containment reference list.
 	 * @see caex.caex215.caex.CAEXPackage#getRoleClass_ExternalInterface()
 	 * @model containment="true"
+	 *        extendedMetaData="kind='element' name='ExternalInterface' namespace='##targetNamespace'"
 	 * @generated
 	 */
 	EList<ExternalInterface> getExternalInterface();
@@ -65,10 +77,14 @@ public interface RoleClass extends CAEXObject {
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * Stores the reference of a class to its base class. References contain the full path to the refered class object.
+	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Ref Base Class Path</em>' attribute.
 	 * @see #setRefBaseClassPath(String)
 	 * @see caex.caex215.caex.CAEXPackage#getRoleClass_RefBaseClassPath()
 	 * @model dataType="org.eclipse.emf.ecore.xml.type.String"
+	 *        extendedMetaData="kind='attribute' name='RefBaseClassPath' namespace='##targetNamespace'"
 	 * @generated
 	 */
 	String getRefBaseClassPath();

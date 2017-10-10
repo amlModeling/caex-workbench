@@ -19,7 +19,7 @@ package caex.caex215.caex;
  * </ul>
  *
  * @see caex.caex215.caex.CAEXPackage#getInternalLink()
- * @model
+ * @model extendedMetaData="name='InternalLink' kind='elementOnly'"
  * @generated
  */
 public interface InternalLink extends CAEXObject {
@@ -35,6 +35,7 @@ public interface InternalLink extends CAEXObject {
 	 * @see #setRefPartnerSideA(String)
 	 * @see caex.caex215.caex.CAEXPackage#getInternalLink_RefPartnerSideA()
 	 * @model dataType="org.eclipse.emf.ecore.xml.type.String"
+	 *        extendedMetaData="kind='attribute' name='RefPartnerSideA' namespace='##targetNamespace'"
 	 * @generated
 	 */
 	String getRefPartnerSideA();
@@ -61,6 +62,7 @@ public interface InternalLink extends CAEXObject {
 	 * @see #setRefPartnerSideB(String)
 	 * @see caex.caex215.caex.CAEXPackage#getInternalLink_RefPartnerSideB()
 	 * @model dataType="org.eclipse.emf.ecore.xml.type.String"
+	 *        extendedMetaData="kind='attribute' name='RefPartnerSideB' namespace='##targetNamespace'"
 	 * @generated
 	 */
 	String getRefPartnerSideB();

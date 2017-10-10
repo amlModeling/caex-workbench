@@ -131,9 +131,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * @generated
 	 */
 	public CAEXFile getCAEXFile() {
-		// TODO: implement this method to return the 'CAEX File' containment reference
-		// Ensure that you remove @generated or mark it @generated NOT
-		throw new UnsupportedOperationException();
+		return (CAEXFile)getMixed().get(CAEXPackage.Literals.DOCUMENT_ROOT__CAEX_FILE, true);
 	}
 
 	/**
@@ -142,12 +140,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * @generated
 	 */
 	public NotificationChain basicSetCAEXFile(CAEXFile newCAEXFile, NotificationChain msgs) {
-		// TODO: implement this method to set the contained 'CAEX File' containment reference
-		// -> this method is automatically invoked to keep the containment relationship in synch
-		// -> do not modify other features
-		// -> return msgs, after adding any generated Notification to it (if it is null, a NotificationChain object must be created first)
-		// Ensure that you remove @generated or mark it @generated NOT
-		throw new UnsupportedOperationException();
+		return ((FeatureMap.Internal)getMixed()).basicAdd(CAEXPackage.Literals.DOCUMENT_ROOT__CAEX_FILE, newCAEXFile, msgs);
 	}
 
 	/**
@@ -156,9 +149,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * @generated
 	 */
 	public void setCAEXFile(CAEXFile newCAEXFile) {
-		// TODO: implement this method to set the 'CAEX File' containment reference
-		// Ensure that you remove @generated or mark it @generated NOT
-		throw new UnsupportedOperationException();
+		((FeatureMap.Internal)getMixed()).set(CAEXPackage.Literals.DOCUMENT_ROOT__CAEX_FILE, newCAEXFile);
 	}
 
 	/**
