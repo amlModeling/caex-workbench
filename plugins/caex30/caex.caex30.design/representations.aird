@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:diagram="http://www.eclipse.org/sirius/diagram/1.1.0" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:pcdef="http://org.pc.definition.diagram/1.0" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xsi:schemaLocation="http://www.eclipse.org/sirius/description/1.1.0 http://www.eclipse.org/sirius/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/style/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description/style">
+  <viewpoint:DAnalysis uid="_yMiHcMQ0Eeqpyd7STzNvhA" selectedViews="_3IGCgMQ0Eeqpyd7STzNvhA" version="14.3.0.201909031200">
+    <semanticResources>description/feature-caex30.pcdef</semanticResources>
+    <semanticResources>description/CAEX30.odesign</semanticResources>
+    <semanticResources>environment:/viewpoint</semanticResources>
+    <semanticResources>platform:/resource/caex.caex30/model/CAEX30.ecore</semanticResources>
+    <semanticResources>platform:/resource/caex.anytype/model/GenericAnyType.ecore</semanticResources>
+    <ownedViews xmi:type="viewpoint:DView" uid="_3IGCgMQ0Eeqpyd7STzNvhA">
+      <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/org.variability.definition.diagram.design/description/pcdiagram.odesign#//@ownedViewpoints[name='PCDiagramVp']"/>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_3L4WUMQ0Eeqpyd7STzNvhA" name="PCDiagramDefinition" repPath="#_3IqqQMQ0Eeqpyd7STzNvhA" changeId="8d37a1e1-f342-4410-910f-be9203a6ac9d">
+        <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/org.variability.definition.diagram.design/description/pcdiagram.odesign#//@ownedViewpoints[name='PCDiagramVp']/@ownedRepresentations[name='PCDiagramDefinition']"/>
+        <target xmi:type="pcdef:PCDiagramDefinition" href="description/feature-caex30.pcdef#/"/>
+      </ownedRepresentationDescriptors>
+    </ownedViews>
+  </viewpoint:DAnalysis>
+  <diagram:DSemanticDiagram uid="_3IqqQMQ0Eeqpyd7STzNvhA">
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_3LqT4MQ0Eeqpyd7STzNvhA" source="DANNOTATION_CUSTOMIZATION_KEY">
+      <data xmi:type="diagram:ComputedStyleDescriptionRegistry" uid="_3LqT4cQ0Eeqpyd7STzNvhA"/>
+    </ownedAnnotationEntries>
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_3OiBsMQ0Eeqpyd7STzNvhA" source="GMF_DIAGRAMS">
+      <data xmi:type="notation:Diagram" xmi:id="_3OiBscQ0Eeqpyd7STzNvhA" type="Sirius" element="_3IqqQMQ0Eeqpyd7STzNvhA" measurementUnit="Pixel">
+        <children xmi:type="notation:Node" xmi:id="_3O0VkMQ0Eeqpyd7STzNvhA" type="2003" element="_3LbqYMQ0Eeqpyd7STzNvhA">
+          <children xmi:type="notation:Node" xmi:id="_3O_7wMQ0Eeqpyd7STzNvhA" type="5007"/>
+          <children xmi:type="notation:Node" xmi:id="_3PLh8MQ0Eeqpyd7STzNvhA" type="7004">
+            <children xmi:type="notation:Node" xmi:id="_3PlxoMQ0Eeqpyd7STzNvhA" type="3010" element="_3LiYEMQ0Eeqpyd7STzNvhA">
+              <styles xmi:type="notation:FontStyle" xmi:id="_3PlxocQ0Eeqpyd7STzNvhA" fontName="Segoe UI" fontHeight="12"/>
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_3PlxosQ0Eeqpyd7STzNvhA"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_3PmYsMQ0Eeqpyd7STzNvhA" type="3010" element="_3LjmMMQ0Eeqpyd7STzNvhA">
+              <styles xmi:type="notation:FontStyle" xmi:id="_3PmYscQ0Eeqpyd7STzNvhA" fontName="Segoe UI" fontHeight="12"/>
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_3PmYssQ0Eeqpyd7STzNvhA"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_3PmYs8Q0Eeqpyd7STzNvhA" type="3010" element="_3LkNQMQ0Eeqpyd7STzNvhA">
+              <styles xmi:type="notation:FontStyle" xmi:id="_3PmYtMQ0Eeqpyd7STzNvhA" fontName="Segoe UI" fontHeight="12"/>
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_3PmYtcQ0Eeqpyd7STzNvhA"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_3PmYtsQ0Eeqpyd7STzNvhA" type="3010" element="_3LkNQsQ0Eeqpyd7STzNvhA">
+              <styles xmi:type="notation:FontStyle" xmi:id="_3PmYt8Q0Eeqpyd7STzNvhA" fontName="Segoe UI" fontHeight="12"/>
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_3PmYuMQ0Eeqpyd7STzNvhA"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_3Pm_wMQ0Eeqpyd7STzNvhA" type="3010" element="_3LlbYMQ0Eeqpyd7STzNvhA">
+              <styles xmi:type="notation:FontStyle" xmi:id="_3Pm_wcQ0Eeqpyd7STzNvhA" fontName="Segoe UI" fontHeight="12"/>
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_3Pm_wsQ0Eeqpyd7STzNvhA"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_3Pm_w8Q0Eeqpyd7STzNvhA" type="3010" element="_3LlbYsQ0Eeqpyd7STzNvhA">
+              <styles xmi:type="notation:FontStyle" xmi:id="_3Pm_xMQ0Eeqpyd7STzNvhA" fontName="Segoe UI" fontHeight="12"/>
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_3Pm_xcQ0Eeqpyd7STzNvhA"/>
+            </children>
+            <styles xmi:type="notation:SortingStyle" xmi:id="_3PLh8cQ0Eeqpyd7STzNvhA"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_3PLh8sQ0Eeqpyd7STzNvhA"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_3O0VkcQ0Eeqpyd7STzNvhA" fontName="Segoe UI" fontHeight="12" bold="true"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_3O0VksQ0Eeqpyd7STzNvhA" x="90" y="15"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_3PfrAMQ0Eeqpyd7STzNvhA" type="2003" element="_3LmCcMQ0Eeqpyd7STzNvhA">
+          <children xmi:type="notation:Node" xmi:id="_3PfrA8Q0Eeqpyd7STzNvhA" type="5007"/>
+          <children xmi:type="notation:Node" xmi:id="_3PfrBMQ0Eeqpyd7STzNvhA" type="7004">
+            <children xmi:type="notation:Node" xmi:id="_3Pnm0MQ0Eeqpyd7STzNvhA" type="3010" element="_3LmCc8Q0Eeqpyd7STzNvhA">
+              <styles xmi:type="notation:FontStyle" xmi:id="_3Pnm0cQ0Eeqpyd7STzNvhA" fontName="Segoe UI" fontHeight="12"/>
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_3Pnm0sQ0Eeqpyd7STzNvhA"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_3Pnm08Q0Eeqpyd7STzNvhA" type="3010" element="_3LoescQ0Eeqpyd7STzNvhA">
+              <styles xmi:type="notation:FontStyle" xmi:id="_3Pnm1MQ0Eeqpyd7STzNvhA" fontName="Segoe UI" fontHeight="12"/>
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_3Pnm1cQ0Eeqpyd7STzNvhA"/>
+            </children>
+            <styles xmi:type="notation:SortingStyle" xmi:id="_3PfrBcQ0Eeqpyd7STzNvhA"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_3PfrBsQ0Eeqpyd7STzNvhA"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_3PfrAcQ0Eeqpyd7STzNvhA" fontName="Segoe UI" fontHeight="12" bold="true"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_3PfrAsQ0Eeqpyd7STzNvhA" x="30" y="240"/>
+        </children>
+        <styles xmi:type="notation:DiagramStyle" xmi:id="_3OiBssQ0Eeqpyd7STzNvhA"/>
+      </data>
+    </ownedAnnotationEntries>
+    <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_3LbqYMQ0Eeqpyd7STzNvhA" name="Attach PC to Graphical Elements">
+      <target xmi:type="pcdef:PCDiagramDefinition" href="description/feature-caex30.pcdef#/"/>
+      <semanticElements xmi:type="pcdef:PCDiagramDefinition" href="description/feature-caex30.pcdef#/"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_3LeGoMQ0Eeqpyd7STzNvhA" labelSize="12" showIcon="false" borderSize="1" borderSizeComputationExpression="1" foregroundColor="255,255,255">
+        <labelFormat>bold</labelFormat>
+        <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/org.variability.definition.diagram.design/description/pcdiagram.odesign#//@ownedViewpoints[name='PCDiagramVp']/@ownedRepresentations[name='PCDiagramDefinition']/@defaultLayer/@containerMappings[name='GraphicalElementsContainer']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.variability.definition.diagram.design/description/pcdiagram.odesign#//@ownedViewpoints[name='PCDiagramVp']/@ownedRepresentations[name='PCDiagramDefinition']/@defaultLayer/@containerMappings[name='GraphicalElementsContainer']"/>
+      <ownedElements xmi:type="diagram:DNodeListElement" uid="_3LiYEMQ0Eeqpyd7STzNvhA" name="ExternalInterface">
+        <target xmi:type="description_1:NodeMapping" href="description/CAEX30.odesign#//@ownedViewpoints[name='CAEX30Viewpoint']/@ownedRepresentations[name='CAEX30InstanceHierarchyDiagram']/@defaultLayer/@containerMappings[name='InternalElement']/@borderedNodeMappings[name='ExternalInterface']"/>
+        <semanticElements xmi:type="description_1:NodeMapping" href="description/CAEX30.odesign#//@ownedViewpoints[name='CAEX30Viewpoint']/@ownedRepresentations[name='CAEX30InstanceHierarchyDiagram']/@defaultLayer/@containerMappings[name='InternalElement']/@borderedNodeMappings[name='ExternalInterface']"/>
+        <ownedStyle xmi:type="diagram:Square" uid="_3Li_IMQ0Eeqpyd7STzNvhA" labelSize="12" labelAlignment="LEFT" labelPosition="node">
+          <description xmi:type="style:SquareDescription" href="platform:/plugin/org.variability.definition.diagram.design/description/pcdiagram.odesign#//@ownedViewpoints[name='PCDiagramVp']/@ownedRepresentations[name='PCDiagramDefinition']/@defaultLayer/@containerMappings[name='GraphicalElementsContainer']/@subNodeMappings[name='NodeMappingNode']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.variability.definition.diagram.design/description/pcdiagram.odesign#//@ownedViewpoints[name='PCDiagramVp']/@ownedRepresentations[name='PCDiagramDefinition']/@defaultLayer/@containerMappings[name='GraphicalElementsContainer']/@subNodeMappings[name='NodeMappingNode']"/>
+      </ownedElements>
+      <ownedElements xmi:type="diagram:DNodeListElement" uid="_3LjmMMQ0Eeqpyd7STzNvhA" name="RoleRequirements">
+        <target xmi:type="description_1:NodeMapping" href="description/CAEX30.odesign#//@ownedViewpoints[name='CAEX30Viewpoint']/@ownedRepresentations[name='CAEX30InstanceHierarchyDiagram']/@defaultLayer/@containerMappings[name='InternalElement']/@subContainerMappings[name='RoleRequirementsContainer']/@subNodeMappings[name='RoleRequirements']"/>
+        <semanticElements xmi:type="description_1:NodeMapping" href="description/CAEX30.odesign#//@ownedViewpoints[name='CAEX30Viewpoint']/@ownedRepresentations[name='CAEX30InstanceHierarchyDiagram']/@defaultLayer/@containerMappings[name='InternalElement']/@subContainerMappings[name='RoleRequirementsContainer']/@subNodeMappings[name='RoleRequirements']"/>
+        <ownedStyle xmi:type="diagram:Square" uid="_3LjmMcQ0Eeqpyd7STzNvhA" labelSize="12" labelAlignment="LEFT" labelPosition="node">
+          <description xmi:type="style:SquareDescription" href="platform:/plugin/org.variability.definition.diagram.design/description/pcdiagram.odesign#//@ownedViewpoints[name='PCDiagramVp']/@ownedRepresentations[name='PCDiagramDefinition']/@defaultLayer/@containerMappings[name='GraphicalElementsContainer']/@subNodeMappings[name='NodeMappingNode']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.variability.definition.diagram.design/description/pcdiagram.odesign#//@ownedViewpoints[name='PCDiagramVp']/@ownedRepresentations[name='PCDiagramDefinition']/@defaultLayer/@containerMappings[name='GraphicalElementsContainer']/@subNodeMappings[name='NodeMappingNode']"/>
+      </ownedElements>
+      <ownedElements xmi:type="diagram:DNodeListElement" uid="_3LkNQMQ0Eeqpyd7STzNvhA" name="SupportedRoleClass">
+        <target xmi:type="description_1:NodeMapping" href="description/CAEX30.odesign#//@ownedViewpoints[name='CAEX30Viewpoint']/@ownedRepresentations[name='CAEX30InstanceHierarchyDiagram']/@defaultLayer/@containerMappings[name='InternalElement']/@subContainerMappings[name='SupportedRoleClassesContainer']/@subNodeMappings[name='SupportedRoleClass']"/>
+        <semanticElements xmi:type="description_1:NodeMapping" href="description/CAEX30.odesign#//@ownedViewpoints[name='CAEX30Viewpoint']/@ownedRepresentations[name='CAEX30InstanceHierarchyDiagram']/@defaultLayer/@containerMappings[name='InternalElement']/@subContainerMappings[name='SupportedRoleClassesContainer']/@subNodeMappings[name='SupportedRoleClass']"/>
+        <ownedStyle xmi:type="diagram:Square" uid="_3LkNQcQ0Eeqpyd7STzNvhA" labelSize="12" labelAlignment="LEFT" labelPosition="node">
+          <description xmi:type="style:SquareDescription" href="platform:/plugin/org.variability.definition.diagram.design/description/pcdiagram.odesign#//@ownedViewpoints[name='PCDiagramVp']/@ownedRepresentations[name='PCDiagramDefinition']/@defaultLayer/@containerMappings[name='GraphicalElementsContainer']/@subNodeMappings[name='NodeMappingNode']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.variability.definition.diagram.design/description/pcdiagram.odesign#//@ownedViewpoints[name='PCDiagramVp']/@ownedRepresentations[name='PCDiagramDefinition']/@defaultLayer/@containerMappings[name='GraphicalElementsContainer']/@subNodeMappings[name='NodeMappingNode']"/>
+      </ownedElements>
+      <ownedElements xmi:type="diagram:DNodeListElement" uid="_3LkNQsQ0Eeqpyd7STzNvhA" name="Attribute">
+        <target xmi:type="description_1:NodeMapping" href="description/CAEX30.odesign#//@ownedViewpoints[name='CAEX30Viewpoint']/@ownedRepresentations[name='CAEX30InstanceHierarchyDiagram']/@defaultLayer/@containerMappings[name='InternalElement']/@subContainerMappings[name='AttributeContainer']/@subNodeMappings[name='Attribute']"/>
+        <semanticElements xmi:type="description_1:NodeMapping" href="description/CAEX30.odesign#//@ownedViewpoints[name='CAEX30Viewpoint']/@ownedRepresentations[name='CAEX30InstanceHierarchyDiagram']/@defaultLayer/@containerMappings[name='InternalElement']/@subContainerMappings[name='AttributeContainer']/@subNodeMappings[name='Attribute']"/>
+        <ownedStyle xmi:type="diagram:Square" uid="_3LkNQ8Q0Eeqpyd7STzNvhA" labelSize="12" labelAlignment="LEFT" labelPosition="node">
+          <description xmi:type="style:SquareDescription" href="platform:/plugin/org.variability.definition.diagram.design/description/pcdiagram.odesign#//@ownedViewpoints[name='PCDiagramVp']/@ownedRepresentations[name='PCDiagramDefinition']/@defaultLayer/@containerMappings[name='GraphicalElementsContainer']/@subNodeMappings[name='NodeMappingNode']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.variability.definition.diagram.design/description/pcdiagram.odesign#//@ownedViewpoints[name='PCDiagramVp']/@ownedRepresentations[name='PCDiagramDefinition']/@defaultLayer/@containerMappings[name='GraphicalElementsContainer']/@subNodeMappings[name='NodeMappingNode']"/>
+      </ownedElements>
+      <ownedElements xmi:type="diagram:DNodeListElement" uid="_3LlbYMQ0Eeqpyd7STzNvhA" name="InternalLinkEdge">
+        <target xmi:type="description_1:EdgeMapping" href="description/CAEX30.odesign#//@ownedViewpoints[name='CAEX30Viewpoint']/@ownedRepresentations[name='CAEX30InstanceHierarchyDiagram']/@defaultLayer/@edgeMappings[name='InternalLinkEdge']"/>
+        <semanticElements xmi:type="description_1:EdgeMapping" href="description/CAEX30.odesign#//@ownedViewpoints[name='CAEX30Viewpoint']/@ownedRepresentations[name='CAEX30InstanceHierarchyDiagram']/@defaultLayer/@edgeMappings[name='InternalLinkEdge']"/>
+        <ownedStyle xmi:type="diagram:Square" uid="_3LlbYcQ0Eeqpyd7STzNvhA" labelSize="12" labelAlignment="LEFT" labelPosition="node">
+          <description xmi:type="style:SquareDescription" href="platform:/plugin/org.variability.definition.diagram.design/description/pcdiagram.odesign#//@ownedViewpoints[name='PCDiagramVp']/@ownedRepresentations[name='PCDiagramDefinition']/@defaultLayer/@containerMappings[name='GraphicalElementsContainer']/@subNodeMappings[name='EdgeMappingEdge']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.variability.definition.diagram.design/description/pcdiagram.odesign#//@ownedViewpoints[name='PCDiagramVp']/@ownedRepresentations[name='PCDiagramDefinition']/@defaultLayer/@containerMappings[name='GraphicalElementsContainer']/@subNodeMappings[name='EdgeMappingEdge']"/>
+      </ownedElements>
+      <ownedElements xmi:type="diagram:DNodeListElement" uid="_3LlbYsQ0Eeqpyd7STzNvhA" name="InternalElement">
+        <target xmi:type="description_1:ContainerMapping" href="description/CAEX30.odesign#//@ownedViewpoints[name='CAEX30Viewpoint']/@ownedRepresentations[name='CAEX30InstanceHierarchyDiagram']/@defaultLayer/@containerMappings[name='InternalElement']"/>
+        <semanticElements xmi:type="description_1:ContainerMapping" href="description/CAEX30.odesign#//@ownedViewpoints[name='CAEX30Viewpoint']/@ownedRepresentations[name='CAEX30InstanceHierarchyDiagram']/@defaultLayer/@containerMappings[name='InternalElement']"/>
+        <ownedStyle xmi:type="diagram:Square" uid="_3LlbY8Q0Eeqpyd7STzNvhA" labelSize="12" labelAlignment="LEFT" labelPosition="node">
+          <description xmi:type="style:SquareDescription" href="platform:/plugin/org.variability.definition.diagram.design/description/pcdiagram.odesign#//@ownedViewpoints[name='PCDiagramVp']/@ownedRepresentations[name='PCDiagramDefinition']/@defaultLayer/@containerMappings[name='GraphicalElementsContainer']/@subNodeMappings[name='ContainerMappingNode']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.variability.definition.diagram.design/description/pcdiagram.odesign#//@ownedViewpoints[name='PCDiagramVp']/@ownedRepresentations[name='PCDiagramDefinition']/@defaultLayer/@containerMappings[name='GraphicalElementsContainer']/@subNodeMappings[name='ContainerMappingNode']"/>
+      </ownedElements>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_3LmCcMQ0Eeqpyd7STzNvhA" name="Stronger-than relations">
+      <target xmi:type="pcdef:StrongerThan" href="description/feature-caex30.pcdef#//@stronger"/>
+      <semanticElements xmi:type="pcdef:StrongerThan" href="description/feature-caex30.pcdef#//@stronger"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_3LmCccQ0Eeqpyd7STzNvhA" labelSize="12" showIcon="false" borderSize="1" borderSizeComputationExpression="1" backgroundColor="246,139,139" foregroundColor="246,139,139">
+        <labelFormat>bold</labelFormat>
+        <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/org.variability.definition.diagram.design/description/pcdiagram.odesign#//@ownedViewpoints[name='PCDiagramVp']/@ownedRepresentations[name='PCDiagramDefinition']/@defaultLayer/@containerMappings[name='StrongerThanContainer']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.variability.definition.diagram.design/description/pcdiagram.odesign#//@ownedViewpoints[name='PCDiagramVp']/@ownedRepresentations[name='PCDiagramDefinition']/@defaultLayer/@containerMappings[name='StrongerThanContainer']"/>
+      <ownedElements xmi:type="diagram:DNodeListElement" uid="_3LmCc8Q0Eeqpyd7STzNvhA" name="(InterfaceClass, InternalLink, partnerSideA : InterfaceClass)">
+        <target xmi:type="ecore:EReference" href="platform:/resource/caex.caex30/model/CAEX30.ecore#//InternalLink/partnerSideA"/>
+        <semanticElements xmi:type="ecore:EReference" href="platform:/resource/caex.caex30/model/CAEX30.ecore#//InternalLink/partnerSideA"/>
+        <ownedStyle xmi:type="diagram:Square" uid="_3LoesMQ0Eeqpyd7STzNvhA" labelSize="12" showIcon="false" labelAlignment="LEFT" labelPosition="node">
+          <description xmi:type="style:SquareDescription" href="platform:/plugin/org.variability.definition.diagram.design/description/pcdiagram.odesign#//@ownedViewpoints[name='PCDiagramVp']/@ownedRepresentations[name='PCDiagramDefinition']/@defaultLayer/@containerMappings[name='StrongerThanContainer']/@subNodeMappings[name='StrongerThanNode']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.variability.definition.diagram.design/description/pcdiagram.odesign#//@ownedViewpoints[name='PCDiagramVp']/@ownedRepresentations[name='PCDiagramDefinition']/@defaultLayer/@containerMappings[name='StrongerThanContainer']/@subNodeMappings[name='StrongerThanNode']"/>
+      </ownedElements>
+      <ownedElements xmi:type="diagram:DNodeListElement" uid="_3LoescQ0Eeqpyd7STzNvhA" name="(InterfaceClass, InternalLink, partnerSideB : InterfaceClass)">
+        <target xmi:type="ecore:EReference" href="platform:/resource/caex.caex30/model/CAEX30.ecore#//InternalLink/partnerSideB"/>
+        <semanticElements xmi:type="ecore:EReference" href="platform:/resource/caex.caex30/model/CAEX30.ecore#//InternalLink/partnerSideB"/>
+        <ownedStyle xmi:type="diagram:Square" uid="_3LpFwMQ0Eeqpyd7STzNvhA" labelSize="12" showIcon="false" labelAlignment="LEFT" labelPosition="node">
+          <description xmi:type="style:SquareDescription" href="platform:/plugin/org.variability.definition.diagram.design/description/pcdiagram.odesign#//@ownedViewpoints[name='PCDiagramVp']/@ownedRepresentations[name='PCDiagramDefinition']/@defaultLayer/@containerMappings[name='StrongerThanContainer']/@subNodeMappings[name='StrongerThanNode']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.variability.definition.diagram.design/description/pcdiagram.odesign#//@ownedViewpoints[name='PCDiagramVp']/@ownedRepresentations[name='PCDiagramDefinition']/@defaultLayer/@containerMappings[name='StrongerThanContainer']/@subNodeMappings[name='StrongerThanNode']"/>
+      </ownedElements>
+    </ownedDiagramElements>
+    <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/org.variability.definition.diagram.design/description/pcdiagram.odesign#//@ownedViewpoints[name='PCDiagramVp']/@ownedRepresentations[name='PCDiagramDefinition']"/>
+    <filterVariableHistory xmi:type="diagram:FilterVariableHistory" uid="_3I7wAMQ0Eeqpyd7STzNvhA"/>
+    <activatedLayers xmi:type="description_1:Layer" href="platform:/plugin/org.variability.definition.diagram.design/description/pcdiagram.odesign#//@ownedViewpoints[name='PCDiagramVp']/@ownedRepresentations[name='PCDiagramDefinition']/@defaultLayer"/>
+    <target xmi:type="pcdef:PCDiagramDefinition" href="description/feature-caex30.pcdef#/"/>
+  </diagram:DSemanticDiagram>
+</xmi:XMI>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<caex:CAEXFile xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:caex="http://www.dke.de/CAEX/300" fileName="PPUSystemUnitClassLib" schemaVersion="3.00">
+  <sourceDocumentInformation lastWritingDateTime="2017-08-16" originID="caex.caex30.caex.presentation.CAEXEditorID" originName="CAEX 3.0 EMF Editor" originVersion="1.0.0"/>
+  <systemUnitClassLib name="PickAndPlaceUnitSystemUnitLibrary">
+    <systemUnitClass name="Stack"/>
+    <systemUnitClass name="Crane"/>
+    <systemUnitClass name="Ramp"/>
+  </systemUnitClassLib>
+</caex:CAEXFile>

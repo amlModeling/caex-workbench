@@ -145,7 +145,10 @@ public class SupportedRoleClassItemProvider extends CAEXBasicObjectItemProvider 
 	 */
 	@Override
 	public String getText(Object object) {
-		String labelValue = ((SupportedRoleClass)object).getRoleClass().getName();
+		String labelValue = "";
+		if (((SupportedRoleClass)object).getRoleClass() != null) {		
+			labelValue = ((SupportedRoleClass)object).getRoleClass().getName();
+		}
 		String label = labelValue == null ? null : labelValue;
 		return label == null || label.length() == 0 ?
 			getString("_UI_SupportedRoleClass_type") :

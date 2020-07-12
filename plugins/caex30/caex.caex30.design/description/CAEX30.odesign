@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<description:Group xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" name="CAEX30" version="12.0.0.2017041100">
-  <ownedViewpoints name="CAEX30Viewpoint" label="CAEX 3.0" modelFileExtension="*.caex" icon="/caex.caex30.design/icons/CAEXFile.gif">
+<description:Group xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:tool="http://www.eclipse.org/sirius/diagram/description/tool/1.1.0" xmlns:tool_1="http://www.eclipse.org/sirius/description/tool/1.1.0" name="CAEX30" version="12.0.0.2017041100">
+  <ownedViewpoints name="CAEX30Viewpoint" label="CAEX 3.0" modelFileExtension="caex" icon="/caex.caex30.design/icons/CAEXFile.gif">
     <ownedRepresentations xsi:type="description_1:DiagramDescription" name="CAEX30InstanceHierarchyDiagram" label="CAEX 3.0 Instance Hierarchy Diagram" initialisation="true" domainClass="caex::InstanceHierarchy" enablePopupBars="true">
       <metamodel href="../../caex.caex30/model/CAEX30.ecore#/"/>
       <defaultLayer name="Default">
@@ -84,6 +84,68 @@
             <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
           </style>
         </containerMappings>
+        <toolSections name="CAEX Palette" icon="/caex.caex30.design/icons/CAEXFile.gif">
+          <ownedTools xsi:type="tool:ContainerCreationDescription" name="Create Internal Element" containerMappings="//@ownedViewpoints[name='CAEX30Viewpoint']/@ownedRepresentations[name='CAEX30InstanceHierarchyDiagram']/@defaultLayer/@containerMappings[name='InternalElement'] //@ownedViewpoints[name='CAEX30Viewpoint']/@ownedRepresentations[name='CAEX30InstanceHierarchyDiagram']/@defaultLayer/@containerMappings[name='InternalElement']/@subContainerMappings[name='InternalElementsContainer']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="aql:container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="caex::InternalElement" referenceName="internalElement"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool_1:ToolDescription" name="Create Attribute" precondition="aql:self.oclIsTypeOf(caex::InternalElement)" elementsToSelect="aql:self" iconPath="/caex.caex30.edit/icons/full/ctool16/CreateAttribute_attribute_Attribute.gif">
+            <element name="element"/>
+            <elementView name="elementView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="aql:self">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="caex::Attribute" referenceName="attribute"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool_1:ToolDescription" name="Create External Interface" precondition="aql:self.oclIsTypeOf(caex::InternalElement)" elementsToSelect="aql:self" iconPath="/caex.caex30.edit/icons/full/ctool16/CreateExternalInterface_externalInterface_ExternalInterface.gif">
+            <element name="element"/>
+            <elementView name="elementView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="aql:self">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="caex::ExternalInterface" referenceName="externalInterface"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:EdgeCreationDescription" name="Create Internal Link" edgeMappings="//@ownedViewpoints[name='CAEX30Viewpoint']/@ownedRepresentations[name='CAEX30InstanceHierarchyDiagram']/@defaultLayer/@edgeMappings[name='InternalLinkEdge']">
+            <sourceVariable name="source"/>
+            <targetVariable name="target"/>
+            <sourceViewVariable name="sourceView"/>
+            <targetViewVariable name="targetView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="aql:source.eContainer()">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="caex.InternalLink" referenceName="internalLink">
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="partnerSideA" valueExpression="var:source">
+                    <subModelOperations xsi:type="tool_1:SetValue" featureName="partnerSideB" valueExpression="var:target"/>
+                  </subModelOperations>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="Create Role Requirements" nodeMappings="//@ownedViewpoints[name='CAEX30Viewpoint']/@ownedRepresentations[name='CAEX30InstanceHierarchyDiagram']/@defaultLayer/@containerMappings[name='InternalElement']/@subContainerMappings[name='RoleRequirementsContainer']/@subNodeMappings[name='RoleRequirements']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="aql:container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="caex::RoleRequirements" referenceName="roleRequirements"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool_1:ToolDescription" name="Create Supported Role Class" precondition="aql:self.oclIsTypeOf(caex::InternalElement)" elementsToSelect="aql:self" iconPath="/caex.caex30.edit/icons/full/obj16/SupportedRoleClass.gif">
+            <element name="element"/>
+            <elementView name="elementView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="aql:self">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="caex::SupportedRoleClass" referenceName="supportedRoleClass"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+        </toolSections>
       </defaultLayer>
     </ownedRepresentations>
     <ownedJavaExtensions qualifiedClassName="caex.caex30.design.Services"/>

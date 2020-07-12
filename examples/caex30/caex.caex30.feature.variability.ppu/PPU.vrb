@@ -1,0 +1,7 @@
+pn "PPU.caex" fm "model.xml" PC for YShapedRamp = YShapedRamp ; PC for Stamp,
+MicroSwitchStamp = Stamp; PC for InductiveSensor = InductiveSensor;  PC
+for  InductiveSensorStack ,
+InductiveSensorStamp,
+InductiveSensorRamp = CraneInductiveSensor ; PC for MicroSwitchStack ,
+MicroSwitchRamp,
+MicroSwitchStamp = (not CraneInductiveSensor or CraneMicroSwitches);

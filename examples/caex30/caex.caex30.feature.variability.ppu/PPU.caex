@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<caex:CAEXFile xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:caex="http://www.dke.de/CAEX/300" fileName="PPU" schemaVersion="3.00">
+  <sourceDocumentInformation lastWritingDateTime="2020-06-16" originID="caex.caex30.caex.presentation.CAEXEditorID" originName="CAEX 3.0 EMF Editor" originProjectID="" originVersion="1.0.0"/>
+  <instanceHierarchy changeMode="state" iD="PickAndPlaceUnit" name="PickAndPlaceUnit">
+    <internalElement name="Stack" refBaseClassPath="PPUSystemUnitClassLib.PickAndPlaceUnitSystemUnitLibrary.Stack" refBaseSystemUnitPath="PPUSystemUnitClassLib.PickAndPlaceUnitSystemUnitLibrary.Stack">
+      <externalInterface xsi:type="caex:ExternalInterface" iD="" name="Output" refBaseClassPath="AMLBaseInterfaceClassLib.AMLBaseInterfaceClassLibrary.PPRConnector">
+        <baseClass href="AMLBaseInterfaceClassLib.caex#//@interfaceClassLib.0/@interfaceClass.0"/>
+      </externalInterface>
+      <internalElement name="InductiveSensor"/>
+      <internalLink name="StackToCrane" refPartnerSideA="PPU.PickAndPlaceUnit.Stack.Output" refPartnerSideB="PPU.PickAndPlaceUnit.Crane.Input" partnerSideA="//@instanceHierarchy.0/@internalElement.0/@externalInterface.0" partnerSideB="//@instanceHierarchy.0/@internalElement.1/@externalInterface.0"/>
+      <baseSystemUnit href="PPUSystemUnitClassLib.caex#//@systemUnitClassLib.0/@systemUnitClass.0"/>
+    </internalElement>
+    <internalElement name="Crane" refBaseClassPath="PPUSystemUnitClassLib.PickAndPlaceUnitSystemUnitLibrary.Crane" refBaseSystemUnitPath="PPUSystemUnitClassLib.PickAndPlaceUnitSystemUnitLibrary.Crane">
+      <externalInterface xsi:type="caex:ExternalInterface" name="Input" refBaseClassPath="AMLBaseInterfaceClassLib.AMLBaseInterfaceClassLibrary.PPRConnector">
+        <baseClass href="AMLBaseInterfaceClassLib.caex#//@interfaceClassLib.0/@interfaceClass.0"/>
+      </externalInterface>
+      <externalInterface xsi:type="caex:ExternalInterface" name="Output" refBaseClassPath="AMLBaseInterfaceClassLib.AMLBaseInterfaceClassLibrary.PPRConnector">
+        <baseClass href="AMLBaseInterfaceClassLib.caex#//@interfaceClassLib.0/@interfaceClass.0"/>
+      </externalInterface>
+      <internalElement name="TurningTable">
+        <internalElement name="MicroSwitchStack"/>
+        <internalElement name="MicroSwitchRamp"/>
+        <internalElement name="MicroSwitchStamp"/>
+        <internalElement name="InductiveSensorStack"/>
+        <internalElement name="InductiveSensorStamp"/>
+        <internalElement name="InductiveSensorRamp"/>
+      </internalElement>
+      <internalLink name="CraneToRamp" refPartnerSideA="PPU.PickAndPlaceUnit.Crane.Output" refPartnerSideB="PPU.PickAndPlaceUnit.Ramp.Input" partnerSideA="//@instanceHierarchy.0/@internalElement.1/@externalInterface.1" partnerSideB="//@instanceHierarchy.0/@internalElement.2/@externalInterface.0"/>
+      <internalLink name="CraneToYRamp" partnerSideA="//@instanceHierarchy.0/@internalElement.1/@externalInterface.1" partnerSideB="//@instanceHierarchy.0/@internalElement.3/@externalInterface.0"/>
+      <internalLink name="CraneToStamp" partnerSideA="//@instanceHierarchy.0/@internalElement.1/@externalInterface.1" partnerSideB="//@instanceHierarchy.0/@internalElement.4/@externalInterface.0"/>
+      <roleRequirements refBaseRoleClassPath="AMLRoleClassLib.AMLRoleClassLibrary.Resource">
+        <roleClass href="AMLRoleClassLib.caex#//@roleClassLib.0/@roleClass.2"/>
+      </roleRequirements>
+      <baseSystemUnit href="PPUSystemUnitClassLib.caex#//@systemUnitClassLib.0/@systemUnitClass.1"/>
+    </internalElement>
+    <internalElement name="Ramp" refBaseClassPath="PPUSystemUnitClassLib.PickAndPlaceUnitSystemUnitLibrary.Ramp" refBaseSystemUnitPath="PPUSystemUnitClassLib.PickAndPlaceUnitSystemUnitLibrary.Ramp">
+      <externalInterface xsi:type="caex:ExternalInterface" name="Input" refBaseClassPath="AMLBaseInterfaceClassLib.AMLBaseInterfaceClassLibrary.PPRConnector">
+        <baseClass href="AMLBaseInterfaceClassLib.caex#//@interfaceClassLib.0/@interfaceClass.0"/>
+      </externalInterface>
+      <roleRequirements refBaseRoleClassPath="AMLRoleClassLib.AMLRoleClassLibrary.Resource">
+        <roleClass href="AMLRoleClassLib.caex#//@roleClassLib.0/@roleClass.2"/>
+      </roleRequirements>
+      <baseSystemUnit href="PPUSystemUnitClassLib.caex#//@systemUnitClassLib.0/@systemUnitClass.2"/>
+    </internalElement>
+    <internalElement name="YShapedRamp">
+      <externalInterface xsi:type="caex:ExternalInterface" name="Input" refBaseClassPath="AMLBaseInterfaceClassLib.AMLBaseInterfaceClassLibrary.PPRConnector">
+        <baseClass href="AMLBaseInterfaceClassLib.caex#//@interfaceClassLib.0/@interfaceClass.0"/>
+      </externalInterface>
+      <roleRequirements refBaseRoleClassPath="AMLRoleClassLib.AMLRoleClassLibrary.Resource">
+        <roleClass href="AMLRoleClassLib.caex#//@roleClassLib.0/@roleClass.2"/>
+      </roleRequirements>
+    </internalElement>
+    <internalElement name="Stamp">
+      <externalInterface xsi:type="caex:ExternalInterface" name="InputStamp" refBaseClassPath="AMLBaseInterfaceClassLib.AMLBaseInterfaceClassLibrary.PPRConnector">
+        <baseClass href="AMLBaseInterfaceClassLib.caex#//@interfaceClassLib.0/@interfaceClass.0"/>
+      </externalInterface>
+      <internalLink name="InputLinkStamp"/>
+      <roleRequirements refBaseRoleClassPath="AMLRoleClassLib.AMLRoleClassLibrary.Resource">
+        <roleClass href="AMLRoleClassLib.caex#//@roleClassLib.0/@roleClass.2"/>
+      </roleRequirements>
+    </internalElement>
+  </instanceHierarchy>
+</caex:CAEXFile>

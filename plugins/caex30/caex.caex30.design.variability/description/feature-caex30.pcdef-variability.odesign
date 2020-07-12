@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<description:Group xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:diagram-xtext="http://altran.com/general/integration/xtextsirius/model/diagram/1.0" xmlns:properties="http://www.eclipse.org/sirius/properties/1.0.0" xmlns:properties-xtext="http://altran.com/general/integration/xtextsirius/model/properties/1.0" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:tool="http://www.eclipse.org/sirius/description/tool/1.1.0" xmlns:tool_1="http://www.eclipse.org/sirius/diagram/description/tool/1.1.0" xmlns:validation="http://www.eclipse.org/sirius/description/validation/1.1.0" name="Variability-CAEX30" version="12.0.0.2017041100">
+  <ownedViewpoints name="Variability CAEX30Viewpoint" modelFileExtension="caex">
+    <ownedRepresentationExtensions xsi:type="description_1:DiagramExtensionDescription" name="Variability to AutomationML" viewpointURI="viewpoint:/caex.caex30.design/CAEX30Viewpoint" representationName="CAEX30InstanceHierarchyDiagram">
+      <metamodel href="../../../plugin/pnpl_variability/model/pnpl_variability.ecore#/"/>
+      <layers name="PresenceCondition">
+        <edgeMappings name="PCtoDiagramElement" sourceMapping="//@ownedViewpoints[name='Variability%20CAEX30Viewpoint']/@ownedRepresentationExtensions[name='Variability%20to%20AutomationML']/@layers[name='PresenceCondition']/@containerMappings[name='PresenceConditionContainer']" targetFinderExpression="feature:elements">
+          <targetMapping xsi:type="description_1:ContainerMapping" href="../../caex.caex30.design/description/CAEX30.odesign#//@ownedViewpoints[name='CAEX30Viewpoint']/@ownedRepresentations[name='CAEX30InstanceHierarchyDiagram']/@defaultLayer/@containerMappings[name='InternalElement']"/>
+          <targetMapping xsi:type="description_1:EdgeMapping" href="../../caex.caex30.design/description/CAEX30.odesign#//@ownedViewpoints[name='CAEX30Viewpoint']/@ownedRepresentations[name='CAEX30InstanceHierarchyDiagram']/@defaultLayer/@edgeMappings[name='InternalLinkEdge']"/>
+          <targetMapping xsi:type="description_1:NodeMapping" href="../../caex.caex30.design/description/CAEX30.odesign#//@ownedViewpoints[name='CAEX30Viewpoint']/@ownedRepresentations[name='CAEX30InstanceHierarchyDiagram']/@defaultLayer/@containerMappings[name='InternalElement']/@borderedNodeMappings[name='ExternalInterface']"/>
+          <targetMapping xsi:type="description_1:NodeMapping" href="../../caex.caex30.design/description/CAEX30.odesign#//@ownedViewpoints[name='CAEX30Viewpoint']/@ownedRepresentations[name='CAEX30InstanceHierarchyDiagram']/@defaultLayer/@containerMappings[name='InternalElement']/@subContainerMappings[name='RoleRequirementsContainer']/@subNodeMappings[name='RoleRequirements']"/>
+          <targetMapping xsi:type="description_1:NodeMapping" href="../../caex.caex30.design/description/CAEX30.odesign#//@ownedViewpoints[name='CAEX30Viewpoint']/@ownedRepresentations[name='CAEX30InstanceHierarchyDiagram']/@defaultLayer/@containerMappings[name='InternalElement']/@subContainerMappings[name='SupportedRoleClassesContainer']/@subNodeMappings[name='SupportedRoleClass']"/>
+          <targetMapping xsi:type="description_1:NodeMapping" href="../../caex.caex30.design/description/CAEX30.odesign#//@ownedViewpoints[name='CAEX30Viewpoint']/@ownedRepresentations[name='CAEX30InstanceHierarchyDiagram']/@defaultLayer/@containerMappings[name='InternalElement']/@subContainerMappings[name='AttributeContainer']/@subNodeMappings[name='Attribute']"/>
+          <style lineStyle="dash" sizeComputationExpression="2">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <centerLabelStyleDescription>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+        <containerMappings name="PresenceConditionContainer" domainClass="variability::PresenceCondition" childrenPresentation="List">
+          <subNodeMappings name="ExpressionNode" labelDirectEdit="//@ownedViewpoints[name='Variability%20CAEX30Viewpoint']/@ownedRepresentationExtensions[name='Variability%20to%20AutomationML']/@layers[name='PresenceCondition']/@toolSections.0/@ownedTools[name='ExpressionEdit']" semanticCandidatesExpression="feature:expression" domainClass="variability::Expression">
+            <style xsi:type="style:NoteDescription" labelSize="12" showIcon="false" labelExpression="service:getLabelParentExpression()" labelPosition="node" resizeKind="NSEW">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='yellow']"/>
+            </style>
+          </subNodeMappings>
+          <style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelExpression="" hideLabelByDefault="true">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='yellow']"/>
+            <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='yellow']"/>
+          </style>
+        </containerMappings>
+        <toolSections name="PresenceCondition">
+          <ownedTools xsi:type="tool:ToolDescription" name="Create PC" precondition="aql:if (self.name = null) then false else if (elementView.diagramElementMapping.name.equals('InternalElement')) then true else if (elementView.diagramElementMapping.name.equals('InternalLinkEdge')) then true else if (elementView.diagramElementMapping.name.equals('ExternalInterface')) then true else if (elementView.diagramElementMapping.name.equals('RoleRequirements')) then true else if (elementView.diagramElementMapping.name.equals('SupportedRoleClass')) then true else if (elementView.diagramElementMapping.name.equals('Attribute')) then true else  false endif endif endif endif endif endif endif" iconPath="/org.variability.definition.diagram.design/icons/variability-icon/pc-icon.png">
+            <element name="element"/>
+            <elementView name="elementView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool:ExternalJavaAction" name="CreatePCJavaAction" id="org.variability.definition.diagram.design.condition.IdCreatePresenceCondition">
+                <parameters name="element" value="aql:self"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool_1:EdgeCreationDescription" name="PresenceCondToDiagramElement" edgeMappings="//@ownedViewpoints[name='Variability%20CAEX30Viewpoint']/@ownedRepresentationExtensions[name='Variability%20to%20AutomationML']/@layers[name='PresenceCondition']/@edgeMappings[name='PCtoDiagramElement']" iconPath="/org.variability.definition.diagram.design/icons/variability-icon/pc-edge.png">
+            <sourceVariable name="source"/>
+            <targetVariable name="target"/>
+            <sourceViewVariable name="sourceView"/>
+            <targetViewVariable name="targetView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool:SetValue" featureName="elements" valueExpression="var:target"/>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="diagram-xtext:XtextDirectEditModelDescription" name="ExpressionEdit" inputLabelExpression="aql:self" injectorId="org.variability.definition.diagram.design.presence.condition">
+            <initialOperation>
+              <firstModelOperations xsi:type="tool:SetValue" valueExpression="var:newValue">
+                <subModelOperations xsi:type="tool:ChangeContext" browseExpression="aql:self.eContainer()">
+                  <subModelOperations xsi:type="tool:ExternalJavaAction" name="IdFeatueValidation" id="org.variability.definition.diagram.design.condition.IdFeatureValidation">
+                    <parameters name="presenceCondition" value="aql:self"/>
+                    <parameters name="containerView" value="aql:self.eInverse(diagram::DNodeList)->first()"/>
+                    <parameters name="removeMarkers" value="true"/>
+                  </subModelOperations>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+        </toolSections>
+      </layers>
+      <validationSet>
+        <ownedRules xsi:type="validation:SemanticValidationRule" name="ExpressionValidation" level="ERROR" message="The message is added programmatically" targetClass="variability::PresenceCondition">
+          <audits auditExpression="service:self.validateExpression()"/>
+        </ownedRules>
+      </validationSet>
+    </ownedRepresentationExtensions>
+    <ownedJavaExtensions qualifiedClassName="caex.caex30.design.variability.Services"/>
+    <ownedJavaExtensions qualifiedClassName="caex.caex30.design.variability.PresenceConditionServices"/>
+  </ownedViewpoints>
+  <extensions xsi:type="properties:ViewExtensionDescription">
+    <categories>
+      <pages groups="//@extensions.0/@categories.0/@groups.0">
+        <extends href="../../../plugin/org.eclipse.sirius.properties.defaultrules/model/properties.odesign#//@extensions.0/@categories.0/@pages.0"/>
+      </pages>
+      <groups name="MainGroup" labelExpression="Properties" semanticCandidateExpression="var:self" preconditionExpression="aql:self.oclIsKindOf(variability::Expression) = false">
+        <extends href="../../../plugin/org.eclipse.sirius.properties.defaultrules/model/properties.odesign#//@extensions.0/@categories.0/@groups.0"/>
+      </groups>
+      <overrides xsi:type="properties:GroupOverrideDescription" name="ExpressionGroup" domainClass="variability::Expression" semanticCandidateExpression="var:self" preconditionExpression="aql:self.oclIsKindOf(variability::Expression)" filterControlsFromOverriddenGroupExpression="aql:self.oclIsKindOf(variability::Expression) = false">
+        <controls xsi:type="properties-xtext:XtextSingleLineModelDescription" name="ExpressionSingleLine" labelExpression="aql:'Expression'" valueExpression="aql:self" injectorId="org.variability.definition.diagram.design.presence.condition">
+          <initialOperation>
+            <firstModelOperations xsi:type="tool:ChangeContext" browseExpression="aql:self.eContainer()">
+              <subModelOperations xsi:type="tool:SetValue" featureName="expression" valueExpression="var:newValue">
+                <subModelOperations xsi:type="tool:ExternalJavaActionCall" name="JavaActionFeatureValidation" action="//@ownedViewpoints[name='Variability%20CAEX30Viewpoint']/@ownedRepresentationExtensions[name='Variability%20to%20AutomationML']/@layers[name='PresenceCondition']/@toolSections.0/@ownedTools[name='ExpressionEdit']/@initialOperation/@firstModelOperations/@subModelOperations.0/@subModelOperations.0"/>
+              </subModelOperations>
+            </firstModelOperations>
+          </initialOperation>
+        </controls>
+        <overrides href="../../../plugin/org.eclipse.sirius.properties.defaultrules/model/properties.odesign#//@extensions.0/@categories.0/@groups.0"/>
+      </overrides>
+    </categories>
+  </extensions>
+</description:Group>

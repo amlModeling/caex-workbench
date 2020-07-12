@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pcdef:PCDiagramDefinition xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:pcdef="http://org.pc.definition.diagram/1.0" name="Variability to AutomationML" viewpointUri="viewpoint:/caex.caex30.design/CAEX30Viewpoint" representationName="CAEX30InstanceHierarchyDiagram">
+  <graphicalElements xsi:type="description:ContainerMapping" href="CAEX30.odesign#//@ownedViewpoints[name='CAEX30Viewpoint']/@ownedRepresentations[name='CAEX30InstanceHierarchyDiagram']/@defaultLayer/@containerMappings[name='InternalElement']"/>
+  <graphicalElements xsi:type="description:EdgeMapping" href="CAEX30.odesign#//@ownedViewpoints[name='CAEX30Viewpoint']/@ownedRepresentations[name='CAEX30InstanceHierarchyDiagram']/@defaultLayer/@edgeMappings[name='InternalLinkEdge']"/>
+  <graphicalElements xsi:type="description:NodeMapping" href="CAEX30.odesign#//@ownedViewpoints[name='CAEX30Viewpoint']/@ownedRepresentations[name='CAEX30InstanceHierarchyDiagram']/@defaultLayer/@containerMappings[name='InternalElement']/@borderedNodeMappings[name='ExternalInterface']"/>
+  <graphicalElements xsi:type="description:NodeMapping" href="CAEX30.odesign#//@ownedViewpoints[name='CAEX30Viewpoint']/@ownedRepresentations[name='CAEX30InstanceHierarchyDiagram']/@defaultLayer/@containerMappings[name='InternalElement']/@subContainerMappings[name='RoleRequirementsContainer']/@subNodeMappings[name='RoleRequirements']"/>
+  <graphicalElements xsi:type="description:NodeMapping" href="CAEX30.odesign#//@ownedViewpoints[name='CAEX30Viewpoint']/@ownedRepresentations[name='CAEX30InstanceHierarchyDiagram']/@defaultLayer/@containerMappings[name='InternalElement']/@subContainerMappings[name='SupportedRoleClassesContainer']/@subNodeMappings[name='SupportedRoleClass']"/>
+  <graphicalElements xsi:type="description:NodeMapping" href="CAEX30.odesign#//@ownedViewpoints[name='CAEX30Viewpoint']/@ownedRepresentations[name='CAEX30InstanceHierarchyDiagram']/@defaultLayer/@containerMappings[name='InternalElement']/@subContainerMappings[name='AttributeContainer']/@subNodeMappings[name='Attribute']"/>
+  <stronger>
+    <strongerThanRef href="../../caex.caex30/model/CAEX30.ecore#//InternalLink/partnerSideA"/>
+    <strongerThanRef href="../../caex.caex30/model/CAEX30.ecore#//InternalLink/partnerSideB"/>
+  </stronger>
+</pcdef:PCDiagramDefinition>
