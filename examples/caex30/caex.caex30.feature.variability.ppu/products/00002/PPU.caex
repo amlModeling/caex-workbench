@@ -21,7 +21,9 @@
         <internalElement name="MicroSwitchRamp"/>
       </internalElement>
       <internalLink name="CraneToRamp" refPartnerSideA="PPU.PickAndPlaceUnit.Crane.Output" refPartnerSideB="PPU.PickAndPlaceUnit.Ramp.Input" partnerSideA="//@instanceHierarchy.0/@internalElement.1/@externalInterface.1" partnerSideB="//@instanceHierarchy.0/@internalElement.2/@externalInterface.0"/>
-      <internalLink name="CraneToYRamp" partnerSideA="//@instanceHierarchy.0/@internalElement.1/@externalInterface.1" partnerSideB="//@instanceHierarchy.0/@internalElement.3/@externalInterface.0"/>
+      <internalLink name="CraneToYRamp" partnerSideA="//@instanceHierarchy.0/@internalElement.1/@externalInterface.1">
+        <partnerSideB href="platform:/resource/caex.caex30.feature.variability.ppu/PPU.caex#//@instanceHierarchy.0/@internalElement.3/@externalInterface.0"/>
+      </internalLink>
       <internalLink name="CraneToStamp" partnerSideA="//@instanceHierarchy.0/@internalElement.1/@externalInterface.1">
         <partnerSideB href="platform:/resource/caex.caex30.feature.variability.ppu/PPU.caex#//@instanceHierarchy.0/@internalElement.4/@externalInterface.0"/>
       </internalLink>
@@ -38,14 +40,6 @@
         <roleClass href="platform:/resource/caex.caex30.feature.variability.ppu/AMLRoleClassLib.caex#//@roleClassLib.0/@roleClass.2"/>
       </roleRequirements>
       <baseSystemUnit href="platform:/resource/caex.caex30.feature.variability.ppu/PPUSystemUnitClassLib.caex#//@systemUnitClassLib.0/@systemUnitClass.2"/>
-    </internalElement>
-    <internalElement name="YShapedRamp">
-      <externalInterface xsi:type="caex:ExternalInterface" name="Input" refBaseClassPath="AMLBaseInterfaceClassLib.AMLBaseInterfaceClassLibrary.PPRConnector">
-        <baseClass href="platform:/resource/caex.caex30.feature.variability.ppu/AMLBaseInterfaceClassLib.caex#//@interfaceClassLib.0/@interfaceClass.0"/>
-      </externalInterface>
-      <roleRequirements refBaseRoleClassPath="AMLRoleClassLib.AMLRoleClassLibrary.Resource">
-        <roleClass href="platform:/resource/caex.caex30.feature.variability.ppu/AMLRoleClassLib.caex#//@roleClassLib.0/@roleClass.2"/>
-      </roleRequirements>
     </internalElement>
   </instanceHierarchy>
 </caex:CAEXFile>

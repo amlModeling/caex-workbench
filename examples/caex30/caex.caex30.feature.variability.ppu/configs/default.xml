@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <configuration>
 	<feature name="caexcaex30featurevariabilityppu"/>
-	<feature name="PPU"/>
+	<feature name="Base"/>
 	<feature name="YShapedRamp"/>
 	<feature name="Stack"/>
 	<feature name="InductiveSensor"/>

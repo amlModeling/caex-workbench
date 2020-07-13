@@ -11,7 +11,8 @@
 	</properties>
 	<struct>
 		<and abstract="true" mandatory="true" name="caexcaex30featurevariabilityppu">
-			<alt name="PPU">
+			<alt name="Base">
+				<graphics key="collapsed" value="false"/>
 				<feature name="YShapedRamp"/>
 				<and name="Stack">
 					<feature mandatory="true" name="InductiveSensor"/>
